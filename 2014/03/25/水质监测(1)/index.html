@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>水质监测(1) | MACDeer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="“水质监测”是我这学期的实习题目，我想通过一系列的文章记录整个的开发过程。这是第一篇，主要记录整体的结构设想和一些关键点。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="水质监测(1)">
+<meta property="og:url" content="https://macdfree.github.io/2014/03/25/水质监测(1)/index.html">
+<meta property="og:site_name" content="MACDeer">
+<meta property="og:description" content="“水质监测”是我这学期的实习题目，我想通过一系列的文章记录整个的开发过程。这是第一篇，主要记录整体的结构设想和一些关键点。">
+<meta property="og:image" content="https://macdfree.github.io/m1.png">
+<meta property="og:updated_time" content="2016-09-17T12:28:06.627Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="水质监测(1)">
+<meta name="twitter:description" content="“水质监测”是我这学期的实习题目，我想通过一系列的文章记录整个的开发过程。这是第一篇，主要记录整体的结构设想和一些关键点。">
+<meta name="twitter:image" content="https://macdfree.github.io/m1.png">
+  
+    <link rel="alternate" href="/atom.xml" title="MACDeer" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <!-- 
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+   -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <!-- <h1 id="logo-wrap">
+        <a href="/" id="logo">MACDeer</a>
+      </h1>
+       -->
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">主页</a>
+        
+          <a class="main-nav-link" href="/archives">归档</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        
+          <a id="nav-github-link" class="nav-icon" href="https://github.com/MACDfree" title="GitHub"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://macdfree.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-水质监测(1)" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/03/25/水质监测(1)/" class="article-date">
+  <time datetime="2014-03-24T16:00:00.000Z" itemprop="datePublished">2014-03-25</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/note/">note</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      水质监测(1)
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>“水质监测”是我这学期的实习题目，我想通过一系列的文章记录整个的开发过程。这是第一篇，主要记录整体的结构设想和一些关键点。</p>
+<a id="more"></a>
+<p>首先是整体的框图</p>
+<p><img src="m1.png" alt="整体框图"></p>
+<p>图中主要包含三个部分，分别为普通节点、汇集节点和服务器。为简化起见，普通节点只画了一个，实际上可以是多个。每个普通节点需要实现的功能为：</p>
+<ol>
+<li>采集温度、PH值和溶解氧值；</li>
+<li>将采集到的数据通过射频模块传输至汇聚节点。</li>
+</ol>
+<p>汇集节点负责接收各个普通节点传送过来的采集数据，并通过GPRS模块将数据发送至服务器。服务器端主要将接收到的数据存入数据库，同时通过Web访问的方式将数据以用户友好的方式呈现出来。</p>
+<p>通过上述分析，整个系统的难点有以下几点：</p>
+<ol>
+<li><p>PH值和溶解氧传感器接口的转换</p>
+<p>因为此类传感器多是BNC接口，要传输至单片机需要额外的电路转换。</p>
+</li>
+<li><p>GPRS通过TCP协议传输时数据包的设计</p>
+<p>其实射频通信时的数据包设计也是要考虑的，要保证数据包的完整和准<br>确。</p>
+</li>
+<li><p>Web的设计</p>
+<p>Web设计不仅要考虑数据如何组织查询，如何显示，对界面的设计也比较繁琐，因为上学期做过个小网站所以深有体会。</p>
+</li>
+</ol>
+<p>以上只是前期需要解决的问题，这些问题不解决后面的根本无法继续，至于后期的则是自行设计电路板，代码整合和优化。这些都是以后的事，在此不再讨论。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://macdfree.github.io/2014/03/25/水质监测(1)/" data-id="cit7696ij000mmke8r16z1vqm" class="article-share-link">Share</a>
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2014/03/27/关于51单片机的中断问题/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          关于51单片机的中断问题
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2014/03/24/用半天时间搭的博客/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">用半天时间搭的博客</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/note/">note</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/wiki/">wiki</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CC1101/">CC1101</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CC2500/">CC2500</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CentOS/">CentOS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C语言/">C语言</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub-Pages/">GitHub Pages</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/">Linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MSP430/">MSP430</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PHP/">PHP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/apache/">apache</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/interrupt/">interrupt</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jekylleb/">jekylleb</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/">mysql</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/中断/">中断</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/动漫/">动漫</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/单片机/">单片机</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/树莓派/">树莓派</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/CC1101/" style="font-size: 20px;">CC1101</a> <a href="/tags/CC2500/" style="font-size: 10px;">CC2500</a> <a href="/tags/CentOS/" style="font-size: 10px;">CentOS</a> <a href="/tags/C语言/" style="font-size: 10px;">C语言</a> <a href="/tags/GitHub-Pages/" style="font-size: 10px;">GitHub Pages</a> <a href="/tags/Linux/" style="font-size: 10px;">Linux</a> <a href="/tags/MSP430/" style="font-size: 20px;">MSP430</a> <a href="/tags/PHP/" style="font-size: 10px;">PHP</a> <a href="/tags/apache/" style="font-size: 10px;">apache</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/interrupt/" style="font-size: 10px;">interrupt</a> <a href="/tags/jekylleb/" style="font-size: 10px;">jekylleb</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/python/" style="font-size: 10px;">python</a> <a href="/tags/中断/" style="font-size: 10px;">中断</a> <a href="/tags/动漫/" style="font-size: 10px;">动漫</a> <a href="/tags/单片机/" style="font-size: 10px;">单片机</a> <a href="/tags/树莓派/" style="font-size: 10px;">树莓派</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">七月 2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">六月 2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04/">四月 2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">三月 2014</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/08/26/CentOS注册服务脚本/">CentOS注册服务脚本</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/02/看过的动漫/">看过的动漫</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/29/hexo搭建博客/">hexo搭建博客</a>
+          </li>
+        
+          <li>
+            <a href="/2014/07/08/低功耗节点设计日记01/">低功耗节点设计日记01</a>
+          </li>
+        
+          <li>
+            <a href="/2014/06/04/CC1101和MSP430调试/">CC1101和MSP430调试</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 macd<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">主页</a>
+  
+    <a href="/archives" class="mobile-nav-link">归档</a>
+  
+</nav>
+    
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
