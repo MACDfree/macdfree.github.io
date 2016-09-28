@@ -3,14 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: mysql | MACDeer</title>
+  <title>Oracle导库 | MACDeer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="MACDeer">
-<meta property="og:url" content="https://macdfree.github.io/tags/mysql/index.html">
+  <meta name="description" content="Oracle导库主要分成清库、清空回收站、导库三个步骤。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Oracle导库">
+<meta property="og:url" content="https://macdfree.github.io/2016/09/29/Oracle导库/index.html">
 <meta property="og:site_name" content="MACDeer">
+<meta property="og:description" content="Oracle导库主要分成清库、清空回收站、导库三个步骤。">
+<meta property="og:updated_time" content="2016-09-28T16:14:56.864Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MACDeer">
+<meta name="twitter:title" content="Oracle导库">
+<meta name="twitter:description" content="Oracle导库主要分成清库、清空回收站、导库三个步骤。">
   
     <link rel="alternate" href="/atom.xml" title="MACDeer" type="application/atom+xml">
   
@@ -60,41 +64,77 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2014" class="archive-year">2014</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2014/04/05/php-apache-mysql配置/" class="archive-article-date">
-  <time datetime="2014-04-04T16:00:00.000Z" itemprop="datePublished">4月 5</time>
+        <section id="main"><article id="post-Oracle导库" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/09/29/Oracle导库/" class="article-date">
+  <time datetime="2016-09-28T16:10:57.000Z" itemprop="datePublished">2016-09-29</time>
 </a>
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/blog/">blog</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2014/04/05/php-apache-mysql配置/">php apache mysql配置</a>
+    <h1 class="article-title" itemprop="name">
+      Oracle导库
     </h1>
   
 
-    </header>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Oracle导库主要分成清库、清空回收站、导库三个步骤。</p>
+<a id="more"></a>
+<ol>
+<li><p>清库</p>
+<p> 将<code>Function</code>、<code>Procedures</code>、<code>Packages</code>、<code>Package bodies</code>、<code>Tables</code>、<code>Triggers</code>、<code>views</code>、<code>Sequences</code>都删除</p>
+</li>
+<li><p>清空回收站</p>
+<p> 执行<code>purge recyclebin</code>，把drop后回收站中的数据清空</p>
+</li>
+<li><p>导库</p>
+<ol>
+<li><p>imp导入</p>
+<p> <code>imp epointshdzjc/11111@ORCL_185 file=d:\sh\shjc_1211.dmp log=d:\sh\imp_shjc_1211.log full=y ignore=y</code>，其中<code>epointshdzjc/11111@ORCL_185</code>为数据库连接，格式为：<code>用户名/密码@192.168.208.120:1521/orcl</code>，<code>file</code>为备份文件的路径，<code>log</code>为日志文件路径。</p>
+</li>
+<li><p>impdp导入</p>
+<p> <code>impdp epointshdzjc/11111@ORCL_185 directory=dir_dp dumpfile=dept.dmp remap_schema=scott:system remap_tablespace=users:tbs1</code>，<code>directory</code>参数指定要导入的备份所在的文件夹，可以用<code>select * from dba_directories;</code>查看文件夹；<code>dumpfile</code>参数指定备份文件名；<code>remap_schema</code>为重新指定schema，格式为<code>src:des</code>；<code>remap_tablespace</code>为重新指定tablespace，格式为<code>src:des</code>。</p>
+</li>
+</ol>
+</li>
+</ol>
+<p>注：使用数据泵方式导入时，遇到版本不兼容的问题，原因是使用高版本的oracle导出的备份，在低版本上导入。解决方法是在导入语句后加上<code>version</code>参数指定导入数据库的版本</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://macdfree.github.io/2016/09/29/Oracle导库/" data-id="citn44wl10000xse8bbaj9xla" class="article-share-link">Share</a>
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Oracle/">Oracle</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/导库/">导库</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数据泵/">数据泵</a></li></ul>
+
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/09/18/测试html/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">测试HTML</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
-
-
 </section>
         
           <aside id="sidebar">
