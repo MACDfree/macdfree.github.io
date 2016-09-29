@@ -11,7 +11,7 @@
 <meta property="og:url" content="https://macdfree.github.io/2016/09/29/Oracle导库/index.html">
 <meta property="og:site_name" content="MACDeer">
 <meta property="og:description" content="Oracle导库主要分成清库、清空回收站、导库三个步骤。">
-<meta property="og:updated_time" content="2016-09-29T04:39:06.597Z">
+<meta property="og:updated_time" content="2016-09-29T14:37:23.434Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Oracle导库">
 <meta name="twitter:description" content="Oracle导库主要分成清库、清空回收站、导库三个步骤。">
@@ -102,20 +102,26 @@
 <li><p>导库</p>
 <ol>
 <li><p>imp导入</p>
-<p> <code>imp epointshdzjc/11111@ORCL_185 file=d:\sh\shjc_1211.dmp log=d:\sh\imp_shjc_1211.log full=y ignore=y</code>，其中<code>epointshdzjc/11111@ORCL_185</code>为数据库连接，格式为：<code>用户名/密码@192.168.208.120:1521/orcl</code>，<code>file</code>为备份文件的路径，<code>log</code>为日志文件路径。</p>
+<p> <code>imp 用户名/密码@ip:port/数据库名 file=d:\sh\shjc_1211.dmp log=d:\sh\imp_shjc_1211.log full=y ignore=y</code>，其中<code>用户名/密码@ip:port/数据库名</code>为数据库连接，格式为：<code>用户名/密码@192.168.208.120:1521/orcl</code>，<code>file</code>为备份文件的路径，<code>log</code>为日志文件路径。</p>
 </li>
 <li><p>impdp导入</p>
-<p> <code>impdp epointshdzjc/11111@ORCL_185 directory=dir_dp dumpfile=dept.dmp remap_schema=scott:system remap_tablespace=users:tbs1</code>，<code>directory</code>参数指定要导入的备份所在的文件夹，可以用<code>select * from dba_directories;</code>查看文件夹；<code>dumpfile</code>参数指定备份文件名；<code>remap_schema</code>为重新指定schema，格式为<code>src:des</code>；<code>remap_tablespace</code>为重新指定tablespace，格式为<code>src:des</code>。</p>
+<p> <code>impdp 用户名/密码@ip:port/数据库名 directory=dir_dp dumpfile=dept.dmp remap_schema=scott:system remap_tablespace=users:tbs1</code>，<code>directory</code>参数指定要导入的备份所在的文件夹，可以用<code>select * from dba_directories;</code>查看文件夹；<code>dumpfile</code>参数指定备份文件名；<code>remap_schema</code>为重新指定schema，格式为<code>src:des</code>；<code>remap_tablespace</code>为重新指定tablespace，格式为<code>src:des</code>。</p>
 </li>
 </ol>
 </li>
 </ol>
-<p>注：使用数据泵方式导入时，遇到版本不兼容的问题，原因是使用高版本的oracle导出的备份，在低版本上导入。解决方法是在导出备份语句后加上<code>version</code>参数指定导入数据库的版本</p>
+<p>注：使用数据泵方式导入时，遇到版本不兼容的问题，原因是使用高版本的oracle导出的备份，在低版本上导入。解决方法是在导出语句后加上<code>version</code>参数指定导入数据库的版本</p>
+<hr>
+<p>补充</p>
+<p>2016年9月29日</p>
+<p>今天测试服务器上有一张表搞坏了，然后老大让我从备份中单独还原这张表的数据，这边也记录一下</p>
+<p><code>imp 用户名/密码@ip:port/数据库名 file=E:\EpointBid_TP6j20160929.dmp log=‪E:\EpointBid_TP6j20160929.log tables=(table_struct)</code></p>
+<p>其实就是加了一个<code>tables</code>参数来指定需要导入的表。另外，今天也发现就算数据库备份和需要导入的数据库表空间不一样也是可以导入成功的。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://macdfree.github.io/2016/09/29/Oracle导库/" data-id="citnuqlf20000rse8w2o3yuqv" class="article-share-link">Share</a>
+      <a data-url="https://macdfree.github.io/2016/09/29/Oracle导库/" data-id="citog4x180000awe8pnvcvst2" class="article-share-link">Share</a>
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Oracle/">Oracle</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/导库/">导库</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数据泵/">数据泵</a></li></ul>
 
