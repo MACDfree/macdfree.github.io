@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
-<!-- saved from url=(0069)https://www.sublimetext.com/docs/3/api_reference.html#example_plugins -->
+<!-- saved from url=(0069)#example_plugins -->
 <html class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>API Reference – Sublime Text 3 Documentation</title>
     
-    <link rel="stylesheet" type="text/css" href="sublime_docs.css"">
+    <link rel="stylesheet" type="text/css" href="sublime_docs.css">
     <link rel="stylesheet" type="text/css" href="css.css">
 <style type="text/css">.fancybox-margin{margin-right:0px;}</style></head>
 <body data-gclp-initialized="true" data-gistbox-initialized="true">
@@ -27,46 +27,46 @@
         <div class="column">
             <h3>综述</h3>
             <ul>
-                <li><a href="https://www.sublimetext.com/docs/3/api_reference.html#example_plugins" target="_blank" rel="external">插件示例</a></li>
-                <li><a href="https://www.sublimetext.com/docs/3/api_reference.html#plugin_lifecycle" target="_blank" rel="external">插件生命周期</a></li>
-                <li><a href="https://www.sublimetext.com/docs/3/api_reference.html#threading" target="_blank" rel="external">Threading</a></li>
-                <li><a href="https://www.sublimetext.com/docs/3/api_reference.html#types" target="_blank" rel="external">Types</a></li>
+                <li><a href="#example_plugins">插件示例</a></li>
+                <li><a href="#plugin_lifecycle">插件生命周期</a></li>
+                <li><a href="#threading">Threading</a></li>
+                <li><a href="#types">Types</a></li>
             </ul>
         </div>
         <div class="column">
             <h3>核心组件</h3>
             <ul>
-                <li><a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime" target="_blank" rel="external"><code>sublime</code> Module</a></li>
-                <li><a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.View" target="_blank" rel="external"><code>View</code> Class</a></li>
-                <li><a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.Selection" target="_blank" rel="external"><code>Selection</code> Class</a></li>
-                <li><a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.Region" target="_blank" rel="external"><code>Region</code> Class</a></li>
-                <li><a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.Phantom" target="_blank" rel="external"><code>Phantom</code> Class</a></li>
-                <li><a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.PhantomSet" target="_blank" rel="external"><code>PhantomSet</code> Class</a></li>
-                <li><a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.Edit" target="_blank" rel="external"><code>Edit</code> Class</a></li>
-                <li><a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.Window" target="_blank" rel="external"><code>Window</code> Class</a></li>
-                <li><a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.Settings" target="_blank" rel="external"><code>Settings</code> Class</a></li>
+                <li><a href="#sublime"><code>sublime</code> Module</a></li>
+                <li><a href="#sublime.View"><code>View</code> Class</a></li>
+                <li><a href="#sublime.Selection"><code>Selection</code> Class</a></li>
+                <li><a href="#sublime.Region"><code>Region</code> Class</a></li>
+                <li><a href="#sublime.Phantom"><code>Phantom</code> Class</a></li>
+                <li><a href="#sublime.PhantomSet"><code>PhantomSet</code> Class</a></li>
+                <li><a href="#sublime.Edit"><code>Edit</code> Class</a></li>
+                <li><a href="#sublime.Window"><code>Window</code> Class</a></li>
+                <li><a href="#sublime.Settings"><code>Settings</code> Class</a></li>
             </ul>
         </div>
         <div class="column">
             <h3>Plugin Extension Points</h3>
             <ul>
                 <li>
-                    <a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime_plugin" target="_blank" rel="external"><code>sublime_plugin</code> Module</a>
+                    <a href="#sublime_plugin"><code>sublime_plugin</code> Module</a>
                 </li>
                 <li>
-                    <a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime_plugin.EventListener" target="_blank" rel="external"><code>EventListener</code> Class</a>
+                    <a href="#sublime_plugin.EventListener"><code>EventListener</code> Class</a>
                 </li>
                 <li>
-                    <a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime_plugin.ViewEventListener" target="_blank" rel="external"><code>ViewEventListener</code> Class</a>
+                    <a href="#sublime_plugin.ViewEventListener"><code>ViewEventListener</code> Class</a>
                 </li>
                 <li>
-                    <a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime_plugin.ApplicationCommand" target="_blank" rel="external"><code>ApplicationCommand</code> Class</a>
+                    <a href="#sublime_plugin.ApplicationCommand"><code>ApplicationCommand</code> Class</a>
                 </li>
                 <li>
-                    <a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime_plugin.WindowCommand" target="_blank" rel="external"><code>WindowCommand</code> Class</a>
+                    <a href="#sublime_plugin.WindowCommand"><code>WindowCommand</code> Class</a>
                 </li>
                 <li>
-                    <a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime_plugin.TextCommand" target="_blank" rel="external"><code>TextCommand</code> Class</a>
+                    <a href="#sublime_plugin.TextCommand"><code>TextCommand</code> Class</a>
                 </li>
             </ul>
         </div>
@@ -217,21 +217,21 @@
             </tr>
             <tr>
                 <td class="mth">decode_value(string)</td>
-                <td class="rtn"><a href="https://www.sublimetext.com/docs/3/api_reference.html#type-value" target="_blank" rel="external">value</a></td>
+                <td class="rtn"><a href="#type-value">value</a></td>
                 <td class="dsc">
                     Decodes a JSON string into an object. If the <tt>string</tt> is invalid, a <tt>ValueError</tt> will be thrown.
                 </td>
             </tr>
             <tr>
                 <td class="mth">expand_variables(value, variables)</td>
-                <td class="rtn"><a href="https://www.sublimetext.com/docs/3/api_reference.html#type-value" target="_blank" rel="external">value</a></td>
+                <td class="rtn"><a href="#type-value">value</a></td>
                 <td class="dsc">
                     Expands any variables in the string <tt>value</tt> using the variables defined in the dictionary <tt>variables</tt>. <tt>value</tt> may also be a <tt>list</tt> or <tt>dict</tt>, in which case the structure will be recursively expanded. Strings should use snippet syntax, for example: <code class=" language-python">expand_variables<span class="token punctuation">(</span><span class="token string">"Hello, ${name}"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token string">"name"</span><span class="token punctuation">:</span> <span class="token string">"Foo"</span><span class="token punctuation">}</span><span class="token punctuation">)</span></code>
                 </td>
             </tr>
             <tr>
                 <td class="mth">load_settings(base_name)</td>
-                <td class="rtn"><a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.Settings" target="_blank" rel="external">Settings</a></td>
+                <td class="rtn"><a href="#sublime.Settings">Settings</a></td>
                 <td class="dsc">
                     Loads the named settings. The name should include a file name and extension, but not a path. The packages will be searched for files matching the <tt>base_name</tt>, and the results will be collated into the settings object. Subsequent calls to <tt>load_settings()</tt> with the <tt>base_name</tt> will return the same object, and not load the settings from disk again.
                 </td>
@@ -245,14 +245,14 @@
             </tr>
             <tr>
                 <td class="mth">windows()</td>
-                <td class="rtn">[<a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.Window" target="_blank" rel="external">Window</a>]</td>
+                <td class="rtn">[<a href="#sublime.Window">Window</a>]</td>
                 <td class="dsc">
                     Returns a list of all the open windows.
                 </td>
             </tr>
             <tr>
                 <td class="mth">active_window()</td>
-                <td class="rtn"><a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.Window" target="_blank" rel="external">Window</a></td>
+                <td class="rtn"><a href="#sublime.Window">Window</a></td>
                 <td class="dsc">
                     Returns the most recently used window.
                 </td>
@@ -303,7 +303,7 @@
                 <td class="mth">run_command(string, &lt;args&gt;)</td>
                 <td class="rtn">None</td>
                 <td class="dsc">
-                    Runs the named <a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime_plugin.ApplicationCommand" target="_blank" rel="external">ApplicationCommand</a> with the (optional) given <tt>args</tt>.
+                    Runs the named <a href="#sublime_plugin.ApplicationCommand">ApplicationCommand</a> with the (optional) given <tt>args</tt>.
                 </td>
             </tr>
             <tr>
@@ -450,14 +450,14 @@
             </tr>
             <tr>
                 <td class="mth">settings()</td>
-                <td class="rtn"><a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.Settings" target="_blank" rel="external">Settings</a></td>
+                <td class="rtn"><a href="#sublime.Settings">Settings</a></td>
                 <td class="dsc">
                     Returns a reference to the view's settings object. Any changes to this settings object will be private to this view.
                 </td>
             </tr>
             <tr>
                 <td class="mth">window()</td>
-                <td class="rtn"><a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.Window" target="_blank" rel="external">Window</a></td>
+                <td class="rtn"><a href="#sublime.Window">Window</a></td>
                 <td class="dsc">
                     Returns a reference to the window containing the view.
                 </td>
@@ -466,7 +466,7 @@
                 <td class="mth">run_command(string, &lt;args&gt;)</td>
                 <td class="rtn">None</td>
                 <td class="dsc">
-                    Runs the named <a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.TextCommand" target="_blank" rel="external">TextCommand</a> with the (optional) given <tt>args</tt>.
+                    Runs the named <a href="#sublime.TextCommand">TextCommand</a> with the (optional) given <tt>args</tt>.
                 </td>
             </tr>
             <tr>
@@ -513,63 +513,63 @@
             </tr>
             <tr>
                 <td class="mth">sel()</td>
-                <td class="rtn"><a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.Selection" target="_blank" rel="external">Selection</a></td>
+                <td class="rtn"><a href="#sublime.Selection">Selection</a></td>
                 <td class="dsc">
                     Returns a reference to the selection.
                 </td>
             </tr>
             <tr>
                 <td class="mth">line(point)</td>
-                <td class="rtn"><a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.Region" target="_blank" rel="external">Region</a></td>
+                <td class="rtn"><a href="#sublime.Region">Region</a></td>
                 <td class="dsc">
                     Returns the line that contains the <tt>point</tt>.
                 </td>
             </tr>
             <tr>
                 <td class="mth">line(region)</td>
-                <td class="rtn"><a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.Region" target="_blank" rel="external">Region</a></td>
+                <td class="rtn"><a href="#sublime.Region">Region</a></td>
                 <td class="dsc">
                     Returns a modified copy of <tt>region</tt> such that it starts at the beginning of a line, and ends at the end of a line. Note that it may span several lines.
                 </td>
             </tr>
             <tr>
                 <td class="mth">full_line(point)</td>
-                <td class="rtn"><a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.Region" target="_blank" rel="external">Region</a></td>
+                <td class="rtn"><a href="#sublime.Region">Region</a></td>
                 <td class="dsc">
                     As <tt>line()</tt>, but the region includes the trailing newline character, if any.
                 </td>
             </tr>
             <tr>
                 <td class="mth">full_line(region)</td>
-                <td class="rtn"><a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.Region" target="_blank" rel="external">Region</a></td>
+                <td class="rtn"><a href="#sublime.Region">Region</a></td>
                 <td class="dsc">
                     As <tt>line()</tt>, but the region includes the trailing newline character, if any.
                 </td>
             </tr>
             <tr>
                 <td class="mth">lines(region)</td>
-                <td class="rtn">[<a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.Region" target="_blank" rel="external">Region</a>]</td>
+                <td class="rtn">[<a href="#sublime.Region">Region</a>]</td>
                 <td class="dsc">
                     Returns a list of lines (in sorted order) intersecting the <tt>region</tt>.
                 </td>
             </tr>
             <tr>
                 <td class="mth">split_by_newlines(region)</td>
-                <td class="rtn">[<a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.Region" target="_blank" rel="external">Region</a>]</td>
+                <td class="rtn">[<a href="#sublime.Region">Region</a>]</td>
                 <td class="dsc">
                     Splits the <tt>region</tt> up such that each region returned exists on exactly one line.
                 </td>
             </tr>
             <tr>
                 <td class="mth">word(point)</td>
-                <td class="rtn"><a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.Region" target="_blank" rel="external">Region</a></td>
+                <td class="rtn"><a href="#sublime.Region">Region</a></td>
                 <td class="dsc">
                     Returns the word that contains the <tt>point</tt>.
                 </td>
             </tr>
             <tr>
                 <td class="mth">word(region)</td>
-                <td class="rtn"><a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.Region" target="_blank" rel="external">Region</a></td>
+                <td class="rtn"><a href="#sublime.Region">Region</a></td>
                 <td class="dsc">
                     Returns a modified copy of <tt>region</tt> such that it starts at the beginning of a word, and ends at the end of a word. Note that it may span several words.
                 </td>
@@ -596,35 +596,35 @@
             </tr>
             <tr>
                 <td class="mth">find_by_class(point, forward, classes, &lt;separators&gt;)</td>
-                <td class="rtn"><a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.Region" target="_blank" rel="external">Region</a></td>
+                <td class="rtn"><a href="#sublime.Region">Region</a></td>
                 <td class="dsc">
                     Finds the next location after <tt>point</tt> that matches the given <tt>classes</tt>. If <tt>forward</tt> is <tt>False</tt>, searches backwards instead of forwards. <tt>classes</tt> is a bitwise OR of the <tt>sublime.CLASS_XXX</tt> flags. <tt>separators</tt> may be passed in, to define what characters should be considered to separate words.
                 </td>
             </tr>
             <tr>
                 <td class="mth">expand_by_class(point, classes, &lt;separators&gt;)</td>
-                <td class="rtn"><a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.Region" target="_blank" rel="external">Region</a></td>
+                <td class="rtn"><a href="#sublime.Region">Region</a></td>
                 <td class="dsc">
                     Expands <tt>point</tt> to the left and right, until each side lands on a location that matches <tt>classes</tt>. <tt>classes</tt> is a bitwise OR of the <tt>sublime.CLASS_XXX</tt> flags. separators may be passed in, to define what characters should be considered to separate words.
                 </td>
             </tr>
             <tr>
                 <td class="mth">expand_by_class(region, classes, &lt;separators&gt;)</td>
-                <td class="rtn"><a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.Region" target="_blank" rel="external">Region</a></td>
+                <td class="rtn"><a href="#sublime.Region">Region</a></td>
                 <td class="dsc">
                     Expands <tt>region</tt> to the left and right, until each side lands on a location that matches <tt>classes</tt>. <tt>classes</tt> is a bitwise OR of the <tt>sublime.CLASS_XXX</tt> flags. <tt>separators</tt> may be passed in, to define what characters should be considered to separate words.
                 </td>
             </tr>
             <tr>
                 <td class="mth">find(pattern, start_point, &lt;flags&gt;)</td>
-                <td class="rtn"><a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.Region" target="_blank" rel="external">Region</a></td>
+                <td class="rtn"><a href="#sublime.Region">Region</a></td>
                 <td class="dsc">
                     Returns the first region matching the regex <tt>pattern</tt>, starting from <tt>start_point</tt>, or <tt>None</tt> if it can't be found. The optional <tt>flags</tt> parameter may be <tt>sublime.LITERAL</tt>, <tt>sublime.IGNORECASE</tt>, or the two ORed together.
                 </td>
             </tr>
             <tr>
                 <td class="mth">find_all(pattern, &lt;flags&gt;, &lt;format&gt;, &lt;extractions&gt;)</td>
-                <td class="rtn">[<a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.Region" target="_blank" rel="external">Region</a>]</td>
+                <td class="rtn">[<a href="#sublime.Region">Region</a>]</td>
                 <td class="dsc">
                     Returns all (non-overlapping) regions matching the regex <tt>pattern</tt>. The optional <tt>flags</tt> parameter may be <tt>sublime.LITERAL</tt>, <tt>sublime.IGNORECASE</tt>, or the two ORed together. If a <tt>format</tt> string is given, then all matches will be formatted with the formatted string and placed into the extractions list.
                 </td>
@@ -652,7 +652,7 @@
             </tr>
             <tr>
                 <td class="mth">extract_scope(point)</td>
-                <td class="rtn"><a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.Region" target="_blank" rel="external">Region</a></td>
+                <td class="rtn"><a href="#sublime.Region">Region</a></td>
                 <td class="dsc">
                     Returns the extent of the syntax scope name assigned to the character at the given <tt>point</tt>.
                 </td>
@@ -680,7 +680,7 @@
             </tr>
             <tr>
                 <td class="mth">find_by_selector(selector)</td>
-                <td class="rtn">[<a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.Region" target="_blank" rel="external">Region</a>]</td>
+                <td class="rtn">[<a href="#sublime.Region">Region</a>]</td>
                 <td class="dsc">
                     Finds all regions in the file matching the given <tt>selector</tt>, returning them as a list.
                 </td>
@@ -689,26 +689,26 @@
                 <td class="mth">show(location, &lt;show_surrounds&gt;)</td>
                 <td class="rtn">None</td>
                 <td class="dsc">
-                    Scroll the view to show the given <tt>location</tt>, which may be a <a href="https://www.sublimetext.com/docs/3/api_reference.html#type-point" target="_blank" rel="external">point</a>, <a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.Region" target="_blank" rel="external">Region</a> or <a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.Selection" target="_blank" rel="external">Selection</a>.
+                    Scroll the view to show the given <tt>location</tt>, which may be a <a href="#type-point">point</a>, <a href="#sublime.Region">Region</a> or <a href="#sublime.Selection">Selection</a>.
                 </td>
             </tr>
             <tr>
                 <td class="mth">show_at_center(location)</td>
                 <td class="rtn">None</td>
                 <td class="dsc">
-                    Scroll the view to center on the <tt>location</tt>, which may be a <a href="https://www.sublimetext.com/docs/3/api_reference.html#type-point" target="_blank" rel="external">point</a> or <a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.Region" target="_blank" rel="external">Region</a>.
+                    Scroll the view to center on the <tt>location</tt>, which may be a <a href="#type-point">point</a> or <a href="#sublime.Region">Region</a>.
                 </td>
             </tr>
             <tr>
                 <td class="mth">visible_region()</td>
-                <td class="rtn"><a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.Region" target="_blank" rel="external">Region</a></td>
+                <td class="rtn"><a href="#sublime.Region">Region</a></td>
                 <td class="dsc">
                     Returns the currently visible area of the view.
                 </td>
             </tr>
             <tr>
                 <td class="mth">viewport_position()</td>
-                <td class="rtn"><a href="https://www.sublimetext.com/docs/3/api_reference.html#type-vector" target="_blank" rel="external">vector</a></td>
+                <td class="rtn"><a href="#type-vector">vector</a></td>
                 <td class="dsc">
                     Returns the offset of the viewport in layout coordinates.
                 </td>
@@ -722,42 +722,42 @@
             </tr>
             <tr>
                 <td class="mth">viewport_extent()</td>
-                <td class="rtn"><a href="https://www.sublimetext.com/docs/3/api_reference.html#type-vector" target="_blank" rel="external">vector</a></td>
+                <td class="rtn"><a href="#type-vector">vector</a></td>
                 <td class="dsc">
                     Returns the width and height of the viewport.
                 </td>
             </tr>
             <tr>
                 <td class="mth">layout_extent()</td>
-                <td class="rtn"><a href="https://www.sublimetext.com/docs/3/api_reference.html#type-vector" target="_blank" rel="external">vector</a></td>
+                <td class="rtn"><a href="#type-vector">vector</a></td>
                 <td class="dsc">
                     Returns the width and height of the layout.
                 </td>
             </tr>
             <tr>
                 <td class="mth">text_to_layout(point)</td>
-                <td class="rtn"><a href="https://www.sublimetext.com/docs/3/api_reference.html#type-vector" target="_blank" rel="external">vector</a></td>
+                <td class="rtn"><a href="#type-vector">vector</a></td>
                 <td class="dsc">
                     Converts a text position to a layout position
                 </td>
             </tr>
             <tr>
                 <td class="mth">layout_to_text(vector)</td>
-                <td class="rtn"><a href="https://www.sublimetext.com/docs/3/api_reference.html#type-point" target="_blank" rel="external">point</a></td>
+                <td class="rtn"><a href="#type-point">point</a></td>
                 <td class="dsc">
                     Converts a layout position to a text position
                 </td>
             </tr>
             <tr>
                 <td class="mth">window_to_layout(vector)</td>
-                <td class="rtn"><a href="https://www.sublimetext.com/docs/3/api_reference.html#type-vector" target="_blank" rel="external">vector</a></td>
+                <td class="rtn"><a href="#type-vector">vector</a></td>
                 <td class="dsc">
                     Converts a window position to a layout position
                 </td>
             </tr>
             <tr>
                 <td class="mth">window_to_text(vector)</td>
-                <td class="rtn"><a href="https://www.sublimetext.com/docs/3/api_reference.html#type-point" target="_blank" rel="external">point</a></td>
+                <td class="rtn"><a href="#type-point">point</a></td>
                 <td class="dsc">
                     Converts a window position to a text position
                 </td>
@@ -832,7 +832,7 @@
             </tr>
             <tr>
                 <td class="mth">get_regions(key)</td>
-                <td class="rtn">[<a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.Region" target="_blank" rel="external">Region</a>]</td>
+                <td class="rtn">[<a href="#sublime.Region">Region</a>]</td>
                 <td class="dsc">
                     Return the regions associated with the given <tt>key</tt>, if any
                 </td>
@@ -905,14 +905,14 @@
             </tr>
             <tr>
                 <td class="mth">unfold(region)</td>
-                <td class="rtn">[<a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.Region" target="_blank" rel="external">Region</a>]</td>
+                <td class="rtn">[<a href="#sublime.Region">Region</a>]</td>
                 <td class="dsc">
                     Unfolds all text in the <tt>region</tt>, returning the unfolded regions
                 </td>
             </tr>
             <tr>
                 <td class="mth">unfold([regions])</td>
-                <td class="rtn">[<a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.Region" target="_blank" rel="external">Region</a>]</td>
+                <td class="rtn">[<a href="#sublime.Region">Region</a>]</td>
                 <td class="dsc">
                     Unfolds all text in the <tt>regions</tt>, returning the unfolded regions
                 </td>
@@ -961,7 +961,7 @@
             </tr>
             <tr>
                 <td class="mth">symbols()</td>
-                <td class="rtn">[(<a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.Region" target="_blank" rel="external">Region</a>, str)]</td>
+                <td class="rtn">[(<a href="#sublime.Region">Region</a>, str)]</td>
                 <td class="dsc">
                     Extract all the symbols defined in the buffer.
                 </td>
@@ -1188,14 +1188,14 @@
             </tr>
             <tr>
                 <td class="mth">cover(region)</td>
-                <td class="rtn"><a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.Region" target="_blank" rel="external">Region</a></td>
+                <td class="rtn"><a href="#sublime.Region">Region</a></td>
                 <td class="dsc">
                     Returns a Region spanning both this and the given regions.
                 </td>
             </tr>
             <tr>
                 <td class="mth">intersection(region)</td>
-                <td class="rtn"><a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.Region" target="_blank" rel="external">Region</a></td>
+                <td class="rtn"><a href="#sublime.Region">Region</a></td>
                 <td class="dsc">
                     Returns the set intersection of the two regions.
                 </td>
@@ -1312,7 +1312,7 @@
         </p>
 
         <p>
-            Edit objects are passed to <a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.TextCommand" target="_blank" rel="external">TextCommand</a>s, and can not be created by the user. Using an invalid Edit object, or an Edit object from a different View, will cause the functions that require them to fail.
+            Edit objects are passed to <a href="#sublime.TextCommand">TextCommand</a>s, and can not be created by the user. Using an invalid Edit object, or an Edit object from a different View, will cause the functions that require them to fail.
         </p>
 
         <table class="functions">
@@ -1347,14 +1347,14 @@
             </tr>
             <tr>
                 <td class="mth">new_file()</td>
-                <td class="rtn"><a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.View" target="_blank" rel="external">View</a></td>
+                <td class="rtn"><a href="#sublime.View">View</a></td>
                 <td class="dsc">
                     Creates a new file. The returned view will be empty, and its <tt>is_loaded()</tt> method will return <tt>True</tt>.
                 </td>
             </tr>
             <tr>
                 <td class="mth">open_file(file_name, &lt;flags&gt;)</td>
-                <td class="rtn"><a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.View" target="_blank" rel="external">View</a></td>
+                <td class="rtn"><a href="#sublime.View">View</a></td>
                 <td class="dsc">
                     <p>
                         Opens the named file, and returns the corresponding view. If the file is already opened, it will be brought to the front. Note that as file loading is asynchronous, operations on the returned view won't be possible until its <tt>is_loading()</tt> method returns <tt>False</tt>.
@@ -1374,35 +1374,35 @@
             </tr>
             <tr>
                 <td class="mth">find_open_file(file_name)</td>
-                <td class="rtn"><a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.View" target="_blank" rel="external">View</a></td>
+                <td class="rtn"><a href="#sublime.View">View</a></td>
                 <td class="dsc">
                     Finds the named file in the list of open files, and returns the corresponding View, or <tt>None</tt> if no such file is open.
                 </td>
             </tr>
             <tr>
                 <td class="mth">active_view()</td>
-                <td class="rtn"><a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.View" target="_blank" rel="external">View</a></td>
+                <td class="rtn"><a href="#sublime.View">View</a></td>
                 <td class="dsc">
                     Returns the currently edited view.
                 </td>
             </tr>
             <tr>
                 <td class="mth">active_view_in_group(group)</td>
-                <td class="rtn"><a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.View" target="_blank" rel="external">View</a></td>
+                <td class="rtn"><a href="#sublime.View">View</a></td>
                 <td class="dsc">
                     Returns the currently edited view in the given <tt>group</tt>.
                 </td>
             </tr>
             <tr>
                 <td class="mth">views()</td>
-                <td class="rtn">[<a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.View" target="_blank" rel="external">View</a>]</td>
+                <td class="rtn">[<a href="#sublime.View">View</a>]</td>
                 <td class="dsc">
                     Returns all open views in the window.
                 </td>
             </tr>
             <tr>
                 <td class="mth">views_in_group(group)</td>
-                <td class="rtn">[<a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.View" target="_blank" rel="external">View</a>]</td>
+                <td class="rtn">[<a href="#sublime.View">View</a>]</td>
                 <td class="dsc">
                     Returns all open views in the given <tt>group</tt>.
                 </td>
@@ -1558,7 +1558,7 @@
                 <td class="mth">run_command(string, &lt;args&gt;)</td>
                 <td class="rtn">None</td>
                 <td class="dsc">
-                    Runs the named <a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.WindowCommand" target="_blank" rel="external">WindowCommand</a> with the (optional) given <tt>args</tt>. This method is able to run any sort of command, dispatching the command via input focus.
+                    Runs the named <a href="#sublime.WindowCommand">WindowCommand</a> with the (optional) given <tt>args</tt>. This method is able to run any sort of command, dispatching the command via input focus.
                 </td>
             </tr>
             <tr>
@@ -1581,14 +1581,14 @@
             </tr>
             <tr>
                 <td class="mth">show_input_panel(caption, initial_text, on_done, on_change, on_cancel)</td>
-                <td class="rtn"><a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.View" target="_blank" rel="external">View</a></td>
+                <td class="rtn"><a href="#sublime.View">View</a></td>
                 <td class="dsc">
                     Shows the input panel, to collect a line of input from the user. <tt>on_done</tt> and <tt>on_change</tt>, if not <tt>None</tt>, should both be functions that expect a single string argument. <tt>on_cancel</tt> should be a function that expects no arguments. The view used for the input widget is returned.
                 </td>
             </tr>
             <tr>
                 <td class="mth">create_output_panel(name, &lt;unlisted&gt;)</td>
-                <td class="rtn"><a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.View" target="_blank" rel="external">View</a></td>
+                <td class="rtn"><a href="#sublime.View">View</a></td>
                 <td class="dsc">
                     <p>
                         Returns the view associated with the named output panel, creating it if required. The output panel can be shown by running the <tt>show_panel</tt> window command, with the <tt>panel</tt> argument set to the name with an <tt>"output."</tt> prefix.
@@ -1600,7 +1600,7 @@
             </tr>
             <tr>
                 <td class="mth">find_output_panel(name)</td>
-                <td class="rtn"><a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.View" target="_blank" rel="external">View</a> <em>or</em> None</td>
+                <td class="rtn"><a href="#sublime.View">View</a> <em>or</em> None</td>
                 <td class="dsc">
                     Returns the view associated with the named output panel, or <tt>None</tt> if the output panel does not exist.
                 </td>
@@ -1628,14 +1628,14 @@
             </tr>
             <tr>
                 <td class="mth">lookup_symbol_in_index(symbol)</td>
-                <td class="rtn">[<a href="https://www.sublimetext.com/docs/3/api_reference.html#type-location" target="_blank" rel="external">location</a>]</td>
+                <td class="rtn">[<a href="#type-location">location</a>]</td>
                 <td class="dsc">
                     Returns all locations where the symbol is defined across files in the current project.
                 </td>
             </tr>
             <tr>
                 <td class="mth">lookup_symbol_in_open_files(symbol)</td>
-                <td class="rtn">[<a href="https://www.sublimetext.com/docs/3/api_reference.html#type-location" target="_blank" rel="external">location</a>]</td>
+                <td class="rtn">[<a href="#type-location">location</a>]</td>
                 <td class="dsc">
                     Returns all locations where the symbol is defined across open files.
                 </td>
@@ -1667,7 +1667,7 @@
             </tr>
             <tr>
                 <td class="mth">get(name, &lt;default&gt;)</td>
-                <td class="rtn"><a href="https://www.sublimetext.com/docs/3/api_reference.html#type-value" target="_blank" rel="external">value</a></td>
+                <td class="rtn"><a href="#type-value">value</a></td>
                 <td class="dsc">
                     Returns the named setting, or <tt>default</tt> if it's not defined. If not passed, <tt>default</tt> will have a value of <tt>None</tt>.
                 </td>
@@ -1952,7 +1952,7 @@
                     </p>
 
                     <p>
-                        <tt>locations</tt> is a list of <a href="https://www.sublimetext.com/docs/3/api_reference.html#type-point" target="_blank" rel="external">points</a>. Since this method is called for all completions in every view no matter the syntax, <code class=" language-python">view<span class="token punctuation">.</span>match_selector<span class="token punctuation">(</span>point<span class="token punctuation">,</span> relevant_scope<span class="token punctuation">)</span></code> should be called to determine if the point is relevant.
+                        <tt>locations</tt> is a list of <a href="#type-point">points</a>. Since this method is called for all completions in every view no matter the syntax, <code class=" language-python">view<span class="token punctuation">.</span>match_selector<span class="token punctuation">(</span>point<span class="token punctuation">,</span> relevant_scope<span class="token punctuation">)</span></code> should be called to determine if the point is relevant.
                     </p>
 
                     <p>
@@ -2054,7 +2054,7 @@
         <h2 id="sublime_plugin.ViewEventListener"><code>sublime_plugin.ViewEventListener</code> Class</h2>
 
         <p>
-            A class that provides similar event handling to <a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.EventListener" target="_blank" rel="external">EventListener</a>, but bound to a specific view. Provides class method-based filtering to control what views objects are created for.
+            A class that provides similar event handling to <a href="#sublime.EventListener">EventListener</a>, but bound to a specific view. Provides class method-based filtering to control what views objects are created for.
         </p>
 
         <p>
@@ -2071,7 +2071,7 @@
                 <td class="mth">is_applicable(settings)</td>
                 <td class="rtn">bool</td>
                 <td class="dsc">
-                    A <tt>@classmethod</tt> that receives a <a href="https://www.sublimetext.com/docs/3/api_reference.html#sublime.Settings" target="_blank" rel="external">Settings</a> object and should return a bool indicating if this class applies to a view with those settings
+                    A <tt>@classmethod</tt> that receives a <a href="#sublime.Settings">Settings</a> object and should return a bool indicating if this class applies to a view with those settings
                 </td>
             </tr>
             <tr>
@@ -2216,7 +2216,7 @@
                     </p>
 
                     <p>
-                        <tt>locations</tt> is a list of <a href="https://www.sublimetext.com/docs/3/api_reference.html#type-point" target="_blank" rel="external">points</a>. Since this method is called for all completions no matter the syntax, <code class=" language-python">self<span class="token punctuation">.</span>view<span class="token punctuation">.</span>match_selector<span class="token punctuation">(</span>point<span class="token punctuation">,</span> relevant_scope<span class="token punctuation">)</span></code> should be called to determine if the point is relevant.
+                        <tt>locations</tt> is a list of <a href="#type-point">points</a>. Since this method is called for all completions no matter the syntax, <code class=" language-python">self<span class="token punctuation">.</span>view<span class="token punctuation">.</span>match_selector<span class="token punctuation">(</span>point<span class="token punctuation">,</span> relevant_scope<span class="token punctuation">)</span></code> should be called to determine if the point is relevant.
                     </p>
 
                     <p>
