@@ -3,14 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>归档: 2016 | MACDeer</title>
+  <title>SublimeText插件编写备忘 | MACDeer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="MACDeer">
-<meta property="og:url" content="https://macdfree.github.io/archives/2016/index.html">
+  <meta name="description" content="最近本来想玩一下Atom，奈何插件真不会写（JS功底太差，CoffeeScript不想用），导致最后又重投了Sublime Text的怀抱。Sublime Text的插件两年前就已经写过，只是当时也就网上各种搜，东拼西凑出来个，也没有好好记录一下，所以这次来补上。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SublimeText插件编写备忘">
+<meta property="og:url" content="https://macdfree.github.io/2016/10/06/SublimeText插件编写备忘/index.html">
 <meta property="og:site_name" content="MACDeer">
+<meta property="og:description" content="最近本来想玩一下Atom，奈何插件真不会写（JS功底太差，CoffeeScript不想用），导致最后又重投了Sublime Text的怀抱。Sublime Text的插件两年前就已经写过，只是当时也就网上各种搜，东拼西凑出来个，也没有好好记录一下，所以这次来补上。">
+<meta property="og:image" content="https://macdfree.github.io/2016/10/06/SublimeText插件编写备忘/awv.jpg">
+<meta property="og:updated_time" content="2016-10-06T14:55:11.011Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MACDeer">
+<meta name="twitter:title" content="SublimeText插件编写备忘">
+<meta name="twitter:description" content="最近本来想玩一下Atom，奈何插件真不会写（JS功底太差，CoffeeScript不想用），导致最后又重投了Sublime Text的怀抱。Sublime Text的插件两年前就已经写过，只是当时也就网上各种搜，东拼西凑出来个，也没有好好记录一下，所以这次来补上。">
+<meta name="twitter:image" content="https://macdfree.github.io/2016/10/06/SublimeText插件编写备忘/awv.jpg">
   
     <link rel="alternate" href="/atom.xml" title="MACDeer" type="application/atom+xml">
   
@@ -60,155 +66,69 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/10/06/SublimeText插件编写备忘/" class="archive-article-date">
-  <time datetime="2016-10-06T13:43:07.000Z" itemprop="datePublished">10月 6</time>
+        <section id="main"><article id="post-SublimeText插件编写备忘" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/10/06/SublimeText插件编写备忘/" class="article-date">
+  <time datetime="2016-10-06T13:43:07.000Z" itemprop="datePublished">2016-10-06</time>
 </a>
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/note/">note</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/10/06/SublimeText插件编写备忘/">SublimeText插件编写备忘</a>
+    <h1 class="article-title" itemprop="name">
+      SublimeText插件编写备忘
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-false">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/10/02/SublimeText3API/" class="archive-article-date">
-  <time datetime="2016-10-02T05:51:54.000Z" itemprop="datePublished">10月 2</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/10/02/SublimeText3API/">Sublime Text 3 API</a>
-    </h1>
-  
+        <p>最近本来想玩一下Atom，奈何插件真不会写（JS功底太差，CoffeeScript不想用），导致最后又重投了Sublime Text的怀抱。Sublime Text的插件两年前就已经写过，只是当时也就网上各种搜，东拼西凑出来个，也没有好好记录一下，所以这次来补上。</p>
+<a id="more"></a>
+<h1 id="1-如何新建一个插件"><a href="#1-如何新建一个插件" class="headerlink" title="1. 如何新建一个插件"></a>1. 如何新建一个插件</h1><p><code>Tools-&gt;Developer-&gt;New Pluging</code> 可以新建一个默认的插件，代码如下：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> sublime</div><div class="line"><span class="keyword">import</span> sublime_plugin</div><div class="line"></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">ExampleCommand</span><span class="params">(sublime_plugin.TextCommand)</span>:</span></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">run</span><span class="params">(self, edit)</span>:</span></div><div class="line">        self.view.insert(edit, <span class="number">0</span>, <span class="string">"Hello, World!"</span>)</div></pre></td></tr></table></figure></p>
+<p>插件文件保存路径类似为 <code>Sublime Text Build 3103 x64\Data\Packages</code>。</p>
+<h1 id="2-指令的命名规则"><a href="#2-指令的命名规则" class="headerlink" title="2. 指令的命名规则"></a>2. 指令的命名规则</h1><p>新建并保存好插件后可以使用 <code>Ctrl+</code> 呼出交互窗口，输入 <code>view.run_command(&#39;example&#39;)</code> 即可插入 <code>Hello, World!</code> 这边要注意指令的命名规则转换，即将驼峰式命名规则转成下划线分割。如：类名是 <code>AaaBbbCommand</code> 则在调用run_command时需要转成 <code>aaa_bbb</code>。</p>
+<h1 id="3-TextCommand、WindowCommand和ApplicationCommand"><a href="#3-TextCommand、WindowCommand和ApplicationCommand" class="headerlink" title="3. TextCommand、WindowCommand和ApplicationCommand"></a>3. TextCommand、WindowCommand和ApplicationCommand</h1><p>默认生成的代码中继承了<code>TextCommand</code>，但其实还有<code>WindowCommand</code>和<code>ApplicationCommand</code>这两个基类。对于这三者的关系，我的理解是：<code>TextCommand</code>对应的是<code>sublime.View</code>，<code>WindowCommand</code>对应的是<code>sublime.Window</code>，<code>ApplicationCommand</code>对应的是<code>Sublime Module</code>；然后是一个Sublime程序会有多个Window，一个Window又会有多个View。</p>
+<img src="/2016/10/06/SublimeText插件编写备忘/awv.jpg" alt="awv.jpg" title="">
+<h1 id="4-run-command常用的内置指令"><a href="#4-run-command常用的内置指令" class="headerlink" title="4. run_command常用的内置指令"></a>4. run_command常用的内置指令</h1><p><code>TextCommand</code>、<code>WindowCommand</code>和<code>ApplicationCommand</code>对于的类都有相应的run_command方法，Sublime Text本身也内置了一些基本的指令，如set_layout、close_window和new_window等。其中set_layout调用时的参数有些复杂，如果要生成一个三列的布局，代码如下：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">new_window.run_command(</div><div class="line">           <span class="string">'set_layout'</span>,</div><div class="line">           &#123;</div><div class="line">               <span class="string">"cols"</span>: [<span class="number">0.0</span>, <span class="number">0.33</span>, <span class="number">0.66</span>, <span class="number">1.0</span>], <span class="comment"># 3列等分</span></div><div class="line">               <span class="string">"rows"</span>: [<span class="number">0.0</span>, <span class="number">1.0</span>], <span class="comment"># 一行</span></div><div class="line">               <span class="string">"cells"</span>: [[<span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">1</span>], [<span class="number">1</span>, <span class="number">0</span>, <span class="number">2</span>, <span class="number">1</span>], [<span class="number">2</span>, <span class="number">0</span>, <span class="number">3</span>, <span class="number">1</span>]] <span class="comment"># 这个我也不知道 -_-|||</span></div><div class="line">           &#125;)</div></pre></td></tr></table></figure></p>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/09/29/Oracle导库/" class="archive-article-date">
-  <time datetime="2016-09-28T16:10:57.000Z" itemprop="datePublished">9月 29</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/09/29/Oracle导库/">Oracle导库</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-false">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/09/18/测试html/" class="archive-article-date">
-  <time datetime="2016-09-17T16:32:24.000Z" itemprop="datePublished">9月 18</time>
-</a>
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://macdfree.github.io/2016/10/06/SublimeText插件编写备忘/" data-id="cityglkgg000looe82plptnj7" class="article-share-link">Share</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/09/18/测试html/">测试HTML</a>
-    </h1>
-  
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Sublime-Text/">Sublime Text</a></li></ul>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/08/26/CentOS注册服务脚本/" class="archive-article-date">
-  <time datetime="2016-08-26T04:44:52.000Z" itemprop="datePublished">8月 26</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/08/26/CentOS注册服务脚本/">CentOS注册服务脚本</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/06/02/看过的动漫/" class="archive-article-date">
-  <time datetime="2016-06-02T06:56:34.000Z" itemprop="datePublished">6月 2</time>
-</a>
+        <!-- 多说评论框 start -->
+        <div class="ds-thread" data-thread-key="cityglkgg000looe82plptnj7" data-title="SublimeText插件编写备忘" data-url="https://macdfree.github.io/2016/10/06/SublimeText插件编写备忘/"></div>
+        <!-- 多说评论框 end -->
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/06/02/看过的动漫/">看过的动漫</a>
-    </h1>
-  
-
-    </header>
+    </footer>
   </div>
-</article>
   
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/05/29/hexo搭建博客/" class="archive-article-date">
-  <time datetime="2016-05-28T19:48:32.000Z" itemprop="datePublished">5月 29</time>
-</a>
-      
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/05/29/hexo搭建博客/">hexo搭建博客</a>
-    </h1>
   
+    <a href="/2016/10/02/SublimeText3API/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Sublime Text 3 API</div>
+    </a>
+  
+</nav>
 
-    </header>
-  </div>
+  
 </article>
-  
-  
-    </div></section>
-  
-
-
 </section>
         
           <aside id="sidebar">
