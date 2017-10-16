@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>字符画 on MACDeer&#39;s Blog</title>
+    <link>https://macdfree.github.io/tags/%E5%AD%97%E7%AC%A6%E7%94%BB/</link>
+    <description>Recent content in 字符画 on MACDeer&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 15 Oct 2017 22:17:44 +0800</lastBuildDate>
+    
+	<atom:link href="https://macdfree.github.io/tags/%E5%AD%97%E7%AC%A6%E7%94%BB/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Figlet使用（字符画）</title>
+      <link>https://macdfree.github.io/wiki/linux/figlet%E4%BD%BF%E7%94%A8%E5%AD%97%E7%AC%A6%E7%94%BB/</link>
+      <pubDate>Sun, 15 Oct 2017 22:17:44 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/linux/figlet%E4%BD%BF%E7%94%A8%E5%AD%97%E7%AC%A6%E7%94%BB/</guid>
+      <description>下载figlet源码包
+解压缩
+tar -zxvf  安装GCC
+yum install gcc  编译
+make figlet  执行
+./figlet HELLO -f fonts/slant.flf  </description>
+    </item>
+    
+  </channel>
+</rss>

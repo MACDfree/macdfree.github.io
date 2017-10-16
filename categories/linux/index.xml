@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on MACDeer&#39;s Blog</title>
+    <link>https://macdfree.github.io/categories/linux/</link>
+    <description>Recent content in Linux on MACDeer&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 15 Oct 2017 22:27:35 +0800</lastBuildDate>
+    
+	<atom:link href="https://macdfree.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Curl使用</title>
+      <link>https://macdfree.github.io/wiki/linux/curl%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Sun, 15 Oct 2017 22:27:35 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/linux/curl%E4%BD%BF%E7%94%A8/</guid>
+      <description>查看请求网址返回信息
+curl -i url  下载文件
+curl -O url  断点续传
+curl -O url  下载过程中中断下载
+curl -C -O url  只用-C参数继续对该文件下载</description>
+    </item>
+    
+    <item>
+      <title>用户新增并授权</title>
+      <link>https://macdfree.github.io/wiki/linux/%E7%94%A8%E6%88%B7%E6%96%B0%E5%A2%9E%E5%B9%B6%E6%8E%88%E6%9D%83/</link>
+      <pubDate>Sun, 15 Oct 2017 22:24:48 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/linux/%E7%94%A8%E6%88%B7%E6%96%B0%E5%A2%9E%E5%B9%B6%E6%8E%88%E6%9D%83/</guid>
+      <description>新增用户
+adduser macd  修改密码
+passwd macd  配置sudo
+在/etc/sudoers中添加如下
+macd	ALL=(ALL) ALL  </description>
+    </item>
+    
+    <item>
+      <title>Linux常用命令</title>
+      <link>https://macdfree.github.io/wiki/linux/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Sun, 15 Oct 2017 22:23:08 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/linux/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>查看端口占用
+netstat -apn | grep 80  解压缩文件tar.gz
+tar -zxvf filename  通过ssh上传下载文件
+scp username@servername:/path/filename /var/www/local_dir （从服务器下载文件） scp /path/filename username@servername:/path （上传文件至服务器） scp -r username@servername:/var/www/remote_dir/ /var/www/local_dir（从服务器下载文件夹） scp -r local_dir username@servername:remote_dir （上传文件夹至服务器）  修改服务器时间
+date -s &amp;quot;2017-07-12 12:22:00&amp;quot;  </description>
+    </item>
+    
+    <item>
+      <title>SSH免密码设置</title>
+      <link>https://macdfree.github.io/wiki/linux/ssh%E5%85%8D%E5%AF%86%E7%A0%81%E8%AE%BE%E7%BD%AE/</link>
+      <pubDate>Sun, 15 Oct 2017 22:19:59 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/linux/ssh%E5%85%8D%E5%AF%86%E7%A0%81%E8%AE%BE%E7%BD%AE/</guid>
+      <description>在客户端生成公钥和 私钥
+ssh-keygen -t rsa  生成位置为~/.ssh下，默认为id_rsa和id_rsa.pub文件
+ 将公钥上传至服务器（如果服务器端没有.ssh文件夹，则需要手动新建）
+scp .ssh/id_rsa.pub username@hostip:.ssh/id_rsa.pub  在服务器端新建authorized_keys文件（如果已存在则不需要新建）（此文件在.ssh文件夹中）
+touch authorized_keys chmod 600 authorized_keys  将公钥内容追加到authorized_keys文件中
+cat id_rsa.pub &amp;gt;&amp;gt; authorized_keys   补充：
+确保.ssh目录权限为700，authorized_keys文件权限为600</description>
+    </item>
+    
+    <item>
+      <title>Figlet使用（字符画）</title>
+      <link>https://macdfree.github.io/wiki/linux/figlet%E4%BD%BF%E7%94%A8%E5%AD%97%E7%AC%A6%E7%94%BB/</link>
+      <pubDate>Sun, 15 Oct 2017 22:17:44 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/linux/figlet%E4%BD%BF%E7%94%A8%E5%AD%97%E7%AC%A6%E7%94%BB/</guid>
+      <description>下载figlet源码包
+解压缩
+tar -zxvf  安装GCC
+yum install gcc  编译
+make figlet  执行
+./figlet HELLO -f fonts/slant.flf  </description>
+    </item>
+    
+    <item>
+      <title>创建用于Nginx的签名证书</title>
+      <link>https://macdfree.github.io/wiki/linux/%E5%88%9B%E5%BB%BA%E7%94%A8%E4%BA%8Enginx%E7%9A%84%E7%AD%BE%E5%90%8D%E8%AF%81%E4%B9%A6/</link>
+      <pubDate>Sun, 15 Oct 2017 22:10:09 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/linux/%E5%88%9B%E5%BB%BA%E7%94%A8%E4%BA%8Enginx%E7%9A%84%E7%AD%BE%E5%90%8D%E8%AF%81%E4%B9%A6/</guid>
+      <description>使用OpenSSL创建证书 生成RSA密钥
+# 生成RSA密钥 openssl genrsa -des3 -out server.key 1024  需要设置密码，请记住
+# 生成已经证书请求 openssl req -new -key server.key -out server.csr  此步骤需要输入证书信息，需要注意的是Common Name最好设置为需要使用此证书的主机名
+cp server.key server.key.org openssl rsa -in server.key.org -out server.key # 使用密钥和CSR对证书进行签名 # 生成v1版证书 openssl x509 -req -days 3650 -sha256 -in server.csr -signkey server.key -out server.crt # 还会有v3版证书，待写  Nginx配置 server中
+listen 8090 ssl; ssl on; ssl_certificate nginxcert/nginx.crt; ssl_certificate_key nginxcert/nginx.key; # 此配置会设置X-Forwarded-Proto值为https，供后台应用调用 proxy_set_header X-Forwarded-Proto https; proxy_set_header Host $host:$server_port; proxy_set_header X-Real-IP $remote_addr; proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for; # 此配置将后台应用返回的http转成https proxy_redirect ~^http://([^:]+):8091(/.</description>
+    </item>
+    
+    <item>
+      <title>Linux抓包分析</title>
+      <link>https://macdfree.github.io/wiki/linux/linux%E6%8A%93%E5%8C%85%E5%88%86%E6%9E%90/</link>
+      <pubDate>Sun, 15 Oct 2017 22:07:57 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/linux/linux%E6%8A%93%E5%8C%85%E5%88%86%E6%9E%90/</guid>
+      <description>使用tcpdump+wireshark工具组合，tcpdump进行再Linux环境下进行抓包并存储为cap文件，wireshark进行分析。
+抓包命令
+tcpdump -nnA &#39;port 8080&#39; -w package.cap  tcpdump [-i interface] -nnAX &#39;expression&#39; -w file -i：指定监听的网卡 -nn：以ip和port的方式显示源朱建和目的主机，而不是主机名和服务 -A：以ASCII的方式显示数据包 -X：以16进制和ASCII方式显示 expression：表达式  </description>
+    </item>
+    
+    <item>
+      <title>Bash知识点</title>
+      <link>https://macdfree.github.io/wiki/linux/bash%E7%9F%A5%E8%AF%86%E7%82%B9/</link>
+      <pubDate>Sun, 15 Oct 2017 22:06:01 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/linux/bash%E7%9F%A5%E8%AF%86%E7%82%B9/</guid>
+      <description>使整条命令以sudo权限执行
+sudo sh -c &amp;quot;cat /dev/null &amp;gt; messages&amp;quot;  </description>
+    </item>
+    
+    <item>
+      <title>CentOS注册服务脚本</title>
+      <link>https://macdfree.github.io/wiki/linux/centos%E6%B3%A8%E5%86%8C%E6%9C%8D%E5%8A%A1%E8%84%9A%E6%9C%AC/</link>
+      <pubDate>Fri, 26 Aug 2016 12:44:52 +0000</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/linux/centos%E6%B3%A8%E5%86%8C%E6%9C%8D%E5%8A%A1%E8%84%9A%E6%9C%AC/</guid>
+      <description>&lt;p&gt;公司测试系统使用wrapper+tomcat部署，在CentOS环境上通过执行wrapper启动系统，但由于是在终端中执行，当退出终端后wrapper也会退出，所以想到将wrapper注册成系统服务。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

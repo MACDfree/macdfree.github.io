@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Oracle on MACDeer&#39;s Blog</title>
+    <link>https://macdfree.github.io/categories/oracle/</link>
+    <description>Recent content in Oracle on MACDeer&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 16 Oct 2017 20:14:43 +0800</lastBuildDate>
+    
+	<atom:link href="https://macdfree.github.io/categories/oracle/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Oracle相关命令</title>
+      <link>https://macdfree.github.io/wiki/oracle/oracle%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Mon, 16 Oct 2017 20:14:43 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/oracle/oracle%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4/</guid>
+      <description> Oracle用户解锁  sqlplus / as sysdba alter user 用户名 account unlock;  </description>
+    </item>
+    
+    <item>
+      <title>新库导入</title>
+      <link>https://macdfree.github.io/wiki/oracle/%E6%96%B0%E5%BA%93%E5%AF%BC%E5%85%A5/</link>
+      <pubDate>Mon, 16 Oct 2017 20:12:38 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/oracle/%E6%96%B0%E5%BA%93%E5%AF%BC%E5%85%A5/</guid>
+      <description> 创建临时表空间
+CREATE TEMPORARY TABLESPACE EpointBid_TP7_QY_Temp TEMPFILE &#39;F:\OracleDB\EpointBid_TP7_QY_Temp.dbf&#39; SIZE 32M AUTOEXTEND ON NEXT 32M MAXSIZE 2048M;  创建表空间
+CREATE TABLESPACE EpointBid_TP7_QY DATAFILE &#39;F:\OracleDB\EpointBid_TP7_QY.dbf&#39; SIZE 500M AUTOEXTEND ON NEXT 5M MAXSIZE 6000M;  创建用户
+CREATE USER EpointBid_TP7_QY IDENTIFIED BY 11111 DEFAULT TABLESPACE EpointBid_TP7_QY TEMPORARY TABLESPACE EpointBid_TP7_QY_Temp;  授权
+GRANT dba TO EpointBid_TP7_QY; GRANT imp_full_database to EpointBid_TP7_QY;  数据泵导入
+impdp EpointBid_TP7_QY/11111 directory=dir_dp dumpfile=EPOINTBID_TP7_EMPTY20170906.DMP remap_schema=EPOINTBID_TP7_Empty:EPOINTBID_TP7_QY remap_tablespace=EPOINTBID_TP7_Empty:EPOINTBID_TP7_QY version=11.1.0.6.0   </description>
+    </item>
+    
+    <item>
+      <title>DIRECTORY管理</title>
+      <link>https://macdfree.github.io/wiki/oracle/directory%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Mon, 16 Oct 2017 20:09:54 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/oracle/directory%E7%AE%A1%E7%90%86/</guid>
+      <description>使用数据泵导入备份时需要根据DIRECTORY来获取备份文件所在路径
+创建文件夹 CREATE [OR REPLACE] DIRECTORY &amp;lt;directory&amp;gt; AS &#39;&amp;lt;pathname&amp;gt;&#39;;  directory为文件夹的别名
+pathname为具体的路径
+设置权限 GRANT READ[,WRITE] ON DIRECTORY &amp;lt;directory&amp;gt; TO &amp;lt;username&amp;gt;;  directory为文件夹的别名
+username为用户名
+查询文件夹 select * from dba_directories;  删除文件夹 drop directory &amp;lt;directory&amp;gt;;  directory为文件夹的别名</description>
+    </item>
+    
+    <item>
+      <title>SQL记录</title>
+      <link>https://macdfree.github.io/wiki/oracle/sql%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Mon, 16 Oct 2017 20:06:00 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/oracle/sql%E8%AE%B0%E5%BD%95/</guid>
+      <description> 查看用户表空间 select distinct(tablespace_name) from dba_segments where owner=upper(&#39;EpointBid_TP7&#39;);  查看Oracle版本 select * from v$version;  查看表大小 由于user_tables表中数据不是实时的，所有需要先执行
+select &#39;analyze table &#39;||S.TABLE_NAME||&#39; compute statistics;&#39; from user_tables s;  再执行
+select t.table_name,t.num_rows from user_tables t ORDER BY NUM_ROWS DESC;  添加字段 alter table tablename add (column datatype [default value][null/not null],….);  修改字段 alter table tablename modify (column datatype [default value][null/not null],….);  删除字段 alter table tablename drop (column);  </description>
+    </item>
+    
+  </channel>
+</rss>

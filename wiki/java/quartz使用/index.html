@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.28" />
+
+
+
+<link rel="canonical" href="https://macdfree.github.io/wiki/java/quartz%E4%BD%BF%E7%94%A8/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>Quartz使用 - MACDeer&#39;s Blog</title>
+    
+<meta name="description" content="Quartz的主要概念是Scheduler、Job、JobDetail和Trigger，其中Scheduler（调度者）是主体；JobDetail和Trigger用于定义任务的相关信息，如：需要执行的任务类，任务执行的时间点等；Job为实际需要执行的任务。需要的Maven依赖：&amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.quartz-scheduler&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;quartz&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;2.2.1&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt;  如果只需要使用Quartz的基本功能，只需要添加以上依赖 测试代码为import org.quartz.JobDetail; import org.quartz.Scheduler; import org.quartz.SchedulerException; import org.quartz.Trigger; import org.quartz.impl.StdSchedulerFactory; import static org.quartz.JobBuilder.*; import static org.quartz.TriggerBuilder.*; import static org.quartz.SimpleScheduleBuilder.*; public class QuartzTest { public static void main(String[] args) throws InterruptedException { try { Scheduler scheduler = StdSchedulerFactory.getDefaultScheduler(); scheduler.start(); JobDetail job = newJob(HelloJob.class).withIdentity(&amp;quot;job1&amp;quot;, &amp;quot;group1&amp;quot;).build(); Trigger trigger = newTrigger().withIdentity(&amp;quot;trigger1&amp;quot;, &amp;quot;group1&amp;quot;).startNow().withSchedule(simpleSchedule() .withIntervalInSeconds(4).repeatForever()).build(); scheduler.scheduleJob(job, trigger); System.out.println(&amp;quot;start time:&amp;quot; &#43; System.currentTimeMillis()); Thread.sleep(20000); scheduler.shutdown(); } catch (SchedulerException se) { se.">
+
+<meta property="og:title" content="Quartz使用 - MACDeer&#39;s Blog">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://macdfree.github.io/wiki/java/quartz%E4%BD%BF%E7%94%A8/">
+<meta property="og:image" content="https://macdfree.github.io/images/default.png">
+<meta property="og:site_name" content="MACDeer&#39;s Blog">
+<meta property="og:description" content="Quartz的主要概念是Scheduler、Job、JobDetail和Trigger，其中Scheduler（调度者）是主体；JobDetail和Trigger用于定义任务的相关信息，如：需要执行的任务类，任务执行的时间点等；Job为实际需要执行的任务。需要的Maven依赖：&amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.quartz-scheduler&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;quartz&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;2.2.1&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt;  如果只需要使用Quartz的基本功能，只需要添加以上依赖 测试代码为import org.quartz.JobDetail; import org.quartz.Scheduler; import org.quartz.SchedulerException; import org.quartz.Trigger; import org.quartz.impl.StdSchedulerFactory; import static org.quartz.JobBuilder.*; import static org.quartz.TriggerBuilder.*; import static org.quartz.SimpleScheduleBuilder.*; public class QuartzTest { public static void main(String[] args) throws InterruptedException { try { Scheduler scheduler = StdSchedulerFactory.getDefaultScheduler(); scheduler.start(); JobDetail job = newJob(HelloJob.class).withIdentity(&amp;quot;job1&amp;quot;, &amp;quot;group1&amp;quot;).build(); Trigger trigger = newTrigger().withIdentity(&amp;quot;trigger1&amp;quot;, &amp;quot;group1&amp;quot;).startNow().withSchedule(simpleSchedule() .withIntervalInSeconds(4).repeatForever()).build(); scheduler.scheduleJob(job, trigger); System.out.println(&amp;quot;start time:&amp;quot; &#43; System.currentTimeMillis()); Thread.sleep(20000); scheduler.shutdown(); } catch (SchedulerException se) { se.">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="MACDeer&#39;s Blog">
+<meta name="twitter:url" content="https://macdfree.github.io/wiki/java/quartz%E4%BD%BF%E7%94%A8/">
+<meta name="twitter:title" content="Quartz使用 - MACDeer&#39;s Blog">
+<meta name="twitter:description" content="Quartz的主要概念是Scheduler、Job、JobDetail和Trigger，其中Scheduler（调度者）是主体；JobDetail和Trigger用于定义任务的相关信息，如：需要执行的任务类，任务执行的时间点等；Job为实际需要执行的任务。需要的Maven依赖：&amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.quartz-scheduler&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;quartz&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;2.2.1&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt;  如果只需要使用Quartz的基本功能，只需要添加以上依赖 测试代码为import org.quartz.JobDetail; import org.quartz.Scheduler; import org.quartz.SchedulerException; import org.quartz.Trigger; import org.quartz.impl.StdSchedulerFactory; import static org.quartz.JobBuilder.*; import static org.quartz.TriggerBuilder.*; import static org.quartz.SimpleScheduleBuilder.*; public class QuartzTest { public static void main(String[] args) throws InterruptedException { try { Scheduler scheduler = StdSchedulerFactory.getDefaultScheduler(); scheduler.start(); JobDetail job = newJob(HelloJob.class).withIdentity(&amp;quot;job1&amp;quot;, &amp;quot;group1&amp;quot;).build(); Trigger trigger = newTrigger().withIdentity(&amp;quot;trigger1&amp;quot;, &amp;quot;group1&amp;quot;).startNow().withSchedule(simpleSchedule() .withIntervalInSeconds(4).repeatForever()).build(); scheduler.scheduleJob(job, trigger); System.out.println(&amp;quot;start time:&amp;quot; &#43; System.currentTimeMillis()); Thread.sleep(20000); scheduler.shutdown(); } catch (SchedulerException se) { se.">
+<meta name="twitter:image" content="https://macdfree.github.io/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"https://macdfree.github.io/"
+    },
+    "headline": "Quartz使用 - MACDeer&#39;s Blog",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://macdfree.github.io/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2017-10-15T21:57:39JST",
+    "dateModified": "2017-10-15T21:57:39JST",
+    "author": {
+      "@type": "Person",
+      "name": "MACDeer&#39;s Blog"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "MACDeer&#39;s Blog",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://macdfree.github.io/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "Quartz的主要概念是Scheduler、Job、JobDetail和Trigger，其中Scheduler（调度者）是主体；JobDetail和Trigger用于定义任务的相关信息，如：需要执行的任务类，任务执行的时间点等；Job为实际需要执行的任务。
+需要的Maven依赖：
+&lt;dependency&gt; &lt;groupId&gt;org.quartz-scheduler&lt;/groupId&gt; &lt;artifactId&gt;quartz&lt;/artifactId&gt; &lt;version&gt;2.2.1&lt;/version&gt; &lt;/dependency&gt;  如果只需要使用Quartz的基本功能，只需要添加以上依赖 测试代码为
+import org.quartz.JobDetail; import org.quartz.Scheduler; import org.quartz.SchedulerException; import org.quartz.Trigger; import org.quartz.impl.StdSchedulerFactory; import static org.quartz.JobBuilder.*; import static org.quartz.TriggerBuilder.*; import static org.quartz.SimpleScheduleBuilder.*; public class QuartzTest { public static void main(String[] args) throws InterruptedException { try { Scheduler scheduler = StdSchedulerFactory.getDefaultScheduler(); scheduler.start(); JobDetail job = newJob(HelloJob.class).withIdentity(&quot;job1&quot;, &quot;group1&quot;).build(); Trigger trigger = newTrigger().withIdentity(&quot;trigger1&quot;, &quot;group1&quot;).startNow().withSchedule(simpleSchedule() .withIntervalInSeconds(4).repeatForever()).build(); scheduler.scheduleJob(job, trigger); System.out.println(&quot;start time:&quot; + System.currentTimeMillis()); Thread.sleep(20000); scheduler.shutdown(); } catch (SchedulerException se) { se."
+  }
+</script>
+
+
+    <link href="https://macdfree.github.io/css/styles.css" rel="stylesheet">
+    
+
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://macdfree.github.io/">MACDeer&#39;s Blog</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="https://macdfree.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://macdfree.github.io/wiki/" itemprop="url"><span itemprop="title">wiki</span></a></li>
+        
+        <li class="active">Quartz使用</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2017-10-15T21:57:39JST">Oct 15, 2017</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://macdfree.github.io/wiki/">wiki</a></li>
+      
+    </ul>
+
+    <h1 class="title">Quartz使用</h1>
+  </header>
+
+  
+
+  <div class="article-body"><p>Quartz的主要概念是Scheduler、Job、JobDetail和Trigger，其中Scheduler（调度者）是主体；JobDetail和Trigger用于定义任务的相关信息，如：需要执行的任务类，任务执行的时间点等；Job为实际需要执行的任务。</p>
+
+<p>需要的Maven依赖：</p>
+
+<pre><code class="language-xml">&lt;dependency&gt;
+  &lt;groupId&gt;org.quartz-scheduler&lt;/groupId&gt;
+  &lt;artifactId&gt;quartz&lt;/artifactId&gt;
+  &lt;version&gt;2.2.1&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre>
+
+<p>如果只需要使用Quartz的基本功能，只需要添加以上依赖
+测试代码为</p>
+
+<pre><code class="language-java">import org.quartz.JobDetail;
+import org.quartz.Scheduler;
+import org.quartz.SchedulerException;
+import org.quartz.Trigger;
+import org.quartz.impl.StdSchedulerFactory;
+
+import static org.quartz.JobBuilder.*;
+import static org.quartz.TriggerBuilder.*;
+import static org.quartz.SimpleScheduleBuilder.*;
+
+public class QuartzTest {
+    public static void main(String[] args) throws InterruptedException {
+        try {
+            Scheduler scheduler = StdSchedulerFactory.getDefaultScheduler();
+            scheduler.start();
+
+            JobDetail job = newJob(HelloJob.class).withIdentity(&quot;job1&quot;, &quot;group1&quot;).build();
+            Trigger trigger = newTrigger().withIdentity(&quot;trigger1&quot;, &quot;group1&quot;).startNow().withSchedule(simpleSchedule()
+                    .withIntervalInSeconds(4).repeatForever()).build();
+
+            scheduler.scheduleJob(job, trigger);
+            System.out.println(&quot;start time:&quot; + System.currentTimeMillis());
+
+            Thread.sleep(20000);
+            scheduler.shutdown();
+        } catch (SchedulerException se) {
+            se.printStackTrace();
+        }
+    }
+}
+</code></pre>
+
+<p>需要注意的是需要使用静态导入，实现类似领域特定语言的效果。</p>
+
+<p>如果需要使用配置文件配置job，需要添加依赖</p>
+
+<pre><code class="language-xml">&lt;dependency&gt;
+  &lt;groupId&gt;org.quartz-scheduler&lt;/groupId&gt;
+  &lt;artifactId&gt;quartz-jobs&lt;/artifactId&gt;
+  &lt;version&gt;2.2.1&lt;/version&gt;
+&lt;/dependency&gt;
+&lt;dependency&gt;
+  &lt;groupId&gt;javax.transaction&lt;/groupId&gt;
+  &lt;artifactId&gt;jta&lt;/artifactId&gt;
+  &lt;version&gt;1.1&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre>
+
+<p>同时添加quartz.properties配置文件，配置中指定配置job的文件名为jobs.xml</p>
+
+<pre><code class="language-ini">org.quartz.scheduler.instanceName = MyScheduler
+org.quartz.threadPool.threadCount = 3
+org.quartz.jobStore.class = org.quartz.simpl.RAMJobStore
+
+#===================================================
+# Configure the Job Initialization Plugin
+#===================================================
+org.quartz.plugin.jobInitializer.class = org.quartz.plugins.xml.XMLSchedulingDataProcessorPlugin
+org.quartz.plugin.jobInitializer.fileNames = jobs.xml
+org.quartz.plugin.jobInitializer.failOnFileNotFound = true
+org.quartz.plugin.jobInitializer.scanInterval = 10
+org.quartz.plugin.jobInitializer.wrapInUserTransaction = false
+</code></pre>
+
+<p>配置的jobs.xml文件示例如下</p>
+
+<pre><code class="language-xml">&lt;?xml version='1.0' encoding='utf-8'?&gt;
+&lt;job-scheduling-data xmlns=&quot;http://www.quartz-scheduler.org/xml/JobSchedulingData&quot;
+                     xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+                     xsi:schemaLocation=&quot;http://www.quartz-scheduler.org/xml/JobSchedulingData http://www.quartz-scheduler.org/xml/job_scheduling_data_1_8.xsd&quot;
+                     version=&quot;1.8&quot;&gt;
+  &lt;schedule&gt;
+    &lt;job&gt;
+      &lt;name&gt;job1&lt;/name&gt;
+      &lt;group&gt;group1&lt;/group&gt;
+
+      &lt;description&gt;Hello Job&lt;/description&gt;
+      &lt;job-class&gt;HelloJob&lt;/job-class&gt;
+    &lt;/job&gt;
+
+    &lt;trigger&gt;
+      &lt;cron&gt;
+        &lt;name&gt;trigger1&lt;/name&gt;
+        &lt;group&gt;group1&lt;/group&gt;
+        &lt;job-name&gt;job1&lt;/job-name&gt;
+        &lt;job-group&gt;group1&lt;/job-group&gt;
+        &lt;cron-expression&gt;0/5 * * * * ?&lt;/cron-expression&gt;
+      &lt;/cron&gt;
+    &lt;/trigger&gt;
+  &lt;/schedule&gt;
+&lt;/job-scheduling-data&gt;
+</code></pre>
+
+<p>相应测试代码如下</p>
+
+<pre><code class="language-java">import org.quartz.Scheduler;
+import org.quartz.SchedulerException;
+import org.quartz.impl.StdSchedulerFactory;
+
+public class QuartzTest {
+    public static void main(String[] args) throws InterruptedException {
+        try {
+            Scheduler scheduler = StdSchedulerFactory.getDefaultScheduler();
+            scheduler.start();
+
+            Thread.sleep(20000);
+            scheduler.shutdown();
+        } catch (SchedulerException se) {
+            se.printStackTrace();
+        }
+    }
+}
+</code></pre>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="https://macdfree.github.io/categories/java/">Java</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">TAGS</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="https://macdfree.github.io/tags/quartz/">quartz</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://macdfree.github.io/wiki/sqlite/%E5%B8%B8%E7%94%A8%E8%AF%AD%E5%8F%A5/" class="list-group-item">常用语句</a>
+      
+      <a href="https://macdfree.github.io/wiki/redis/redis%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="list-group-item">Redis常用命令</a>
+      
+      <a href="https://macdfree.github.io/wiki/python/pip%E5%AE%89%E8%A3%85%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/" class="list-group-item">Pip安装常见问题</a>
+      
+      <a href="https://macdfree.github.io/wiki/python/virtualenv%E4%BD%BF%E7%94%A8/" class="list-group-item">Virtualenv使用</a>
+      
+      <a href="https://macdfree.github.io/wiki/oracle/oracle%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4/" class="list-group-item">Oracle相关命令</a>
+      
+      <a href="https://macdfree.github.io/wiki/oracle/%E6%96%B0%E5%BA%93%E5%AF%BC%E5%85%A5/" class="list-group-item">新库导入</a>
+      
+      <a href="https://macdfree.github.io/wiki/oracle/directory%E7%AE%A1%E7%90%86/" class="list-group-item">DIRECTORY管理</a>
+      
+      <a href="https://macdfree.github.io/wiki/oracle/sql%E8%AE%B0%E5%BD%95/" class="list-group-item">SQL记录</a>
+      
+      <a href="https://macdfree.github.io/wiki/mysql/mysql%E4%BF%AE%E6%94%B9%E8%BF%9E%E6%8E%A5%E6%97%B6%E9%97%B4/" class="list-group-item">MySQL修改连接时间</a>
+      
+      <a href="https://macdfree.github.io/wiki/mysql/mysql%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%8F%8A%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA/" class="list-group-item">MySQL安装配置及导入导出</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://macdfree.github.io/categories/note" class="list-group-item">note</a>
+      
+      <a href="https://macdfree.github.io/categories/linux" class="list-group-item">linux</a>
+      
+      <a href="https://macdfree.github.io/categories/java" class="list-group-item">java</a>
+      
+      <a href="https://macdfree.github.io/categories/macos" class="list-group-item">macos</a>
+      
+      <a href="https://macdfree.github.io/categories/mysql" class="list-group-item">mysql</a>
+      
+      <a href="https://macdfree.github.io/categories/oracle" class="list-group-item">oracle</a>
+      
+      <a href="https://macdfree.github.io/categories/bigdata" class="list-group-item">bigdata</a>
+      
+      <a href="https://macdfree.github.io/categories/go" class="list-group-item">go</a>
+      
+      <a href="https://macdfree.github.io/categories/html" class="list-group-item">html</a>
+      
+      <a href="https://macdfree.github.io/categories/python" class="list-group-item">python</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://macdfree.github.io/tags/bash" class="list-group-item">bash</a>
+      
+      <a href="https://macdfree.github.io/tags/cc1101" class="list-group-item">cc1101</a>
+      
+      <a href="https://macdfree.github.io/tags/hive" class="list-group-item">hive</a>
+      
+      <a href="https://macdfree.github.io/tags/msp430" class="list-group-item">msp430</a>
+      
+      <a href="https://macdfree.github.io/tags/apache" class="list-group-item">apache</a>
+      
+      <a href="https://macdfree.github.io/tags/brew" class="list-group-item">brew</a>
+      
+      <a href="https://macdfree.github.io/tags/c" class="list-group-item">c</a>
+      
+      <a href="https://macdfree.github.io/tags/cc2500" class="list-group-item">cc2500</a>
+      
+      <a href="https://macdfree.github.io/tags/curl" class="list-group-item">curl</a>
+      
+      <a href="https://macdfree.github.io/tags/figlet" class="list-group-item">figlet</a>
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; MACDeer&#39;s Blog</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

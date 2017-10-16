@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Brew on MACDeer&#39;s Blog</title>
+    <link>https://macdfree.github.io/tags/brew/</link>
+    <description>Recent content in Brew on MACDeer&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 15 Oct 2017 22:33:25 +0800</lastBuildDate>
+    
+	<atom:link href="https://macdfree.github.io/tags/brew/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Brew相关</title>
+      <link>https://macdfree.github.io/wiki/macos/brew%E7%9B%B8%E5%85%B3/</link>
+      <pubDate>Sun, 15 Oct 2017 22:33:25 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/macos/brew%E7%9B%B8%E5%85%B3/</guid>
+      <description>包管理工具
+Homebrew
+命令：brew
+brew安装目录
+/usr/local/Cellar
+brew安装mysql
+brew install mysql  启动MySQL
+To have launchd start mysql now and restart at login: brew services start mysql Or, if you don&#39;t want/need a background service you can just run: mysql.server start  brew安装autojump
+brew install autojump  </description>
+    </item>
+    
+  </channel>
+</rss>

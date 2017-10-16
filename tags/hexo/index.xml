@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hexo on MACDeer&#39;s Blog</title>
+    <link>https://macdfree.github.io/tags/hexo/</link>
+    <description>Recent content in Hexo on MACDeer&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 29 May 2016 03:48:32 +0000</lastBuildDate>
+    
+	<atom:link href="https://macdfree.github.io/tags/hexo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>hexo搭建博客</title>
+      <link>https://macdfree.github.io/posts/hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Sun, 29 May 2016 03:48:32 +0000</pubDate>
+      
+      <guid>https://macdfree.github.io/posts/hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>&lt;p&gt;在网上看见使用Hexo和GitHub Page搭建博客的文章，闲来无事就仿照着做了一下。起初是在我的Windows电脑搭建，但觉得Windows和命令行不怎么协调，就改用我的树莓派搭建。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Iterm on MACDeer&#39;s Blog</title>
+    <link>https://macdfree.github.io/tags/iterm/</link>
+    <description>Recent content in Iterm on MACDeer&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 15 Oct 2017 22:35:41 +0800</lastBuildDate>
+    
+	<atom:link href="https://macdfree.github.io/tags/iterm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>iTerm安装配置</title>
+      <link>https://macdfree.github.io/wiki/macos/iterm%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Sun, 15 Oct 2017 22:35:41 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/macos/iterm%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</guid>
+      <description> 安装iTerm
+ 安装oh-my-zsh
+curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh  安装powerline
+git clone https://github.com/powerline/fonts.git cd fonts ./install.sh  修改iTerm配置字体
+ 安装配置配色方案
+git clone git://github.com/altercation/solarized.git  导入配置文件
+import配置文件
+ 使用agnoster主题
+先检查一下~/.oh-my-zsh/themes目录下应该有此主题文件 编辑~/.zshrc文件，将ZSH_THEME修改为agnoster
+ 设置指令高亮效果
+git clone git://github.com/zsh-users/zsh-syntax-highlighting.git  编辑~/.zshrc文件，在最后添加以下内容
+source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh  安装历史操作记录自动补全插件
+git clone git://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions  在.zshrc中添加如下语句
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh   </description>
+    </item>
+    
+  </channel>
+</rss>

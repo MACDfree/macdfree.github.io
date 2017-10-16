@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.28" />
+
+
+
+<link rel="canonical" href="https://macdfree.github.io/posts/sublimetext%E6%8F%92%E4%BB%B6%E7%BC%96%E5%86%99%E5%A4%87%E5%BF%98/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>SublimeText插件编写备忘 - MACDeer&#39;s Blog</title>
+    
+<meta name="description" content="&lt;p&gt;最近本来想玩一下Atom，奈何插件真不会写（JS功底太差，CoffeeScript不想用），导致最后又重投了Sublime Text的怀抱。Sublime Text的插件两年前就已经写过，只是当时也就网上各种搜，东拼西凑出来个，也没有好好记录一下，所以这次来补上。&lt;/p&gt;&lt;p&gt;&lt;/p&gt;">
+
+<meta property="og:title" content="SublimeText插件编写备忘 - MACDeer&#39;s Blog">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://macdfree.github.io/posts/sublimetext%E6%8F%92%E4%BB%B6%E7%BC%96%E5%86%99%E5%A4%87%E5%BF%98/">
+<meta property="og:image" content="https://macdfree.github.io/images/default.png">
+<meta property="og:site_name" content="MACDeer&#39;s Blog">
+<meta property="og:description" content="&lt;p&gt;最近本来想玩一下Atom，奈何插件真不会写（JS功底太差，CoffeeScript不想用），导致最后又重投了Sublime Text的怀抱。Sublime Text的插件两年前就已经写过，只是当时也就网上各种搜，东拼西凑出来个，也没有好好记录一下，所以这次来补上。&lt;/p&gt;&lt;p&gt;&lt;/p&gt;">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="MACDeer&#39;s Blog">
+<meta name="twitter:url" content="https://macdfree.github.io/posts/sublimetext%E6%8F%92%E4%BB%B6%E7%BC%96%E5%86%99%E5%A4%87%E5%BF%98/">
+<meta name="twitter:title" content="SublimeText插件编写备忘 - MACDeer&#39;s Blog">
+<meta name="twitter:description" content="&lt;p&gt;最近本来想玩一下Atom，奈何插件真不会写（JS功底太差，CoffeeScript不想用），导致最后又重投了Sublime Text的怀抱。Sublime Text的插件两年前就已经写过，只是当时也就网上各种搜，东拼西凑出来个，也没有好好记录一下，所以这次来补上。&lt;/p&gt;&lt;p&gt;&lt;/p&gt;">
+<meta name="twitter:image" content="https://macdfree.github.io/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"https://macdfree.github.io/"
+    },
+    "headline": "SublimeText插件编写备忘 - MACDeer&#39;s Blog",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://macdfree.github.io/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2016-10-06T21:43:07JST",
+    "dateModified": "2016-10-06T21:43:07JST",
+    "author": {
+      "@type": "Person",
+      "name": "MACDeer&#39;s Blog"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "MACDeer&#39;s Blog",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://macdfree.github.io/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "<p>最近本来想玩一下Atom，奈何插件真不会写（JS功底太差，CoffeeScript不想用），导致最后又重投了Sublime Text的怀抱。Sublime Text的插件两年前就已经写过，只是当时也就网上各种搜，东拼西凑出来个，也没有好好记录一下，所以这次来补上。</p>
+
+<p></p>"
+  }
+</script>
+
+
+    <link href="https://macdfree.github.io/css/styles.css" rel="stylesheet">
+    
+
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://macdfree.github.io/">MACDeer&#39;s Blog</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="https://macdfree.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://macdfree.github.io/posts/" itemprop="url"><span itemprop="title">posts</span></a></li>
+        
+        <li class="active">SublimeText插件编写备忘</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2016-10-06T21:43:07JST">Oct 6, 2016</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://macdfree.github.io/posts/">posts</a></li>
+      
+    </ul>
+
+    <h1 class="title">SublimeText插件编写备忘</h1>
+  </header>
+
+  
+
+  <div class="article-body"><p>最近本来想玩一下Atom，奈何插件真不会写（JS功底太差，CoffeeScript不想用），导致最后又重投了Sublime Text的怀抱。Sublime Text的插件两年前就已经写过，只是当时也就网上各种搜，东拼西凑出来个，也没有好好记录一下，所以这次来补上。</p>
+
+<p></p>
+
+<h1 id="1-如何新建一个插件">1. 如何新建一个插件</h1>
+
+<p><code>Tools-&gt;Developer-&gt;New Pluging</code> 可以新建一个默认的插件，代码如下：</p>
+
+<pre><code class="language-python">import sublime
+import sublime_plugin
+
+
+class ExampleCommand(sublime_plugin.TextCommand):
+    def run(self, edit):
+        self.view.insert(edit, 0, &quot;Hello, World!&quot;)
+</code></pre>
+
+<p>插件文件保存路径类似为 <code>Sublime Text Build 3103 x64\Data\Packages</code>。</p>
+
+<h1 id="2-指令的命名规则">2. 指令的命名规则</h1>
+
+<p>新建并保存好插件后可以使用 Ctrl+` 呼出交互窗口，输入 <code>view.run_command('example')</code> 即可插入 <code>Hello, World!</code> 这边要注意指令的命名规则转换，即将驼峰式命名规则转成下划线分割。如：类名是 <code>AaaBbbCommand</code> 则在调用run_command时需要转成 <code>aaa_bbb</code>。</p>
+
+<h1 id="3-textcommand-windowcommand和applicationcommand">3. TextCommand、WindowCommand和ApplicationCommand</h1>
+
+<p>默认生成的代码中继承了<code>TextCommand</code>，但其实还有<code>WindowCommand</code>和<code>ApplicationCommand</code>这两个基类。对于这三者的关系，我的理解是：<code>TextCommand</code>对应的是<code>sublime.View</code>，<code>WindowCommand</code>对应的是<code>sublime.Window</code>，<code>ApplicationCommand</code>对应的是<code>Sublime Module</code>；然后是一个Sublime程序会有多个Window，一个Window又会有多个View。</p>
+
+<p><img src="http://ocd8m6zlz.bkt.clouddn.com/awv.jpg" alt="示意图" /></p>
+
+<h1 id="4-run-command常用的内置指令">4. run_command常用的内置指令</h1>
+
+<p><code>TextCommand</code>、<code>WindowCommand</code>和<code>ApplicationCommand</code>对于的类都有相应的run_command方法，Sublime Text本身也内置了一些基本的指令，如set_layout、close_window和new_window等。其中set_layout调用时的参数有些复杂，如果要生成一个三列的布局，代码如下：</p>
+
+<pre><code class="language-python">new_window.run_command(
+           'set_layout',
+           {
+               &quot;cols&quot;: [0.0, 0.33, 0.66, 1.0], # 3列等分
+               &quot;rows&quot;: [0.0, 1.0], # 一行
+               &quot;cells&quot;: [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1]] # 这个我也不知道 -_-|||
+           })
+</code></pre></div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="https://macdfree.github.io/categories/note/">note</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">TAGS</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="https://macdfree.github.io/tags/sublime-text/">Sublime Text</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://macdfree.github.io/wiki/sqlite/%E5%B8%B8%E7%94%A8%E8%AF%AD%E5%8F%A5/" class="list-group-item">常用语句</a>
+      
+      <a href="https://macdfree.github.io/wiki/redis/redis%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="list-group-item">Redis常用命令</a>
+      
+      <a href="https://macdfree.github.io/wiki/python/pip%E5%AE%89%E8%A3%85%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/" class="list-group-item">Pip安装常见问题</a>
+      
+      <a href="https://macdfree.github.io/wiki/python/virtualenv%E4%BD%BF%E7%94%A8/" class="list-group-item">Virtualenv使用</a>
+      
+      <a href="https://macdfree.github.io/wiki/oracle/oracle%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4/" class="list-group-item">Oracle相关命令</a>
+      
+      <a href="https://macdfree.github.io/wiki/oracle/%E6%96%B0%E5%BA%93%E5%AF%BC%E5%85%A5/" class="list-group-item">新库导入</a>
+      
+      <a href="https://macdfree.github.io/wiki/oracle/directory%E7%AE%A1%E7%90%86/" class="list-group-item">DIRECTORY管理</a>
+      
+      <a href="https://macdfree.github.io/wiki/oracle/sql%E8%AE%B0%E5%BD%95/" class="list-group-item">SQL记录</a>
+      
+      <a href="https://macdfree.github.io/wiki/mysql/mysql%E4%BF%AE%E6%94%B9%E8%BF%9E%E6%8E%A5%E6%97%B6%E9%97%B4/" class="list-group-item">MySQL修改连接时间</a>
+      
+      <a href="https://macdfree.github.io/wiki/mysql/mysql%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%8F%8A%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA/" class="list-group-item">MySQL安装配置及导入导出</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://macdfree.github.io/categories/note" class="list-group-item">note</a>
+      
+      <a href="https://macdfree.github.io/categories/linux" class="list-group-item">linux</a>
+      
+      <a href="https://macdfree.github.io/categories/java" class="list-group-item">java</a>
+      
+      <a href="https://macdfree.github.io/categories/macos" class="list-group-item">macos</a>
+      
+      <a href="https://macdfree.github.io/categories/mysql" class="list-group-item">mysql</a>
+      
+      <a href="https://macdfree.github.io/categories/oracle" class="list-group-item">oracle</a>
+      
+      <a href="https://macdfree.github.io/categories/bigdata" class="list-group-item">bigdata</a>
+      
+      <a href="https://macdfree.github.io/categories/go" class="list-group-item">go</a>
+      
+      <a href="https://macdfree.github.io/categories/html" class="list-group-item">html</a>
+      
+      <a href="https://macdfree.github.io/categories/python" class="list-group-item">python</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://macdfree.github.io/tags/bash" class="list-group-item">bash</a>
+      
+      <a href="https://macdfree.github.io/tags/cc1101" class="list-group-item">cc1101</a>
+      
+      <a href="https://macdfree.github.io/tags/hive" class="list-group-item">hive</a>
+      
+      <a href="https://macdfree.github.io/tags/msp430" class="list-group-item">msp430</a>
+      
+      <a href="https://macdfree.github.io/tags/apache" class="list-group-item">apache</a>
+      
+      <a href="https://macdfree.github.io/tags/brew" class="list-group-item">brew</a>
+      
+      <a href="https://macdfree.github.io/tags/c" class="list-group-item">c</a>
+      
+      <a href="https://macdfree.github.io/tags/cc2500" class="list-group-item">cc2500</a>
+      
+      <a href="https://macdfree.github.io/tags/curl" class="list-group-item">curl</a>
+      
+      <a href="https://macdfree.github.io/tags/figlet" class="list-group-item">figlet</a>
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; MACDeer&#39;s Blog</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

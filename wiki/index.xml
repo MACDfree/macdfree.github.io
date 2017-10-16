@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wikis on MACDeer&#39;s Blog</title>
+    <link>https://macdfree.github.io/wiki/</link>
+    <description>Recent content in Wikis on MACDeer&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 16 Oct 2017 20:22:25 +0800</lastBuildDate>
+    
+	<atom:link href="https://macdfree.github.io/wiki/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>常用语句</title>
+      <link>https://macdfree.github.io/wiki/sqlite/%E5%B8%B8%E7%94%A8%E8%AF%AD%E5%8F%A5/</link>
+      <pubDate>Mon, 16 Oct 2017 20:22:25 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/sqlite/%E5%B8%B8%E7%94%A8%E8%AF%AD%E5%8F%A5/</guid>
+      <description>创建表
+create table tablename ( colname coltype ... );  设置自增
+ID INTEGER PRIMARY KEY AUTOINCREMENT  注意自增只能用于integer primary列，SQLite中每张表默认有一个rowid
+执行SQL脚本
+sqlite3 dbfilename .read sqlfilename  </description>
+    </item>
+    
+    <item>
+      <title>Redis常用命令</title>
+      <link>https://macdfree.github.io/wiki/redis/redis%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Mon, 16 Oct 2017 20:19:39 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/redis/redis%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description> 进入redis命令行 redis-cli  查看redis基本信息 info  查看客户端连接数 info clients  删除当前数据库中的所有Key flushdb  删除所有数据库中的key flushall  查看客户端列表 client list  </description>
+    </item>
+    
+    <item>
+      <title>Pip安装常见问题</title>
+      <link>https://macdfree.github.io/wiki/python/pip%E5%AE%89%E8%A3%85%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Mon, 16 Oct 2017 20:17:30 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/python/pip%E5%AE%89%E8%A3%85%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
+      <description>报错：
+fatal error: Python.h: No such file or directory  缺少python-dev开发包
+安装：
+yum install python-devel yum install python34-devel  </description>
+    </item>
+    
+    <item>
+      <title>Virtualenv使用</title>
+      <link>https://macdfree.github.io/wiki/python/virtualenv%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Mon, 16 Oct 2017 20:15:58 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/python/virtualenv%E4%BD%BF%E7%94%A8/</guid>
+      <description> 新建虚拟环境（指定解释器） virtualenv -p /usr/bin/python2.7 venv  激活虚拟环境 source venv/bin/activate  退出虚拟环境 deactivate  </description>
+    </item>
+    
+    <item>
+      <title>Oracle相关命令</title>
+      <link>https://macdfree.github.io/wiki/oracle/oracle%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Mon, 16 Oct 2017 20:14:43 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/oracle/oracle%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4/</guid>
+      <description> Oracle用户解锁  sqlplus / as sysdba alter user 用户名 account unlock;  </description>
+    </item>
+    
+    <item>
+      <title>新库导入</title>
+      <link>https://macdfree.github.io/wiki/oracle/%E6%96%B0%E5%BA%93%E5%AF%BC%E5%85%A5/</link>
+      <pubDate>Mon, 16 Oct 2017 20:12:38 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/oracle/%E6%96%B0%E5%BA%93%E5%AF%BC%E5%85%A5/</guid>
+      <description> 创建临时表空间
+CREATE TEMPORARY TABLESPACE EpointBid_TP7_QY_Temp TEMPFILE &#39;F:\OracleDB\EpointBid_TP7_QY_Temp.dbf&#39; SIZE 32M AUTOEXTEND ON NEXT 32M MAXSIZE 2048M;  创建表空间
+CREATE TABLESPACE EpointBid_TP7_QY DATAFILE &#39;F:\OracleDB\EpointBid_TP7_QY.dbf&#39; SIZE 500M AUTOEXTEND ON NEXT 5M MAXSIZE 6000M;  创建用户
+CREATE USER EpointBid_TP7_QY IDENTIFIED BY 11111 DEFAULT TABLESPACE EpointBid_TP7_QY TEMPORARY TABLESPACE EpointBid_TP7_QY_Temp;  授权
+GRANT dba TO EpointBid_TP7_QY; GRANT imp_full_database to EpointBid_TP7_QY;  数据泵导入
+impdp EpointBid_TP7_QY/11111 directory=dir_dp dumpfile=EPOINTBID_TP7_EMPTY20170906.DMP remap_schema=EPOINTBID_TP7_Empty:EPOINTBID_TP7_QY remap_tablespace=EPOINTBID_TP7_Empty:EPOINTBID_TP7_QY version=11.1.0.6.0   </description>
+    </item>
+    
+    <item>
+      <title>DIRECTORY管理</title>
+      <link>https://macdfree.github.io/wiki/oracle/directory%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Mon, 16 Oct 2017 20:09:54 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/oracle/directory%E7%AE%A1%E7%90%86/</guid>
+      <description>使用数据泵导入备份时需要根据DIRECTORY来获取备份文件所在路径
+创建文件夹 CREATE [OR REPLACE] DIRECTORY &amp;lt;directory&amp;gt; AS &#39;&amp;lt;pathname&amp;gt;&#39;;  directory为文件夹的别名
+pathname为具体的路径
+设置权限 GRANT READ[,WRITE] ON DIRECTORY &amp;lt;directory&amp;gt; TO &amp;lt;username&amp;gt;;  directory为文件夹的别名
+username为用户名
+查询文件夹 select * from dba_directories;  删除文件夹 drop directory &amp;lt;directory&amp;gt;;  directory为文件夹的别名</description>
+    </item>
+    
+    <item>
+      <title>SQL记录</title>
+      <link>https://macdfree.github.io/wiki/oracle/sql%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Mon, 16 Oct 2017 20:06:00 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/oracle/sql%E8%AE%B0%E5%BD%95/</guid>
+      <description> 查看用户表空间 select distinct(tablespace_name) from dba_segments where owner=upper(&#39;EpointBid_TP7&#39;);  查看Oracle版本 select * from v$version;  查看表大小 由于user_tables表中数据不是实时的，所有需要先执行
+select &#39;analyze table &#39;||S.TABLE_NAME||&#39; compute statistics;&#39; from user_tables s;  再执行
+select t.table_name,t.num_rows from user_tables t ORDER BY NUM_ROWS DESC;  添加字段 alter table tablename add (column datatype [default value][null/not null],….);  修改字段 alter table tablename modify (column datatype [default value][null/not null],….);  删除字段 alter table tablename drop (column);  </description>
+    </item>
+    
+    <item>
+      <title>MySQL修改连接时间</title>
+      <link>https://macdfree.github.io/wiki/mysql/mysql%E4%BF%AE%E6%94%B9%E8%BF%9E%E6%8E%A5%E6%97%B6%E9%97%B4/</link>
+      <pubDate>Sun, 15 Oct 2017 23:07:49 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/mysql/mysql%E4%BF%AE%E6%94%B9%E8%BF%9E%E6%8E%A5%E6%97%B6%E9%97%B4/</guid>
+      <description>Windows下修改my.ini文件，在mysqld节点下增加如下配置并重启：
+wait_timeout=388000 interactive-timeout=388000  </description>
+    </item>
+    
+    <item>
+      <title>MySQL安装配置及导入导出</title>
+      <link>https://macdfree.github.io/wiki/mysql/mysql%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%8F%8A%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA/</link>
+      <pubDate>Sun, 15 Oct 2017 22:55:29 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/mysql/mysql%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%8F%8A%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA/</guid>
+      <description>Windows首次安装MySQL时初始化 mysqld --initialize [with random root password] mysqld --initialize-insecure [without random root password]  linux安装mysql后密码重置  修改/etc/my.cnf文件，添加skip-grant-tables=1配置，重启mysqld服务
+ mysql -uroot连接数据库
+ 修改密码
+use mysql; update user set authentication_string=password(&#39;root&#39;), password_expired=&#39;N&#39;, password_last_changed=now() where user=&#39;root&#39;;  修改/etc/my.cnf文件，删除skip-grant-tables=1配置，重启mysqld服务
+ mysql -uroot -p连接数据库
+ 允许远程访问
+use mysql; update user set host=&#39;%&#39; where user=&#39;root&#39;;   补充 mysql5.7为root用户随机生成了密码，一般存放在/var/log/mysqld.log中
+grep &amp;quot;password&amp;quot; /var/log/mysqld.log  可以使用此密码登录
+使用此密码登录后需要通过以下语句修改密码
+alter user &#39;root&#39;@&#39;localhost&#39; identified by &#39;11111&#39;;  查看mysql密码长度限制
+select @@validate_password_length;  设置mysql密码长度限制</description>
+    </item>
+    
+    <item>
+      <title>MySQL读取配置文件顺序</title>
+      <link>https://macdfree.github.io/wiki/mysql/mysql%E8%AF%BB%E5%8F%96%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E9%A1%BA%E5%BA%8F/</link>
+      <pubDate>Sun, 15 Oct 2017 22:54:01 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/mysql/mysql%E8%AF%BB%E5%8F%96%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E9%A1%BA%E5%BA%8F/</guid>
+      <description> /etc/my.cnf
+ /etc/mysql/my.cnf
+ /usr/local/etc/my.cnf
+ ~/.my.cnf
+  </description>
+    </item>
+    
+    <item>
+      <title>MySQL常用语句</title>
+      <link>https://macdfree.github.io/wiki/mysql/mysql%E5%B8%B8%E7%94%A8%E8%AF%AD%E5%8F%A5/</link>
+      <pubDate>Sun, 15 Oct 2017 22:51:08 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/mysql/mysql%E5%B8%B8%E7%94%A8%E8%AF%AD%E5%8F%A5/</guid>
+      <description>删除数据库
+drop database if exists epointbid_bigdata_pro;  删除视图
+drop view if exists view_frame_user_java;  查看慢查询语句
+show full processlist; kill 慢查询的id;  添加字段
+ALTER TABLE tablename ADD column type COMMENT &#39;message&#39;;  添加索引
+ALTER TABLE tablename ADD INDEX indexname(`column`);  查看MySQL全局变量
+show global variables like &#39;%timeout%&#39;;  设置自增列的值
+alter table users AUTO_INCREMENT=10000;  查看数据库
+show databases;  </description>
+    </item>
+    
+    <item>
+      <title>Mac中的相关备忘</title>
+      <link>https://macdfree.github.io/wiki/macos/mac%E4%B8%AD%E7%9A%84%E7%9B%B8%E5%85%B3%E5%A4%87%E5%BF%98/</link>
+      <pubDate>Sun, 15 Oct 2017 22:47:36 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/macos/mac%E4%B8%AD%E7%9A%84%E7%9B%B8%E5%85%B3%E5%A4%87%E5%BF%98/</guid>
+      <description>键盘图标映射
+⌘：command、win
+⌃：control、ctrl
+⌥：option、alt
+⇧：shift
+⇪：caps lock
+常用快捷键
+SpotLight: cmd+空格
+iTerm快捷键
+查找历史：ctrl+r</description>
+    </item>
+    
+    <item>
+      <title>iTerm安装配置</title>
+      <link>https://macdfree.github.io/wiki/macos/iterm%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Sun, 15 Oct 2017 22:35:41 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/macos/iterm%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</guid>
+      <description> 安装iTerm
+ 安装oh-my-zsh
+curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh  安装powerline
+git clone https://github.com/powerline/fonts.git cd fonts ./install.sh  修改iTerm配置字体
+ 安装配置配色方案
+git clone git://github.com/altercation/solarized.git  导入配置文件
+import配置文件
+ 使用agnoster主题
+先检查一下~/.oh-my-zsh/themes目录下应该有此主题文件 编辑~/.zshrc文件，将ZSH_THEME修改为agnoster
+ 设置指令高亮效果
+git clone git://github.com/zsh-users/zsh-syntax-highlighting.git  编辑~/.zshrc文件，在最后添加以下内容
+source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh  安装历史操作记录自动补全插件
+git clone git://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions  在.zshrc中添加如下语句
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh   </description>
+    </item>
+    
+    <item>
+      <title>Brew相关</title>
+      <link>https://macdfree.github.io/wiki/macos/brew%E7%9B%B8%E5%85%B3/</link>
+      <pubDate>Sun, 15 Oct 2017 22:33:25 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/macos/brew%E7%9B%B8%E5%85%B3/</guid>
+      <description>包管理工具
+Homebrew
+命令：brew
+brew安装目录
+/usr/local/Cellar
+brew安装mysql
+brew install mysql  启动MySQL
+To have launchd start mysql now and restart at login: brew services start mysql Or, if you don&#39;t want/need a background service you can just run: mysql.server start  brew安装autojump
+brew install autojump  </description>
+    </item>
+    
+    <item>
+      <title>Vagrant使用</title>
+      <link>https://macdfree.github.io/wiki/macos/vagrant%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Sun, 15 Oct 2017 22:29:41 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/macos/vagrant%E4%BD%BF%E7%94%A8/</guid>
+      <description>添加镜像
+vagrant box add  删除镜像
+vagrant box remove  列出镜像
+vagrant box list  初始化虚拟机（需要新建文件夹）
+vagrant init  启动虚拟机
+vagrant up  关闭虚拟机
+vagrant halt  重启虚拟机
+vagrant reload vagrant reload --provision #可以执行Vagrantfile中的脚本  导出镜像
+vagrant package --output xxx.box  Vagrantfile文件配置
+端口转发
+config.vm.network &amp;quot;forwarded_port&amp;quot;, guest: 80, host: 8080  私有地址
+config.vm.network &amp;quot;private_network&amp;quot;, ip: &amp;quot;192.168.33.10&amp;quot;  公有地址
+config.vm.network &amp;quot;public_network&amp;quot;, ip: &amp;quot;192.168.1.222&amp;quot;  虚拟机运行参数
+config.vm.provider &amp;quot;virtualbox&amp;quot; do |vb| vb.name = &amp;quot;centos_test&amp;quot; vb.</description>
+    </item>
+    
+    <item>
+      <title>Curl使用</title>
+      <link>https://macdfree.github.io/wiki/linux/curl%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Sun, 15 Oct 2017 22:27:35 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/linux/curl%E4%BD%BF%E7%94%A8/</guid>
+      <description>查看请求网址返回信息
+curl -i url  下载文件
+curl -O url  断点续传
+curl -O url  下载过程中中断下载
+curl -C -O url  只用-C参数继续对该文件下载</description>
+    </item>
+    
+    <item>
+      <title>用户新增并授权</title>
+      <link>https://macdfree.github.io/wiki/linux/%E7%94%A8%E6%88%B7%E6%96%B0%E5%A2%9E%E5%B9%B6%E6%8E%88%E6%9D%83/</link>
+      <pubDate>Sun, 15 Oct 2017 22:24:48 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/linux/%E7%94%A8%E6%88%B7%E6%96%B0%E5%A2%9E%E5%B9%B6%E6%8E%88%E6%9D%83/</guid>
+      <description>新增用户
+adduser macd  修改密码
+passwd macd  配置sudo
+在/etc/sudoers中添加如下
+macd	ALL=(ALL) ALL  </description>
+    </item>
+    
+    <item>
+      <title>Linux常用命令</title>
+      <link>https://macdfree.github.io/wiki/linux/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Sun, 15 Oct 2017 22:23:08 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/linux/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>查看端口占用
+netstat -apn | grep 80  解压缩文件tar.gz
+tar -zxvf filename  通过ssh上传下载文件
+scp username@servername:/path/filename /var/www/local_dir （从服务器下载文件） scp /path/filename username@servername:/path （上传文件至服务器） scp -r username@servername:/var/www/remote_dir/ /var/www/local_dir（从服务器下载文件夹） scp -r local_dir username@servername:remote_dir （上传文件夹至服务器）  修改服务器时间
+date -s &amp;quot;2017-07-12 12:22:00&amp;quot;  </description>
+    </item>
+    
+    <item>
+      <title>SSH免密码设置</title>
+      <link>https://macdfree.github.io/wiki/linux/ssh%E5%85%8D%E5%AF%86%E7%A0%81%E8%AE%BE%E7%BD%AE/</link>
+      <pubDate>Sun, 15 Oct 2017 22:19:59 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/linux/ssh%E5%85%8D%E5%AF%86%E7%A0%81%E8%AE%BE%E7%BD%AE/</guid>
+      <description>在客户端生成公钥和 私钥
+ssh-keygen -t rsa  生成位置为~/.ssh下，默认为id_rsa和id_rsa.pub文件
+ 将公钥上传至服务器（如果服务器端没有.ssh文件夹，则需要手动新建）
+scp .ssh/id_rsa.pub username@hostip:.ssh/id_rsa.pub  在服务器端新建authorized_keys文件（如果已存在则不需要新建）（此文件在.ssh文件夹中）
+touch authorized_keys chmod 600 authorized_keys  将公钥内容追加到authorized_keys文件中
+cat id_rsa.pub &amp;gt;&amp;gt; authorized_keys   补充：
+确保.ssh目录权限为700，authorized_keys文件权限为600</description>
+    </item>
+    
+    <item>
+      <title>Figlet使用（字符画）</title>
+      <link>https://macdfree.github.io/wiki/linux/figlet%E4%BD%BF%E7%94%A8%E5%AD%97%E7%AC%A6%E7%94%BB/</link>
+      <pubDate>Sun, 15 Oct 2017 22:17:44 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/linux/figlet%E4%BD%BF%E7%94%A8%E5%AD%97%E7%AC%A6%E7%94%BB/</guid>
+      <description>下载figlet源码包
+解压缩
+tar -zxvf  安装GCC
+yum install gcc  编译
+make figlet  执行
+./figlet HELLO -f fonts/slant.flf  </description>
+    </item>
+    
+    <item>
+      <title>创建用于Nginx的签名证书</title>
+      <link>https://macdfree.github.io/wiki/linux/%E5%88%9B%E5%BB%BA%E7%94%A8%E4%BA%8Enginx%E7%9A%84%E7%AD%BE%E5%90%8D%E8%AF%81%E4%B9%A6/</link>
+      <pubDate>Sun, 15 Oct 2017 22:10:09 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/linux/%E5%88%9B%E5%BB%BA%E7%94%A8%E4%BA%8Enginx%E7%9A%84%E7%AD%BE%E5%90%8D%E8%AF%81%E4%B9%A6/</guid>
+      <description>使用OpenSSL创建证书 生成RSA密钥
+# 生成RSA密钥 openssl genrsa -des3 -out server.key 1024  需要设置密码，请记住
+# 生成已经证书请求 openssl req -new -key server.key -out server.csr  此步骤需要输入证书信息，需要注意的是Common Name最好设置为需要使用此证书的主机名
+cp server.key server.key.org openssl rsa -in server.key.org -out server.key # 使用密钥和CSR对证书进行签名 # 生成v1版证书 openssl x509 -req -days 3650 -sha256 -in server.csr -signkey server.key -out server.crt # 还会有v3版证书，待写  Nginx配置 server中
+listen 8090 ssl; ssl on; ssl_certificate nginxcert/nginx.crt; ssl_certificate_key nginxcert/nginx.key; # 此配置会设置X-Forwarded-Proto值为https，供后台应用调用 proxy_set_header X-Forwarded-Proto https; proxy_set_header Host $host:$server_port; proxy_set_header X-Real-IP $remote_addr; proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for; # 此配置将后台应用返回的http转成https proxy_redirect ~^http://([^:]+):8091(/.</description>
+    </item>
+    
+    <item>
+      <title>Linux抓包分析</title>
+      <link>https://macdfree.github.io/wiki/linux/linux%E6%8A%93%E5%8C%85%E5%88%86%E6%9E%90/</link>
+      <pubDate>Sun, 15 Oct 2017 22:07:57 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/linux/linux%E6%8A%93%E5%8C%85%E5%88%86%E6%9E%90/</guid>
+      <description>使用tcpdump+wireshark工具组合，tcpdump进行再Linux环境下进行抓包并存储为cap文件，wireshark进行分析。
+抓包命令
+tcpdump -nnA &#39;port 8080&#39; -w package.cap  tcpdump [-i interface] -nnAX &#39;expression&#39; -w file -i：指定监听的网卡 -nn：以ip和port的方式显示源朱建和目的主机，而不是主机名和服务 -A：以ASCII的方式显示数据包 -X：以16进制和ASCII方式显示 expression：表达式  </description>
+    </item>
+    
+    <item>
+      <title>Bash知识点</title>
+      <link>https://macdfree.github.io/wiki/linux/bash%E7%9F%A5%E8%AF%86%E7%82%B9/</link>
+      <pubDate>Sun, 15 Oct 2017 22:06:01 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/linux/bash%E7%9F%A5%E8%AF%86%E7%82%B9/</guid>
+      <description>使整条命令以sudo权限执行
+sudo sh -c &amp;quot;cat /dev/null &amp;gt; messages&amp;quot;  </description>
+    </item>
+    
+    <item>
+      <title>Spring记录</title>
+      <link>https://macdfree.github.io/wiki/java/spring%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Sun, 15 Oct 2017 22:03:36 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/java/spring%E8%AE%B0%E5%BD%95/</guid>
+      <description>等价注解
+@Inject == @Autowired
+@Named == @Component</description>
+    </item>
+    
+    <item>
+      <title>Shiro学习记录</title>
+      <link>https://macdfree.github.io/wiki/java/shiro%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Sun, 15 Oct 2017 22:02:11 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/java/shiro%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</guid>
+      <description>Authentication：身份认证
+Authorization：授权
+身份认证流程：
+Subject -&amp;gt; Security Manager -&amp;gt; Authenticator -&amp;gt; AuthenticationStrategy -&amp;gt; Realm</description>
+    </item>
+    
+    <item>
+      <title>Quartz使用</title>
+      <link>https://macdfree.github.io/wiki/java/quartz%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Sun, 15 Oct 2017 21:57:39 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/java/quartz%E4%BD%BF%E7%94%A8/</guid>
+      <description>Quartz的主要概念是Scheduler、Job、JobDetail和Trigger，其中Scheduler（调度者）是主体；JobDetail和Trigger用于定义任务的相关信息，如：需要执行的任务类，任务执行的时间点等；Job为实际需要执行的任务。
+需要的Maven依赖：
+&amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.quartz-scheduler&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;quartz&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;2.2.1&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt;  如果只需要使用Quartz的基本功能，只需要添加以上依赖 测试代码为
+import org.quartz.JobDetail; import org.quartz.Scheduler; import org.quartz.SchedulerException; import org.quartz.Trigger; import org.quartz.impl.StdSchedulerFactory; import static org.quartz.JobBuilder.*; import static org.quartz.TriggerBuilder.*; import static org.quartz.SimpleScheduleBuilder.*; public class QuartzTest { public static void main(String[] args) throws InterruptedException { try { Scheduler scheduler = StdSchedulerFactory.getDefaultScheduler(); scheduler.start(); JobDetail job = newJob(HelloJob.class).withIdentity(&amp;quot;job1&amp;quot;, &amp;quot;group1&amp;quot;).build(); Trigger trigger = newTrigger().withIdentity(&amp;quot;trigger1&amp;quot;, &amp;quot;group1&amp;quot;).startNow().withSchedule(simpleSchedule() .withIntervalInSeconds(4).repeatForever()).build(); scheduler.scheduleJob(job, trigger); System.out.println(&amp;quot;start time:&amp;quot; + System.currentTimeMillis()); Thread.sleep(20000); scheduler.shutdown(); } catch (SchedulerException se) { se.</description>
+    </item>
+    
+    <item>
+      <title>Web.xml记录</title>
+      <link>https://macdfree.github.io/wiki/java/web.xml%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Sun, 15 Oct 2017 21:55:17 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/java/web.xml%E8%AE%B0%E5%BD%95/</guid>
+      <description>Filter 需要实现javax.servlet.Filter接口。 在Web应用启动时初始化（仅初始化一次），随Web应用停止而销毁。会拦截每次客户端的请求。
+Listener 需要实现javax.servlet.ServletContextListener接口。 在Web应用启动时初始化（仅初始一次），随Web应用停止而销毁。 Web应用启动时需要会读取web.xml中context-param节点的内容以key-value的形式放入ServletContext中，在Listener中可以通过ServletContextEvent参数的getServletContext方法获取ServletContext。
+由上可知，Filter如其名，对每次客户端请求做处理（过滤）；Listener则是作为一个初始化的功能。
+web.xml加载流程 context-param &amp;gt; listener &amp;gt; filter &amp;gt; sevlet &amp;gt; spring&amp;hellip;
+classpath和classpath*的区别 classpath：只在当前的classpath下查找
+classpath*：不仅在当前classpath下查找，而且会在jar包的classes中去查找</description>
+    </item>
+    
+    <item>
+      <title>Keytool使用</title>
+      <link>https://macdfree.github.io/wiki/java/keytool%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Sun, 15 Oct 2017 21:51:56 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/java/keytool%E4%BD%BF%E7%94%A8/</guid>
+      <description>keytool工具所在路径：jdkpath/bin/keytool[.exe]
+导入密钥库
+keytool -importcert -file demo.crt -keystore demo.jks -alias demo  删除指定密钥库中的证书
+keytool -delete -alias demo -keystore demo.jks  列出密钥库中的所有证书
+keytool -list -keystore demo.jks  </description>
+    </item>
+    
+    <item>
+      <title>Maven常用命令</title>
+      <link>https://macdfree.github.io/wiki/java/maven%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Sun, 15 Oct 2017 21:50:23 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/java/maven%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>使用指定参数打包
+mvn package -P dev  </description>
+    </item>
+    
+    <item>
+      <title>开发环境准备 VSCode</title>
+      <link>https://macdfree.github.io/wiki/go/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87-vscode/</link>
+      <pubDate>Sun, 15 Oct 2017 21:42:59 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/go/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87-vscode/</guid>
+      <description> 下载Go语言zip包，解压缩到任意目录
+ 配置环境变量，PATH中添加go/bin路径，新增GOROOT环境变量，值为go目录
+ 安装VSCode，安装Go插件（推荐安装Settings Sync插件，可以实现多平台插件和配置文件的同步）
+ 新建gotool文件夹存放Go插件依赖的工具，使用VSCode打开此文件夹，新增工作区配置：go.toolsGopath和go.gopath
+ 执行安装Go工具命令
+  </description>
+    </item>
+    
+    <item>
+      <title>Go知识点备忘</title>
+      <link>https://macdfree.github.io/wiki/go/go%E7%9F%A5%E8%AF%86%E7%82%B9%E5%A4%87%E5%BF%98/</link>
+      <pubDate>Thu, 12 Oct 2017 23:02:15 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/go/go%E7%9F%A5%E8%AF%86%E7%82%B9%E5%A4%87%E5%BF%98/</guid>
+      <description> =和:=的区别 =用于赋值，:=声明变量并赋值且进行自动类型推断 =必须先使用var进行声明
+var a a=100 // 或 var b=100 // 或 var c int=100 // :=声明并赋值，不能加var，也不能加类型 d:=100  slice类型和array类型变量初始化差异 数组：[n]T
+切片：[]T
+s := []int{0,1,2,3,4,5} // slice s := [...]int{0,1,2,3,4,5} // array values := [9]int{} // array  切片初始化时不需要指定长度，数组初始化时需要指定长度
+类型转换 T(v)  </description>
+    </item>
+    
+    <item>
+      <title>Git常用命令</title>
+      <link>https://macdfree.github.io/wiki/git/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Thu, 12 Oct 2017 22:57:49 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/git/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description> 初始化Git仓库 git init  跟踪所有改动文件 git add . git add -i # 交换式添加跟踪文件  停止跟踪文件但不删除 git rm --cached &amp;lt;file&amp;gt;  提交所有更新过的文件 git commit -m &#39;commit message&#39;  删除未跟踪的所有文件 git clean -f # 删除未跟踪的文件 git clean -fd # 删除未跟踪的文件和文件夹 # 使用git clean前先使用-n参数预览需要删除的文件，防止误删，如 git clean -nf  撤销工作目录中所有未提交的修改 git reset --hard HEAD  全局设置 git config --global user.name &amp;quot;macdfree&amp;quot; git config --global user.email &amp;quot;macdfree@163.com&amp;quot;  切换Tag git checkout &amp;lt;tagname&amp;gt;  </description>
+    </item>
+    
+    <item>
+      <title>Hive SQL</title>
+      <link>https://macdfree.github.io/wiki/bigdata/hive-sql/</link>
+      <pubDate>Thu, 12 Oct 2017 22:55:53 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/bigdata/hive-sql/</guid>
+      <description>建表示例
+sql&amp;gt; create table r_user (id_user bigint,login string,password string,name string,description string,enabled string) row format delimited fields terminated by &#39;;&#39; stored as textfile location &#39;/user/hadoop/db/bigdata/r_user&#39;;  注意location指定的文件夹，默认文件夹名称和表名称一致</description>
+    </item>
+    
+    <item>
+      <title>Hadoop&#43;Hive环境搭建</title>
+      <link>https://macdfree.github.io/wiki/bigdata/hadoop&#43;hive%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
+      <pubDate>Thu, 12 Oct 2017 22:10:56 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/bigdata/hadoop&#43;hive%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
+      <description>安装包版本说明    安装包 版本     Hadoop 2.8.1   Hive 2.3.0    安装Hadoop 创建用户hadoop # 创建hadoop用户 Shell&amp;gt; useradd -m hadoop -s /bin/bash # 设置密码 Shell&amp;gt; passwd hadoop  修改hostname # 修改hostname Shell&amp;gt; vim /etc/hosts  修改后重启，使用hadoop用户登录
+设置免登录 # 生成密钥对 Shell&amp;gt; ssh-keygen -t rsa # 追加到authorized_keys中 Shell&amp;gt; cat ./id_rsa.pub &amp;gt;&amp;gt; ./authorized_keys # 设置权限 Shell&amp;gt; chmod 644 authorized_keys # 将下载好的hadoop和hive安装包解压缩到opt目录下 Shell&amp;gt; tar -zxvf filename  添加环境变量 Shell&amp;gt; vim .</description>
+    </item>
+    
+    <item>
+      <title>CentOS注册服务脚本</title>
+      <link>https://macdfree.github.io/wiki/linux/centos%E6%B3%A8%E5%86%8C%E6%9C%8D%E5%8A%A1%E8%84%9A%E6%9C%AC/</link>
+      <pubDate>Fri, 26 Aug 2016 12:44:52 +0000</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/linux/centos%E6%B3%A8%E5%86%8C%E6%9C%8D%E5%8A%A1%E8%84%9A%E6%9C%AC/</guid>
+      <description>&lt;p&gt;公司测试系统使用wrapper+tomcat部署，在CentOS环境上通过执行wrapper启动系统，但由于是在终端中执行，当退出终端后wrapper也会退出，所以想到将wrapper注册成系统服务。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

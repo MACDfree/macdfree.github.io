@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.28" />
+
+
+
+<link rel="canonical" href="https://macdfree.github.io/wiki/macos/iterm%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>iTerm安装配置 - MACDeer&#39;s Blog</title>
+    
+<meta name="description" content=" 安装iTerm 安装oh-my-zshcurl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh  安装powerlinegit clone https://github.com/powerline/fonts.git cd fonts ./install.sh  修改iTerm配置字体 安装配置配色方案git clone git://github.com/altercation/solarized.git  导入配置文件import配置文件 使用agnoster主题先检查一下~/.oh-my-zsh/themes目录下应该有此主题文件 编辑~/.zshrc文件，将ZSH_THEME修改为agnoster 设置指令高亮效果git clone git://github.com/zsh-users/zsh-syntax-highlighting.git  编辑~/.zshrc文件，在最后添加以下内容source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh  安装历史操作记录自动补全插件git clone git://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions  在.zshrc中添加如下语句source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh   ">
+
+<meta property="og:title" content="iTerm安装配置 - MACDeer&#39;s Blog">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://macdfree.github.io/wiki/macos/iterm%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/">
+<meta property="og:image" content="https://macdfree.github.io/images/default.png">
+<meta property="og:site_name" content="MACDeer&#39;s Blog">
+<meta property="og:description" content=" 安装iTerm 安装oh-my-zshcurl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh  安装powerlinegit clone https://github.com/powerline/fonts.git cd fonts ./install.sh  修改iTerm配置字体 安装配置配色方案git clone git://github.com/altercation/solarized.git  导入配置文件import配置文件 使用agnoster主题先检查一下~/.oh-my-zsh/themes目录下应该有此主题文件 编辑~/.zshrc文件，将ZSH_THEME修改为agnoster 设置指令高亮效果git clone git://github.com/zsh-users/zsh-syntax-highlighting.git  编辑~/.zshrc文件，在最后添加以下内容source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh  安装历史操作记录自动补全插件git clone git://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions  在.zshrc中添加如下语句source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh   ">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="MACDeer&#39;s Blog">
+<meta name="twitter:url" content="https://macdfree.github.io/wiki/macos/iterm%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/">
+<meta name="twitter:title" content="iTerm安装配置 - MACDeer&#39;s Blog">
+<meta name="twitter:description" content=" 安装iTerm 安装oh-my-zshcurl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh  安装powerlinegit clone https://github.com/powerline/fonts.git cd fonts ./install.sh  修改iTerm配置字体 安装配置配色方案git clone git://github.com/altercation/solarized.git  导入配置文件import配置文件 使用agnoster主题先检查一下~/.oh-my-zsh/themes目录下应该有此主题文件 编辑~/.zshrc文件，将ZSH_THEME修改为agnoster 设置指令高亮效果git clone git://github.com/zsh-users/zsh-syntax-highlighting.git  编辑~/.zshrc文件，在最后添加以下内容source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh  安装历史操作记录自动补全插件git clone git://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions  在.zshrc中添加如下语句source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh   ">
+<meta name="twitter:image" content="https://macdfree.github.io/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"https://macdfree.github.io/"
+    },
+    "headline": "iTerm安装配置 - MACDeer&#39;s Blog",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://macdfree.github.io/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2017-10-15T22:35:41JST",
+    "dateModified": "2017-10-15T22:35:41JST",
+    "author": {
+      "@type": "Person",
+      "name": "MACDeer&#39;s Blog"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "MACDeer&#39;s Blog",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://macdfree.github.io/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": " 安装iTerm
+ 安装oh-my-zsh
+curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh  安装powerline
+git clone https://github.com/powerline/fonts.git cd fonts ./install.sh  修改iTerm配置字体
+ 安装配置配色方案
+git clone git://github.com/altercation/solarized.git  导入配置文件
+import配置文件
+ 使用agnoster主题
+先检查一下~/.oh-my-zsh/themes目录下应该有此主题文件 编辑~/.zshrc文件，将ZSH_THEME修改为agnoster
+ 设置指令高亮效果
+git clone git://github.com/zsh-users/zsh-syntax-highlighting.git  编辑~/.zshrc文件，在最后添加以下内容
+source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh  安装历史操作记录自动补全插件
+git clone git://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions  在.zshrc中添加如下语句
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh   "
+  }
+</script>
+
+
+    <link href="https://macdfree.github.io/css/styles.css" rel="stylesheet">
+    
+
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://macdfree.github.io/">MACDeer&#39;s Blog</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="https://macdfree.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://macdfree.github.io/wiki/" itemprop="url"><span itemprop="title">wiki</span></a></li>
+        
+        <li class="active">iTerm安装配置</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2017-10-15T22:35:41JST">Oct 15, 2017</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://macdfree.github.io/wiki/">wiki</a></li>
+      
+    </ul>
+
+    <h1 class="title">iTerm安装配置</h1>
+  </header>
+
+  
+
+  <div class="article-body"><ol>
+<li><p>安装iTerm</p></li>
+
+<li><p>安装oh-my-zsh</p>
+
+<pre><code class="language-sh">curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+</code></pre></li>
+
+<li><p>安装powerline</p>
+
+<pre><code class="language-sh">git clone https://github.com/powerline/fonts.git
+cd fonts
+./install.sh
+</code></pre></li>
+
+<li><p>修改iTerm配置字体</p>
+
+<p><img src="http://ocd8m6zlz.bkt.clouddn.com/字体配置.png" alt="字体配置" /></p></li>
+
+<li><p>安装配置配色方案</p>
+
+<pre><code class="language-sh">git clone git://github.com/altercation/solarized.git
+</code></pre>
+
+<p>导入配置文件</p>
+
+<p><img src="http://ocd8m6zlz.bkt.clouddn.com/导入配置文件.png" alt="导入配置文件" /></p>
+
+<p>import配置文件</p></li>
+
+<li><p>使用agnoster主题</p>
+
+<p>先检查一下<code>~/.oh-my-zsh/themes</code>目录下应该有此主题文件
+编辑<code>~/.zshrc</code>文件，将<code>ZSH_THEME</code>修改为<code>agnoster</code></p>
+
+<p><img src="http://ocd8m6zlz.bkt.clouddn.com/主题配置.png" alt="主题配置" /></p></li>
+
+<li><p>设置指令高亮效果</p>
+
+<pre><code class="language-sh">git clone git://github.com/zsh-users/zsh-syntax-highlighting.git
+</code></pre>
+
+<p>编辑~/.zshrc文件，在最后添加以下内容</p>
+
+<pre><code class="language-sh">source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+</code></pre></li>
+
+<li><p>安装历史操作记录自动补全插件</p>
+
+<pre><code class="language-sh">git clone git://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+</code></pre>
+
+<p>在.zshrc中添加如下语句</p>
+
+<pre><code class="language-sh">source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+</code></pre></li>
+</ol>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="https://macdfree.github.io/categories/macos/">MacOS</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">TAGS</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="https://macdfree.github.io/tags/iterm/">iterm</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://macdfree.github.io/wiki/sqlite/%E5%B8%B8%E7%94%A8%E8%AF%AD%E5%8F%A5/" class="list-group-item">常用语句</a>
+      
+      <a href="https://macdfree.github.io/wiki/redis/redis%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="list-group-item">Redis常用命令</a>
+      
+      <a href="https://macdfree.github.io/wiki/python/pip%E5%AE%89%E8%A3%85%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/" class="list-group-item">Pip安装常见问题</a>
+      
+      <a href="https://macdfree.github.io/wiki/python/virtualenv%E4%BD%BF%E7%94%A8/" class="list-group-item">Virtualenv使用</a>
+      
+      <a href="https://macdfree.github.io/wiki/oracle/oracle%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4/" class="list-group-item">Oracle相关命令</a>
+      
+      <a href="https://macdfree.github.io/wiki/oracle/%E6%96%B0%E5%BA%93%E5%AF%BC%E5%85%A5/" class="list-group-item">新库导入</a>
+      
+      <a href="https://macdfree.github.io/wiki/oracle/directory%E7%AE%A1%E7%90%86/" class="list-group-item">DIRECTORY管理</a>
+      
+      <a href="https://macdfree.github.io/wiki/oracle/sql%E8%AE%B0%E5%BD%95/" class="list-group-item">SQL记录</a>
+      
+      <a href="https://macdfree.github.io/wiki/mysql/mysql%E4%BF%AE%E6%94%B9%E8%BF%9E%E6%8E%A5%E6%97%B6%E9%97%B4/" class="list-group-item">MySQL修改连接时间</a>
+      
+      <a href="https://macdfree.github.io/wiki/mysql/mysql%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%8F%8A%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA/" class="list-group-item">MySQL安装配置及导入导出</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://macdfree.github.io/categories/note" class="list-group-item">note</a>
+      
+      <a href="https://macdfree.github.io/categories/linux" class="list-group-item">linux</a>
+      
+      <a href="https://macdfree.github.io/categories/java" class="list-group-item">java</a>
+      
+      <a href="https://macdfree.github.io/categories/macos" class="list-group-item">macos</a>
+      
+      <a href="https://macdfree.github.io/categories/mysql" class="list-group-item">mysql</a>
+      
+      <a href="https://macdfree.github.io/categories/oracle" class="list-group-item">oracle</a>
+      
+      <a href="https://macdfree.github.io/categories/bigdata" class="list-group-item">bigdata</a>
+      
+      <a href="https://macdfree.github.io/categories/go" class="list-group-item">go</a>
+      
+      <a href="https://macdfree.github.io/categories/html" class="list-group-item">html</a>
+      
+      <a href="https://macdfree.github.io/categories/python" class="list-group-item">python</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://macdfree.github.io/tags/bash" class="list-group-item">bash</a>
+      
+      <a href="https://macdfree.github.io/tags/cc1101" class="list-group-item">cc1101</a>
+      
+      <a href="https://macdfree.github.io/tags/hive" class="list-group-item">hive</a>
+      
+      <a href="https://macdfree.github.io/tags/msp430" class="list-group-item">msp430</a>
+      
+      <a href="https://macdfree.github.io/tags/apache" class="list-group-item">apache</a>
+      
+      <a href="https://macdfree.github.io/tags/brew" class="list-group-item">brew</a>
+      
+      <a href="https://macdfree.github.io/tags/c" class="list-group-item">c</a>
+      
+      <a href="https://macdfree.github.io/tags/cc2500" class="list-group-item">cc2500</a>
+      
+      <a href="https://macdfree.github.io/tags/curl" class="list-group-item">curl</a>
+      
+      <a href="https://macdfree.github.io/tags/figlet" class="list-group-item">figlet</a>
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; MACDeer&#39;s Blog</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

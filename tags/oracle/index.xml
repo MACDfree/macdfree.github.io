@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Oracle on MACDeer&#39;s Blog</title>
+    <link>https://macdfree.github.io/tags/oracle/</link>
+    <description>Recent content in Oracle on MACDeer&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 29 Sep 2016 00:10:57 +0000</lastBuildDate>
+    
+	<atom:link href="https://macdfree.github.io/tags/oracle/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Oracle导库</title>
+      <link>https://macdfree.github.io/posts/oracle%E5%AF%BC%E5%BA%93/</link>
+      <pubDate>Thu, 29 Sep 2016 00:10:57 +0000</pubDate>
+      
+      <guid>https://macdfree.github.io/posts/oracle%E5%AF%BC%E5%BA%93/</guid>
+      <description>&lt;p&gt;Oracle导库主要分成清库、清空回收站、导库三个步骤。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

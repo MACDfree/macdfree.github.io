@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Macos on MACDeer&#39;s Blog</title>
+    <link>https://macdfree.github.io/categories/macos/</link>
+    <description>Recent content in Macos on MACDeer&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 15 Oct 2017 22:47:36 +0800</lastBuildDate>
+    
+	<atom:link href="https://macdfree.github.io/categories/macos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mac中的相关备忘</title>
+      <link>https://macdfree.github.io/wiki/macos/mac%E4%B8%AD%E7%9A%84%E7%9B%B8%E5%85%B3%E5%A4%87%E5%BF%98/</link>
+      <pubDate>Sun, 15 Oct 2017 22:47:36 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/macos/mac%E4%B8%AD%E7%9A%84%E7%9B%B8%E5%85%B3%E5%A4%87%E5%BF%98/</guid>
+      <description>键盘图标映射
+⌘：command、win
+⌃：control、ctrl
+⌥：option、alt
+⇧：shift
+⇪：caps lock
+常用快捷键
+SpotLight: cmd+空格
+iTerm快捷键
+查找历史：ctrl+r</description>
+    </item>
+    
+    <item>
+      <title>iTerm安装配置</title>
+      <link>https://macdfree.github.io/wiki/macos/iterm%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Sun, 15 Oct 2017 22:35:41 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/macos/iterm%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</guid>
+      <description> 安装iTerm
+ 安装oh-my-zsh
+curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh  安装powerline
+git clone https://github.com/powerline/fonts.git cd fonts ./install.sh  修改iTerm配置字体
+ 安装配置配色方案
+git clone git://github.com/altercation/solarized.git  导入配置文件
+import配置文件
+ 使用agnoster主题
+先检查一下~/.oh-my-zsh/themes目录下应该有此主题文件 编辑~/.zshrc文件，将ZSH_THEME修改为agnoster
+ 设置指令高亮效果
+git clone git://github.com/zsh-users/zsh-syntax-highlighting.git  编辑~/.zshrc文件，在最后添加以下内容
+source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh  安装历史操作记录自动补全插件
+git clone git://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions  在.zshrc中添加如下语句
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh   </description>
+    </item>
+    
+    <item>
+      <title>Brew相关</title>
+      <link>https://macdfree.github.io/wiki/macos/brew%E7%9B%B8%E5%85%B3/</link>
+      <pubDate>Sun, 15 Oct 2017 22:33:25 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/macos/brew%E7%9B%B8%E5%85%B3/</guid>
+      <description>包管理工具
+Homebrew
+命令：brew
+brew安装目录
+/usr/local/Cellar
+brew安装mysql
+brew install mysql  启动MySQL
+To have launchd start mysql now and restart at login: brew services start mysql Or, if you don&#39;t want/need a background service you can just run: mysql.server start  brew安装autojump
+brew install autojump  </description>
+    </item>
+    
+    <item>
+      <title>Vagrant使用</title>
+      <link>https://macdfree.github.io/wiki/macos/vagrant%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Sun, 15 Oct 2017 22:29:41 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/macos/vagrant%E4%BD%BF%E7%94%A8/</guid>
+      <description>添加镜像
+vagrant box add  删除镜像
+vagrant box remove  列出镜像
+vagrant box list  初始化虚拟机（需要新建文件夹）
+vagrant init  启动虚拟机
+vagrant up  关闭虚拟机
+vagrant halt  重启虚拟机
+vagrant reload vagrant reload --provision #可以执行Vagrantfile中的脚本  导出镜像
+vagrant package --output xxx.box  Vagrantfile文件配置
+端口转发
+config.vm.network &amp;quot;forwarded_port&amp;quot;, guest: 80, host: 8080  私有地址
+config.vm.network &amp;quot;private_network&amp;quot;, ip: &amp;quot;192.168.33.10&amp;quot;  公有地址
+config.vm.network &amp;quot;public_network&amp;quot;, ip: &amp;quot;192.168.1.222&amp;quot;  虚拟机运行参数
+config.vm.provider &amp;quot;virtualbox&amp;quot; do |vb| vb.name = &amp;quot;centos_test&amp;quot; vb.</description>
+    </item>
+    
+  </channel>
+</rss>

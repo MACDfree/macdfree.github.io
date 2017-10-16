@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Keytool on MACDeer&#39;s Blog</title>
+    <link>https://macdfree.github.io/tags/keytool/</link>
+    <description>Recent content in Keytool on MACDeer&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 15 Oct 2017 21:51:56 +0800</lastBuildDate>
+    
+	<atom:link href="https://macdfree.github.io/tags/keytool/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Keytool使用</title>
+      <link>https://macdfree.github.io/wiki/java/keytool%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Sun, 15 Oct 2017 21:51:56 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/java/keytool%E4%BD%BF%E7%94%A8/</guid>
+      <description>keytool工具所在路径：jdkpath/bin/keytool[.exe]
+导入密钥库
+keytool -importcert -file demo.crt -keystore demo.jks -alias demo  删除指定密钥库中的证书
+keytool -delete -alias demo -keystore demo.jks  列出密钥库中的所有证书
+keytool -list -keystore demo.jks  </description>
+    </item>
+    
+  </channel>
+</rss>

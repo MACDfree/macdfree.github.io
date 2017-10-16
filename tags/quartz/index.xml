@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quartz on MACDeer&#39;s Blog</title>
+    <link>https://macdfree.github.io/tags/quartz/</link>
+    <description>Recent content in Quartz on MACDeer&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 15 Oct 2017 21:57:39 +0800</lastBuildDate>
+    
+	<atom:link href="https://macdfree.github.io/tags/quartz/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Quartz使用</title>
+      <link>https://macdfree.github.io/wiki/java/quartz%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Sun, 15 Oct 2017 21:57:39 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/java/quartz%E4%BD%BF%E7%94%A8/</guid>
+      <description>Quartz的主要概念是Scheduler、Job、JobDetail和Trigger，其中Scheduler（调度者）是主体；JobDetail和Trigger用于定义任务的相关信息，如：需要执行的任务类，任务执行的时间点等；Job为实际需要执行的任务。
+需要的Maven依赖：
+&amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.quartz-scheduler&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;quartz&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;2.2.1&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt;  如果只需要使用Quartz的基本功能，只需要添加以上依赖 测试代码为
+import org.quartz.JobDetail; import org.quartz.Scheduler; import org.quartz.SchedulerException; import org.quartz.Trigger; import org.quartz.impl.StdSchedulerFactory; import static org.quartz.JobBuilder.*; import static org.quartz.TriggerBuilder.*; import static org.quartz.SimpleScheduleBuilder.*; public class QuartzTest { public static void main(String[] args) throws InterruptedException { try { Scheduler scheduler = StdSchedulerFactory.getDefaultScheduler(); scheduler.start(); JobDetail job = newJob(HelloJob.class).withIdentity(&amp;quot;job1&amp;quot;, &amp;quot;group1&amp;quot;).build(); Trigger trigger = newTrigger().withIdentity(&amp;quot;trigger1&amp;quot;, &amp;quot;group1&amp;quot;).startNow().withSchedule(simpleSchedule() .withIntervalInSeconds(4).repeatForever()).build(); scheduler.scheduleJob(job, trigger); System.out.println(&amp;quot;start time:&amp;quot; + System.currentTimeMillis()); Thread.sleep(20000); scheduler.shutdown(); } catch (SchedulerException se) { se.</description>
+    </item>
+    
+  </channel>
+</rss>

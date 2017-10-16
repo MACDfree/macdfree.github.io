@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.28" />
+
+
+
+<link rel="canonical" href="https://macdfree.github.io/wiki/bigdata/hadoop&#43;hive%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>Hadoop&#43;Hive环境搭建 - MACDeer&#39;s Blog</title>
+    
+<meta name="description" content="安装包版本说明    安装包 版本     Hadoop 2.8.1   Hive 2.3.0    安装Hadoop 创建用户hadoop # 创建hadoop用户 Shell&amp;gt; useradd -m hadoop -s /bin/bash # 设置密码 Shell&amp;gt; passwd hadoop  修改hostname # 修改hostname Shell&amp;gt; vim /etc/hosts  修改后重启，使用hadoop用户登录设置免登录 # 生成密钥对 Shell&amp;gt; ssh-keygen -t rsa # 追加到authorized_keys中 Shell&amp;gt; cat ./id_rsa.pub &amp;gt;&amp;gt; ./authorized_keys # 设置权限 Shell&amp;gt; chmod 644 authorized_keys # 将下载好的hadoop和hive安装包解压缩到opt目录下 Shell&amp;gt; tar -zxvf filename  添加环境变量 Shell&amp;gt; vim .">
+
+<meta property="og:title" content="Hadoop&#43;Hive环境搭建 - MACDeer&#39;s Blog">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://macdfree.github.io/wiki/bigdata/hadoop&#43;hive%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+<meta property="og:image" content="https://macdfree.github.io/images/default.png">
+<meta property="og:site_name" content="MACDeer&#39;s Blog">
+<meta property="og:description" content="安装包版本说明    安装包 版本     Hadoop 2.8.1   Hive 2.3.0    安装Hadoop 创建用户hadoop # 创建hadoop用户 Shell&amp;gt; useradd -m hadoop -s /bin/bash # 设置密码 Shell&amp;gt; passwd hadoop  修改hostname # 修改hostname Shell&amp;gt; vim /etc/hosts  修改后重启，使用hadoop用户登录设置免登录 # 生成密钥对 Shell&amp;gt; ssh-keygen -t rsa # 追加到authorized_keys中 Shell&amp;gt; cat ./id_rsa.pub &amp;gt;&amp;gt; ./authorized_keys # 设置权限 Shell&amp;gt; chmod 644 authorized_keys # 将下载好的hadoop和hive安装包解压缩到opt目录下 Shell&amp;gt; tar -zxvf filename  添加环境变量 Shell&amp;gt; vim .">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="MACDeer&#39;s Blog">
+<meta name="twitter:url" content="https://macdfree.github.io/wiki/bigdata/hadoop&#43;hive%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+<meta name="twitter:title" content="Hadoop&#43;Hive环境搭建 - MACDeer&#39;s Blog">
+<meta name="twitter:description" content="安装包版本说明    安装包 版本     Hadoop 2.8.1   Hive 2.3.0    安装Hadoop 创建用户hadoop # 创建hadoop用户 Shell&amp;gt; useradd -m hadoop -s /bin/bash # 设置密码 Shell&amp;gt; passwd hadoop  修改hostname # 修改hostname Shell&amp;gt; vim /etc/hosts  修改后重启，使用hadoop用户登录设置免登录 # 生成密钥对 Shell&amp;gt; ssh-keygen -t rsa # 追加到authorized_keys中 Shell&amp;gt; cat ./id_rsa.pub &amp;gt;&amp;gt; ./authorized_keys # 设置权限 Shell&amp;gt; chmod 644 authorized_keys # 将下载好的hadoop和hive安装包解压缩到opt目录下 Shell&amp;gt; tar -zxvf filename  添加环境变量 Shell&amp;gt; vim .">
+<meta name="twitter:image" content="https://macdfree.github.io/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"https://macdfree.github.io/"
+    },
+    "headline": "Hadoop&#43;Hive环境搭建 - MACDeer&#39;s Blog",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://macdfree.github.io/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2017-10-12T22:10:56JST",
+    "dateModified": "2017-10-12T22:10:56JST",
+    "author": {
+      "@type": "Person",
+      "name": "MACDeer&#39;s Blog"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "MACDeer&#39;s Blog",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://macdfree.github.io/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "安装包版本说明    安装包 版本     Hadoop 2.8.1   Hive 2.3.0    安装Hadoop 创建用户hadoop # 创建hadoop用户 Shell&gt; useradd -m hadoop -s /bin/bash # 设置密码 Shell&gt; passwd hadoop  修改hostname # 修改hostname Shell&gt; vim /etc/hosts  修改后重启，使用hadoop用户登录
+设置免登录 # 生成密钥对 Shell&gt; ssh-keygen -t rsa # 追加到authorized_keys中 Shell&gt; cat ./id_rsa.pub &gt;&gt; ./authorized_keys # 设置权限 Shell&gt; chmod 644 authorized_keys # 将下载好的hadoop和hive安装包解压缩到opt目录下 Shell&gt; tar -zxvf filename  添加环境变量 Shell&gt; vim ."
+  }
+</script>
+
+
+    <link href="https://macdfree.github.io/css/styles.css" rel="stylesheet">
+    
+
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://macdfree.github.io/">MACDeer&#39;s Blog</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="https://macdfree.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://macdfree.github.io/wiki/" itemprop="url"><span itemprop="title">wiki</span></a></li>
+        
+        <li class="active">Hadoop&#43;Hive环境搭建</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2017-10-12T22:10:56JST">Oct 12, 2017</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://macdfree.github.io/wiki/">wiki</a></li>
+      
+    </ul>
+
+    <h1 class="title">Hadoop&#43;Hive环境搭建</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<h3 id="安装包版本说明">安装包版本说明</h3>
+
+<table>
+<thead>
+<tr>
+<th>安装包</th>
+<th>版本</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Hadoop</td>
+<td>2.8.1</td>
+</tr>
+
+<tr>
+<td>Hive</td>
+<td>2.3.0</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="安装hadoop">安装Hadoop</h3>
+
+<h4 id="创建用户hadoop">创建用户hadoop</h4>
+
+<pre><code class="language-sh"># 创建hadoop用户
+Shell&gt; useradd -m hadoop -s /bin/bash
+# 设置密码
+Shell&gt; passwd hadoop
+</code></pre>
+
+<h4 id="修改hostname">修改hostname</h4>
+
+<pre><code class="language-sh"># 修改hostname
+Shell&gt; vim /etc/hosts
+</code></pre>
+
+<p><img src="http://ocd8m6zlz.bkt.clouddn.com/clipboard.png" alt="hosts" /></p>
+
+<p>修改后重启，使用hadoop用户登录</p>
+
+<h4 id="设置免登录">设置免登录</h4>
+
+<pre><code class="language-sh"># 生成密钥对
+Shell&gt; ssh-keygen -t rsa
+# 追加到authorized_keys中
+Shell&gt; cat ./id_rsa.pub &gt;&gt; ./authorized_keys
+# 设置权限
+Shell&gt; chmod 644 authorized_keys
+# 将下载好的hadoop和hive安装包解压缩到opt目录下
+Shell&gt; tar -zxvf filename
+</code></pre>
+
+<h4 id="添加环境变量">添加环境变量</h4>
+
+<pre><code class="language-sh">Shell&gt; vim .bashrc
+</code></pre>
+
+<p>追加如下内容</p>
+
+<pre><code class="language-sh">export JAVA_HOME=/usr/lib/jvm/java
+export HADOOP_HOME=/opt/hadoop
+export HIVE_HOME=/opt/hive2
+export PATH=$PATH:$JAVA_HOME/bin:$HADOOP_HOME/bin:$HIVE_HOME/bin
+</code></pre>
+
+<p>使修改生效</p>
+
+<pre><code class="language-sh">Shell&gt; source .bashrc
+</code></pre>
+
+<h4 id="修改配置文件">修改配置文件</h4>
+
+<p>修改$HADOOP_HOME/etc/hadoop/core-site.xml</p>
+
+<pre><code class="language-xml">&lt;configuration&gt;
+    &lt;property&gt;
+        &lt;name&gt;hadoop.tmp.dir&lt;/name&gt;
+        &lt;value&gt;file:/opt/hadoop/tmp&lt;/value&gt;
+    &lt;/property&gt;
+    &lt;property&gt;
+        &lt;name&gt;fs.defaultFS&lt;/name&gt;
+        &lt;value&gt;hdfs://hadoop001:9000&lt;/value&gt;
+    &lt;/property&gt;
+    &lt;property&gt;
+        &lt;name&gt;hadoop.proxyuser.hadoop.hosts&lt;/name&gt;
+        &lt;value&gt;*&lt;/value&gt;
+    &lt;/property&gt;
+    &lt;property&gt;
+        &lt;name&gt;hadoop.proxyuser.hadoop.groups&lt;/name&gt;
+        &lt;value&gt;*&lt;/value&gt;
+    &lt;/property&gt;
+&lt;/configuration&gt;
+</code></pre>
+
+<p>注意<code>hadoop.tmp.dir</code>配置，防止系统重启后被操作系统删除，配置<code>fs.defaultFS</code>为指定HDFS的namenode</p>
+
+<p>修改$HADOOP_HOME/etc/hadoop/hdfs-site.xml</p>
+
+<pre><code class="language-xml">&lt;configuration&gt;
+    &lt;property&gt;
+        &lt;name&gt;dfs.replication&lt;/name&gt;
+        &lt;value&gt;1&lt;/value&gt;
+    &lt;/property&gt;
+    &lt;property&gt;
+        &lt;name&gt;dfs.namenode.name.dir&lt;/name&gt;
+        &lt;value&gt;file:/home/hadoop/data/dfs/name&lt;/value&gt;
+    &lt;/property&gt;
+    &lt;property&gt;
+        &lt;name&gt;dfs.datanode.data.dir&lt;/name&gt;
+        &lt;value&gt;file:/home/hadoop/data/dfs/data&lt;/value&gt;
+    &lt;/property&gt;
+&lt;/configuration&gt;
+</code></pre>
+
+<p>配置项<code>dfs.replication</code>为HDFS的副本数，由于使用伪分布式，所以设置为1；配置项<code>dfs.namenode.name.dir</code>和<code>dfs.datanode.data.dir</code>分别为设置namenode和datanode的存储路径</p>
+
+<p>修改$HADOOP_HOME/etc/hadoop/mapred-site.xml</p>
+
+<pre><code class="language-xml">&lt;configuration&gt;
+    &lt;property&gt;
+        &lt;name&gt;mapreduce.framework.name&lt;/name&gt;
+        &lt;value&gt;yarn&lt;/value&gt;
+    &lt;/property&gt;
+    &lt;property&gt;
+        &lt;name&gt;mapreduce.jobhistory.address&lt;/name&gt;
+        &lt;value&gt;hadoop001:10020&lt;/value&gt;
+    &lt;/property&gt;
+    &lt;property&gt;
+        &lt;name&gt;mapreduce.jobhistory.webapp.address&lt;/name&gt;
+        &lt;value&gt;hadoop001:19888&lt;/value&gt;
+    &lt;/property&gt;
+&lt;/configuration&gt;
+</code></pre>
+
+<p>修改$HADOOP_HOME/etc/hadoop/yarn-site.xml</p>
+
+<pre><code class="language-xml">&lt;configuration&gt;
+    &lt;property&gt;
+        &lt;name&gt;yarn.nodemanager.aux-services&lt;/name&gt;
+        &lt;value&gt;mapreduce_shuffle&lt;/value&gt;
+    &lt;/property&gt;
+    &lt;property&gt;
+        &lt;name&gt;yarn.nodemanager.aux-services.mapreduce.shuffle.class&lt;/name&gt;
+        &lt;value&gt;org.apache.hadoop.mapred.ShuffleHandler&lt;/value&gt;
+    &lt;/property&gt;
+    &lt;property&gt;
+        &lt;name&gt;yarn.resourcemanager.address&lt;/name&gt;
+        &lt;value&gt;hadoop001:8032&lt;/value&gt;
+    &lt;/property&gt;
+    &lt;property&gt;
+        &lt;name&gt;yarn.resourcemanager.scheduler.address&lt;/name&gt;
+        &lt;value&gt;hadoop001:8030&lt;/value&gt;
+    &lt;/property&gt;
+    &lt;property&gt;
+        &lt;name&gt;yarn.resourcemanager.resource-tracker.address&lt;/name&gt;
+        &lt;value&gt;hadoop001:8035&lt;/value&gt;
+    &lt;/property&gt;
+    &lt;property&gt;
+        &lt;name&gt;yarn.resourcemanager.admin.address&lt;/name&gt;
+        &lt;value&gt;hadoop001:8033&lt;/value&gt;
+    &lt;/property&gt;
+    &lt;property&gt;
+        &lt;name&gt;yarn.resourcemanager.webapp.address&lt;/name&gt;
+        &lt;value&gt;hadoop001:8088&lt;/value&gt;
+    &lt;/property&gt;
+&lt;/configuration&gt;
+</code></pre>
+
+<p>格式化namenode</p>
+
+<pre><code class="language-sh">Shell&gt; hdfs namenode –format
+</code></pre>
+
+<p>启动服务</p>
+
+<pre><code class="language-sh">#（在$HADOOP/sbin下）
+Shell&gt; ./start-dfs.sh
+Shell&gt; ./start-yarn.sh
+# 或者
+Shell&gt; ./start-all.sh
+</code></pre>
+
+<p>WebUI管理界面</p>
+
+<p><a href="http://192.168.131.21:50070">http://192.168.131.21:50070</a>     HDFS管理界面</p>
+
+<p><a href="http://192.168.131.21:8088">http://192.168.131.21:8088</a>       MR管理界面</p>
+
+<h3 id="安装hive">安装Hive</h3>
+
+<p>解压Hive到opt目录下</p>
+
+<p>添加环境变量HIVE_HOME和PATH</p>
+
+<p>添加Hive相关目录</p>
+
+<pre><code class="language-sh">Shell&gt; hadoop fs -mkdir       /tmp
+Shell&gt; hadoop fs -mkdir       /user/hive/warehouse
+Shell&gt; hadoop fs -chmod g+w   /tmp
+Shell&gt; hadoop fs -chmod g+w   /user/hive/warehouse
+</code></pre>
+
+<p>复制一个hive-site.xml（$HIVE_HOME/conf）</p>
+
+<pre><code class="language-sh">Shell&gt; cp hive-default.xml.template hive-site.xml
+</code></pre>
+
+<p>修改hive.site.xml文件</p>
+
+<ol>
+<li><p>使用MySQL存储元数据</p>
+
+<p>MySQL驱动：javax.jdo.option.ConnectionDriverName
+com.mysql.jdbc.Driver
+数据库连接字符串：javax.jdo.option.ConnectionURL
+jdbc:mysql://192.168.131.1:3306/metastore_db?createDatabaseIfNotExist=true
+数据库连接用户名：javax.jdo.option.ConnectionUserName
+数据库连接密码：javax.jdo.option.ConnectionPassword
+需要将MySQL的驱动添加到hive的lib下</p></li>
+
+<li><p>设置hive用户名密码</p>
+
+<p>用户名：hive.server2.keystore.path
+密码：hive.server2.keystore.password
+最好设置为hadoop，否则会有权限问题</p></li>
+
+<li><p>替换变量</p>
+
+<p>主要是${system:java.io.tmpdir}和${system:user.name}两个，需要修改为真实的绝对路径，例如：/opt/hive2/root/</p></li>
+</ol>
+
+<p>初始化数据库</p>
+
+<pre><code class="language-sh">Shell&gt; schematool -dbType mysql -initSchema
+</code></pre>
+
+<p>启动服务</p>
+
+<pre><code class="language-sh">Shell&gt; hiveserver2
+</code></pre>
+
+<p>连接hive数据库</p>
+
+<pre><code class="language-sh">Shell&gt; beeline -u jdbc:hive2://192.168.131.21:10000 -n hadoop -p hadoop
+</code></pre>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="https://macdfree.github.io/categories/bigdata/">BigData</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">TAGS</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="https://macdfree.github.io/tags/hadoop/">hadoop</a></li>
+          
+          <li><a href="https://macdfree.github.io/tags/hive/">hive</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+  </footer>
+
+</article>
+
+
+    
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://macdfree.github.io/wiki/sqlite/%E5%B8%B8%E7%94%A8%E8%AF%AD%E5%8F%A5/" class="list-group-item">常用语句</a>
+      
+      <a href="https://macdfree.github.io/wiki/redis/redis%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="list-group-item">Redis常用命令</a>
+      
+      <a href="https://macdfree.github.io/wiki/python/pip%E5%AE%89%E8%A3%85%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/" class="list-group-item">Pip安装常见问题</a>
+      
+      <a href="https://macdfree.github.io/wiki/python/virtualenv%E4%BD%BF%E7%94%A8/" class="list-group-item">Virtualenv使用</a>
+      
+      <a href="https://macdfree.github.io/wiki/oracle/oracle%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4/" class="list-group-item">Oracle相关命令</a>
+      
+      <a href="https://macdfree.github.io/wiki/oracle/%E6%96%B0%E5%BA%93%E5%AF%BC%E5%85%A5/" class="list-group-item">新库导入</a>
+      
+      <a href="https://macdfree.github.io/wiki/oracle/directory%E7%AE%A1%E7%90%86/" class="list-group-item">DIRECTORY管理</a>
+      
+      <a href="https://macdfree.github.io/wiki/oracle/sql%E8%AE%B0%E5%BD%95/" class="list-group-item">SQL记录</a>
+      
+      <a href="https://macdfree.github.io/wiki/mysql/mysql%E4%BF%AE%E6%94%B9%E8%BF%9E%E6%8E%A5%E6%97%B6%E9%97%B4/" class="list-group-item">MySQL修改连接时间</a>
+      
+      <a href="https://macdfree.github.io/wiki/mysql/mysql%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%8F%8A%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA/" class="list-group-item">MySQL安装配置及导入导出</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://macdfree.github.io/categories/note" class="list-group-item">note</a>
+      
+      <a href="https://macdfree.github.io/categories/linux" class="list-group-item">linux</a>
+      
+      <a href="https://macdfree.github.io/categories/java" class="list-group-item">java</a>
+      
+      <a href="https://macdfree.github.io/categories/macos" class="list-group-item">macos</a>
+      
+      <a href="https://macdfree.github.io/categories/mysql" class="list-group-item">mysql</a>
+      
+      <a href="https://macdfree.github.io/categories/oracle" class="list-group-item">oracle</a>
+      
+      <a href="https://macdfree.github.io/categories/bigdata" class="list-group-item">bigdata</a>
+      
+      <a href="https://macdfree.github.io/categories/go" class="list-group-item">go</a>
+      
+      <a href="https://macdfree.github.io/categories/html" class="list-group-item">html</a>
+      
+      <a href="https://macdfree.github.io/categories/python" class="list-group-item">python</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://macdfree.github.io/tags/bash" class="list-group-item">bash</a>
+      
+      <a href="https://macdfree.github.io/tags/cc1101" class="list-group-item">cc1101</a>
+      
+      <a href="https://macdfree.github.io/tags/hive" class="list-group-item">hive</a>
+      
+      <a href="https://macdfree.github.io/tags/msp430" class="list-group-item">msp430</a>
+      
+      <a href="https://macdfree.github.io/tags/apache" class="list-group-item">apache</a>
+      
+      <a href="https://macdfree.github.io/tags/brew" class="list-group-item">brew</a>
+      
+      <a href="https://macdfree.github.io/tags/c" class="list-group-item">c</a>
+      
+      <a href="https://macdfree.github.io/tags/cc2500" class="list-group-item">cc2500</a>
+      
+      <a href="https://macdfree.github.io/tags/curl" class="list-group-item">curl</a>
+      
+      <a href="https://macdfree.github.io/tags/figlet" class="list-group-item">figlet</a>
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; MACDeer&#39;s Blog</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

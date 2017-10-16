@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mysql on MACDeer&#39;s Blog</title>
+    <link>https://macdfree.github.io/categories/mysql/</link>
+    <description>Recent content in Mysql on MACDeer&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 15 Oct 2017 23:07:49 +0800</lastBuildDate>
+    
+	<atom:link href="https://macdfree.github.io/categories/mysql/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MySQL修改连接时间</title>
+      <link>https://macdfree.github.io/wiki/mysql/mysql%E4%BF%AE%E6%94%B9%E8%BF%9E%E6%8E%A5%E6%97%B6%E9%97%B4/</link>
+      <pubDate>Sun, 15 Oct 2017 23:07:49 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/mysql/mysql%E4%BF%AE%E6%94%B9%E8%BF%9E%E6%8E%A5%E6%97%B6%E9%97%B4/</guid>
+      <description>Windows下修改my.ini文件，在mysqld节点下增加如下配置并重启：
+wait_timeout=388000 interactive-timeout=388000  </description>
+    </item>
+    
+    <item>
+      <title>MySQL安装配置及导入导出</title>
+      <link>https://macdfree.github.io/wiki/mysql/mysql%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%8F%8A%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA/</link>
+      <pubDate>Sun, 15 Oct 2017 22:55:29 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/mysql/mysql%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%8F%8A%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA/</guid>
+      <description>Windows首次安装MySQL时初始化 mysqld --initialize [with random root password] mysqld --initialize-insecure [without random root password]  linux安装mysql后密码重置  修改/etc/my.cnf文件，添加skip-grant-tables=1配置，重启mysqld服务
+ mysql -uroot连接数据库
+ 修改密码
+use mysql; update user set authentication_string=password(&#39;root&#39;), password_expired=&#39;N&#39;, password_last_changed=now() where user=&#39;root&#39;;  修改/etc/my.cnf文件，删除skip-grant-tables=1配置，重启mysqld服务
+ mysql -uroot -p连接数据库
+ 允许远程访问
+use mysql; update user set host=&#39;%&#39; where user=&#39;root&#39;;   补充 mysql5.7为root用户随机生成了密码，一般存放在/var/log/mysqld.log中
+grep &amp;quot;password&amp;quot; /var/log/mysqld.log  可以使用此密码登录
+使用此密码登录后需要通过以下语句修改密码
+alter user &#39;root&#39;@&#39;localhost&#39; identified by &#39;11111&#39;;  查看mysql密码长度限制
+select @@validate_password_length;  设置mysql密码长度限制</description>
+    </item>
+    
+    <item>
+      <title>MySQL读取配置文件顺序</title>
+      <link>https://macdfree.github.io/wiki/mysql/mysql%E8%AF%BB%E5%8F%96%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E9%A1%BA%E5%BA%8F/</link>
+      <pubDate>Sun, 15 Oct 2017 22:54:01 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/mysql/mysql%E8%AF%BB%E5%8F%96%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E9%A1%BA%E5%BA%8F/</guid>
+      <description> /etc/my.cnf
+ /etc/mysql/my.cnf
+ /usr/local/etc/my.cnf
+ ~/.my.cnf
+  </description>
+    </item>
+    
+    <item>
+      <title>MySQL常用语句</title>
+      <link>https://macdfree.github.io/wiki/mysql/mysql%E5%B8%B8%E7%94%A8%E8%AF%AD%E5%8F%A5/</link>
+      <pubDate>Sun, 15 Oct 2017 22:51:08 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/mysql/mysql%E5%B8%B8%E7%94%A8%E8%AF%AD%E5%8F%A5/</guid>
+      <description>删除数据库
+drop database if exists epointbid_bigdata_pro;  删除视图
+drop view if exists view_frame_user_java;  查看慢查询语句
+show full processlist; kill 慢查询的id;  添加字段
+ALTER TABLE tablename ADD column type COMMENT &#39;message&#39;;  添加索引
+ALTER TABLE tablename ADD INDEX indexname(`column`);  查看MySQL全局变量
+show global variables like &#39;%timeout%&#39;;  设置自增列的值
+alter table users AUTO_INCREMENT=10000;  查看数据库
+show databases;  </description>
+    </item>
+    
+  </channel>
+</rss>

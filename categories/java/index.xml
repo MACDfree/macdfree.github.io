@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on MACDeer&#39;s Blog</title>
+    <link>https://macdfree.github.io/categories/java/</link>
+    <description>Recent content in Java on MACDeer&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 15 Oct 2017 22:03:36 +0800</lastBuildDate>
+    
+	<atom:link href="https://macdfree.github.io/categories/java/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Spring记录</title>
+      <link>https://macdfree.github.io/wiki/java/spring%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Sun, 15 Oct 2017 22:03:36 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/java/spring%E8%AE%B0%E5%BD%95/</guid>
+      <description>等价注解
+@Inject == @Autowired
+@Named == @Component</description>
+    </item>
+    
+    <item>
+      <title>Shiro学习记录</title>
+      <link>https://macdfree.github.io/wiki/java/shiro%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Sun, 15 Oct 2017 22:02:11 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/java/shiro%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</guid>
+      <description>Authentication：身份认证
+Authorization：授权
+身份认证流程：
+Subject -&amp;gt; Security Manager -&amp;gt; Authenticator -&amp;gt; AuthenticationStrategy -&amp;gt; Realm</description>
+    </item>
+    
+    <item>
+      <title>Quartz使用</title>
+      <link>https://macdfree.github.io/wiki/java/quartz%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Sun, 15 Oct 2017 21:57:39 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/java/quartz%E4%BD%BF%E7%94%A8/</guid>
+      <description>Quartz的主要概念是Scheduler、Job、JobDetail和Trigger，其中Scheduler（调度者）是主体；JobDetail和Trigger用于定义任务的相关信息，如：需要执行的任务类，任务执行的时间点等；Job为实际需要执行的任务。
+需要的Maven依赖：
+&amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.quartz-scheduler&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;quartz&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;2.2.1&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt;  如果只需要使用Quartz的基本功能，只需要添加以上依赖 测试代码为
+import org.quartz.JobDetail; import org.quartz.Scheduler; import org.quartz.SchedulerException; import org.quartz.Trigger; import org.quartz.impl.StdSchedulerFactory; import static org.quartz.JobBuilder.*; import static org.quartz.TriggerBuilder.*; import static org.quartz.SimpleScheduleBuilder.*; public class QuartzTest { public static void main(String[] args) throws InterruptedException { try { Scheduler scheduler = StdSchedulerFactory.getDefaultScheduler(); scheduler.start(); JobDetail job = newJob(HelloJob.class).withIdentity(&amp;quot;job1&amp;quot;, &amp;quot;group1&amp;quot;).build(); Trigger trigger = newTrigger().withIdentity(&amp;quot;trigger1&amp;quot;, &amp;quot;group1&amp;quot;).startNow().withSchedule(simpleSchedule() .withIntervalInSeconds(4).repeatForever()).build(); scheduler.scheduleJob(job, trigger); System.out.println(&amp;quot;start time:&amp;quot; + System.currentTimeMillis()); Thread.sleep(20000); scheduler.shutdown(); } catch (SchedulerException se) { se.</description>
+    </item>
+    
+    <item>
+      <title>Web.xml记录</title>
+      <link>https://macdfree.github.io/wiki/java/web.xml%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Sun, 15 Oct 2017 21:55:17 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/java/web.xml%E8%AE%B0%E5%BD%95/</guid>
+      <description>Filter 需要实现javax.servlet.Filter接口。 在Web应用启动时初始化（仅初始化一次），随Web应用停止而销毁。会拦截每次客户端的请求。
+Listener 需要实现javax.servlet.ServletContextListener接口。 在Web应用启动时初始化（仅初始一次），随Web应用停止而销毁。 Web应用启动时需要会读取web.xml中context-param节点的内容以key-value的形式放入ServletContext中，在Listener中可以通过ServletContextEvent参数的getServletContext方法获取ServletContext。
+由上可知，Filter如其名，对每次客户端请求做处理（过滤）；Listener则是作为一个初始化的功能。
+web.xml加载流程 context-param &amp;gt; listener &amp;gt; filter &amp;gt; sevlet &amp;gt; spring&amp;hellip;
+classpath和classpath*的区别 classpath：只在当前的classpath下查找
+classpath*：不仅在当前classpath下查找，而且会在jar包的classes中去查找</description>
+    </item>
+    
+    <item>
+      <title>Keytool使用</title>
+      <link>https://macdfree.github.io/wiki/java/keytool%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Sun, 15 Oct 2017 21:51:56 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/java/keytool%E4%BD%BF%E7%94%A8/</guid>
+      <description>keytool工具所在路径：jdkpath/bin/keytool[.exe]
+导入密钥库
+keytool -importcert -file demo.crt -keystore demo.jks -alias demo  删除指定密钥库中的证书
+keytool -delete -alias demo -keystore demo.jks  列出密钥库中的所有证书
+keytool -list -keystore demo.jks  </description>
+    </item>
+    
+    <item>
+      <title>Maven常用命令</title>
+      <link>https://macdfree.github.io/wiki/java/maven%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Sun, 15 Oct 2017 21:50:23 +0800</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/java/maven%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>使用指定参数打包
+mvn package -P dev  </description>
+    </item>
+    
+  </channel>
+</rss>
