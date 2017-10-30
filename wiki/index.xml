@@ -447,7 +447,7 @@ s := []int{0,1,2,3,4,5} // slice s := [...]int{0,1,2,3,4,5} // array values := [
       <pubDate>Thu, 12 Oct 2017 22:57:49 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/git/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
-      <description> 初始化Git仓库 git init  跟踪所有改动文件 git add . git add -i # 交换式添加跟踪文件  停止跟踪文件但不删除 git rm --cached &amp;lt;file&amp;gt;  提交所有更新过的文件 git commit -m &#39;commit message&#39;  删除未跟踪的所有文件 git clean -f # 删除未跟踪的文件 git clean -fd # 删除未跟踪的文件和文件夹 # 使用git clean前先使用-n参数预览需要删除的文件，防止误删，如 git clean -nf  撤销工作目录中所有未提交的修改 git reset --hard HEAD  全局设置 git config --global user.name &amp;quot;macdfree&amp;quot; git config --global user.email &amp;quot;macdfree@163.com&amp;quot;  切换Tag git checkout &amp;lt;tagname&amp;gt;  </description>
+      <description> 初始化Git仓库 git init  跟踪所有改动文件 git add . git add -i # 交互式添加跟踪文件  停止跟踪文件但不删除 git rm --cached &amp;lt;file&amp;gt;  提交所有更新过的文件 git commit -m &#39;commit message&#39;  删除未跟踪的所有文件 git clean -f # 删除未跟踪的文件 git clean -fd # 删除未跟踪的文件和文件夹 # 使用git clean前先使用-n参数预览需要删除的文件，防止误删，如 git clean -nf  撤销工作目录中所有未提交的修改 git reset --hard HEAD  全局设置 git config --global user.name &amp;quot;macdfree&amp;quot; git config --global user.email &amp;quot;macdfree@163.com&amp;quot;  切换Tag git checkout &amp;lt;tagname&amp;gt;  </description>
     </item>
     
     <item>
