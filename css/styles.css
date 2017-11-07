@@ -11,6 +11,7 @@ html {
 body {
   font-size: inherit;
   font-weight: 300;
+  font-family: "Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 p {
@@ -289,4 +290,6 @@ article.li.sm>header {
   color: #263238;
 }
 
-
+a.decoration-none:hover {
+  text-decoration: none;
+}

@@ -108,8 +108,8 @@ select t.table_name,t.num_rows from user_tables t ORDER BY NUM_ROWS DESC;  添�
       <pubDate>Sun, 15 Oct 2017 23:07:49 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/mysql/mysql%E4%BF%AE%E6%94%B9%E8%BF%9E%E6%8E%A5%E6%97%B6%E9%97%B4/</guid>
-      <description>Windows下修改my.ini文件，在mysqld节点下增加如下配置并重启：
-wait_timeout=388000 interactive-timeout=388000  </description>
+      <description>&lt;p&gt;Windows下修改&lt;code&gt;my.ini&lt;/code&gt;文件，在mysqld节点下增加如下配置并重启
+&lt;/p&gt;</description>
     </item>
     
     <item>
