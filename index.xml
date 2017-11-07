@@ -492,10 +492,10 @@ sql&amp;gt; create table r_user (id_user bigint,login string,password string,nam
     
     <item>
       <title>Oracle导库</title>
-      <link>https://macdfree.github.io/posts/oracle%E5%AF%BC%E5%BA%93/</link>
+      <link>https://macdfree.github.io/wiki/oracle/oracle%E5%AF%BC%E5%BA%93/</link>
       <pubDate>Thu, 29 Sep 2016 00:10:57 +0000</pubDate>
       
-      <guid>https://macdfree.github.io/posts/oracle%E5%AF%BC%E5%BA%93/</guid>
+      <guid>https://macdfree.github.io/wiki/oracle/oracle%E5%AF%BC%E5%BA%93/</guid>
       <description>&lt;p&gt;Oracle导库主要分成清库、清空回收站、导库三个步骤。&lt;/p&gt;</description>
     </item>
     
@@ -598,10 +598,10 @@ sql&amp;gt; create table r_user (id_user bigint,login string,password string,nam
     
     <item>
       <title>Python转码问题的解决方法</title>
-      <link>https://macdfree.github.io/posts/python%E8%BD%AC%E7%A0%81%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</link>
+      <link>https://macdfree.github.io/wiki/python/python%E8%BD%AC%E7%A0%81%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</link>
       <pubDate>Sat, 05 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://macdfree.github.io/posts/python%E8%BD%AC%E7%A0%81%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</guid>
+      <guid>https://macdfree.github.io/wiki/python/python%E8%BD%AC%E7%A0%81%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</guid>
       <description>参考
 有时，若要将某个String对象s从gbk内码转换为UTF-8，可以如下操作
 s.decode(&#39;gbk&#39;).encode(&#39;utf-8′)  可是，在实际应用中，我发现，这种办法经常会出现异常：

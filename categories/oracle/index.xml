@@ -59,5 +59,14 @@ select &#39;analyze table &#39;||S.TABLE_NAME||&#39; compute statistics;&#39; fr
 select t.table_name,t.num_rows from user_tables t ORDER BY NUM_ROWS DESC;  添加字段 alter table tablename add (column datatype [default value][null/not null],….);  修改字段 alter table tablename modify (column datatype [default value][null/not null],….);  删除字段 alter table tablename drop (column);  </description>
     </item>
     
+    <item>
+      <title>Oracle导库</title>
+      <link>https://macdfree.github.io/wiki/oracle/oracle%E5%AF%BC%E5%BA%93/</link>
+      <pubDate>Thu, 29 Sep 2016 00:10:57 +0000</pubDate>
+      
+      <guid>https://macdfree.github.io/wiki/oracle/oracle%E5%AF%BC%E5%BA%93/</guid>
+      <description>&lt;p&gt;Oracle导库主要分成清库、清空回收站、导库三个步骤。&lt;/p&gt;</description>
+    </item>
+    
   </channel>
 </rss>

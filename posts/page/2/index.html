@@ -62,54 +62,6 @@
       <li><article class="li">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2014-04-06T00:00:00JST">Apr 6, 2014</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://macdfree.github.io/posts/">posts</a></li>
-      
-    </ul>
-    <h2 class="title"><a href="https://macdfree.github.io/posts/%E6%B0%B4%E8%B4%A8%E7%9B%91%E6%B5%8B2/">水质监测(2)</a></h2>
-  </header>
-
-  
-  <div class="summary"><p>拖来拖去就拖到现在了，什么都没弄，趁现在临阵抱一下佛脚吧。</p>
-
-<p></p></div>
-
-  <footer>
-    <a href="https://macdfree.github.io/posts/%E6%B0%B4%E8%B4%A8%E7%9B%91%E6%B5%8B2/" title="水质监测(2)">Read More…</a>
-  </footer>
-</article>
-</li>
-      
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2014-04-05T00:00:00JST">Apr 5, 2014</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://macdfree.github.io/posts/">posts</a></li>
-      
-    </ul>
-    <h2 class="title"><a href="https://macdfree.github.io/posts/python%E8%BD%AC%E7%A0%81%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/">Python转码问题的解决方法</a></h2>
-  </header>
-
-  
-  <div class="summary">参考
-有时，若要将某个String对象s从gbk内码转换为UTF-8，可以如下操作
-s.decode('gbk').encode('utf-8′)  可是，在实际应用中，我发现，这种办法经常会出现异常：
- UnicodeDecodeError: &lsquo;gbk&rsquo; codec can&rsquo;t decode bytes in position 30664-30665: illegal multibyte sequence
- 这是因为遇到了非法字符——尤其是在某些用C/C++编写的程序中，全角空格往往有多种不同的实现方式，比如\xa3\xa0，或者\xa4\x57，这些字符，看起来都是全角空格，但它们并不是“合法”的全角空格（真正的全角空格是\xa1\xa1），因此在转码的过程中出现了异常。
-这样的问题很让人头疼，因为只要字符串中出现了一个非法字符，整个字符串——有时候，就是整篇文章——就都无法转码。
-解决办法： s.decode(&lsquo;gbk&rsquo;, ‘ignore&rsquo;).encode(&lsquo;utf-8′) 因为decode的函数原型是decode([encoding], [errors=&lsquo;strict&rsquo;])，可以用第二个参数控制错误处理的策略，默认的参数就是strict，代表遇到非法字符时抛出异常；
- 如果设置为ignore，则会忽略非法字符； 如果设置为replace，则会用?取代非法字符； 如果设置为xmlcharrefreplace，则使用XML的字符引用。  python文档
- decode( [encoding[, errors]]) Decodes the string using the codec registered for encoding. encoding defaults to the default string encoding. errors may be given to set a different error handling scheme. The default is &lsquo;strict&rsquo;, meaning that encoding errors raise UnicodeError.</div>
-
-  <footer>
-    <a href="https://macdfree.github.io/posts/python%E8%BD%AC%E7%A0%81%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" title="Python转码问题的解决方法">Read More…</a>
-  </footer>
-</article>
-</li>
-      
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
       <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2014-04-05T00:00:00JST">Apr 5, 2014</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://macdfree.github.io/posts/">posts</a></li>
       
@@ -248,25 +200,25 @@ s.decode('gbk').encode('utf-8′)  可是，在实际应用中，我发现，这
     </div>
     <div class="list-group">
       
-      <a href="https://macdfree.github.io/categories/note" class="list-group-item">note</a>
-      
       <a href="https://macdfree.github.io/categories/linux" class="list-group-item">linux</a>
       
+      <a href="https://macdfree.github.io/categories/note" class="list-group-item">note</a>
+      
       <a href="https://macdfree.github.io/categories/java" class="list-group-item">java</a>
+      
+      <a href="https://macdfree.github.io/categories/oracle" class="list-group-item">oracle</a>
       
       <a href="https://macdfree.github.io/categories/macos" class="list-group-item">macos</a>
       
       <a href="https://macdfree.github.io/categories/mysql" class="list-group-item">mysql</a>
       
-      <a href="https://macdfree.github.io/categories/oracle" class="list-group-item">oracle</a>
+      <a href="https://macdfree.github.io/categories/python" class="list-group-item">python</a>
       
       <a href="https://macdfree.github.io/categories/bigdata" class="list-group-item">bigdata</a>
       
       <a href="https://macdfree.github.io/categories/go" class="list-group-item">go</a>
       
       <a href="https://macdfree.github.io/categories/html" class="list-group-item">html</a>
-      
-      <a href="https://macdfree.github.io/categories/python" class="list-group-item">python</a>
       
     </div>
   </section>

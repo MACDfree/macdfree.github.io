@@ -188,7 +188,7 @@
   </url>
   
   <url>
-    <loc>https://macdfree.github.io/posts/oracle%E5%AF%BC%E5%BA%93/</loc>
+    <loc>https://macdfree.github.io/wiki/oracle/oracle%E5%AF%BC%E5%BA%93/</loc>
     <lastmod>2016-09-29T00:10:57+00:00</lastmod>
   </url>
   
@@ -238,7 +238,7 @@
   </url>
   
   <url>
-    <loc>https://macdfree.github.io/posts/python%E8%BD%AC%E7%A0%81%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</loc>
+    <loc>https://macdfree.github.io/wiki/python/python%E8%BD%AC%E7%A0%81%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</loc>
     <lastmod>2014-04-05T00:00:00+00:00</lastmod>
   </url>
   
@@ -287,13 +287,13 @@
   </url>
   
   <url>
-    <loc>https://macdfree.github.io/tags/c/</loc>
+    <loc>https://macdfree.github.io/categories/c/</loc>
     <lastmod>2014-04-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://macdfree.github.io/categories/c/</loc>
+    <loc>https://macdfree.github.io/tags/c/</loc>
     <lastmod>2014-04-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -443,14 +443,14 @@
   </url>
   
   <url>
-    <loc>https://macdfree.github.io/tags/mysql/</loc>
-    <lastmod>2014-04-05T00:00:00+00:00</lastmod>
+    <loc>https://macdfree.github.io/categories/mysql/</loc>
+    <lastmod>2017-10-15T23:07:49+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://macdfree.github.io/categories/mysql/</loc>
-    <lastmod>2017-10-15T23:07:49+08:00</lastmod>
+    <loc>https://macdfree.github.io/tags/mysql/</loc>
+    <lastmod>2014-04-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -463,12 +463,6 @@
   <url>
     <loc>https://macdfree.github.io/categories/note/</loc>
     <lastmod>2016-10-06T21:43:07+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://macdfree.github.io/tags/oracle/</loc>
-    <lastmod>2016-09-29T00:10:57+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -493,12 +487,6 @@
   <url>
     <loc>https://macdfree.github.io/posts/</loc>
     <lastmod>2016-10-06T21:43:07+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://macdfree.github.io/tags/python/</loc>
-    <lastmod>2014-04-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -655,6 +643,12 @@
   <url>
     <loc>https://macdfree.github.io/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/</loc>
     <lastmod>2014-04-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://macdfree.github.io/tags/%E7%BC%96%E7%A0%81/</loc>
+    <lastmod>2014-04-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
