@@ -16,21 +16,21 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
     <title>Hadoop&#43;Hive环境搭建 - MACDeer&#39;s Blog</title>
     
-<meta name="description" content="安装包版本说明    安装包 版本     Hadoop 2.8.1   Hive 2.3.0    安装Hadoop 创建用户hadoop # 创建hadoop用户 Shell&amp;gt; useradd -m hadoop -s /bin/bash # 设置密码 Shell&amp;gt; passwd hadoop  修改hostname # 修改hostname Shell&amp;gt; vim /etc/hosts  修改后重启，使用hadoop用户登录设置免登录 # 生成密钥对 Shell&amp;gt; ssh-keygen -t rsa # 追加到authorized_keys中 Shell&amp;gt; cat ./id_rsa.pub &amp;gt;&amp;gt; ./authorized_keys # 设置权限 Shell&amp;gt; chmod 644 authorized_keys # 将下载好的hadoop和hive安装包解压缩到opt目录下 Shell&amp;gt; tar -zxvf filename  添加环境变量 Shell&amp;gt; vim .">
+<meta name="description" content="&lt;p&gt;&lt;code&gt;Hadoop&lt;/code&gt;&#43;&lt;code&gt;Hive&lt;/code&gt;环境搭建过程说明及注意事项&lt;/p&gt;">
 
 <meta property="og:title" content="Hadoop&#43;Hive环境搭建 - MACDeer&#39;s Blog">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://macdfree.github.io/wiki/bigdata/hadoop&#43;hive%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
 <meta property="og:image" content="https://macdfree.github.io/images/default.png">
 <meta property="og:site_name" content="MACDeer&#39;s Blog">
-<meta property="og:description" content="安装包版本说明    安装包 版本     Hadoop 2.8.1   Hive 2.3.0    安装Hadoop 创建用户hadoop # 创建hadoop用户 Shell&amp;gt; useradd -m hadoop -s /bin/bash # 设置密码 Shell&amp;gt; passwd hadoop  修改hostname # 修改hostname Shell&amp;gt; vim /etc/hosts  修改后重启，使用hadoop用户登录设置免登录 # 生成密钥对 Shell&amp;gt; ssh-keygen -t rsa # 追加到authorized_keys中 Shell&amp;gt; cat ./id_rsa.pub &amp;gt;&amp;gt; ./authorized_keys # 设置权限 Shell&amp;gt; chmod 644 authorized_keys # 将下载好的hadoop和hive安装包解压缩到opt目录下 Shell&amp;gt; tar -zxvf filename  添加环境变量 Shell&amp;gt; vim .">
+<meta property="og:description" content="&lt;p&gt;&lt;code&gt;Hadoop&lt;/code&gt;&#43;&lt;code&gt;Hive&lt;/code&gt;环境搭建过程说明及注意事项&lt;/p&gt;">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="MACDeer&#39;s Blog">
 <meta name="twitter:url" content="https://macdfree.github.io/wiki/bigdata/hadoop&#43;hive%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
 <meta name="twitter:title" content="Hadoop&#43;Hive环境搭建 - MACDeer&#39;s Blog">
-<meta name="twitter:description" content="安装包版本说明    安装包 版本     Hadoop 2.8.1   Hive 2.3.0    安装Hadoop 创建用户hadoop # 创建hadoop用户 Shell&amp;gt; useradd -m hadoop -s /bin/bash # 设置密码 Shell&amp;gt; passwd hadoop  修改hostname # 修改hostname Shell&amp;gt; vim /etc/hosts  修改后重启，使用hadoop用户登录设置免登录 # 生成密钥对 Shell&amp;gt; ssh-keygen -t rsa # 追加到authorized_keys中 Shell&amp;gt; cat ./id_rsa.pub &amp;gt;&amp;gt; ./authorized_keys # 设置权限 Shell&amp;gt; chmod 644 authorized_keys # 将下载好的hadoop和hive安装包解压缩到opt目录下 Shell&amp;gt; tar -zxvf filename  添加环境变量 Shell&amp;gt; vim .">
+<meta name="twitter:description" content="&lt;p&gt;&lt;code&gt;Hadoop&lt;/code&gt;&#43;&lt;code&gt;Hive&lt;/code&gt;环境搭建过程说明及注意事项&lt;/p&gt;">
 <meta name="twitter:image" content="https://macdfree.github.io/images/default.png">
 
 
@@ -65,8 +65,8 @@
         "height": 60
       }
     },
-    "description": "安装包版本说明    安装包 版本     Hadoop 2.8.1   Hive 2.3.0    安装Hadoop 创建用户hadoop # 创建hadoop用户 Shell&gt; useradd -m hadoop -s /bin/bash # 设置密码 Shell&gt; passwd hadoop  修改hostname # 修改hostname Shell&gt; vim /etc/hosts  修改后重启，使用hadoop用户登录
-设置免登录 # 生成密钥对 Shell&gt; ssh-keygen -t rsa # 追加到authorized_keys中 Shell&gt; cat ./id_rsa.pub &gt;&gt; ./authorized_keys # 设置权限 Shell&gt; chmod 644 authorized_keys # 将下载好的hadoop和hive安装包解压缩到opt目录下 Shell&gt; tar -zxvf filename  添加环境变量 Shell&gt; vim ."
+    "description": "<p><code>Hadoop</code>+<code>Hive</code>环境搭建过程说明及注意事项
+</p>"
   }
 </script>
 
@@ -129,7 +129,8 @@
 
   
 
-  <div class="article-body">
+  <div class="article-body"><p><code>Hadoop</code>+<code>Hive</code>环境搭建过程说明及注意事项
+</p>
 
 <h3 id="安装包版本说明">安装包版本说明</h3>
 
@@ -378,8 +379,7 @@ jdbc:mysql://192.168.131.1:3306/metastore_db?createDatabaseIfNotExist=true
 <p>连接hive数据库</p>
 
 <pre><code class="language-sh">Shell&gt; beeline -u jdbc:hive2://192.168.131.21:10000 -n hadoop -p hadoop
-</code></pre>
-</div>
+</code></pre></div>
 
   <footer class="article-footer">
     

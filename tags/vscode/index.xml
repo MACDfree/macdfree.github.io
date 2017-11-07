@@ -17,12 +17,8 @@
       <pubDate>Sun, 15 Oct 2017 21:42:59 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/go/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87-vscode/</guid>
-      <description> 下载Go语言zip包，解压缩到任意目录
- 配置环境变量，PATH中添加go/bin路径，新增GOROOT环境变量，值为go目录
- 安装VSCode，安装Go插件（推荐安装Settings Sync插件，可以实现多平台插件和配置文件的同步）
- 新建gotool文件夹存放Go插件依赖的工具，使用VSCode打开此文件夹，新增工作区配置：go.toolsGopath和go.gopath
- 执行安装Go工具命令
-  </description>
+      <description>&lt;p&gt;使用&lt;code&gt;VSCode&lt;/code&gt;搭建&lt;code&gt;Go&lt;/code&gt;开发环境
+&lt;/p&gt;</description>
     </item>
     
   </channel>

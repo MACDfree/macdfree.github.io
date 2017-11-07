@@ -17,11 +17,8 @@
       <pubDate>Sun, 15 Oct 2017 21:51:56 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/java/keytool%E4%BD%BF%E7%94%A8/</guid>
-      <description>keytool工具所在路径：jdkpath/bin/keytool[.exe]
-导入密钥库
-keytool -importcert -file demo.crt -keystore demo.jks -alias demo  删除指定密钥库中的证书
-keytool -delete -alias demo -keystore demo.jks  列出密钥库中的所有证书
-keytool -list -keystore demo.jks  </description>
+      <description>&lt;p&gt;JDK中证书管理工具keytool的使用
+&lt;/p&gt;</description>
     </item>
     
   </channel>

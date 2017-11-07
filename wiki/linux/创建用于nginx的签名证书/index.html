@@ -16,21 +16,21 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
     <title>创建用于Nginx的签名证书 - MACDeer&#39;s Blog</title>
     
-<meta name="description" content="使用OpenSSL创建证书 生成RSA密钥# 生成RSA密钥 openssl genrsa -des3 -out server.key 1024  需要设置密码，请记住# 生成已经证书请求 openssl req -new -key server.key -out server.csr  此步骤需要输入证书信息，需要注意的是Common Name最好设置为需要使用此证书的主机名cp server.key server.key.org openssl rsa -in server.key.org -out server.key # 使用密钥和CSR对证书进行签名 # 生成v1版证书 openssl x509 -req -days 3650 -sha256 -in server.csr -signkey server.key -out server.crt # 还会有v3版证书，待写  Nginx配置 server中listen 8090 ssl; ssl on; ssl_certificate nginxcert/nginx.crt; ssl_certificate_key nginxcert/nginx.key; # 此配置会设置X-Forwarded-Proto值为https，供后台应用调用 proxy_set_header X-Forwarded-Proto https; proxy_set_header Host $host:$server_port; proxy_set_header X-Real-IP $remote_addr; proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for; # 此配置将后台应用返回的http转成https proxy_redirect ~^http://([^:]&#43;):8091(/.">
+<meta name="description" content="&lt;p&gt;Nginx配置SSL时创建签名证书的方法&lt;/p&gt;">
 
 <meta property="og:title" content="创建用于Nginx的签名证书 - MACDeer&#39;s Blog">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://macdfree.github.io/wiki/linux/%E5%88%9B%E5%BB%BA%E7%94%A8%E4%BA%8Enginx%E7%9A%84%E7%AD%BE%E5%90%8D%E8%AF%81%E4%B9%A6/">
 <meta property="og:image" content="https://macdfree.github.io/images/default.png">
 <meta property="og:site_name" content="MACDeer&#39;s Blog">
-<meta property="og:description" content="使用OpenSSL创建证书 生成RSA密钥# 生成RSA密钥 openssl genrsa -des3 -out server.key 1024  需要设置密码，请记住# 生成已经证书请求 openssl req -new -key server.key -out server.csr  此步骤需要输入证书信息，需要注意的是Common Name最好设置为需要使用此证书的主机名cp server.key server.key.org openssl rsa -in server.key.org -out server.key # 使用密钥和CSR对证书进行签名 # 生成v1版证书 openssl x509 -req -days 3650 -sha256 -in server.csr -signkey server.key -out server.crt # 还会有v3版证书，待写  Nginx配置 server中listen 8090 ssl; ssl on; ssl_certificate nginxcert/nginx.crt; ssl_certificate_key nginxcert/nginx.key; # 此配置会设置X-Forwarded-Proto值为https，供后台应用调用 proxy_set_header X-Forwarded-Proto https; proxy_set_header Host $host:$server_port; proxy_set_header X-Real-IP $remote_addr; proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for; # 此配置将后台应用返回的http转成https proxy_redirect ~^http://([^:]&#43;):8091(/.">
+<meta property="og:description" content="&lt;p&gt;Nginx配置SSL时创建签名证书的方法&lt;/p&gt;">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="MACDeer&#39;s Blog">
 <meta name="twitter:url" content="https://macdfree.github.io/wiki/linux/%E5%88%9B%E5%BB%BA%E7%94%A8%E4%BA%8Enginx%E7%9A%84%E7%AD%BE%E5%90%8D%E8%AF%81%E4%B9%A6/">
 <meta name="twitter:title" content="创建用于Nginx的签名证书 - MACDeer&#39;s Blog">
-<meta name="twitter:description" content="使用OpenSSL创建证书 生成RSA密钥# 生成RSA密钥 openssl genrsa -des3 -out server.key 1024  需要设置密码，请记住# 生成已经证书请求 openssl req -new -key server.key -out server.csr  此步骤需要输入证书信息，需要注意的是Common Name最好设置为需要使用此证书的主机名cp server.key server.key.org openssl rsa -in server.key.org -out server.key # 使用密钥和CSR对证书进行签名 # 生成v1版证书 openssl x509 -req -days 3650 -sha256 -in server.csr -signkey server.key -out server.crt # 还会有v3版证书，待写  Nginx配置 server中listen 8090 ssl; ssl on; ssl_certificate nginxcert/nginx.crt; ssl_certificate_key nginxcert/nginx.key; # 此配置会设置X-Forwarded-Proto值为https，供后台应用调用 proxy_set_header X-Forwarded-Proto https; proxy_set_header Host $host:$server_port; proxy_set_header X-Real-IP $remote_addr; proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for; # 此配置将后台应用返回的http转成https proxy_redirect ~^http://([^:]&#43;):8091(/.">
+<meta name="twitter:description" content="&lt;p&gt;Nginx配置SSL时创建签名证书的方法&lt;/p&gt;">
 <meta name="twitter:image" content="https://macdfree.github.io/images/default.png">
 
 
@@ -65,11 +65,8 @@
         "height": 60
       }
     },
-    "description": "使用OpenSSL创建证书 生成RSA密钥
-# 生成RSA密钥 openssl genrsa -des3 -out server.key 1024  需要设置密码，请记住
-# 生成已经证书请求 openssl req -new -key server.key -out server.csr  此步骤需要输入证书信息，需要注意的是Common Name最好设置为需要使用此证书的主机名
-cp server.key server.key.org openssl rsa -in server.key.org -out server.key # 使用密钥和CSR对证书进行签名 # 生成v1版证书 openssl x509 -req -days 3650 -sha256 -in server.csr -signkey server.key -out server.crt # 还会有v3版证书，待写  Nginx配置 server中
-listen 8090 ssl; ssl on; ssl_certificate nginxcert/nginx.crt; ssl_certificate_key nginxcert/nginx.key; # 此配置会设置X-Forwarded-Proto值为https，供后台应用调用 proxy_set_header X-Forwarded-Proto https; proxy_set_header Host $host:$server_port; proxy_set_header X-Real-IP $remote_addr; proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for; # 此配置将后台应用返回的http转成https proxy_redirect ~^http://([^:]+):8091(/."
+    "description": "<p>Nginx配置SSL时创建签名证书的方法
+</p>"
   }
 </script>
 
@@ -132,7 +129,8 @@ listen 8090 ssl; ssl on; ssl_certificate nginxcert/nginx.crt; ssl_certificate_ke
 
   
 
-  <div class="article-body">
+  <div class="article-body"><p>Nginx配置SSL时创建签名证书的方法
+</p>
 
 <h3 id="使用openssl创建证书">使用OpenSSL创建证书</h3>
 
@@ -174,8 +172,7 @@ proxy_set_header X-Real-IP $remote_addr;
 proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 # 此配置将后台应用返回的http转成https
 proxy_redirect ~^http://([^:]+):8091(/.+)$ https://$1:8091$2;
-</code></pre>
-</div>
+</code></pre></div>
 
   <footer class="article-footer">
     

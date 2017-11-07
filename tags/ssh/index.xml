@@ -17,13 +17,8 @@
       <pubDate>Sun, 15 Oct 2017 22:19:59 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/linux/ssh%E5%85%8D%E5%AF%86%E7%A0%81%E8%AE%BE%E7%BD%AE/</guid>
-      <description>在客户端生成公钥和 私钥
-ssh-keygen -t rsa  生成位置为~/.ssh下，默认为id_rsa和id_rsa.pub文件
- 将公钥上传至服务器（如果服务器端没有.ssh文件夹，则需要手动新建）
-scp .ssh/id_rsa.pub username@hostip:.ssh/id_rsa.pub  在服务器端新建authorized_keys文件（如果已存在则不需要新建）（此文件在.ssh文件夹中）
-touch authorized_keys chmod 600 authorized_keys  将公钥内容追加到authorized_keys文件中
-cat id_rsa.pub &amp;gt;&amp;gt; authorized_keys   补充：
-确保.ssh目录权限为700，authorized_keys文件权限为600</description>
+      <description>&lt;p&gt;实现SSH证书登录
+&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -70,12 +70,8 @@
   </header>
 
   
-  <div class="summary"> 下载Go语言zip包，解压缩到任意目录
- 配置环境变量，PATH中添加go/bin路径，新增GOROOT环境变量，值为go目录
- 安装VSCode，安装Go插件（推荐安装Settings Sync插件，可以实现多平台插件和配置文件的同步）
- 新建gotool文件夹存放Go插件依赖的工具，使用VSCode打开此文件夹，新增工作区配置：go.toolsGopath和go.gopath
- 执行安装Go工具命令
-  </div>
+  <div class="summary"><p>使用<code>VSCode</code>搭建<code>Go</code>开发环境
+</p></div>
 
   <footer>
     <a href="https://macdfree.github.io/wiki/go/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87-vscode/" title="开发环境准备 VSCode">Read More…</a>
@@ -94,11 +90,8 @@
   </header>
 
   
-  <div class="summary"> =和:=的区别 =用于赋值，:=声明变量并赋值且进行自动类型推断 =必须先使用var进行声明
-var a a=100 // 或 var b=100 // 或 var c int=100 // :=声明并赋值，不能加var，也不能加类型 d:=100  slice类型和array类型变量初始化差异 数组：[n]T
-切片：[]T
-s := []int{0,1,2,3,4,5} // slice s := [...]int{0,1,2,3,4,5} // array values := [9]int{} // array  切片初始化时不需要指定长度，数组初始化时需要指定长度
-类型转换 T(v)  </div>
+  <div class="summary"><p><code>Go</code>相关知识点记录
+</p></div>
 
   <footer>
     <a href="https://macdfree.github.io/wiki/go/go%E7%9F%A5%E8%AF%86%E7%82%B9%E5%A4%87%E5%BF%98/" title="Go知识点备忘">Read More…</a>
@@ -117,7 +110,8 @@ s := []int{0,1,2,3,4,5} // slice s := [...]int{0,1,2,3,4,5} // array values := [
   </header>
 
   
-  <div class="summary"> 初始化Git仓库 git init  跟踪所有改动文件 git add . git add -i # 交互式添加跟踪文件  停止跟踪文件但不删除 git rm --cached &lt;file&gt;  提交所有更新过的文件 git commit -m 'commit message'  删除未跟踪的所有文件 git clean -f # 删除未跟踪的文件 git clean -fd # 删除未跟踪的文件和文件夹 # 使用git clean前先使用-n参数预览需要删除的文件，防止误删，如 git clean -nf  撤销工作目录中所有未提交的修改 git reset --hard HEAD  全局设置 git config --global user.name &quot;macdfree&quot; git config --global user.email &quot;macdfree@163.com&quot;  切换Tag git checkout &lt;tagname&gt;  </div>
+  <div class="summary"><p><code>Git</code>常用命令记录
+</p></div>
 
   <footer>
     <a href="https://macdfree.github.io/wiki/git/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" title="Git常用命令">Read More…</a>
@@ -136,8 +130,8 @@ s := []int{0,1,2,3,4,5} // slice s := [...]int{0,1,2,3,4,5} // array values := [
   </header>
 
   
-  <div class="summary">建表示例
-sql&gt; create table r_user (id_user bigint,login string,password string,name string,description string,enabled string) row format delimited fields terminated by ';' stored as textfile location '/user/hadoop/db/bigdata/r_user';  注意location指定的文件夹，默认文件夹名称和表名称一致</div>
+  <div class="summary"><p><code>Hive SQL</code>相关记录
+</p></div>
 
   <footer>
     <a href="https://macdfree.github.io/wiki/bigdata/hive-sql/" title="Hive SQL">Read More…</a>
@@ -156,8 +150,8 @@ sql&gt; create table r_user (id_user bigint,login string,password string,name st
   </header>
 
   
-  <div class="summary">安装包版本说明    安装包 版本     Hadoop 2.8.1   Hive 2.3.0    安装Hadoop 创建用户hadoop # 创建hadoop用户 Shell&gt; useradd -m hadoop -s /bin/bash # 设置密码 Shell&gt; passwd hadoop  修改hostname # 修改hostname Shell&gt; vim /etc/hosts  修改后重启，使用hadoop用户登录
-设置免登录 # 生成密钥对 Shell&gt; ssh-keygen -t rsa # 追加到authorized_keys中 Shell&gt; cat ./id_rsa.pub &gt;&gt; ./authorized_keys # 设置权限 Shell&gt; chmod 644 authorized_keys # 将下载好的hadoop和hive安装包解压缩到opt目录下 Shell&gt; tar -zxvf filename  添加环境变量 Shell&gt; vim .</div>
+  <div class="summary"><p><code>Hadoop</code>+<code>Hive</code>环境搭建过程说明及注意事项
+</p></div>
 
   <footer>
     <a href="https://macdfree.github.io/wiki/bigdata/hadoop&#43;hive%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" title="Hadoop&#43;Hive环境搭建">Read More…</a>
@@ -195,9 +189,8 @@ sql&gt; create table r_user (id_user bigint,login string,password string,name st
   </header>
 
   
-  <div class="summary"><p>公司测试系统使用wrapper+tomcat部署，在CentOS环境上通过执行wrapper启动系统，但由于是在终端中执行，当退出终端后wrapper也会退出，所以想到将wrapper注册成系统服务。</p>
-
-<p></p></div>
+  <div class="summary"><p>CentOS中服务脚本示例模板及注册方法
+</p></div>
 
   <footer>
     <a href="https://macdfree.github.io/wiki/linux/centos%E6%B3%A8%E5%86%8C%E6%9C%8D%E5%8A%A1%E8%84%9A%E6%9C%AC/" title="CentOS注册服务脚本">Read More…</a>

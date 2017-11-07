@@ -17,9 +17,8 @@
       <pubDate>Sun, 15 Oct 2017 22:03:36 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/java/spring%E8%AE%B0%E5%BD%95/</guid>
-      <description>等价注解
-@Inject == @Autowired
-@Named == @Component</description>
+      <description>&lt;p&gt;Spring相关知识点记录
+&lt;/p&gt;</description>
     </item>
     
   </channel>

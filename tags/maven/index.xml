@@ -17,8 +17,8 @@
       <pubDate>Sun, 15 Oct 2017 21:50:23 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/java/maven%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
-      <description>使用指定参数打包
-mvn package -P dev  </description>
+      <description>&lt;p&gt;Maven常用命令记录
+&lt;/p&gt;</description>
     </item>
     
   </channel>

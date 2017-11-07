@@ -16,21 +16,21 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
     <title>Vagrant使用 - MACDeer&#39;s Blog</title>
     
-<meta name="description" content="添加镜像vagrant box add  删除镜像vagrant box remove  列出镜像vagrant box list  初始化虚拟机（需要新建文件夹）vagrant init  启动虚拟机vagrant up  关闭虚拟机vagrant halt  重启虚拟机vagrant reload vagrant reload --provision #可以执行Vagrantfile中的脚本  导出镜像vagrant package --output xxx.box  Vagrantfile文件配置端口转发config.vm.network &amp;quot;forwarded_port&amp;quot;, guest: 80, host: 8080  私有地址config.vm.network &amp;quot;private_network&amp;quot;, ip: &amp;quot;192.168.33.10&amp;quot;  公有地址config.vm.network &amp;quot;public_network&amp;quot;, ip: &amp;quot;192.168.1.222&amp;quot;  虚拟机运行参数config.vm.provider &amp;quot;virtualbox&amp;quot; do |vb| vb.name = &amp;quot;centos_test&amp;quot; vb.">
+<meta name="description" content="&lt;p&gt;虚拟机管理软件Vagrant使用记录&lt;/p&gt;">
 
 <meta property="og:title" content="Vagrant使用 - MACDeer&#39;s Blog">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://macdfree.github.io/wiki/macos/vagrant%E4%BD%BF%E7%94%A8/">
 <meta property="og:image" content="https://macdfree.github.io/images/default.png">
 <meta property="og:site_name" content="MACDeer&#39;s Blog">
-<meta property="og:description" content="添加镜像vagrant box add  删除镜像vagrant box remove  列出镜像vagrant box list  初始化虚拟机（需要新建文件夹）vagrant init  启动虚拟机vagrant up  关闭虚拟机vagrant halt  重启虚拟机vagrant reload vagrant reload --provision #可以执行Vagrantfile中的脚本  导出镜像vagrant package --output xxx.box  Vagrantfile文件配置端口转发config.vm.network &amp;quot;forwarded_port&amp;quot;, guest: 80, host: 8080  私有地址config.vm.network &amp;quot;private_network&amp;quot;, ip: &amp;quot;192.168.33.10&amp;quot;  公有地址config.vm.network &amp;quot;public_network&amp;quot;, ip: &amp;quot;192.168.1.222&amp;quot;  虚拟机运行参数config.vm.provider &amp;quot;virtualbox&amp;quot; do |vb| vb.name = &amp;quot;centos_test&amp;quot; vb.">
+<meta property="og:description" content="&lt;p&gt;虚拟机管理软件Vagrant使用记录&lt;/p&gt;">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="MACDeer&#39;s Blog">
 <meta name="twitter:url" content="https://macdfree.github.io/wiki/macos/vagrant%E4%BD%BF%E7%94%A8/">
 <meta name="twitter:title" content="Vagrant使用 - MACDeer&#39;s Blog">
-<meta name="twitter:description" content="添加镜像vagrant box add  删除镜像vagrant box remove  列出镜像vagrant box list  初始化虚拟机（需要新建文件夹）vagrant init  启动虚拟机vagrant up  关闭虚拟机vagrant halt  重启虚拟机vagrant reload vagrant reload --provision #可以执行Vagrantfile中的脚本  导出镜像vagrant package --output xxx.box  Vagrantfile文件配置端口转发config.vm.network &amp;quot;forwarded_port&amp;quot;, guest: 80, host: 8080  私有地址config.vm.network &amp;quot;private_network&amp;quot;, ip: &amp;quot;192.168.33.10&amp;quot;  公有地址config.vm.network &amp;quot;public_network&amp;quot;, ip: &amp;quot;192.168.1.222&amp;quot;  虚拟机运行参数config.vm.provider &amp;quot;virtualbox&amp;quot; do |vb| vb.name = &amp;quot;centos_test&amp;quot; vb.">
+<meta name="twitter:description" content="&lt;p&gt;虚拟机管理软件Vagrant使用记录&lt;/p&gt;">
 <meta name="twitter:image" content="https://macdfree.github.io/images/default.png">
 
 
@@ -65,20 +65,8 @@
         "height": 60
       }
     },
-    "description": "添加镜像
-vagrant box add  删除镜像
-vagrant box remove  列出镜像
-vagrant box list  初始化虚拟机（需要新建文件夹）
-vagrant init  启动虚拟机
-vagrant up  关闭虚拟机
-vagrant halt  重启虚拟机
-vagrant reload vagrant reload --provision #可以执行Vagrantfile中的脚本  导出镜像
-vagrant package --output xxx.box  Vagrantfile文件配置
-端口转发
-config.vm.network &quot;forwarded_port&quot;, guest: 80, host: 8080  私有地址
-config.vm.network &quot;private_network&quot;, ip: &quot;192.168.33.10&quot;  公有地址
-config.vm.network &quot;public_network&quot;, ip: &quot;192.168.1.222&quot;  虚拟机运行参数
-config.vm.provider &quot;virtualbox&quot; do |vb| vb.name = &quot;centos_test&quot; vb."
+    "description": "<p>虚拟机管理软件Vagrant使用记录
+</p>"
   }
 </script>
 
@@ -141,7 +129,10 @@ config.vm.provider &quot;virtualbox&quot; do |vb| vb.name = &quot;centos_test&qu
 
   
 
-  <div class="article-body"><p>添加镜像</p>
+  <div class="article-body"><p>虚拟机管理软件Vagrant使用记录
+</p>
+
+<p>添加镜像</p>
 
 <pre><code class="language-sh">vagrant box add
 </code></pre>
@@ -211,8 +202,7 @@ end
 <p>设置主机名</p>
 
 <pre><code>config.vm.hostname = &quot;macdpc&quot;
-</code></pre>
-</div>
+</code></pre></div>
 
   <footer class="article-footer">
     

@@ -17,15 +17,8 @@
       <pubDate>Sun, 15 Oct 2017 22:33:25 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/macos/brew%E7%9B%B8%E5%85%B3/</guid>
-      <description>包管理工具
-Homebrew
-命令：brew
-brew安装目录
-/usr/local/Cellar
-brew安装mysql
-brew install mysql  启动MySQL
-To have launchd start mysql now and restart at login: brew services start mysql Or, if you don&#39;t want/need a background service you can just run: mysql.server start  brew安装autojump
-brew install autojump  </description>
+      <description>&lt;p&gt;MacOS下包管理工具brew相关用法记录
+&lt;/p&gt;</description>
     </item>
     
   </channel>

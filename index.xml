@@ -167,16 +167,8 @@ show databases;  </description>
       <pubDate>Sun, 15 Oct 2017 22:47:36 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/macos/mac%E4%B8%AD%E7%9A%84%E7%9B%B8%E5%85%B3%E5%A4%87%E5%BF%98/</guid>
-      <description>键盘图标映射
-⌘：command、win
-⌃：control、ctrl
-⌥：option、alt
-⇧：shift
-⇪：caps lock
-常用快捷键
-SpotLight: cmd+空格
-iTerm快捷键
-查找历史：ctrl+r</description>
+      <description>&lt;p&gt;键盘图标映射
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -185,20 +177,8 @@ iTerm快捷键
       <pubDate>Sun, 15 Oct 2017 22:35:41 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/macos/iterm%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</guid>
-      <description> 安装iTerm
- 安装oh-my-zsh
-curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh  安装powerline
-git clone https://github.com/powerline/fonts.git cd fonts ./install.sh  修改iTerm配置字体
- 安装配置配色方案
-git clone git://github.com/altercation/solarized.git  导入配置文件
-import配置文件
- 使用agnoster主题
-先检查一下~/.oh-my-zsh/themes目录下应该有此主题文件 编辑~/.zshrc文件，将ZSH_THEME修改为agnoster
- 设置指令高亮效果
-git clone git://github.com/zsh-users/zsh-syntax-highlighting.git  编辑~/.zshrc文件，在最后添加以下内容
-source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh  安装历史操作记录自动补全插件
-git clone git://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions  在.zshrc中添加如下语句
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh   </description>
+      <description>&lt;p&gt;iTerm相关配置记录备忘
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -207,15 +187,8 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh   </description>
       <pubDate>Sun, 15 Oct 2017 22:33:25 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/macos/brew%E7%9B%B8%E5%85%B3/</guid>
-      <description>包管理工具
-Homebrew
-命令：brew
-brew安装目录
-/usr/local/Cellar
-brew安装mysql
-brew install mysql  启动MySQL
-To have launchd start mysql now and restart at login: brew services start mysql Or, if you don&#39;t want/need a background service you can just run: mysql.server start  brew安装autojump
-brew install autojump  </description>
+      <description>&lt;p&gt;MacOS下包管理工具brew相关用法记录
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -224,20 +197,8 @@ brew install autojump  </description>
       <pubDate>Sun, 15 Oct 2017 22:29:41 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/macos/vagrant%E4%BD%BF%E7%94%A8/</guid>
-      <description>添加镜像
-vagrant box add  删除镜像
-vagrant box remove  列出镜像
-vagrant box list  初始化虚拟机（需要新建文件夹）
-vagrant init  启动虚拟机
-vagrant up  关闭虚拟机
-vagrant halt  重启虚拟机
-vagrant reload vagrant reload --provision #可以执行Vagrantfile中的脚本  导出镜像
-vagrant package --output xxx.box  Vagrantfile文件配置
-端口转发
-config.vm.network &amp;quot;forwarded_port&amp;quot;, guest: 80, host: 8080  私有地址
-config.vm.network &amp;quot;private_network&amp;quot;, ip: &amp;quot;192.168.33.10&amp;quot;  公有地址
-config.vm.network &amp;quot;public_network&amp;quot;, ip: &amp;quot;192.168.1.222&amp;quot;  虚拟机运行参数
-config.vm.provider &amp;quot;virtualbox&amp;quot; do |vb| vb.name = &amp;quot;centos_test&amp;quot; vb.</description>
+      <description>&lt;p&gt;虚拟机管理软件Vagrant使用记录
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -246,11 +207,8 @@ config.vm.provider &amp;quot;virtualbox&amp;quot; do |vb| vb.name = &amp;quot;ce
       <pubDate>Sun, 15 Oct 2017 22:27:35 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/linux/curl%E4%BD%BF%E7%94%A8/</guid>
-      <description>查看请求网址返回信息
-curl -i url  下载文件
-curl -O url  断点续传
-curl -O url  下载过程中中断下载
-curl -C -O url  只用-C参数继续对该文件下载</description>
+      <description>&lt;p&gt;curl用法记录
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -259,11 +217,8 @@ curl -C -O url  只用-C参数继续对该文件下载</description>
       <pubDate>Sun, 15 Oct 2017 22:24:48 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/linux/%E7%94%A8%E6%88%B7%E6%96%B0%E5%A2%9E%E5%B9%B6%E6%8E%88%E6%9D%83/</guid>
-      <description>新增用户
-adduser macd  修改密码
-passwd macd  配置sudo
-在/etc/sudoers中添加如下
-macd	ALL=(ALL) ALL  </description>
+      <description>&lt;p&gt;Linux新增用户并授权命令
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -272,11 +227,8 @@ macd	ALL=(ALL) ALL  </description>
       <pubDate>Sun, 15 Oct 2017 22:23:08 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/linux/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
-      <description>查看端口占用
-netstat -apn | grep 80  解压缩文件tar.gz
-tar -zxvf filename  通过ssh上传下载文件
-scp username@servername:/path/filename /var/www/local_dir （从服务器下载文件） scp /path/filename username@servername:/path （上传文件至服务器） scp -r username@servername:/var/www/remote_dir/ /var/www/local_dir（从服务器下载文件夹） scp -r local_dir username@servername:remote_dir （上传文件夹至服务器）  修改服务器时间
-date -s &amp;quot;2017-07-12 12:22:00&amp;quot;  </description>
+      <description>&lt;p&gt;Linux常用命令记录
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -285,13 +237,8 @@ date -s &amp;quot;2017-07-12 12:22:00&amp;quot;  </description>
       <pubDate>Sun, 15 Oct 2017 22:19:59 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/linux/ssh%E5%85%8D%E5%AF%86%E7%A0%81%E8%AE%BE%E7%BD%AE/</guid>
-      <description>在客户端生成公钥和 私钥
-ssh-keygen -t rsa  生成位置为~/.ssh下，默认为id_rsa和id_rsa.pub文件
- 将公钥上传至服务器（如果服务器端没有.ssh文件夹，则需要手动新建）
-scp .ssh/id_rsa.pub username@hostip:.ssh/id_rsa.pub  在服务器端新建authorized_keys文件（如果已存在则不需要新建）（此文件在.ssh文件夹中）
-touch authorized_keys chmod 600 authorized_keys  将公钥内容追加到authorized_keys文件中
-cat id_rsa.pub &amp;gt;&amp;gt; authorized_keys   补充：
-确保.ssh目录权限为700，authorized_keys文件权限为600</description>
+      <description>&lt;p&gt;实现SSH证书登录
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -300,12 +247,8 @@ cat id_rsa.pub &amp;gt;&amp;gt; authorized_keys   补充：
       <pubDate>Sun, 15 Oct 2017 22:17:44 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/linux/figlet%E4%BD%BF%E7%94%A8%E5%AD%97%E7%AC%A6%E7%94%BB/</guid>
-      <description>下载figlet源码包
-解压缩
-tar -zxvf  安装GCC
-yum install gcc  编译
-make figlet  执行
-./figlet HELLO -f fonts/slant.flf  </description>
+      <description>&lt;p&gt;字符画工具Figlet的安装和使用
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -314,11 +257,8 @@ make figlet  执行
       <pubDate>Sun, 15 Oct 2017 22:10:09 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/linux/%E5%88%9B%E5%BB%BA%E7%94%A8%E4%BA%8Enginx%E7%9A%84%E7%AD%BE%E5%90%8D%E8%AF%81%E4%B9%A6/</guid>
-      <description>使用OpenSSL创建证书 生成RSA密钥
-# 生成RSA密钥 openssl genrsa -des3 -out server.key 1024  需要设置密码，请记住
-# 生成已经证书请求 openssl req -new -key server.key -out server.csr  此步骤需要输入证书信息，需要注意的是Common Name最好设置为需要使用此证书的主机名
-cp server.key server.key.org openssl rsa -in server.key.org -out server.key # 使用密钥和CSR对证书进行签名 # 生成v1版证书 openssl x509 -req -days 3650 -sha256 -in server.csr -signkey server.key -out server.crt # 还会有v3版证书，待写  Nginx配置 server中
-listen 8090 ssl; ssl on; ssl_certificate nginxcert/nginx.crt; ssl_certificate_key nginxcert/nginx.key; # 此配置会设置X-Forwarded-Proto值为https，供后台应用调用 proxy_set_header X-Forwarded-Proto https; proxy_set_header Host $host:$server_port; proxy_set_header X-Real-IP $remote_addr; proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for; # 此配置将后台应用返回的http转成https proxy_redirect ~^http://([^:]+):8091(/.</description>
+      <description>&lt;p&gt;Nginx配置SSL时创建签名证书的方法
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -327,9 +267,8 @@ listen 8090 ssl; ssl on; ssl_certificate nginxcert/nginx.crt; ssl_certificate_ke
       <pubDate>Sun, 15 Oct 2017 22:07:57 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/linux/linux%E6%8A%93%E5%8C%85%E5%88%86%E6%9E%90/</guid>
-      <description>使用tcpdump+wireshark工具组合，tcpdump进行再Linux环境下进行抓包并存储为cap文件，wireshark进行分析。
-抓包命令
-tcpdump -nnA &#39;port 8080&#39; -w package.cap  tcpdump [-i interface] -nnAX &#39;expression&#39; -w file -i：指定监听的网卡 -nn：以ip和port的方式显示源朱建和目的主机，而不是主机名和服务 -A：以ASCII的方式显示数据包 -X：以16进制和ASCII方式显示 expression：表达式  </description>
+      <description>&lt;p&gt;使用tcpdump+wireshark工具组合，tcpdump进行再Linux环境下进行抓包并存储为cap文件，wireshark进行分析。
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -338,8 +277,8 @@ tcpdump -nnA &#39;port 8080&#39; -w package.cap  tcpdump [-i interface] -nnAX &#
       <pubDate>Sun, 15 Oct 2017 22:06:01 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/linux/bash%E7%9F%A5%E8%AF%86%E7%82%B9/</guid>
-      <description>使整条命令以sudo权限执行
-sudo sh -c &amp;quot;cat /dev/null &amp;gt; messages&amp;quot;  </description>
+      <description>&lt;p&gt;Bash知识点记录
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -348,9 +287,8 @@ sudo sh -c &amp;quot;cat /dev/null &amp;gt; messages&amp;quot;  </description>
       <pubDate>Sun, 15 Oct 2017 22:03:36 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/java/spring%E8%AE%B0%E5%BD%95/</guid>
-      <description>等价注解
-@Inject == @Autowired
-@Named == @Component</description>
+      <description>&lt;p&gt;Spring相关知识点记录
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -359,10 +297,8 @@ sudo sh -c &amp;quot;cat /dev/null &amp;gt; messages&amp;quot;  </description>
       <pubDate>Sun, 15 Oct 2017 22:02:11 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/java/shiro%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</guid>
-      <description>Authentication：身份认证
-Authorization：授权
-身份认证流程：
-Subject -&amp;gt; Security Manager -&amp;gt; Authenticator -&amp;gt; AuthenticationStrategy -&amp;gt; Realm</description>
+      <description>&lt;p&gt;安全框架Shiro学习记录
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -371,10 +307,8 @@ Subject -&amp;gt; Security Manager -&amp;gt; Authenticator -&amp;gt; Authenticat
       <pubDate>Sun, 15 Oct 2017 21:57:39 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/java/quartz%E4%BD%BF%E7%94%A8/</guid>
-      <description>Quartz的主要概念是Scheduler、Job、JobDetail和Trigger，其中Scheduler（调度者）是主体；JobDetail和Trigger用于定义任务的相关信息，如：需要执行的任务类，任务执行的时间点等；Job为实际需要执行的任务。
-需要的Maven依赖：
-&amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.quartz-scheduler&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;quartz&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;2.2.1&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt;  如果只需要使用Quartz的基本功能，只需要添加以上依赖 测试代码为
-import org.quartz.JobDetail; import org.quartz.Scheduler; import org.quartz.SchedulerException; import org.quartz.Trigger; import org.quartz.impl.StdSchedulerFactory; import static org.quartz.JobBuilder.*; import static org.quartz.TriggerBuilder.*; import static org.quartz.SimpleScheduleBuilder.*; public class QuartzTest { public static void main(String[] args) throws InterruptedException { try { Scheduler scheduler = StdSchedulerFactory.getDefaultScheduler(); scheduler.start(); JobDetail job = newJob(HelloJob.class).withIdentity(&amp;quot;job1&amp;quot;, &amp;quot;group1&amp;quot;).build(); Trigger trigger = newTrigger().withIdentity(&amp;quot;trigger1&amp;quot;, &amp;quot;group1&amp;quot;).startNow().withSchedule(simpleSchedule() .withIntervalInSeconds(4).repeatForever()).build(); scheduler.scheduleJob(job, trigger); System.out.println(&amp;quot;start time:&amp;quot; + System.currentTimeMillis()); Thread.sleep(20000); scheduler.shutdown(); } catch (SchedulerException se) { se.</description>
+      <description>&lt;p&gt;Quartz的主要概念是Scheduler、Job、JobDetail和Trigger，其中Scheduler（调度者）是主体；JobDetail和Trigger用于定义任务的相关信息，如：需要执行的任务类，任务执行的时间点等；Job为实际需要执行的任务。
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -383,12 +317,8 @@ import org.quartz.JobDetail; import org.quartz.Scheduler; import org.quartz.Sche
       <pubDate>Sun, 15 Oct 2017 21:55:17 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/java/web.xml%E8%AE%B0%E5%BD%95/</guid>
-      <description>Filter 需要实现javax.servlet.Filter接口。 在Web应用启动时初始化（仅初始化一次），随Web应用停止而销毁。会拦截每次客户端的请求。
-Listener 需要实现javax.servlet.ServletContextListener接口。 在Web应用启动时初始化（仅初始一次），随Web应用停止而销毁。 Web应用启动时需要会读取web.xml中context-param节点的内容以key-value的形式放入ServletContext中，在Listener中可以通过ServletContextEvent参数的getServletContext方法获取ServletContext。
-由上可知，Filter如其名，对每次客户端请求做处理（过滤）；Listener则是作为一个初始化的功能。
-web.xml加载流程 context-param &amp;gt; listener &amp;gt; filter &amp;gt; sevlet &amp;gt; spring&amp;hellip;
-classpath和classpath*的区别 classpath：只在当前的classpath下查找
-classpath*：不仅在当前classpath下查找，而且会在jar包的classes中去查找</description>
+      <description>&lt;p&gt;web.xml相关知识点记录
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -397,11 +327,8 @@ classpath*：不仅在当前classpath下查找，而且会在jar包的classes中
       <pubDate>Sun, 15 Oct 2017 21:51:56 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/java/keytool%E4%BD%BF%E7%94%A8/</guid>
-      <description>keytool工具所在路径：jdkpath/bin/keytool[.exe]
-导入密钥库
-keytool -importcert -file demo.crt -keystore demo.jks -alias demo  删除指定密钥库中的证书
-keytool -delete -alias demo -keystore demo.jks  列出密钥库中的所有证书
-keytool -list -keystore demo.jks  </description>
+      <description>&lt;p&gt;JDK中证书管理工具keytool的使用
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -410,8 +337,8 @@ keytool -list -keystore demo.jks  </description>
       <pubDate>Sun, 15 Oct 2017 21:50:23 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/java/maven%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
-      <description>使用指定参数打包
-mvn package -P dev  </description>
+      <description>&lt;p&gt;Maven常用命令记录
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -420,12 +347,8 @@ mvn package -P dev  </description>
       <pubDate>Sun, 15 Oct 2017 21:42:59 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/go/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87-vscode/</guid>
-      <description> 下载Go语言zip包，解压缩到任意目录
- 配置环境变量，PATH中添加go/bin路径，新增GOROOT环境变量，值为go目录
- 安装VSCode，安装Go插件（推荐安装Settings Sync插件，可以实现多平台插件和配置文件的同步）
- 新建gotool文件夹存放Go插件依赖的工具，使用VSCode打开此文件夹，新增工作区配置：go.toolsGopath和go.gopath
- 执行安装Go工具命令
-  </description>
+      <description>&lt;p&gt;使用&lt;code&gt;VSCode&lt;/code&gt;搭建&lt;code&gt;Go&lt;/code&gt;开发环境
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -434,11 +357,8 @@ mvn package -P dev  </description>
       <pubDate>Thu, 12 Oct 2017 23:02:15 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/go/go%E7%9F%A5%E8%AF%86%E7%82%B9%E5%A4%87%E5%BF%98/</guid>
-      <description> =和:=的区别 =用于赋值，:=声明变量并赋值且进行自动类型推断 =必须先使用var进行声明
-var a a=100 // 或 var b=100 // 或 var c int=100 // :=声明并赋值，不能加var，也不能加类型 d:=100  slice类型和array类型变量初始化差异 数组：[n]T
-切片：[]T
-s := []int{0,1,2,3,4,5} // slice s := [...]int{0,1,2,3,4,5} // array values := [9]int{} // array  切片初始化时不需要指定长度，数组初始化时需要指定长度
-类型转换 T(v)  </description>
+      <description>&lt;p&gt;&lt;code&gt;Go&lt;/code&gt;相关知识点记录
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -447,7 +367,8 @@ s := []int{0,1,2,3,4,5} // slice s := [...]int{0,1,2,3,4,5} // array values := [
       <pubDate>Thu, 12 Oct 2017 22:57:49 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/git/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
-      <description> 初始化Git仓库 git init  跟踪所有改动文件 git add . git add -i # 交互式添加跟踪文件  停止跟踪文件但不删除 git rm --cached &amp;lt;file&amp;gt;  提交所有更新过的文件 git commit -m &#39;commit message&#39;  删除未跟踪的所有文件 git clean -f # 删除未跟踪的文件 git clean -fd # 删除未跟踪的文件和文件夹 # 使用git clean前先使用-n参数预览需要删除的文件，防止误删，如 git clean -nf  撤销工作目录中所有未提交的修改 git reset --hard HEAD  全局设置 git config --global user.name &amp;quot;macdfree&amp;quot; git config --global user.email &amp;quot;macdfree@163.com&amp;quot;  切换Tag git checkout &amp;lt;tagname&amp;gt;  </description>
+      <description>&lt;p&gt;&lt;code&gt;Git&lt;/code&gt;常用命令记录
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -456,8 +377,8 @@ s := []int{0,1,2,3,4,5} // slice s := [...]int{0,1,2,3,4,5} // array values := [
       <pubDate>Thu, 12 Oct 2017 22:55:53 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/bigdata/hive-sql/</guid>
-      <description>建表示例
-sql&amp;gt; create table r_user (id_user bigint,login string,password string,name string,description string,enabled string) row format delimited fields terminated by &#39;;&#39; stored as textfile location &#39;/user/hadoop/db/bigdata/r_user&#39;;  注意location指定的文件夹，默认文件夹名称和表名称一致</description>
+      <description>&lt;p&gt;&lt;code&gt;Hive SQL&lt;/code&gt;相关记录
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -466,8 +387,8 @@ sql&amp;gt; create table r_user (id_user bigint,login string,password string,nam
       <pubDate>Thu, 12 Oct 2017 22:10:56 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/bigdata/hadoop&#43;hive%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
-      <description>安装包版本说明    安装包 版本     Hadoop 2.8.1   Hive 2.3.0    安装Hadoop 创建用户hadoop # 创建hadoop用户 Shell&amp;gt; useradd -m hadoop -s /bin/bash # 设置密码 Shell&amp;gt; passwd hadoop  修改hostname # 修改hostname Shell&amp;gt; vim /etc/hosts  修改后重启，使用hadoop用户登录
-设置免登录 # 生成密钥对 Shell&amp;gt; ssh-keygen -t rsa # 追加到authorized_keys中 Shell&amp;gt; cat ./id_rsa.pub &amp;gt;&amp;gt; ./authorized_keys # 设置权限 Shell&amp;gt; chmod 644 authorized_keys # 将下载好的hadoop和hive安装包解压缩到opt目录下 Shell&amp;gt; tar -zxvf filename  添加环境变量 Shell&amp;gt; vim .</description>
+      <description>&lt;p&gt;&lt;code&gt;Hadoop&lt;/code&gt;+&lt;code&gt;Hive&lt;/code&gt;环境搭建过程说明及注意事项
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -514,9 +435,8 @@ sql&amp;gt; create table r_user (id_user bigint,login string,password string,nam
       <pubDate>Fri, 26 Aug 2016 12:44:52 +0000</pubDate>
       
       <guid>https://macdfree.github.io/wiki/linux/centos%E6%B3%A8%E5%86%8C%E6%9C%8D%E5%8A%A1%E8%84%9A%E6%9C%AC/</guid>
-      <description>&lt;p&gt;公司测试系统使用wrapper+tomcat部署，在CentOS环境上通过执行wrapper启动系统，但由于是在终端中执行，当退出终端后wrapper也会退出，所以想到将wrapper注册成系统服务。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;CentOS中服务脚本示例模板及注册方法
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -651,7 +571,9 @@ s.decode(&#39;gbk&#39;).encode(&#39;utf-8′)  可是，在实际应用中，我
       <pubDate>Mon, 24 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>https://macdfree.github.io/posts/%E7%94%A8%E5%8D%8A%E5%A4%A9%E6%97%B6%E9%97%B4%E6%90%AD%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
-      <description>今天没事做（其实准确地说是不想做事），无聊上网的时候偶然想到以前试过的用GitHub Pages搭建blog的方法，就顺着以前的进展做了下去。首先是看了jekyllrb的文档，不得不说看英文文档真是头痛，幸好官网的字体风格还是蛮适合阅读的，否则我真是看不下去。大概看过文档后基本知道怎么用了。之后就开始写代码，先把大体的框架写完，然后考虑可以再加入点什么，不过可惜，到现在我都没办法为它加入一般博客应该有的功能，如分类、标签、评论、浏览次数等等。现在只有基本可以看的功能，唉，我太水了吧。从中午11：00弄到现在，觉得效率还是有点低，不过总算没有白费这假期的一下午。话说貌似我总是做点不相关的事情，老师让我熟悉MSP430，我却在这里弄blog，真是不务正业。。。。。</description>
+      <description>&lt;p&gt;使用&lt;code&gt;GitHub Pages&lt;/code&gt;和&lt;code&gt;jekylleb&lt;/code&gt;搭建博客系统&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

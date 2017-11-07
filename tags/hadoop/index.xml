@@ -17,8 +17,8 @@
       <pubDate>Thu, 12 Oct 2017 22:10:56 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/bigdata/hadoop&#43;hive%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
-      <description>安装包版本说明    安装包 版本     Hadoop 2.8.1   Hive 2.3.0    安装Hadoop 创建用户hadoop # 创建hadoop用户 Shell&amp;gt; useradd -m hadoop -s /bin/bash # 设置密码 Shell&amp;gt; passwd hadoop  修改hostname # 修改hostname Shell&amp;gt; vim /etc/hosts  修改后重启，使用hadoop用户登录
-设置免登录 # 生成密钥对 Shell&amp;gt; ssh-keygen -t rsa # 追加到authorized_keys中 Shell&amp;gt; cat ./id_rsa.pub &amp;gt;&amp;gt; ./authorized_keys # 设置权限 Shell&amp;gt; chmod 644 authorized_keys # 将下载好的hadoop和hive安装包解压缩到opt目录下 Shell&amp;gt; tar -zxvf filename  添加环境变量 Shell&amp;gt; vim .</description>
+      <description>&lt;p&gt;&lt;code&gt;Hadoop&lt;/code&gt;+&lt;code&gt;Hive&lt;/code&gt;环境搭建过程说明及注意事项
+&lt;/p&gt;</description>
     </item>
     
   </channel>

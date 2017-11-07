@@ -16,21 +16,21 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
     <title>SSH免密码设置 - MACDeer&#39;s Blog</title>
     
-<meta name="description" content="在客户端生成公钥和 私钥ssh-keygen -t rsa  生成位置为~/.ssh下，默认为id_rsa和id_rsa.pub文件 将公钥上传至服务器（如果服务器端没有.ssh文件夹，则需要手动新建）scp .ssh/id_rsa.pub username@hostip:.ssh/id_rsa.pub  在服务器端新建authorized_keys文件（如果已存在则不需要新建）（此文件在.ssh文件夹中）touch authorized_keys chmod 600 authorized_keys  将公钥内容追加到authorized_keys文件中cat id_rsa.pub &amp;gt;&amp;gt; authorized_keys   补充：确保.ssh目录权限为700，authorized_keys文件权限为600">
+<meta name="description" content="&lt;p&gt;实现SSH证书登录&lt;/p&gt;">
 
 <meta property="og:title" content="SSH免密码设置 - MACDeer&#39;s Blog">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://macdfree.github.io/wiki/linux/ssh%E5%85%8D%E5%AF%86%E7%A0%81%E8%AE%BE%E7%BD%AE/">
 <meta property="og:image" content="https://macdfree.github.io/images/default.png">
 <meta property="og:site_name" content="MACDeer&#39;s Blog">
-<meta property="og:description" content="在客户端生成公钥和 私钥ssh-keygen -t rsa  生成位置为~/.ssh下，默认为id_rsa和id_rsa.pub文件 将公钥上传至服务器（如果服务器端没有.ssh文件夹，则需要手动新建）scp .ssh/id_rsa.pub username@hostip:.ssh/id_rsa.pub  在服务器端新建authorized_keys文件（如果已存在则不需要新建）（此文件在.ssh文件夹中）touch authorized_keys chmod 600 authorized_keys  将公钥内容追加到authorized_keys文件中cat id_rsa.pub &amp;gt;&amp;gt; authorized_keys   补充：确保.ssh目录权限为700，authorized_keys文件权限为600">
+<meta property="og:description" content="&lt;p&gt;实现SSH证书登录&lt;/p&gt;">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="MACDeer&#39;s Blog">
 <meta name="twitter:url" content="https://macdfree.github.io/wiki/linux/ssh%E5%85%8D%E5%AF%86%E7%A0%81%E8%AE%BE%E7%BD%AE/">
 <meta name="twitter:title" content="SSH免密码设置 - MACDeer&#39;s Blog">
-<meta name="twitter:description" content="在客户端生成公钥和 私钥ssh-keygen -t rsa  生成位置为~/.ssh下，默认为id_rsa和id_rsa.pub文件 将公钥上传至服务器（如果服务器端没有.ssh文件夹，则需要手动新建）scp .ssh/id_rsa.pub username@hostip:.ssh/id_rsa.pub  在服务器端新建authorized_keys文件（如果已存在则不需要新建）（此文件在.ssh文件夹中）touch authorized_keys chmod 600 authorized_keys  将公钥内容追加到authorized_keys文件中cat id_rsa.pub &amp;gt;&amp;gt; authorized_keys   补充：确保.ssh目录权限为700，authorized_keys文件权限为600">
+<meta name="twitter:description" content="&lt;p&gt;实现SSH证书登录&lt;/p&gt;">
 <meta name="twitter:image" content="https://macdfree.github.io/images/default.png">
 
 
@@ -65,13 +65,8 @@
         "height": 60
       }
     },
-    "description": "在客户端生成公钥和 私钥
-ssh-keygen -t rsa  生成位置为~/.ssh下，默认为id_rsa和id_rsa.pub文件
- 将公钥上传至服务器（如果服务器端没有.ssh文件夹，则需要手动新建）
-scp .ssh/id_rsa.pub username@hostip:.ssh/id_rsa.pub  在服务器端新建authorized_keys文件（如果已存在则不需要新建）（此文件在.ssh文件夹中）
-touch authorized_keys chmod 600 authorized_keys  将公钥内容追加到authorized_keys文件中
-cat id_rsa.pub &gt;&gt; authorized_keys   补充：
-确保.ssh目录权限为700，authorized_keys文件权限为600"
+    "description": "<p>实现SSH证书登录
+</p>"
   }
 </script>
 
@@ -134,7 +129,10 @@ cat id_rsa.pub &gt;&gt; authorized_keys   补充：
 
   
 
-  <div class="article-body"><ol>
+  <div class="article-body"><p>实现SSH证书登录
+</p>
+
+<ol>
 <li><p>在客户端生成公钥和 私钥</p>
 
 <pre><code class="language-sh">ssh-keygen -t rsa
@@ -161,8 +159,7 @@ chmod 600 authorized_keys
 
 <p>补充：</p>
 
-<p>确保.ssh目录权限为700，authorized_keys文件权限为600</p>
-</div>
+<p>确保.ssh目录权限为700，authorized_keys文件权限为600</p></div>
 
   <footer class="article-footer">
     

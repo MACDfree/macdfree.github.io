@@ -120,16 +120,8 @@ show databases;  </div>
   </header>
 
   
-  <div class="summary">键盘图标映射
-⌘：command、win
-⌃：control、ctrl
-⌥：option、alt
-⇧：shift
-⇪：caps lock
-常用快捷键
-SpotLight: cmd+空格
-iTerm快捷键
-查找历史：ctrl+r</div>
+  <div class="summary"><p>键盘图标映射
+</p></div>
 
   <footer>
     <a href="https://macdfree.github.io/wiki/macos/mac%E4%B8%AD%E7%9A%84%E7%9B%B8%E5%85%B3%E5%A4%87%E5%BF%98/" title="Mac中的相关备忘">Read More…</a>
@@ -148,20 +140,8 @@ iTerm快捷键
   </header>
 
   
-  <div class="summary"> 安装iTerm
- 安装oh-my-zsh
-curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh  安装powerline
-git clone https://github.com/powerline/fonts.git cd fonts ./install.sh  修改iTerm配置字体
- 安装配置配色方案
-git clone git://github.com/altercation/solarized.git  导入配置文件
-import配置文件
- 使用agnoster主题
-先检查一下~/.oh-my-zsh/themes目录下应该有此主题文件 编辑~/.zshrc文件，将ZSH_THEME修改为agnoster
- 设置指令高亮效果
-git clone git://github.com/zsh-users/zsh-syntax-highlighting.git  编辑~/.zshrc文件，在最后添加以下内容
-source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh  安装历史操作记录自动补全插件
-git clone git://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions  在.zshrc中添加如下语句
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh   </div>
+  <div class="summary"><p>iTerm相关配置记录备忘
+</p></div>
 
   <footer>
     <a href="https://macdfree.github.io/wiki/macos/iterm%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/" title="iTerm安装配置">Read More…</a>
@@ -180,15 +160,8 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh   </div>
   </header>
 
   
-  <div class="summary">包管理工具
-Homebrew
-命令：brew
-brew安装目录
-/usr/local/Cellar
-brew安装mysql
-brew install mysql  启动MySQL
-To have launchd start mysql now and restart at login: brew services start mysql Or, if you don't want/need a background service you can just run: mysql.server start  brew安装autojump
-brew install autojump  </div>
+  <div class="summary"><p>MacOS下包管理工具brew相关用法记录
+</p></div>
 
   <footer>
     <a href="https://macdfree.github.io/wiki/macos/brew%E7%9B%B8%E5%85%B3/" title="Brew相关">Read More…</a>
@@ -207,20 +180,8 @@ brew install autojump  </div>
   </header>
 
   
-  <div class="summary">添加镜像
-vagrant box add  删除镜像
-vagrant box remove  列出镜像
-vagrant box list  初始化虚拟机（需要新建文件夹）
-vagrant init  启动虚拟机
-vagrant up  关闭虚拟机
-vagrant halt  重启虚拟机
-vagrant reload vagrant reload --provision #可以执行Vagrantfile中的脚本  导出镜像
-vagrant package --output xxx.box  Vagrantfile文件配置
-端口转发
-config.vm.network &quot;forwarded_port&quot;, guest: 80, host: 8080  私有地址
-config.vm.network &quot;private_network&quot;, ip: &quot;192.168.33.10&quot;  公有地址
-config.vm.network &quot;public_network&quot;, ip: &quot;192.168.1.222&quot;  虚拟机运行参数
-config.vm.provider &quot;virtualbox&quot; do |vb| vb.name = &quot;centos_test&quot; vb.</div>
+  <div class="summary"><p>虚拟机管理软件Vagrant使用记录
+</p></div>
 
   <footer>
     <a href="https://macdfree.github.io/wiki/macos/vagrant%E4%BD%BF%E7%94%A8/" title="Vagrant使用">Read More…</a>
@@ -239,11 +200,8 @@ config.vm.provider &quot;virtualbox&quot; do |vb| vb.name = &quot;centos_test&qu
   </header>
 
   
-  <div class="summary">查看请求网址返回信息
-curl -i url  下载文件
-curl -O url  断点续传
-curl -O url  下载过程中中断下载
-curl -C -O url  只用-C参数继续对该文件下载</div>
+  <div class="summary"><p>curl用法记录
+</p></div>
 
   <footer>
     <a href="https://macdfree.github.io/wiki/linux/curl%E4%BD%BF%E7%94%A8/" title="Curl使用">Read More…</a>
@@ -262,11 +220,8 @@ curl -C -O url  只用-C参数继续对该文件下载</div>
   </header>
 
   
-  <div class="summary">新增用户
-adduser macd  修改密码
-passwd macd  配置sudo
-在/etc/sudoers中添加如下
-macd	ALL=(ALL) ALL  </div>
+  <div class="summary"><p>Linux新增用户并授权命令
+</p></div>
 
   <footer>
     <a href="https://macdfree.github.io/wiki/linux/%E7%94%A8%E6%88%B7%E6%96%B0%E5%A2%9E%E5%B9%B6%E6%8E%88%E6%9D%83/" title="用户新增并授权">Read More…</a>
@@ -285,11 +240,8 @@ macd	ALL=(ALL) ALL  </div>
   </header>
 
   
-  <div class="summary">查看端口占用
-netstat -apn | grep 80  解压缩文件tar.gz
-tar -zxvf filename  通过ssh上传下载文件
-scp username@servername:/path/filename /var/www/local_dir （从服务器下载文件） scp /path/filename username@servername:/path （上传文件至服务器） scp -r username@servername:/var/www/remote_dir/ /var/www/local_dir（从服务器下载文件夹） scp -r local_dir username@servername:remote_dir （上传文件夹至服务器）  修改服务器时间
-date -s &quot;2017-07-12 12:22:00&quot;  </div>
+  <div class="summary"><p>Linux常用命令记录
+</p></div>
 
   <footer>
     <a href="https://macdfree.github.io/wiki/linux/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" title="Linux常用命令">Read More…</a>
@@ -308,13 +260,8 @@ date -s &quot;2017-07-12 12:22:00&quot;  </div>
   </header>
 
   
-  <div class="summary">在客户端生成公钥和 私钥
-ssh-keygen -t rsa  生成位置为~/.ssh下，默认为id_rsa和id_rsa.pub文件
- 将公钥上传至服务器（如果服务器端没有.ssh文件夹，则需要手动新建）
-scp .ssh/id_rsa.pub username@hostip:.ssh/id_rsa.pub  在服务器端新建authorized_keys文件（如果已存在则不需要新建）（此文件在.ssh文件夹中）
-touch authorized_keys chmod 600 authorized_keys  将公钥内容追加到authorized_keys文件中
-cat id_rsa.pub &gt;&gt; authorized_keys   补充：
-确保.ssh目录权限为700，authorized_keys文件权限为600</div>
+  <div class="summary"><p>实现SSH证书登录
+</p></div>
 
   <footer>
     <a href="https://macdfree.github.io/wiki/linux/ssh%E5%85%8D%E5%AF%86%E7%A0%81%E8%AE%BE%E7%BD%AE/" title="SSH免密码设置">Read More…</a>

@@ -16,21 +16,21 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
     <title>CentOS注册服务脚本 - MACDeer&#39;s Blog</title>
     
-<meta name="description" content="&lt;p&gt;公司测试系统使用wrapper&#43;tomcat部署，在CentOS环境上通过执行wrapper启动系统，但由于是在终端中执行，当退出终端后wrapper也会退出，所以想到将wrapper注册成系统服务。&lt;/p&gt;&lt;p&gt;&lt;/p&gt;">
+<meta name="description" content="&lt;p&gt;CentOS中服务脚本示例模板及注册方法&lt;/p&gt;">
 
 <meta property="og:title" content="CentOS注册服务脚本 - MACDeer&#39;s Blog">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://macdfree.github.io/wiki/linux/centos%E6%B3%A8%E5%86%8C%E6%9C%8D%E5%8A%A1%E8%84%9A%E6%9C%AC/">
 <meta property="og:image" content="https://macdfree.github.io/images/default.png">
 <meta property="og:site_name" content="MACDeer&#39;s Blog">
-<meta property="og:description" content="&lt;p&gt;公司测试系统使用wrapper&#43;tomcat部署，在CentOS环境上通过执行wrapper启动系统，但由于是在终端中执行，当退出终端后wrapper也会退出，所以想到将wrapper注册成系统服务。&lt;/p&gt;&lt;p&gt;&lt;/p&gt;">
+<meta property="og:description" content="&lt;p&gt;CentOS中服务脚本示例模板及注册方法&lt;/p&gt;">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="MACDeer&#39;s Blog">
 <meta name="twitter:url" content="https://macdfree.github.io/wiki/linux/centos%E6%B3%A8%E5%86%8C%E6%9C%8D%E5%8A%A1%E8%84%9A%E6%9C%AC/">
 <meta name="twitter:title" content="CentOS注册服务脚本 - MACDeer&#39;s Blog">
-<meta name="twitter:description" content="&lt;p&gt;公司测试系统使用wrapper&#43;tomcat部署，在CentOS环境上通过执行wrapper启动系统，但由于是在终端中执行，当退出终端后wrapper也会退出，所以想到将wrapper注册成系统服务。&lt;/p&gt;&lt;p&gt;&lt;/p&gt;">
+<meta name="twitter:description" content="&lt;p&gt;CentOS中服务脚本示例模板及注册方法&lt;/p&gt;">
 <meta name="twitter:image" content="https://macdfree.github.io/images/default.png">
 
 
@@ -65,9 +65,8 @@
         "height": 60
       }
     },
-    "description": "<p>公司测试系统使用wrapper+tomcat部署，在CentOS环境上通过执行wrapper启动系统，但由于是在终端中执行，当退出终端后wrapper也会退出，所以想到将wrapper注册成系统服务。</p>
-
-<p></p>"
+    "description": "<p>CentOS中服务脚本示例模板及注册方法
+</p>"
   }
 </script>
 
@@ -130,9 +129,12 @@
 
   
 
-  <div class="article-body"><p>公司测试系统使用wrapper+tomcat部署，在CentOS环境上通过执行wrapper启动系统，但由于是在终端中执行，当退出终端后wrapper也会退出，所以想到将wrapper注册成系统服务。</p>
+  <div class="article-body"><p>CentOS中服务脚本示例模板及注册方法
+</p>
 
-<p></p>
+<p>公司测试系统使用wrapper+tomcat部署，在CentOS环境上通过执行wrapper启动系统，但由于是在终端中执行，当退出终端后wrapper也会退出，所以想到将wrapper注册成系统服务。</p>
+
+<!--more-->
 
 <p>首先需要编写启动服务的脚本：</p>
 

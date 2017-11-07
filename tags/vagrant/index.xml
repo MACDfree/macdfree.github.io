@@ -17,20 +17,8 @@
       <pubDate>Sun, 15 Oct 2017 22:29:41 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/macos/vagrant%E4%BD%BF%E7%94%A8/</guid>
-      <description>添加镜像
-vagrant box add  删除镜像
-vagrant box remove  列出镜像
-vagrant box list  初始化虚拟机（需要新建文件夹）
-vagrant init  启动虚拟机
-vagrant up  关闭虚拟机
-vagrant halt  重启虚拟机
-vagrant reload vagrant reload --provision #可以执行Vagrantfile中的脚本  导出镜像
-vagrant package --output xxx.box  Vagrantfile文件配置
-端口转发
-config.vm.network &amp;quot;forwarded_port&amp;quot;, guest: 80, host: 8080  私有地址
-config.vm.network &amp;quot;private_network&amp;quot;, ip: &amp;quot;192.168.33.10&amp;quot;  公有地址
-config.vm.network &amp;quot;public_network&amp;quot;, ip: &amp;quot;192.168.1.222&amp;quot;  虚拟机运行参数
-config.vm.provider &amp;quot;virtualbox&amp;quot; do |vb| vb.name = &amp;quot;centos_test&amp;quot; vb.</description>
+      <description>&lt;p&gt;虚拟机管理软件Vagrant使用记录
+&lt;/p&gt;</description>
     </item>
     
   </channel>
