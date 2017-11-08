@@ -180,15 +180,12 @@ mysqld --initialize-insecure [without random root password]
       <pubDate>Sun, 15 Oct 2017 22:51:08 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/mysql/mysql%E5%B8%B8%E7%94%A8%E8%AF%AD%E5%8F%A5/</guid>
-      <description>删除数据库
-drop database if exists epointbid_bigdata_pro;  删除视图
-drop view if exists view_frame_user_java;  查看慢查询语句
-show full processlist; kill 慢查询的id;  添加字段
-ALTER TABLE tablename ADD column type COMMENT &#39;message&#39;;  添加索引
-ALTER TABLE tablename ADD INDEX indexname(`column`);  查看MySQL全局变量
-show global variables like &#39;%timeout%&#39;;  设置自增列的值
-alter table users AUTO_INCREMENT=10000;  查看数据库
-show databases;  </description>
+      <description>&lt;p&gt;删除数据库&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;drop database if exists epointbid_bigdata_pro;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
