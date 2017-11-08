@@ -90,17 +90,13 @@
   </header>
 
   
-  <div class="summary">Windows首次安装MySQL时初始化 mysqld --initialize [with random root password] mysqld --initialize-insecure [without random root password]  linux安装mysql后密码重置  修改/etc/my.cnf文件，添加skip-grant-tables=1配置，重启mysqld服务
- mysql -uroot连接数据库
- 修改密码
-use mysql; update user set authentication_string=password('root'), password_expired='N', password_last_changed=now() where user='root';  修改/etc/my.cnf文件，删除skip-grant-tables=1配置，重启mysqld服务
- mysql -uroot -p连接数据库
- 允许远程访问
-use mysql; update user set host='%' where user='root';   补充 mysql5.7为root用户随机生成了密码，一般存放在/var/log/mysqld.log中
-grep &quot;password&quot; /var/log/mysqld.log  可以使用此密码登录
-使用此密码登录后需要通过以下语句修改密码
-alter user 'root'@'localhost' identified by '11111';  查看mysql密码长度限制
-select @@validate_password_length;  设置mysql密码长度限制</div>
+  <div class="summary"><h3 id="windows首次安装mysql时初始化">Windows首次安装MySQL时初始化</h3>
+
+<pre><code class="language-sh">mysqld --initialize [with random root password]
+mysqld --initialize-insecure [without random root password]
+</code></pre>
+
+<p></p></div>
 
   <footer>
     <a href="https://macdfree.github.io/wiki/mysql/mysql%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%8F%8A%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA/" title="MySQL安装配置及导入导出">Read More…</a>
@@ -119,11 +115,17 @@ select @@validate_password_length;  设置mysql密码长度限制</div>
   </header>
 
   
-  <div class="summary"> /etc/my.cnf
- /etc/mysql/my.cnf
- /usr/local/etc/my.cnf
- ~/.my.cnf
-  </div>
+  <div class="summary"><ol>
+<li><p>/etc/my.cnf</p></li>
+
+<li><p>/etc/mysql/my.cnf</p></li>
+
+<li><p>/usr/local/etc/my.cnf</p></li>
+
+<li><p>~/.my.cnf</p></li>
+</ol>
+
+<p></p></div>
 
   <footer>
     <a href="https://macdfree.github.io/wiki/mysql/mysql%E8%AF%BB%E5%8F%96%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E9%A1%BA%E5%BA%8F/" title="MySQL读取配置文件顺序">Read More…</a>

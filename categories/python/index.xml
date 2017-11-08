@@ -17,10 +17,14 @@
       <pubDate>Mon, 16 Oct 2017 20:17:30 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/python/pip%E5%AE%89%E8%A3%85%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
-      <description>报错：
-fatal error: Python.h: No such file or directory  缺少python-dev开发包
-安装：
-yum install python-devel yum install python34-devel  </description>
+      <description>&lt;p&gt;报错：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;fatal error: Python.h: No such file or directory
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;缺少python-dev开发包&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -29,7 +33,12 @@ yum install python-devel yum install python34-devel  </description>
       <pubDate>Mon, 16 Oct 2017 20:15:58 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/python/virtualenv%E4%BD%BF%E7%94%A8/</guid>
-      <description> 新建虚拟环境（指定解释器） virtualenv -p /usr/bin/python2.7 venv  激活虚拟环境 source venv/bin/activate  退出虚拟环境 deactivate  </description>
+      <description>&lt;h4 id=&#34;新建虚拟环境-指定解释器&#34;&gt;新建虚拟环境（指定解释器）&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;virtualenv -p /usr/bin/python2.7 venv
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>

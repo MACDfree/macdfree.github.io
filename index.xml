@@ -17,11 +17,14 @@
       <pubDate>Mon, 16 Oct 2017 20:22:25 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/sqlite/%E5%B8%B8%E7%94%A8%E8%AF%AD%E5%8F%A5/</guid>
-      <description>创建表
-create table tablename ( colname coltype ... );  设置自增
-ID INTEGER PRIMARY KEY AUTOINCREMENT  注意自增只能用于integer primary列，SQLite中每张表默认有一个rowid
-执行SQL脚本
-sqlite3 dbfilename .read sqlfilename  </description>
+      <description>&lt;h3 id=&#34;创建表&#34;&gt;创建表&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;create table tablename (
+  colname coltype ...
+);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -30,7 +33,12 @@ sqlite3 dbfilename .read sqlfilename  </description>
       <pubDate>Mon, 16 Oct 2017 20:19:39 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/redis/redis%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
-      <description> 进入redis命令行 redis-cli  查看redis基本信息 info  查看客户端连接数 info clients  删除当前数据库中的所有Key flushdb  删除所有数据库中的key flushall  查看客户端列表 client list  </description>
+      <description>&lt;h4 id=&#34;进入redis命令行&#34;&gt;进入redis命令行&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;redis-cli
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -39,10 +47,14 @@ sqlite3 dbfilename .read sqlfilename  </description>
       <pubDate>Mon, 16 Oct 2017 20:17:30 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/python/pip%E5%AE%89%E8%A3%85%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
-      <description>报错：
-fatal error: Python.h: No such file or directory  缺少python-dev开发包
-安装：
-yum install python-devel yum install python34-devel  </description>
+      <description>&lt;p&gt;报错：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;fatal error: Python.h: No such file or directory
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;缺少python-dev开发包&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -51,7 +63,12 @@ yum install python-devel yum install python34-devel  </description>
       <pubDate>Mon, 16 Oct 2017 20:15:58 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/python/virtualenv%E4%BD%BF%E7%94%A8/</guid>
-      <description> 新建虚拟环境（指定解释器） virtualenv -p /usr/bin/python2.7 venv  激活虚拟环境 source venv/bin/activate  退出虚拟环境 deactivate  </description>
+      <description>&lt;h4 id=&#34;新建虚拟环境-指定解释器&#34;&gt;新建虚拟环境（指定解释器）&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;virtualenv -p /usr/bin/python2.7 venv
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -60,7 +77,14 @@ yum install python-devel yum install python34-devel  </description>
       <pubDate>Mon, 16 Oct 2017 20:14:43 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/oracle/oracle%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4/</guid>
-      <description> Oracle用户解锁  sqlplus / as sysdba alter user 用户名 account unlock;  </description>
+      <description>&lt;h4 id=&#34;oracle用户解锁&#34;&gt;Oracle用户解锁&lt;/h4&gt;
+
+&lt;ol&gt;
+&lt;li&gt;sqlplus / as sysdba&lt;/li&gt;
+&lt;li&gt;alter user 用户名 account unlock;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -69,12 +93,16 @@ yum install python-devel yum install python34-devel  </description>
       <pubDate>Mon, 16 Oct 2017 20:12:38 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/oracle/%E6%96%B0%E5%BA%93%E5%AF%BC%E5%85%A5/</guid>
-      <description> 创建临时表空间
-CREATE TEMPORARY TABLESPACE EpointBid_TP7_QY_Temp TEMPFILE &#39;F:\OracleDB\EpointBid_TP7_QY_Temp.dbf&#39; SIZE 32M AUTOEXTEND ON NEXT 32M MAXSIZE 2048M;  创建表空间
-CREATE TABLESPACE EpointBid_TP7_QY DATAFILE &#39;F:\OracleDB\EpointBid_TP7_QY.dbf&#39; SIZE 500M AUTOEXTEND ON NEXT 5M MAXSIZE 6000M;  创建用户
-CREATE USER EpointBid_TP7_QY IDENTIFIED BY 11111 DEFAULT TABLESPACE EpointBid_TP7_QY TEMPORARY TABLESPACE EpointBid_TP7_QY_Temp;  授权
-GRANT dba TO EpointBid_TP7_QY; GRANT imp_full_database to EpointBid_TP7_QY;  数据泵导入
-impdp EpointBid_TP7_QY/11111 directory=dir_dp dumpfile=EPOINTBID_TP7_EMPTY20170906.DMP remap_schema=EPOINTBID_TP7_Empty:EPOINTBID_TP7_QY remap_tablespace=EPOINTBID_TP7_Empty:EPOINTBID_TP7_QY version=11.1.0.6.0   </description>
+      <description>&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;创建临时表空间&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;CREATE TEMPORARY TABLESPACE EpointBid_TP7_QY_Temp
+TEMPFILE &#39;F:\OracleDB\EpointBid_TP7_QY_Temp.dbf&#39;
+SIZE 32M
+AUTOEXTEND ON NEXT 32M MAXSIZE 2048M;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -83,12 +111,9 @@ impdp EpointBid_TP7_QY/11111 directory=dir_dp dumpfile=EPOINTBID_TP7_EMPTY201709
       <pubDate>Mon, 16 Oct 2017 20:09:54 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/oracle/directory%E7%AE%A1%E7%90%86/</guid>
-      <description>使用数据泵导入备份时需要根据DIRECTORY来获取备份文件所在路径
-创建文件夹 CREATE [OR REPLACE] DIRECTORY &amp;lt;directory&amp;gt; AS &#39;&amp;lt;pathname&amp;gt;&#39;;  directory为文件夹的别名
-pathname为具体的路径
-设置权限 GRANT READ[,WRITE] ON DIRECTORY &amp;lt;directory&amp;gt; TO &amp;lt;username&amp;gt;;  directory为文件夹的别名
-username为用户名
-查询文件夹 select * from dba_directories;  删除文件夹 drop directory &amp;lt;directory&amp;gt;;  directory为文件夹的别名</description>
+      <description>&lt;p&gt;使用数据泵导入备份时需要根据DIRECTORY来获取备份文件所在路径&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -97,9 +122,12 @@ username为用户名
       <pubDate>Mon, 16 Oct 2017 20:06:00 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/oracle/sql%E8%AE%B0%E5%BD%95/</guid>
-      <description> 查看用户表空间 select distinct(tablespace_name) from dba_segments where owner=upper(&#39;EpointBid_TP7&#39;);  查看Oracle版本 select * from v$version;  查看表大小 由于user_tables表中数据不是实时的，所有需要先执行
-select &#39;analyze table &#39;||S.TABLE_NAME||&#39; compute statistics;&#39; from user_tables s;  再执行
-select t.table_name,t.num_rows from user_tables t ORDER BY NUM_ROWS DESC;  添加字段 alter table tablename add (column datatype [default value][null/not null],….);  修改字段 alter table tablename modify (column datatype [default value][null/not null],….);  删除字段 alter table tablename drop (column);  </description>
+      <description>&lt;h4 id=&#34;查看用户表空间&#34;&gt;查看用户表空间&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select distinct(tablespace_name) from dba_segments where owner=upper(&#39;EpointBid_TP7&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -118,17 +146,13 @@ select t.table_name,t.num_rows from user_tables t ORDER BY NUM_ROWS DESC;  添�
       <pubDate>Sun, 15 Oct 2017 22:55:29 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/mysql/mysql%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%8F%8A%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA/</guid>
-      <description>Windows首次安装MySQL时初始化 mysqld --initialize [with random root password] mysqld --initialize-insecure [without random root password]  linux安装mysql后密码重置  修改/etc/my.cnf文件，添加skip-grant-tables=1配置，重启mysqld服务
- mysql -uroot连接数据库
- 修改密码
-use mysql; update user set authentication_string=password(&#39;root&#39;), password_expired=&#39;N&#39;, password_last_changed=now() where user=&#39;root&#39;;  修改/etc/my.cnf文件，删除skip-grant-tables=1配置，重启mysqld服务
- mysql -uroot -p连接数据库
- 允许远程访问
-use mysql; update user set host=&#39;%&#39; where user=&#39;root&#39;;   补充 mysql5.7为root用户随机生成了密码，一般存放在/var/log/mysqld.log中
-grep &amp;quot;password&amp;quot; /var/log/mysqld.log  可以使用此密码登录
-使用此密码登录后需要通过以下语句修改密码
-alter user &#39;root&#39;@&#39;localhost&#39; identified by &#39;11111&#39;;  查看mysql密码长度限制
-select @@validate_password_length;  设置mysql密码长度限制</description>
+      <description>&lt;h3 id=&#34;windows首次安装mysql时初始化&#34;&gt;Windows首次安装MySQL时初始化&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;mysqld --initialize [with random root password]
+mysqld --initialize-insecure [without random root password]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -137,11 +161,17 @@ select @@validate_password_length;  设置mysql密码长度限制</description>
       <pubDate>Sun, 15 Oct 2017 22:54:01 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/mysql/mysql%E8%AF%BB%E5%8F%96%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E9%A1%BA%E5%BA%8F/</guid>
-      <description> /etc/my.cnf
- /etc/mysql/my.cnf
- /usr/local/etc/my.cnf
- ~/.my.cnf
-  </description>
+      <description>&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;/etc/my.cnf&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;/etc/mysql/my.cnf&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;/usr/local/etc/my.cnf&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;~/.my.cnf&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>

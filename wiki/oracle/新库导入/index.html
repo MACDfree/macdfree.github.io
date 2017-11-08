@@ -16,21 +16,21 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
     <title>新库导入 - MACDeer&#39;s Blog</title>
     
-<meta name="description" content=" 创建临时表空间CREATE TEMPORARY TABLESPACE EpointBid_TP7_QY_Temp TEMPFILE &#39;F:\OracleDB\EpointBid_TP7_QY_Temp.dbf&#39; SIZE 32M AUTOEXTEND ON NEXT 32M MAXSIZE 2048M;  创建表空间CREATE TABLESPACE EpointBid_TP7_QY DATAFILE &#39;F:\OracleDB\EpointBid_TP7_QY.dbf&#39; SIZE 500M AUTOEXTEND ON NEXT 5M MAXSIZE 6000M;  创建用户CREATE USER EpointBid_TP7_QY IDENTIFIED BY 11111 DEFAULT TABLESPACE EpointBid_TP7_QY TEMPORARY TABLESPACE EpointBid_TP7_QY_Temp;  授权GRANT dba TO EpointBid_TP7_QY; GRANT imp_full_database to EpointBid_TP7_QY;  数据泵导入impdp EpointBid_TP7_QY/11111 directory=dir_dp dumpfile=EPOINTBID_TP7_EMPTY20170906.DMP remap_schema=EPOINTBID_TP7_Empty:EPOINTBID_TP7_QY remap_tablespace=EPOINTBID_TP7_Empty:EPOINTBID_TP7_QY version=11.1.0.6.0   ">
+<meta name="description" content="&lt;ol&gt;&lt;li&gt;&lt;p&gt;创建临时表空间&lt;/p&gt;&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;CREATE TEMPORARY TABLESPACE EpointBid_TP7_QY_TempTEMPFILE &#39;F:\OracleDB\EpointBid_TP7_QY_Temp.dbf&#39;SIZE 32MAUTOEXTEND ON NEXT 32M MAXSIZE 2048M;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;">
 
 <meta property="og:title" content="新库导入 - MACDeer&#39;s Blog">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://macdfree.github.io/wiki/oracle/%E6%96%B0%E5%BA%93%E5%AF%BC%E5%85%A5/">
 <meta property="og:image" content="https://macdfree.github.io/images/default.png">
 <meta property="og:site_name" content="MACDeer&#39;s Blog">
-<meta property="og:description" content=" 创建临时表空间CREATE TEMPORARY TABLESPACE EpointBid_TP7_QY_Temp TEMPFILE &#39;F:\OracleDB\EpointBid_TP7_QY_Temp.dbf&#39; SIZE 32M AUTOEXTEND ON NEXT 32M MAXSIZE 2048M;  创建表空间CREATE TABLESPACE EpointBid_TP7_QY DATAFILE &#39;F:\OracleDB\EpointBid_TP7_QY.dbf&#39; SIZE 500M AUTOEXTEND ON NEXT 5M MAXSIZE 6000M;  创建用户CREATE USER EpointBid_TP7_QY IDENTIFIED BY 11111 DEFAULT TABLESPACE EpointBid_TP7_QY TEMPORARY TABLESPACE EpointBid_TP7_QY_Temp;  授权GRANT dba TO EpointBid_TP7_QY; GRANT imp_full_database to EpointBid_TP7_QY;  数据泵导入impdp EpointBid_TP7_QY/11111 directory=dir_dp dumpfile=EPOINTBID_TP7_EMPTY20170906.DMP remap_schema=EPOINTBID_TP7_Empty:EPOINTBID_TP7_QY remap_tablespace=EPOINTBID_TP7_Empty:EPOINTBID_TP7_QY version=11.1.0.6.0   ">
+<meta property="og:description" content="&lt;ol&gt;&lt;li&gt;&lt;p&gt;创建临时表空间&lt;/p&gt;&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;CREATE TEMPORARY TABLESPACE EpointBid_TP7_QY_TempTEMPFILE &#39;F:\OracleDB\EpointBid_TP7_QY_Temp.dbf&#39;SIZE 32MAUTOEXTEND ON NEXT 32M MAXSIZE 2048M;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="MACDeer&#39;s Blog">
 <meta name="twitter:url" content="https://macdfree.github.io/wiki/oracle/%E6%96%B0%E5%BA%93%E5%AF%BC%E5%85%A5/">
 <meta name="twitter:title" content="新库导入 - MACDeer&#39;s Blog">
-<meta name="twitter:description" content=" 创建临时表空间CREATE TEMPORARY TABLESPACE EpointBid_TP7_QY_Temp TEMPFILE &#39;F:\OracleDB\EpointBid_TP7_QY_Temp.dbf&#39; SIZE 32M AUTOEXTEND ON NEXT 32M MAXSIZE 2048M;  创建表空间CREATE TABLESPACE EpointBid_TP7_QY DATAFILE &#39;F:\OracleDB\EpointBid_TP7_QY.dbf&#39; SIZE 500M AUTOEXTEND ON NEXT 5M MAXSIZE 6000M;  创建用户CREATE USER EpointBid_TP7_QY IDENTIFIED BY 11111 DEFAULT TABLESPACE EpointBid_TP7_QY TEMPORARY TABLESPACE EpointBid_TP7_QY_Temp;  授权GRANT dba TO EpointBid_TP7_QY; GRANT imp_full_database to EpointBid_TP7_QY;  数据泵导入impdp EpointBid_TP7_QY/11111 directory=dir_dp dumpfile=EPOINTBID_TP7_EMPTY20170906.DMP remap_schema=EPOINTBID_TP7_Empty:EPOINTBID_TP7_QY remap_tablespace=EPOINTBID_TP7_Empty:EPOINTBID_TP7_QY version=11.1.0.6.0   ">
+<meta name="twitter:description" content="&lt;ol&gt;&lt;li&gt;&lt;p&gt;创建临时表空间&lt;/p&gt;&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;CREATE TEMPORARY TABLESPACE EpointBid_TP7_QY_TempTEMPFILE &#39;F:\OracleDB\EpointBid_TP7_QY_Temp.dbf&#39;SIZE 32MAUTOEXTEND ON NEXT 32M MAXSIZE 2048M;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;">
 <meta name="twitter:image" content="https://macdfree.github.io/images/default.png">
 
 
@@ -65,12 +65,16 @@
         "height": 60
       }
     },
-    "description": " 创建临时表空间
-CREATE TEMPORARY TABLESPACE EpointBid_TP7_QY_Temp TEMPFILE 'F:\OracleDB\EpointBid_TP7_QY_Temp.dbf' SIZE 32M AUTOEXTEND ON NEXT 32M MAXSIZE 2048M;  创建表空间
-CREATE TABLESPACE EpointBid_TP7_QY DATAFILE 'F:\OracleDB\EpointBid_TP7_QY.dbf' SIZE 500M AUTOEXTEND ON NEXT 5M MAXSIZE 6000M;  创建用户
-CREATE USER EpointBid_TP7_QY IDENTIFIED BY 11111 DEFAULT TABLESPACE EpointBid_TP7_QY TEMPORARY TABLESPACE EpointBid_TP7_QY_Temp;  授权
-GRANT dba TO EpointBid_TP7_QY; GRANT imp_full_database to EpointBid_TP7_QY;  数据泵导入
-impdp EpointBid_TP7_QY/11111 directory=dir_dp dumpfile=EPOINTBID_TP7_EMPTY20170906.DMP remap_schema=EPOINTBID_TP7_Empty:EPOINTBID_TP7_QY remap_tablespace=EPOINTBID_TP7_Empty:EPOINTBID_TP7_QY version=11.1.0.6.0   "
+    "description": "<ol>
+<li><p>创建临时表空间</p>
+
+<pre><code class="language-sql">CREATE TEMPORARY TABLESPACE EpointBid_TP7_QY_Temp
+TEMPFILE 'F:\OracleDB\EpointBid_TP7_QY_Temp.dbf'
+SIZE 32M
+AUTOEXTEND ON NEXT 32M MAXSIZE 2048M;
+</code></pre>
+
+<p></p>"
   }
 </script>
 
@@ -140,7 +144,9 @@ impdp EpointBid_TP7_QY/11111 directory=dir_dp dumpfile=EPOINTBID_TP7_EMPTY201709
 TEMPFILE 'F:\OracleDB\EpointBid_TP7_QY_Temp.dbf'
 SIZE 32M
 AUTOEXTEND ON NEXT 32M MAXSIZE 2048M;
-</code></pre></li>
+</code></pre>
+
+<p></p></li>
 
 <li><p>创建表空间</p>
 
@@ -167,8 +173,7 @@ GRANT imp_full_database to EpointBid_TP7_QY;
 
 <pre><code class="language-sh">impdp EpointBid_TP7_QY/11111 directory=dir_dp dumpfile=EPOINTBID_TP7_EMPTY20170906.DMP remap_schema=EPOINTBID_TP7_Empty:EPOINTBID_TP7_QY remap_tablespace=EPOINTBID_TP7_Empty:EPOINTBID_TP7_QY version=11.1.0.6.0 
 </code></pre></li>
-</ol>
-</div>
+</ol></div>
 
   <footer class="article-footer">
     

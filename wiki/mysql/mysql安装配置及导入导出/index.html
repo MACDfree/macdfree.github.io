@@ -16,21 +16,21 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
     <title>MySQL安装配置及导入导出 - MACDeer&#39;s Blog</title>
     
-<meta name="description" content="Windows首次安装MySQL时初始化 mysqld --initialize [with random root password] mysqld --initialize-insecure [without random root password]  linux安装mysql后密码重置  修改/etc/my.cnf文件，添加skip-grant-tables=1配置，重启mysqld服务 mysql -uroot连接数据库 修改密码use mysql; update user set authentication_string=password(&#39;root&#39;), password_expired=&#39;N&#39;, password_last_changed=now() where user=&#39;root&#39;;  修改/etc/my.cnf文件，删除skip-grant-tables=1配置，重启mysqld服务 mysql -uroot -p连接数据库 允许远程访问use mysql; update user set host=&#39;%&#39; where user=&#39;root&#39;;   补充 mysql5.7为root用户随机生成了密码，一般存放在/var/log/mysqld.log中grep &amp;quot;password&amp;quot; /var/log/mysqld.log  可以使用此密码登录使用此密码登录后需要通过以下语句修改密码alter user &#39;root&#39;@&#39;localhost&#39; identified by &#39;11111&#39;;  查看mysql密码长度限制select @@validate_password_length;  设置mysql密码长度限制">
+<meta name="description" content="&lt;h3 id=&#34;windows首次安装mysql时初始化&#34;&gt;Windows首次安装MySQL时初始化&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;mysqld --initialize [with random root password]mysqld --initialize-insecure [without random root password]&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;">
 
 <meta property="og:title" content="MySQL安装配置及导入导出 - MACDeer&#39;s Blog">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://macdfree.github.io/wiki/mysql/mysql%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%8F%8A%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA/">
 <meta property="og:image" content="https://macdfree.github.io/images/default.png">
 <meta property="og:site_name" content="MACDeer&#39;s Blog">
-<meta property="og:description" content="Windows首次安装MySQL时初始化 mysqld --initialize [with random root password] mysqld --initialize-insecure [without random root password]  linux安装mysql后密码重置  修改/etc/my.cnf文件，添加skip-grant-tables=1配置，重启mysqld服务 mysql -uroot连接数据库 修改密码use mysql; update user set authentication_string=password(&#39;root&#39;), password_expired=&#39;N&#39;, password_last_changed=now() where user=&#39;root&#39;;  修改/etc/my.cnf文件，删除skip-grant-tables=1配置，重启mysqld服务 mysql -uroot -p连接数据库 允许远程访问use mysql; update user set host=&#39;%&#39; where user=&#39;root&#39;;   补充 mysql5.7为root用户随机生成了密码，一般存放在/var/log/mysqld.log中grep &amp;quot;password&amp;quot; /var/log/mysqld.log  可以使用此密码登录使用此密码登录后需要通过以下语句修改密码alter user &#39;root&#39;@&#39;localhost&#39; identified by &#39;11111&#39;;  查看mysql密码长度限制select @@validate_password_length;  设置mysql密码长度限制">
+<meta property="og:description" content="&lt;h3 id=&#34;windows首次安装mysql时初始化&#34;&gt;Windows首次安装MySQL时初始化&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;mysqld --initialize [with random root password]mysqld --initialize-insecure [without random root password]&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="MACDeer&#39;s Blog">
 <meta name="twitter:url" content="https://macdfree.github.io/wiki/mysql/mysql%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%8F%8A%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA/">
 <meta name="twitter:title" content="MySQL安装配置及导入导出 - MACDeer&#39;s Blog">
-<meta name="twitter:description" content="Windows首次安装MySQL时初始化 mysqld --initialize [with random root password] mysqld --initialize-insecure [without random root password]  linux安装mysql后密码重置  修改/etc/my.cnf文件，添加skip-grant-tables=1配置，重启mysqld服务 mysql -uroot连接数据库 修改密码use mysql; update user set authentication_string=password(&#39;root&#39;), password_expired=&#39;N&#39;, password_last_changed=now() where user=&#39;root&#39;;  修改/etc/my.cnf文件，删除skip-grant-tables=1配置，重启mysqld服务 mysql -uroot -p连接数据库 允许远程访问use mysql; update user set host=&#39;%&#39; where user=&#39;root&#39;;   补充 mysql5.7为root用户随机生成了密码，一般存放在/var/log/mysqld.log中grep &amp;quot;password&amp;quot; /var/log/mysqld.log  可以使用此密码登录使用此密码登录后需要通过以下语句修改密码alter user &#39;root&#39;@&#39;localhost&#39; identified by &#39;11111&#39;;  查看mysql密码长度限制select @@validate_password_length;  设置mysql密码长度限制">
+<meta name="twitter:description" content="&lt;h3 id=&#34;windows首次安装mysql时初始化&#34;&gt;Windows首次安装MySQL时初始化&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;mysqld --initialize [with random root password]mysqld --initialize-insecure [without random root password]&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;">
 <meta name="twitter:image" content="https://macdfree.github.io/images/default.png">
 
 
@@ -65,17 +65,13 @@
         "height": 60
       }
     },
-    "description": "Windows首次安装MySQL时初始化 mysqld --initialize [with random root password] mysqld --initialize-insecure [without random root password]  linux安装mysql后密码重置  修改/etc/my.cnf文件，添加skip-grant-tables=1配置，重启mysqld服务
- mysql -uroot连接数据库
- 修改密码
-use mysql; update user set authentication_string=password('root'), password_expired='N', password_last_changed=now() where user='root';  修改/etc/my.cnf文件，删除skip-grant-tables=1配置，重启mysqld服务
- mysql -uroot -p连接数据库
- 允许远程访问
-use mysql; update user set host='%' where user='root';   补充 mysql5.7为root用户随机生成了密码，一般存放在/var/log/mysqld.log中
-grep &quot;password&quot; /var/log/mysqld.log  可以使用此密码登录
-使用此密码登录后需要通过以下语句修改密码
-alter user 'root'@'localhost' identified by '11111';  查看mysql密码长度限制
-select @@validate_password_length;  设置mysql密码长度限制"
+    "description": "<h3 id="windows首次安装mysql时初始化">Windows首次安装MySQL时初始化</h3>
+
+<pre><code class="language-sh">mysqld --initialize [with random root password]
+mysqld --initialize-insecure [without random root password]
+</code></pre>
+
+<p></p>"
   }
 </script>
 
@@ -138,13 +134,13 @@ select @@validate_password_length;  设置mysql密码长度限制"
 
   
 
-  <div class="article-body">
-
-<h3 id="windows首次安装mysql时初始化">Windows首次安装MySQL时初始化</h3>
+  <div class="article-body"><h3 id="windows首次安装mysql时初始化">Windows首次安装MySQL时初始化</h3>
 
 <pre><code class="language-sh">mysqld --initialize [with random root password]
 mysqld --initialize-insecure [without random root password]
 </code></pre>
+
+<p></p>
 
 <h3 id="linux安装mysql后密码重置">linux安装mysql后密码重置</h3>
 
@@ -236,8 +232,7 @@ update user set host='%' where user='root';
 <p>导入数据库</p>
 
 <pre><code class="language-sh">mysql -uroot -p1111 bigdata2 &lt; export.sql
-</code></pre>
-</div>
+</code></pre></div>
 
   <footer class="article-footer">
     

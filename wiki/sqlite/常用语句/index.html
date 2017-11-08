@@ -16,21 +16,21 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
     <title>常用语句 - MACDeer&#39;s Blog</title>
     
-<meta name="description" content="创建表create table tablename ( colname coltype ... );  设置自增ID INTEGER PRIMARY KEY AUTOINCREMENT  注意自增只能用于integer primary列，SQLite中每张表默认有一个rowid执行SQL脚本sqlite3 dbfilename .read sqlfilename  ">
+<meta name="description" content="&lt;h3 id=&#34;创建表&#34;&gt;创建表&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;create table tablename (  colname coltype ...);&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;">
 
 <meta property="og:title" content="常用语句 - MACDeer&#39;s Blog">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://macdfree.github.io/wiki/sqlite/%E5%B8%B8%E7%94%A8%E8%AF%AD%E5%8F%A5/">
 <meta property="og:image" content="https://macdfree.github.io/images/default.png">
 <meta property="og:site_name" content="MACDeer&#39;s Blog">
-<meta property="og:description" content="创建表create table tablename ( colname coltype ... );  设置自增ID INTEGER PRIMARY KEY AUTOINCREMENT  注意自增只能用于integer primary列，SQLite中每张表默认有一个rowid执行SQL脚本sqlite3 dbfilename .read sqlfilename  ">
+<meta property="og:description" content="&lt;h3 id=&#34;创建表&#34;&gt;创建表&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;create table tablename (  colname coltype ...);&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="MACDeer&#39;s Blog">
 <meta name="twitter:url" content="https://macdfree.github.io/wiki/sqlite/%E5%B8%B8%E7%94%A8%E8%AF%AD%E5%8F%A5/">
 <meta name="twitter:title" content="常用语句 - MACDeer&#39;s Blog">
-<meta name="twitter:description" content="创建表create table tablename ( colname coltype ... );  设置自增ID INTEGER PRIMARY KEY AUTOINCREMENT  注意自增只能用于integer primary列，SQLite中每张表默认有一个rowid执行SQL脚本sqlite3 dbfilename .read sqlfilename  ">
+<meta name="twitter:description" content="&lt;h3 id=&#34;创建表&#34;&gt;创建表&lt;/h3&gt;&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;create table tablename (  colname coltype ...);&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;">
 <meta name="twitter:image" content="https://macdfree.github.io/images/default.png">
 
 
@@ -65,11 +65,14 @@
         "height": 60
       }
     },
-    "description": "创建表
-create table tablename ( colname coltype ... );  设置自增
-ID INTEGER PRIMARY KEY AUTOINCREMENT  注意自增只能用于integer primary列，SQLite中每张表默认有一个rowid
-执行SQL脚本
-sqlite3 dbfilename .read sqlfilename  "
+    "description": "<h3 id="创建表">创建表</h3>
+
+<pre><code class="language-sql">create table tablename (
+  colname coltype ...
+);
+</code></pre>
+
+<p></p>"
   }
 </script>
 
@@ -132,26 +135,27 @@ sqlite3 dbfilename .read sqlfilename  "
 
   
 
-  <div class="article-body"><p>创建表</p>
+  <div class="article-body"><h3 id="创建表">创建表</h3>
 
 <pre><code class="language-sql">create table tablename (
   colname coltype ...
 );
 </code></pre>
 
-<p>设置自增</p>
+<p></p>
+
+<h3 id="设置自增">设置自增</h3>
 
 <pre><code class="language-sql">ID INTEGER PRIMARY KEY AUTOINCREMENT
 </code></pre>
 
 <p>注意自增只能用于integer primary列，SQLite中每张表默认有一个rowid</p>
 
-<p>执行SQL脚本</p>
+<h3 id="执行sql脚本">执行SQL脚本</h3>
 
 <pre><code>sqlite3 dbfilename
 .read sqlfilename
-</code></pre>
-</div>
+</code></pre></div>
 
   <footer class="article-footer">
     

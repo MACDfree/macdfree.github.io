@@ -17,11 +17,14 @@
       <pubDate>Mon, 16 Oct 2017 20:22:25 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/sqlite/%E5%B8%B8%E7%94%A8%E8%AF%AD%E5%8F%A5/</guid>
-      <description>创建表
-create table tablename ( colname coltype ... );  设置自增
-ID INTEGER PRIMARY KEY AUTOINCREMENT  注意自增只能用于integer primary列，SQLite中每张表默认有一个rowid
-执行SQL脚本
-sqlite3 dbfilename .read sqlfilename  </description>
+      <description>&lt;h3 id=&#34;创建表&#34;&gt;创建表&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;create table tablename (
+  colname coltype ...
+);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

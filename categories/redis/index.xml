@@ -17,7 +17,12 @@
       <pubDate>Mon, 16 Oct 2017 20:19:39 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/redis/redis%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
-      <description> 进入redis命令行 redis-cli  查看redis基本信息 info  查看客户端连接数 info clients  删除当前数据库中的所有Key flushdb  删除所有数据库中的key flushall  查看客户端列表 client list  </description>
+      <description>&lt;h4 id=&#34;进入redis命令行&#34;&gt;进入redis命令行&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;redis-cli
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

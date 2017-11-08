@@ -16,21 +16,21 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
     <title>SQL记录 - MACDeer&#39;s Blog</title>
     
-<meta name="description" content=" 查看用户表空间 select distinct(tablespace_name) from dba_segments where owner=upper(&#39;EpointBid_TP7&#39;);  查看Oracle版本 select * from v$version;  查看表大小 由于user_tables表中数据不是实时的，所有需要先执行select &#39;analyze table &#39;||S.TABLE_NAME||&#39; compute statistics;&#39; from user_tables s;  再执行select t.table_name,t.num_rows from user_tables t ORDER BY NUM_ROWS DESC;  添加字段 alter table tablename add (column datatype [default value][null/not null],….);  修改字段 alter table tablename modify (column datatype [default value][null/not null],….);  删除字段 alter table tablename drop (column);  ">
+<meta name="description" content="&lt;h4 id=&#34;查看用户表空间&#34;&gt;查看用户表空间&lt;/h4&gt;&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select distinct(tablespace_name) from dba_segments where owner=upper(&#39;EpointBid_TP7&#39;);&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;">
 
 <meta property="og:title" content="SQL记录 - MACDeer&#39;s Blog">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://macdfree.github.io/wiki/oracle/sql%E8%AE%B0%E5%BD%95/">
 <meta property="og:image" content="https://macdfree.github.io/images/default.png">
 <meta property="og:site_name" content="MACDeer&#39;s Blog">
-<meta property="og:description" content=" 查看用户表空间 select distinct(tablespace_name) from dba_segments where owner=upper(&#39;EpointBid_TP7&#39;);  查看Oracle版本 select * from v$version;  查看表大小 由于user_tables表中数据不是实时的，所有需要先执行select &#39;analyze table &#39;||S.TABLE_NAME||&#39; compute statistics;&#39; from user_tables s;  再执行select t.table_name,t.num_rows from user_tables t ORDER BY NUM_ROWS DESC;  添加字段 alter table tablename add (column datatype [default value][null/not null],….);  修改字段 alter table tablename modify (column datatype [default value][null/not null],….);  删除字段 alter table tablename drop (column);  ">
+<meta property="og:description" content="&lt;h4 id=&#34;查看用户表空间&#34;&gt;查看用户表空间&lt;/h4&gt;&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select distinct(tablespace_name) from dba_segments where owner=upper(&#39;EpointBid_TP7&#39;);&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="MACDeer&#39;s Blog">
 <meta name="twitter:url" content="https://macdfree.github.io/wiki/oracle/sql%E8%AE%B0%E5%BD%95/">
 <meta name="twitter:title" content="SQL记录 - MACDeer&#39;s Blog">
-<meta name="twitter:description" content=" 查看用户表空间 select distinct(tablespace_name) from dba_segments where owner=upper(&#39;EpointBid_TP7&#39;);  查看Oracle版本 select * from v$version;  查看表大小 由于user_tables表中数据不是实时的，所有需要先执行select &#39;analyze table &#39;||S.TABLE_NAME||&#39; compute statistics;&#39; from user_tables s;  再执行select t.table_name,t.num_rows from user_tables t ORDER BY NUM_ROWS DESC;  添加字段 alter table tablename add (column datatype [default value][null/not null],….);  修改字段 alter table tablename modify (column datatype [default value][null/not null],….);  删除字段 alter table tablename drop (column);  ">
+<meta name="twitter:description" content="&lt;h4 id=&#34;查看用户表空间&#34;&gt;查看用户表空间&lt;/h4&gt;&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select distinct(tablespace_name) from dba_segments where owner=upper(&#39;EpointBid_TP7&#39;);&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;">
 <meta name="twitter:image" content="https://macdfree.github.io/images/default.png">
 
 
@@ -65,9 +65,12 @@
         "height": 60
       }
     },
-    "description": " 查看用户表空间 select distinct(tablespace_name) from dba_segments where owner=upper('EpointBid_TP7');  查看Oracle版本 select * from v$version;  查看表大小 由于user_tables表中数据不是实时的，所有需要先执行
-select 'analyze table '||S.TABLE_NAME||' compute statistics;' from user_tables s;  再执行
-select t.table_name,t.num_rows from user_tables t ORDER BY NUM_ROWS DESC;  添加字段 alter table tablename add (column datatype [default value][null/not null],….);  修改字段 alter table tablename modify (column datatype [default value][null/not null],….);  删除字段 alter table tablename drop (column);  "
+    "description": "<h4 id="查看用户表空间">查看用户表空间</h4>
+
+<pre><code class="language-sql">select distinct(tablespace_name) from dba_segments where owner=upper('EpointBid_TP7');
+</code></pre>
+
+<p></p>"
   }
 </script>
 
@@ -130,12 +133,12 @@ select t.table_name,t.num_rows from user_tables t ORDER BY NUM_ROWS DESC;  添�
 
   
 
-  <div class="article-body">
-
-<h4 id="查看用户表空间">查看用户表空间</h4>
+  <div class="article-body"><h4 id="查看用户表空间">查看用户表空间</h4>
 
 <pre><code class="language-sql">select distinct(tablespace_name) from dba_segments where owner=upper('EpointBid_TP7');
 </code></pre>
+
+<p></p>
 
 <h4 id="查看oracle版本">查看Oracle版本</h4>
 
@@ -167,8 +170,7 @@ select t.table_name,t.num_rows from user_tables t ORDER BY NUM_ROWS DESC;  添�
 <h4 id="删除字段">删除字段</h4>
 
 <pre><code class="language-sql">alter table tablename drop (column);
-</code></pre>
-</div>
+</code></pre></div>
 
   <footer class="article-footer">
     

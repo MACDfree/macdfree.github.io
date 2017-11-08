@@ -17,7 +17,12 @@
       <pubDate>Mon, 16 Oct 2017 20:15:58 +0800</pubDate>
       
       <guid>https://macdfree.github.io/wiki/python/virtualenv%E4%BD%BF%E7%94%A8/</guid>
-      <description> 新建虚拟环境（指定解释器） virtualenv -p /usr/bin/python2.7 venv  激活虚拟环境 source venv/bin/activate  退出虚拟环境 deactivate  </description>
+      <description>&lt;h4 id=&#34;新建虚拟环境-指定解释器&#34;&gt;新建虚拟环境（指定解释器）&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;virtualenv -p /usr/bin/python2.7 venv
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
