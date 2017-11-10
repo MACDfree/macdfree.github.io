@@ -1,5 +1,5 @@
 html {
-  font-size: 18px;
+  font-size: 15px;
 }
 
 @media (max-width:  768px)  {
@@ -11,7 +11,7 @@ html {
 body {
   font-size: inherit;
   font-weight: 300;
-  font-family: "Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: Roboto,"Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
 }
 
 p {
@@ -250,7 +250,7 @@ article.li.sm>header {
 }
 
 .article-body strong {
-  box-shadow: 0 -.5rem 0 0 #5bc0de inset;
+  /* box-shadow: 0 -.5rem 0 0 #5bc0de inset; */
 }
 
 .article-body em {
