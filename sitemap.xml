@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://macdfree.github.io/wiki/go/go%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2017-11-07T22:18:08+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://macdfree.github.io/wiki/sqlite/%E5%B8%B8%E7%94%A8%E8%AF%AD%E5%8F%A5/</loc>
     <lastmod>2017-10-16T20:22:25+08:00</lastmod>
   </url>
@@ -342,7 +347,7 @@
   
   <url>
     <loc>https://macdfree.github.io/categories/go/</loc>
-    <lastmod>2017-10-15T21:42:59+08:00</lastmod>
+    <lastmod>2017-11-07T22:18:08+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -414,7 +419,7 @@
   
   <url>
     <loc>https://macdfree.github.io/</loc>
-    <lastmod>2017-10-16T20:22:25+08:00</lastmod>
+    <lastmod>2017-11-07T22:18:08+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -582,7 +587,7 @@
   
   <url>
     <loc>https://macdfree.github.io/wiki/</loc>
-    <lastmod>2017-10-16T20:22:25+08:00</lastmod>
+    <lastmod>2017-11-07T22:18:08+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -595,6 +600,12 @@
   <url>
     <loc>https://macdfree.github.io/tags/%E4%B8%AD%E6%96%AD/</loc>
     <lastmod>2014-03-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://macdfree.github.io/tags/%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
+    <lastmod>2017-11-07T22:18:08+08:00</lastmod>
     <priority>0</priority>
   </url>
   
