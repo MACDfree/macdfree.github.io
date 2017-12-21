@@ -166,12 +166,14 @@ ssl_certificate nginxcert/nginx.crt;
 ssl_certificate_key nginxcert/nginx.key;
 
 # 此配置会设置X-Forwarded-Proto值为https，供后台应用调用
-proxy_set_header X-Forwarded-Proto  https;
+proxy_set_header X-Forwarded-Proto  $scheme;
 proxy_set_header Host $host:$server_port;
 proxy_set_header X-Real-IP $remote_addr;
 proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 # 此配置将后台应用返回的http转成https
-proxy_redirect ~^http://([^:]+):8091(/.+)$ https://$1:8091$2;
+#proxy_redirect ~^http://([^:]+):$server_port(/.+)$ https://$1:$server_port$2;
+#让http请求重定向到https请求
+error_page 497  https://$host:$server_port$request_uri;
 </code></pre></div>
 
   <footer class="article-footer">
