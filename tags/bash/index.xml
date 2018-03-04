@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bash on MACDeer&#39;s Blog</title>
-    <link>https://macdfree.github.io/tags/bash/</link>
+    <link>/tags/bash/</link>
     <description>Recent content in Bash on MACDeer&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh-CN</language>
     <lastBuildDate>Sun, 15 Oct 2017 22:06:01 +0800</lastBuildDate>
     
-	<atom:link href="https://macdfree.github.io/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/bash/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Bash知识点</title>
-      <link>https://macdfree.github.io/wiki/linux/bash%E7%9F%A5%E8%AF%86%E7%82%B9/</link>
+      <link>/wiki/linux/bash%E7%9F%A5%E8%AF%86%E7%82%B9/</link>
       <pubDate>Sun, 15 Oct 2017 22:06:01 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/linux/bash%E7%9F%A5%E8%AF%86%E7%82%B9/</guid>
+      <guid>/wiki/linux/bash%E7%9F%A5%E8%AF%86%E7%82%B9/</guid>
       <description>&lt;p&gt;Bash知识点记录
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>CentOS注册服务脚本</title>
-      <link>https://macdfree.github.io/wiki/linux/centos%E6%B3%A8%E5%86%8C%E6%9C%8D%E5%8A%A1%E8%84%9A%E6%9C%AC/</link>
+      <link>/wiki/linux/centos%E6%B3%A8%E5%86%8C%E6%9C%8D%E5%8A%A1%E8%84%9A%E6%9C%AC/</link>
       <pubDate>Fri, 26 Aug 2016 12:44:52 +0000</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/linux/centos%E6%B3%A8%E5%86%8C%E6%9C%8D%E5%8A%A1%E8%84%9A%E6%9C%AC/</guid>
+      <guid>/wiki/linux/centos%E6%B3%A8%E5%86%8C%E6%9C%8D%E5%8A%A1%E8%84%9A%E6%9C%AC/</guid>
       <description>&lt;p&gt;CentOS中服务脚本示例模板及注册方法
 &lt;/p&gt;</description>
     </item>

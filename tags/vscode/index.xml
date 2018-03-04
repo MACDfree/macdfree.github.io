@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vscode on MACDeer&#39;s Blog</title>
-    <link>https://macdfree.github.io/tags/vscode/</link>
+    <link>/tags/vscode/</link>
     <description>Recent content in Vscode on MACDeer&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh-CN</language>
     <lastBuildDate>Sun, 15 Oct 2017 21:42:59 +0800</lastBuildDate>
     
-	<atom:link href="https://macdfree.github.io/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>开发环境准备 VSCode</title>
-      <link>https://macdfree.github.io/wiki/go/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87-vscode/</link>
+      <link>/wiki/go/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87-vscode/</link>
       <pubDate>Sun, 15 Oct 2017 21:42:59 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/go/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87-vscode/</guid>
+      <guid>/wiki/go/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87-vscode/</guid>
       <description>&lt;p&gt;使用&lt;code&gt;VSCode&lt;/code&gt;搭建&lt;code&gt;Go&lt;/code&gt;开发环境
 &lt;/p&gt;</description>
     </item>

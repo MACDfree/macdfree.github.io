@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hive on MACDeer&#39;s Blog</title>
-    <link>https://macdfree.github.io/tags/hive/</link>
+    <link>/tags/hive/</link>
     <description>Recent content in Hive on MACDeer&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh-CN</language>
     <lastBuildDate>Thu, 12 Oct 2017 22:55:53 +0800</lastBuildDate>
     
-	<atom:link href="https://macdfree.github.io/tags/hive/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/hive/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hive SQL</title>
-      <link>https://macdfree.github.io/wiki/bigdata/hive-sql/</link>
+      <link>/wiki/bigdata/hive-sql/</link>
       <pubDate>Thu, 12 Oct 2017 22:55:53 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/bigdata/hive-sql/</guid>
+      <guid>/wiki/bigdata/hive-sql/</guid>
       <description>&lt;p&gt;&lt;code&gt;Hive SQL&lt;/code&gt;相关记录
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Hadoop&#43;Hive环境搭建</title>
-      <link>https://macdfree.github.io/wiki/bigdata/hadoop&#43;hive%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
+      <link>/wiki/bigdata/hadoop&#43;hive%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
       <pubDate>Thu, 12 Oct 2017 22:10:56 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/bigdata/hadoop&#43;hive%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
+      <guid>/wiki/bigdata/hadoop&#43;hive%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
       <description>&lt;p&gt;&lt;code&gt;Hadoop&lt;/code&gt;+&lt;code&gt;Hive&lt;/code&gt;环境搭建过程说明及注意事项
 &lt;/p&gt;</description>
     </item>

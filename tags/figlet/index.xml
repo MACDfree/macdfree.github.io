@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Figlet on MACDeer&#39;s Blog</title>
-    <link>https://macdfree.github.io/tags/figlet/</link>
+    <link>/tags/figlet/</link>
     <description>Recent content in Figlet on MACDeer&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh-CN</language>
     <lastBuildDate>Sun, 15 Oct 2017 22:17:44 +0800</lastBuildDate>
     
-	<atom:link href="https://macdfree.github.io/tags/figlet/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/figlet/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Figlet使用（字符画）</title>
-      <link>https://macdfree.github.io/wiki/linux/figlet%E4%BD%BF%E7%94%A8%E5%AD%97%E7%AC%A6%E7%94%BB/</link>
+      <link>/wiki/linux/figlet%E4%BD%BF%E7%94%A8%E5%AD%97%E7%AC%A6%E7%94%BB/</link>
       <pubDate>Sun, 15 Oct 2017 22:17:44 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/linux/figlet%E4%BD%BF%E7%94%A8%E5%AD%97%E7%AC%A6%E7%94%BB/</guid>
+      <guid>/wiki/linux/figlet%E4%BD%BF%E7%94%A8%E5%AD%97%E7%AC%A6%E7%94%BB/</guid>
       <description>&lt;p&gt;字符画工具Figlet的安装和使用
 &lt;/p&gt;</description>
     </item>

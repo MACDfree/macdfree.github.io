@@ -2,30 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>编码 on MACDeer&#39;s Blog</title>
-    <link>https://macdfree.github.io/tags/%E7%BC%96%E7%A0%81/</link>
+    <link>/tags/%E7%BC%96%E7%A0%81/</link>
     <description>Recent content in 编码 on MACDeer&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh-CN</language>
     <lastBuildDate>Sat, 05 Apr 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://macdfree.github.io/tags/%E7%BC%96%E7%A0%81/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/%E7%BC%96%E7%A0%81/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Python转码问题的解决方法</title>
-      <link>https://macdfree.github.io/wiki/python/python%E8%BD%AC%E7%A0%81%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</link>
+      <link>/wiki/python/python%E8%BD%AC%E7%A0%81%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</link>
       <pubDate>Sat, 05 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/python/python%E8%BD%AC%E7%A0%81%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</guid>
-      <description>参考
-有时，若要将某个String对象s从gbk内码转换为UTF-8，可以如下操作
-s.decode(&#39;gbk&#39;).encode(&#39;utf-8′)  可是，在实际应用中，我发现，这种办法经常会出现异常：
- UnicodeDecodeError: &amp;lsquo;gbk&amp;rsquo; codec can&amp;rsquo;t decode bytes in position 30664-30665: illegal multibyte sequence
- 这是因为遇到了非法字符——尤其是在某些用C/C++编写的程序中，全角空格往往有多种不同的实现方式，比如\xa3\xa0，或者\xa4\x57，这些字符，看起来都是全角空格，但它们并不是“合法”的全角空格（真正的全角空格是\xa1\xa1），因此在转码的过程中出现了异常。
-这样的问题很让人头疼，因为只要字符串中出现了一个非法字符，整个字符串——有时候，就是整篇文章——就都无法转码。
-解决办法： s.decode(&amp;lsquo;gbk&amp;rsquo;, ‘ignore&amp;rsquo;).encode(&amp;lsquo;utf-8′) 因为decode的函数原型是decode([encoding], [errors=&amp;lsquo;strict&amp;rsquo;])，可以用第二个参数控制错误处理的策略，默认的参数就是strict，代表遇到非法字符时抛出异常；
- 如果设置为ignore，则会忽略非法字符； 如果设置为replace，则会用?取代非法字符； 如果设置为xmlcharrefreplace，则使用XML的字符引用。  python文档
- decode( [encoding[, errors]]) Decodes the string using the codec registered for encoding. encoding defaults to the default string encoding. errors may be given to set a different error handling scheme. The default is &amp;lsquo;strict&amp;rsquo;, meaning that encoding errors raise UnicodeError.</description>
+      <guid>/wiki/python/python%E8%BD%AC%E7%A0%81%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</guid>
+      <description>参考 有时，若要将某个String对象s从gbk内码转换为UTF-8，可以如下操作 s.decode(&#39;gbk&#39;).encode(&#39;utf-8′</description>
     </item>
     
   </channel>

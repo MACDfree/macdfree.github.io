@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>交叉编译 on MACDeer&#39;s Blog</title>
-    <link>https://macdfree.github.io/tags/%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</link>
+    <link>/tags/%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</link>
     <description>Recent content in 交叉编译 on MACDeer&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh-CN</language>
     <lastBuildDate>Tue, 07 Nov 2017 22:18:08 +0800</lastBuildDate>
     
-	<atom:link href="https://macdfree.github.io/tags/%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Go命令记录</title>
-      <link>https://macdfree.github.io/wiki/go/go%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/</link>
+      <link>/wiki/go/go%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Tue, 07 Nov 2017 22:18:08 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/go/go%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/</guid>
+      <guid>/wiki/go/go%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;&lt;code&gt;Go&lt;/code&gt;相关命令记录
 &lt;/p&gt;</description>
     </item>

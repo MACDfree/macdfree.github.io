@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Iterm on MACDeer&#39;s Blog</title>
-    <link>https://macdfree.github.io/tags/iterm/</link>
+    <link>/tags/iterm/</link>
     <description>Recent content in Iterm on MACDeer&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh-CN</language>
     <lastBuildDate>Sun, 15 Oct 2017 22:35:41 +0800</lastBuildDate>
     
-	<atom:link href="https://macdfree.github.io/tags/iterm/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/iterm/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>iTerm安装配置</title>
-      <link>https://macdfree.github.io/wiki/macos/iterm%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</link>
+      <link>/wiki/macos/iterm%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Sun, 15 Oct 2017 22:35:41 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/macos/iterm%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</guid>
+      <guid>/wiki/macos/iterm%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</guid>
       <description>&lt;p&gt;iTerm相关配置记录备忘
 &lt;/p&gt;</description>
     </item>

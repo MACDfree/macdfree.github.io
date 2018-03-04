@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wikis on MACDeer&#39;s Blog</title>
-    <link>https://macdfree.github.io/wiki/</link>
+    <link>/wiki/</link>
     <description>Recent content in Wikis on MACDeer&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh-CN</language>
     <lastBuildDate>Tue, 07 Nov 2017 22:18:08 +0800</lastBuildDate>
     
-	<atom:link href="https://macdfree.github.io/wiki/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/wiki/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Go命令记录</title>
-      <link>https://macdfree.github.io/wiki/go/go%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/</link>
+      <link>/wiki/go/go%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Tue, 07 Nov 2017 22:18:08 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/go/go%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/</guid>
+      <guid>/wiki/go/go%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;&lt;code&gt;Go&lt;/code&gt;相关命令记录
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>常用语句</title>
-      <link>https://macdfree.github.io/wiki/sqlite/%E5%B8%B8%E7%94%A8%E8%AF%AD%E5%8F%A5/</link>
+      <link>/wiki/sqlite/%E5%B8%B8%E7%94%A8%E8%AF%AD%E5%8F%A5/</link>
       <pubDate>Mon, 16 Oct 2017 20:22:25 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/sqlite/%E5%B8%B8%E7%94%A8%E8%AF%AD%E5%8F%A5/</guid>
+      <guid>/wiki/sqlite/%E5%B8%B8%E7%94%A8%E8%AF%AD%E5%8F%A5/</guid>
       <description>&lt;h3 id=&#34;创建表&#34;&gt;创建表&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;create table tablename (
@@ -39,10 +39,10 @@
     
     <item>
       <title>Redis常用命令</title>
-      <link>https://macdfree.github.io/wiki/redis/redis%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <link>/wiki/redis/redis%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Mon, 16 Oct 2017 20:19:39 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/redis/redis%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <guid>/wiki/redis/redis%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
       <description>&lt;h4 id=&#34;进入redis命令行&#34;&gt;进入redis命令行&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;redis-cli
@@ -53,10 +53,10 @@
     
     <item>
       <title>Pip安装常见问题</title>
-      <link>https://macdfree.github.io/wiki/python/pip%E5%AE%89%E8%A3%85%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
+      <link>/wiki/python/pip%E5%AE%89%E8%A3%85%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
       <pubDate>Mon, 16 Oct 2017 20:17:30 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/python/pip%E5%AE%89%E8%A3%85%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
+      <guid>/wiki/python/pip%E5%AE%89%E8%A3%85%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
       <description>&lt;p&gt;报错：&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;fatal error: Python.h: No such file or directory
@@ -69,10 +69,10 @@
     
     <item>
       <title>Virtualenv使用</title>
-      <link>https://macdfree.github.io/wiki/python/virtualenv%E4%BD%BF%E7%94%A8/</link>
+      <link>/wiki/python/virtualenv%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Mon, 16 Oct 2017 20:15:58 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/python/virtualenv%E4%BD%BF%E7%94%A8/</guid>
+      <guid>/wiki/python/virtualenv%E4%BD%BF%E7%94%A8/</guid>
       <description>&lt;h4 id=&#34;新建虚拟环境-指定解释器&#34;&gt;新建虚拟环境（指定解释器）&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;virtualenv -p /usr/bin/python2.7 venv
@@ -83,10 +83,10 @@
     
     <item>
       <title>Oracle相关命令</title>
-      <link>https://macdfree.github.io/wiki/oracle/oracle%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4/</link>
+      <link>/wiki/oracle/oracle%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Mon, 16 Oct 2017 20:14:43 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/oracle/oracle%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4/</guid>
+      <guid>/wiki/oracle/oracle%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4/</guid>
       <description>&lt;h4 id=&#34;oracle用户解锁&#34;&gt;Oracle用户解锁&lt;/h4&gt;
 
 &lt;ol&gt;
@@ -99,10 +99,10 @@
     
     <item>
       <title>新库导入</title>
-      <link>https://macdfree.github.io/wiki/oracle/%E6%96%B0%E5%BA%93%E5%AF%BC%E5%85%A5/</link>
+      <link>/wiki/oracle/%E6%96%B0%E5%BA%93%E5%AF%BC%E5%85%A5/</link>
       <pubDate>Mon, 16 Oct 2017 20:12:38 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/oracle/%E6%96%B0%E5%BA%93%E5%AF%BC%E5%85%A5/</guid>
+      <guid>/wiki/oracle/%E6%96%B0%E5%BA%93%E5%AF%BC%E5%85%A5/</guid>
       <description>&lt;ol&gt;
 &lt;li&gt;&lt;p&gt;创建临时表空间&lt;/p&gt;
 
@@ -117,10 +117,10 @@ AUTOEXTEND ON NEXT 32M MAXSIZE 2048M;
     
     <item>
       <title>DIRECTORY管理</title>
-      <link>https://macdfree.github.io/wiki/oracle/directory%E7%AE%A1%E7%90%86/</link>
+      <link>/wiki/oracle/directory%E7%AE%A1%E7%90%86/</link>
       <pubDate>Mon, 16 Oct 2017 20:09:54 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/oracle/directory%E7%AE%A1%E7%90%86/</guid>
+      <guid>/wiki/oracle/directory%E7%AE%A1%E7%90%86/</guid>
       <description>&lt;p&gt;使用数据泵导入备份时需要根据DIRECTORY来获取备份文件所在路径&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -128,10 +128,10 @@ AUTOEXTEND ON NEXT 32M MAXSIZE 2048M;
     
     <item>
       <title>SQL记录</title>
-      <link>https://macdfree.github.io/wiki/oracle/sql%E8%AE%B0%E5%BD%95/</link>
+      <link>/wiki/oracle/sql%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Mon, 16 Oct 2017 20:06:00 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/oracle/sql%E8%AE%B0%E5%BD%95/</guid>
+      <guid>/wiki/oracle/sql%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;h4 id=&#34;查看用户表空间&#34;&gt;查看用户表空间&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select distinct(tablespace_name) from dba_segments where owner=upper(&#39;EpointBid_TP7&#39;);
@@ -142,20 +142,20 @@ AUTOEXTEND ON NEXT 32M MAXSIZE 2048M;
     
     <item>
       <title>MySQL修改连接时间</title>
-      <link>https://macdfree.github.io/wiki/mysql/mysql%E4%BF%AE%E6%94%B9%E8%BF%9E%E6%8E%A5%E6%97%B6%E9%97%B4/</link>
+      <link>/wiki/mysql/mysql%E4%BF%AE%E6%94%B9%E8%BF%9E%E6%8E%A5%E6%97%B6%E9%97%B4/</link>
       <pubDate>Sun, 15 Oct 2017 23:07:49 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/mysql/mysql%E4%BF%AE%E6%94%B9%E8%BF%9E%E6%8E%A5%E6%97%B6%E9%97%B4/</guid>
+      <guid>/wiki/mysql/mysql%E4%BF%AE%E6%94%B9%E8%BF%9E%E6%8E%A5%E6%97%B6%E9%97%B4/</guid>
       <description>&lt;p&gt;Windows下修改&lt;code&gt;my.ini&lt;/code&gt;文件，在mysqld节点下增加如下配置并重启
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>MySQL安装配置及导入导出</title>
-      <link>https://macdfree.github.io/wiki/mysql/mysql%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%8F%8A%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA/</link>
+      <link>/wiki/mysql/mysql%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%8F%8A%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA/</link>
       <pubDate>Sun, 15 Oct 2017 22:55:29 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/mysql/mysql%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%8F%8A%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA/</guid>
+      <guid>/wiki/mysql/mysql%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%8F%8A%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA/</guid>
       <description>&lt;h3 id=&#34;windows首次安装mysql时初始化&#34;&gt;Windows首次安装MySQL时初始化&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;mysqld --initialize [with random root password]
@@ -167,10 +167,10 @@ mysqld --initialize-insecure [without random root password]
     
     <item>
       <title>MySQL读取配置文件顺序</title>
-      <link>https://macdfree.github.io/wiki/mysql/mysql%E8%AF%BB%E5%8F%96%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E9%A1%BA%E5%BA%8F/</link>
+      <link>/wiki/mysql/mysql%E8%AF%BB%E5%8F%96%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E9%A1%BA%E5%BA%8F/</link>
       <pubDate>Sun, 15 Oct 2017 22:54:01 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/mysql/mysql%E8%AF%BB%E5%8F%96%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E9%A1%BA%E5%BA%8F/</guid>
+      <guid>/wiki/mysql/mysql%E8%AF%BB%E5%8F%96%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E9%A1%BA%E5%BA%8F/</guid>
       <description>&lt;ol&gt;
 &lt;li&gt;&lt;p&gt;/etc/my.cnf&lt;/p&gt;&lt;/li&gt;
 
@@ -186,10 +186,10 @@ mysqld --initialize-insecure [without random root password]
     
     <item>
       <title>MySQL常用语句</title>
-      <link>https://macdfree.github.io/wiki/mysql/mysql%E5%B8%B8%E7%94%A8%E8%AF%AD%E5%8F%A5/</link>
+      <link>/wiki/mysql/mysql%E5%B8%B8%E7%94%A8%E8%AF%AD%E5%8F%A5/</link>
       <pubDate>Sun, 15 Oct 2017 22:51:08 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/mysql/mysql%E5%B8%B8%E7%94%A8%E8%AF%AD%E5%8F%A5/</guid>
+      <guid>/wiki/mysql/mysql%E5%B8%B8%E7%94%A8%E8%AF%AD%E5%8F%A5/</guid>
       <description>&lt;p&gt;删除数据库&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;drop database if exists epointbid_bigdata_pro;
@@ -200,268 +200,260 @@ mysqld --initialize-insecure [without random root password]
     
     <item>
       <title>Mac中的相关备忘</title>
-      <link>https://macdfree.github.io/wiki/macos/mac%E4%B8%AD%E7%9A%84%E7%9B%B8%E5%85%B3%E5%A4%87%E5%BF%98/</link>
+      <link>/wiki/macos/mac%E4%B8%AD%E7%9A%84%E7%9B%B8%E5%85%B3%E5%A4%87%E5%BF%98/</link>
       <pubDate>Sun, 15 Oct 2017 22:47:36 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/macos/mac%E4%B8%AD%E7%9A%84%E7%9B%B8%E5%85%B3%E5%A4%87%E5%BF%98/</guid>
+      <guid>/wiki/macos/mac%E4%B8%AD%E7%9A%84%E7%9B%B8%E5%85%B3%E5%A4%87%E5%BF%98/</guid>
       <description>&lt;p&gt;键盘图标映射
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>iTerm安装配置</title>
-      <link>https://macdfree.github.io/wiki/macos/iterm%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</link>
+      <link>/wiki/macos/iterm%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Sun, 15 Oct 2017 22:35:41 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/macos/iterm%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</guid>
+      <guid>/wiki/macos/iterm%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</guid>
       <description>&lt;p&gt;iTerm相关配置记录备忘
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Brew相关</title>
-      <link>https://macdfree.github.io/wiki/macos/brew%E7%9B%B8%E5%85%B3/</link>
+      <link>/wiki/macos/brew%E7%9B%B8%E5%85%B3/</link>
       <pubDate>Sun, 15 Oct 2017 22:33:25 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/macos/brew%E7%9B%B8%E5%85%B3/</guid>
+      <guid>/wiki/macos/brew%E7%9B%B8%E5%85%B3/</guid>
       <description>&lt;p&gt;MacOS下包管理工具brew相关用法记录
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Vagrant使用</title>
-      <link>https://macdfree.github.io/wiki/macos/vagrant%E4%BD%BF%E7%94%A8/</link>
+      <link>/wiki/macos/vagrant%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Sun, 15 Oct 2017 22:29:41 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/macos/vagrant%E4%BD%BF%E7%94%A8/</guid>
+      <guid>/wiki/macos/vagrant%E4%BD%BF%E7%94%A8/</guid>
       <description>&lt;p&gt;虚拟机管理软件Vagrant使用记录
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Curl使用</title>
-      <link>https://macdfree.github.io/wiki/linux/curl%E4%BD%BF%E7%94%A8/</link>
+      <link>/wiki/linux/curl%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Sun, 15 Oct 2017 22:27:35 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/linux/curl%E4%BD%BF%E7%94%A8/</guid>
+      <guid>/wiki/linux/curl%E4%BD%BF%E7%94%A8/</guid>
       <description>&lt;p&gt;curl用法记录
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>用户新增并授权</title>
-      <link>https://macdfree.github.io/wiki/linux/%E7%94%A8%E6%88%B7%E6%96%B0%E5%A2%9E%E5%B9%B6%E6%8E%88%E6%9D%83/</link>
+      <link>/wiki/linux/%E7%94%A8%E6%88%B7%E6%96%B0%E5%A2%9E%E5%B9%B6%E6%8E%88%E6%9D%83/</link>
       <pubDate>Sun, 15 Oct 2017 22:24:48 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/linux/%E7%94%A8%E6%88%B7%E6%96%B0%E5%A2%9E%E5%B9%B6%E6%8E%88%E6%9D%83/</guid>
+      <guid>/wiki/linux/%E7%94%A8%E6%88%B7%E6%96%B0%E5%A2%9E%E5%B9%B6%E6%8E%88%E6%9D%83/</guid>
       <description>&lt;p&gt;Linux新增用户并授权命令
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Linux常用命令</title>
-      <link>https://macdfree.github.io/wiki/linux/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <link>/wiki/linux/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Sun, 15 Oct 2017 22:23:08 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/linux/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <guid>/wiki/linux/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
       <description>&lt;p&gt;Linux常用命令记录
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>SSH免密码设置</title>
-      <link>https://macdfree.github.io/wiki/linux/ssh%E5%85%8D%E5%AF%86%E7%A0%81%E8%AE%BE%E7%BD%AE/</link>
+      <link>/wiki/linux/ssh%E5%85%8D%E5%AF%86%E7%A0%81%E8%AE%BE%E7%BD%AE/</link>
       <pubDate>Sun, 15 Oct 2017 22:19:59 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/linux/ssh%E5%85%8D%E5%AF%86%E7%A0%81%E8%AE%BE%E7%BD%AE/</guid>
+      <guid>/wiki/linux/ssh%E5%85%8D%E5%AF%86%E7%A0%81%E8%AE%BE%E7%BD%AE/</guid>
       <description>&lt;p&gt;实现SSH证书登录
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Figlet使用（字符画）</title>
-      <link>https://macdfree.github.io/wiki/linux/figlet%E4%BD%BF%E7%94%A8%E5%AD%97%E7%AC%A6%E7%94%BB/</link>
+      <link>/wiki/linux/figlet%E4%BD%BF%E7%94%A8%E5%AD%97%E7%AC%A6%E7%94%BB/</link>
       <pubDate>Sun, 15 Oct 2017 22:17:44 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/linux/figlet%E4%BD%BF%E7%94%A8%E5%AD%97%E7%AC%A6%E7%94%BB/</guid>
+      <guid>/wiki/linux/figlet%E4%BD%BF%E7%94%A8%E5%AD%97%E7%AC%A6%E7%94%BB/</guid>
       <description>&lt;p&gt;字符画工具Figlet的安装和使用
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>创建用于Nginx的签名证书</title>
-      <link>https://macdfree.github.io/wiki/linux/%E5%88%9B%E5%BB%BA%E7%94%A8%E4%BA%8Enginx%E7%9A%84%E7%AD%BE%E5%90%8D%E8%AF%81%E4%B9%A6/</link>
+      <link>/wiki/linux/%E5%88%9B%E5%BB%BA%E7%94%A8%E4%BA%8Enginx%E7%9A%84%E7%AD%BE%E5%90%8D%E8%AF%81%E4%B9%A6/</link>
       <pubDate>Sun, 15 Oct 2017 22:10:09 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/linux/%E5%88%9B%E5%BB%BA%E7%94%A8%E4%BA%8Enginx%E7%9A%84%E7%AD%BE%E5%90%8D%E8%AF%81%E4%B9%A6/</guid>
+      <guid>/wiki/linux/%E5%88%9B%E5%BB%BA%E7%94%A8%E4%BA%8Enginx%E7%9A%84%E7%AD%BE%E5%90%8D%E8%AF%81%E4%B9%A6/</guid>
       <description>&lt;p&gt;Nginx配置SSL时创建签名证书的方法
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Linux抓包分析</title>
-      <link>https://macdfree.github.io/wiki/linux/linux%E6%8A%93%E5%8C%85%E5%88%86%E6%9E%90/</link>
+      <link>/wiki/linux/linux%E6%8A%93%E5%8C%85%E5%88%86%E6%9E%90/</link>
       <pubDate>Sun, 15 Oct 2017 22:07:57 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/linux/linux%E6%8A%93%E5%8C%85%E5%88%86%E6%9E%90/</guid>
+      <guid>/wiki/linux/linux%E6%8A%93%E5%8C%85%E5%88%86%E6%9E%90/</guid>
       <description>&lt;p&gt;使用tcpdump+wireshark工具组合，tcpdump进行再Linux环境下进行抓包并存储为cap文件，wireshark进行分析。
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Bash知识点</title>
-      <link>https://macdfree.github.io/wiki/linux/bash%E7%9F%A5%E8%AF%86%E7%82%B9/</link>
+      <link>/wiki/linux/bash%E7%9F%A5%E8%AF%86%E7%82%B9/</link>
       <pubDate>Sun, 15 Oct 2017 22:06:01 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/linux/bash%E7%9F%A5%E8%AF%86%E7%82%B9/</guid>
+      <guid>/wiki/linux/bash%E7%9F%A5%E8%AF%86%E7%82%B9/</guid>
       <description>&lt;p&gt;Bash知识点记录
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Spring记录</title>
-      <link>https://macdfree.github.io/wiki/java/spring%E8%AE%B0%E5%BD%95/</link>
+      <link>/wiki/java/spring%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sun, 15 Oct 2017 22:03:36 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/java/spring%E8%AE%B0%E5%BD%95/</guid>
+      <guid>/wiki/java/spring%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;Spring相关知识点记录
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Shiro学习记录</title>
-      <link>https://macdfree.github.io/wiki/java/shiro%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</link>
+      <link>/wiki/java/shiro%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sun, 15 Oct 2017 22:02:11 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/java/shiro%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</guid>
+      <guid>/wiki/java/shiro%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;安全框架Shiro学习记录
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Quartz使用</title>
-      <link>https://macdfree.github.io/wiki/java/quartz%E4%BD%BF%E7%94%A8/</link>
+      <link>/wiki/java/quartz%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Sun, 15 Oct 2017 21:57:39 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/java/quartz%E4%BD%BF%E7%94%A8/</guid>
+      <guid>/wiki/java/quartz%E4%BD%BF%E7%94%A8/</guid>
       <description>&lt;p&gt;Quartz的主要概念是Scheduler、Job、JobDetail和Trigger，其中Scheduler（调度者）是主体；JobDetail和Trigger用于定义任务的相关信息，如：需要执行的任务类，任务执行的时间点等；Job为实际需要执行的任务。
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Web.xml记录</title>
-      <link>https://macdfree.github.io/wiki/java/web.xml%E8%AE%B0%E5%BD%95/</link>
+      <link>/wiki/java/web.xml%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sun, 15 Oct 2017 21:55:17 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/java/web.xml%E8%AE%B0%E5%BD%95/</guid>
+      <guid>/wiki/java/web.xml%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;web.xml相关知识点记录
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Keytool使用</title>
-      <link>https://macdfree.github.io/wiki/java/keytool%E4%BD%BF%E7%94%A8/</link>
+      <link>/wiki/java/keytool%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Sun, 15 Oct 2017 21:51:56 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/java/keytool%E4%BD%BF%E7%94%A8/</guid>
+      <guid>/wiki/java/keytool%E4%BD%BF%E7%94%A8/</guid>
       <description>&lt;p&gt;JDK中证书管理工具keytool的使用
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Maven常用命令</title>
-      <link>https://macdfree.github.io/wiki/java/maven%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <link>/wiki/java/maven%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Sun, 15 Oct 2017 21:50:23 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/java/maven%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <guid>/wiki/java/maven%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
       <description>&lt;p&gt;Maven常用命令记录
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>开发环境准备 VSCode</title>
-      <link>https://macdfree.github.io/wiki/go/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87-vscode/</link>
+      <link>/wiki/go/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87-vscode/</link>
       <pubDate>Sun, 15 Oct 2017 21:42:59 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/go/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87-vscode/</guid>
+      <guid>/wiki/go/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87-vscode/</guid>
       <description>&lt;p&gt;使用&lt;code&gt;VSCode&lt;/code&gt;搭建&lt;code&gt;Go&lt;/code&gt;开发环境
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Go知识点备忘</title>
-      <link>https://macdfree.github.io/wiki/go/go%E7%9F%A5%E8%AF%86%E7%82%B9%E5%A4%87%E5%BF%98/</link>
+      <link>/wiki/go/go%E7%9F%A5%E8%AF%86%E7%82%B9%E5%A4%87%E5%BF%98/</link>
       <pubDate>Thu, 12 Oct 2017 23:02:15 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/go/go%E7%9F%A5%E8%AF%86%E7%82%B9%E5%A4%87%E5%BF%98/</guid>
+      <guid>/wiki/go/go%E7%9F%A5%E8%AF%86%E7%82%B9%E5%A4%87%E5%BF%98/</guid>
       <description>&lt;p&gt;&lt;code&gt;Go&lt;/code&gt;相关知识点记录
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Git常用命令</title>
-      <link>https://macdfree.github.io/wiki/git/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <link>/wiki/git/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Thu, 12 Oct 2017 22:57:49 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/git/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <guid>/wiki/git/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
       <description>&lt;p&gt;&lt;code&gt;Git&lt;/code&gt;常用命令记录
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Hive SQL</title>
-      <link>https://macdfree.github.io/wiki/bigdata/hive-sql/</link>
+      <link>/wiki/bigdata/hive-sql/</link>
       <pubDate>Thu, 12 Oct 2017 22:55:53 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/bigdata/hive-sql/</guid>
+      <guid>/wiki/bigdata/hive-sql/</guid>
       <description>&lt;p&gt;&lt;code&gt;Hive SQL&lt;/code&gt;相关记录
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Hadoop&#43;Hive环境搭建</title>
-      <link>https://macdfree.github.io/wiki/bigdata/hadoop&#43;hive%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
+      <link>/wiki/bigdata/hadoop&#43;hive%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
       <pubDate>Thu, 12 Oct 2017 22:10:56 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/bigdata/hadoop&#43;hive%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
+      <guid>/wiki/bigdata/hadoop&#43;hive%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
       <description>&lt;p&gt;&lt;code&gt;Hadoop&lt;/code&gt;+&lt;code&gt;Hive&lt;/code&gt;环境搭建过程说明及注意事项
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Oracle导库</title>
-      <link>https://macdfree.github.io/wiki/oracle/oracle%E5%AF%BC%E5%BA%93/</link>
+      <link>/wiki/oracle/oracle%E5%AF%BC%E5%BA%93/</link>
       <pubDate>Thu, 29 Sep 2016 00:10:57 +0000</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/oracle/oracle%E5%AF%BC%E5%BA%93/</guid>
+      <guid>/wiki/oracle/oracle%E5%AF%BC%E5%BA%93/</guid>
       <description>&lt;p&gt;Oracle导库主要分成清库、清空回收站、导库三个步骤。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>CentOS注册服务脚本</title>
-      <link>https://macdfree.github.io/wiki/linux/centos%E6%B3%A8%E5%86%8C%E6%9C%8D%E5%8A%A1%E8%84%9A%E6%9C%AC/</link>
+      <link>/wiki/linux/centos%E6%B3%A8%E5%86%8C%E6%9C%8D%E5%8A%A1%E8%84%9A%E6%9C%AC/</link>
       <pubDate>Fri, 26 Aug 2016 12:44:52 +0000</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/linux/centos%E6%B3%A8%E5%86%8C%E6%9C%8D%E5%8A%A1%E8%84%9A%E6%9C%AC/</guid>
+      <guid>/wiki/linux/centos%E6%B3%A8%E5%86%8C%E6%9C%8D%E5%8A%A1%E8%84%9A%E6%9C%AC/</guid>
       <description>&lt;p&gt;CentOS中服务脚本示例模板及注册方法
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Python转码问题的解决方法</title>
-      <link>https://macdfree.github.io/wiki/python/python%E8%BD%AC%E7%A0%81%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</link>
+      <link>/wiki/python/python%E8%BD%AC%E7%A0%81%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</link>
       <pubDate>Sat, 05 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/python/python%E8%BD%AC%E7%A0%81%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</guid>
-      <description>参考
-有时，若要将某个String对象s从gbk内码转换为UTF-8，可以如下操作
-s.decode(&#39;gbk&#39;).encode(&#39;utf-8′)  可是，在实际应用中，我发现，这种办法经常会出现异常：
- UnicodeDecodeError: &amp;lsquo;gbk&amp;rsquo; codec can&amp;rsquo;t decode bytes in position 30664-30665: illegal multibyte sequence
- 这是因为遇到了非法字符——尤其是在某些用C/C++编写的程序中，全角空格往往有多种不同的实现方式，比如\xa3\xa0，或者\xa4\x57，这些字符，看起来都是全角空格，但它们并不是“合法”的全角空格（真正的全角空格是\xa1\xa1），因此在转码的过程中出现了异常。
-这样的问题很让人头疼，因为只要字符串中出现了一个非法字符，整个字符串——有时候，就是整篇文章——就都无法转码。
-解决办法： s.decode(&amp;lsquo;gbk&amp;rsquo;, ‘ignore&amp;rsquo;).encode(&amp;lsquo;utf-8′) 因为decode的函数原型是decode([encoding], [errors=&amp;lsquo;strict&amp;rsquo;])，可以用第二个参数控制错误处理的策略，默认的参数就是strict，代表遇到非法字符时抛出异常；
- 如果设置为ignore，则会忽略非法字符； 如果设置为replace，则会用?取代非法字符； 如果设置为xmlcharrefreplace，则使用XML的字符引用。  python文档
- decode( [encoding[, errors]]) Decodes the string using the codec registered for encoding. encoding defaults to the default string encoding. errors may be given to set a different error handling scheme. The default is &amp;lsquo;strict&amp;rsquo;, meaning that encoding errors raise UnicodeError.</description>
+      <guid>/wiki/python/python%E8%BD%AC%E7%A0%81%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</guid>
+      <description>参考 有时，若要将某个String对象s从gbk内码转换为UTF-8，可以如下操作 s.decode(&#39;gbk&#39;).encode(&#39;utf-8′</description>
     </item>
     
   </channel>

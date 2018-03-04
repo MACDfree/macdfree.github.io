@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Web.xml on MACDeer&#39;s Blog</title>
-    <link>https://macdfree.github.io/tags/web.xml/</link>
+    <link>/tags/web.xml/</link>
     <description>Recent content in Web.xml on MACDeer&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh-CN</language>
     <lastBuildDate>Sun, 15 Oct 2017 21:55:17 +0800</lastBuildDate>
     
-	<atom:link href="https://macdfree.github.io/tags/web.xml/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/web.xml/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Web.xml记录</title>
-      <link>https://macdfree.github.io/wiki/java/web.xml%E8%AE%B0%E5%BD%95/</link>
+      <link>/wiki/java/web.xml%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sun, 15 Oct 2017 21:55:17 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/java/web.xml%E8%AE%B0%E5%BD%95/</guid>
+      <guid>/wiki/java/web.xml%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;web.xml相关知识点记录
 &lt;/p&gt;</description>
     </item>

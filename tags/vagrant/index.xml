@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vagrant on MACDeer&#39;s Blog</title>
-    <link>https://macdfree.github.io/tags/vagrant/</link>
+    <link>/tags/vagrant/</link>
     <description>Recent content in Vagrant on MACDeer&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh-CN</language>
     <lastBuildDate>Sun, 15 Oct 2017 22:29:41 +0800</lastBuildDate>
     
-	<atom:link href="https://macdfree.github.io/tags/vagrant/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/vagrant/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Vagrant使用</title>
-      <link>https://macdfree.github.io/wiki/macos/vagrant%E4%BD%BF%E7%94%A8/</link>
+      <link>/wiki/macos/vagrant%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Sun, 15 Oct 2017 22:29:41 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/macos/vagrant%E4%BD%BF%E7%94%A8/</guid>
+      <guid>/wiki/macos/vagrant%E4%BD%BF%E7%94%A8/</guid>
       <description>&lt;p&gt;虚拟机管理软件Vagrant使用记录
 &lt;/p&gt;</description>
     </item>

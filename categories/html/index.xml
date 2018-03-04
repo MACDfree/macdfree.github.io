@@ -2,31 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Html on MACDeer&#39;s Blog</title>
-    <link>https://macdfree.github.io/categories/html/</link>
+    <link>/categories/html/</link>
     <description>Recent content in Html on MACDeer&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh-CN</language>
     <lastBuildDate>Sun, 02 Oct 2016 13:51:54 +0000</lastBuildDate>
     
-	<atom:link href="https://macdfree.github.io/categories/html/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/html/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Sublime Text 3 API</title>
-      <link>https://macdfree.github.io/posts/sublimetext3api/</link>
+      <link>/posts/sublimetext3api/</link>
       <pubDate>Sun, 02 Oct 2016 13:51:54 +0000</pubDate>
       
-      <guid>https://macdfree.github.io/posts/sublimetext3api/</guid>
-      <description>API Reference – Sublime Text 3 Documentation .fancybox-margin { margin-right: 0px; }       Website Forum  Sublime Text 3 Documentation API Reference    综述  插件示例 插件生命周期 Threading Types   核心组件  sublime Module View Class Selection Class Region Class Phantom Class PhantomSet Class Edit Class Window Class Settings Class   Plugin Extension Points   sublime_plugin Module   EventListener Class   ViewEventListener Class   ApplicationCommand Class   WindowCommand Class   TextCommand Class      综述 插件示例 Sublime Text预装了几个插件，它们位于 Defaultpackage中:   Packages/Default/delete_word.</description>
-    </item>
-    
-    <item>
-      <title>测试HTML</title>
-      <link>https://macdfree.github.io/posts/%E6%B5%8B%E8%AF%95html/</link>
-      <pubDate>Sun, 18 Sep 2016 00:32:24 +0000</pubDate>
-      
-      <guid>https://macdfree.github.io/posts/%E6%B5%8B%E8%AF%95html/</guid>
-      <description>WYSIWYGvar text = document.getElementById(&#34;text&#34;);text.onchange = function() {document.getElementById(&#34;content&#34;).innerHTML = text.value;};</description>
+      <guid>/posts/sublimetext3api/</guid>
+      <description>API Reference – Sublime Text 3 Documentation .fancybox-margin { margin-right: 0px; } Website Forum Sublime Text 3 Documentation API Reference 综述 插件示例 插件生命周期 Threading Types 核心组件 sublime Module View Class Selection Class Region Class Phantom Class PhantomSet Class Edit Class Window Class Settings Class Plugin Extension Points sublime_plugin Module EventListener Class ViewEventListener Class ApplicationCommand Class WindowCommand Class TextCommand</description>
     </item>
     
   </channel>

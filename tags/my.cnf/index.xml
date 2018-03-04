@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My.cnf on MACDeer&#39;s Blog</title>
-    <link>https://macdfree.github.io/tags/my.cnf/</link>
+    <link>/tags/my.cnf/</link>
     <description>Recent content in My.cnf on MACDeer&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh-CN</language>
     <lastBuildDate>Sun, 15 Oct 2017 22:54:01 +0800</lastBuildDate>
     
-	<atom:link href="https://macdfree.github.io/tags/my.cnf/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/my.cnf/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>MySQL读取配置文件顺序</title>
-      <link>https://macdfree.github.io/wiki/mysql/mysql%E8%AF%BB%E5%8F%96%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E9%A1%BA%E5%BA%8F/</link>
+      <link>/wiki/mysql/mysql%E8%AF%BB%E5%8F%96%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E9%A1%BA%E5%BA%8F/</link>
       <pubDate>Sun, 15 Oct 2017 22:54:01 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/mysql/mysql%E8%AF%BB%E5%8F%96%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E9%A1%BA%E5%BA%8F/</guid>
+      <guid>/wiki/mysql/mysql%E8%AF%BB%E5%8F%96%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E9%A1%BA%E5%BA%8F/</guid>
       <description>&lt;ol&gt;
 &lt;li&gt;&lt;p&gt;/etc/my.cnf&lt;/p&gt;&lt;/li&gt;
 

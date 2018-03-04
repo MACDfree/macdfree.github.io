@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>单片机 on MACDeer&#39;s Blog</title>
-    <link>https://macdfree.github.io/tags/%E5%8D%95%E7%89%87%E6%9C%BA/</link>
+    <link>/tags/%E5%8D%95%E7%89%87%E6%9C%BA/</link>
     <description>Recent content in 单片机 on MACDeer&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh-CN</language>
     <lastBuildDate>Thu, 27 Mar 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://macdfree.github.io/tags/%E5%8D%95%E7%89%87%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/%E5%8D%95%E7%89%87%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>关于51单片机的中断问题</title>
-      <link>https://macdfree.github.io/posts/%E5%85%B3%E4%BA%8E51%E5%8D%95%E7%89%87%E6%9C%BA%E7%9A%84%E4%B8%AD%E6%96%AD%E9%97%AE%E9%A2%98/</link>
+      <link>/posts/%E5%85%B3%E4%BA%8E51%E5%8D%95%E7%89%87%E6%9C%BA%E7%9A%84%E4%B8%AD%E6%96%AD%E9%97%AE%E9%A2%98/</link>
       <pubDate>Thu, 27 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://macdfree.github.io/posts/%E5%85%B3%E4%BA%8E51%E5%8D%95%E7%89%87%E6%9C%BA%E7%9A%84%E4%B8%AD%E6%96%AD%E9%97%AE%E9%A2%98/</guid>
+      <guid>/posts/%E5%85%B3%E4%BA%8E51%E5%8D%95%E7%89%87%E6%9C%BA%E7%9A%84%E4%B8%AD%E6%96%AD%E9%97%AE%E9%A2%98/</guid>
       <description>&lt;p&gt;今天上无线传感器网络课的时候，老师问了一个他遇到的问题：用C语言编写中断程序时，&lt;code&gt;interrupt&lt;/code&gt;后跟的数字写错了，但实际运行时却是正常的，他进一步试验发现只要这个数字比正确的数字大都是可以的，由此问我们其中的原因。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

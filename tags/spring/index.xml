@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Spring on MACDeer&#39;s Blog</title>
-    <link>https://macdfree.github.io/tags/spring/</link>
+    <link>/tags/spring/</link>
     <description>Recent content in Spring on MACDeer&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh-CN</language>
     <lastBuildDate>Sun, 15 Oct 2017 22:03:36 +0800</lastBuildDate>
     
-	<atom:link href="https://macdfree.github.io/tags/spring/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/spring/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Spring记录</title>
-      <link>https://macdfree.github.io/wiki/java/spring%E8%AE%B0%E5%BD%95/</link>
+      <link>/wiki/java/spring%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sun, 15 Oct 2017 22:03:36 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/java/spring%E8%AE%B0%E5%BD%95/</guid>
+      <guid>/wiki/java/spring%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;Spring相关知识点记录
 &lt;/p&gt;</description>
     </item>

@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Go on MACDeer&#39;s Blog</title>
-    <link>https://macdfree.github.io/categories/go/</link>
+    <link>/categories/go/</link>
     <description>Recent content in Go on MACDeer&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh-CN</language>
     <lastBuildDate>Tue, 07 Nov 2017 22:18:08 +0800</lastBuildDate>
     
-	<atom:link href="https://macdfree.github.io/categories/go/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/go/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Go命令记录</title>
-      <link>https://macdfree.github.io/wiki/go/go%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/</link>
+      <link>/wiki/go/go%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Tue, 07 Nov 2017 22:18:08 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/go/go%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/</guid>
+      <guid>/wiki/go/go%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;p&gt;&lt;code&gt;Go&lt;/code&gt;相关命令记录
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>开发环境准备 VSCode</title>
-      <link>https://macdfree.github.io/wiki/go/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87-vscode/</link>
+      <link>/wiki/go/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87-vscode/</link>
       <pubDate>Sun, 15 Oct 2017 21:42:59 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/go/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87-vscode/</guid>
+      <guid>/wiki/go/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87-vscode/</guid>
       <description>&lt;p&gt;使用&lt;code&gt;VSCode&lt;/code&gt;搭建&lt;code&gt;Go&lt;/code&gt;开发环境
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Go知识点备忘</title>
-      <link>https://macdfree.github.io/wiki/go/go%E7%9F%A5%E8%AF%86%E7%82%B9%E5%A4%87%E5%BF%98/</link>
+      <link>/wiki/go/go%E7%9F%A5%E8%AF%86%E7%82%B9%E5%A4%87%E5%BF%98/</link>
       <pubDate>Thu, 12 Oct 2017 23:02:15 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/go/go%E7%9F%A5%E8%AF%86%E7%82%B9%E5%A4%87%E5%BF%98/</guid>
+      <guid>/wiki/go/go%E7%9F%A5%E8%AF%86%E7%82%B9%E5%A4%87%E5%BF%98/</guid>
       <description>&lt;p&gt;&lt;code&gt;Go&lt;/code&gt;相关知识点记录
 &lt;/p&gt;</description>
     </item>

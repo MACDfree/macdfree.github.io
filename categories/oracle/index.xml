@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Oracle on MACDeer&#39;s Blog</title>
-    <link>https://macdfree.github.io/categories/oracle/</link>
+    <link>/categories/oracle/</link>
     <description>Recent content in Oracle on MACDeer&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh-CN</language>
     <lastBuildDate>Mon, 16 Oct 2017 20:14:43 +0800</lastBuildDate>
     
-	<atom:link href="https://macdfree.github.io/categories/oracle/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/oracle/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Oracle相关命令</title>
-      <link>https://macdfree.github.io/wiki/oracle/oracle%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4/</link>
+      <link>/wiki/oracle/oracle%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Mon, 16 Oct 2017 20:14:43 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/oracle/oracle%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4/</guid>
+      <guid>/wiki/oracle/oracle%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4/</guid>
       <description>&lt;h4 id=&#34;oracle用户解锁&#34;&gt;Oracle用户解锁&lt;/h4&gt;
 
 &lt;ol&gt;
@@ -29,10 +29,10 @@
     
     <item>
       <title>新库导入</title>
-      <link>https://macdfree.github.io/wiki/oracle/%E6%96%B0%E5%BA%93%E5%AF%BC%E5%85%A5/</link>
+      <link>/wiki/oracle/%E6%96%B0%E5%BA%93%E5%AF%BC%E5%85%A5/</link>
       <pubDate>Mon, 16 Oct 2017 20:12:38 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/oracle/%E6%96%B0%E5%BA%93%E5%AF%BC%E5%85%A5/</guid>
+      <guid>/wiki/oracle/%E6%96%B0%E5%BA%93%E5%AF%BC%E5%85%A5/</guid>
       <description>&lt;ol&gt;
 &lt;li&gt;&lt;p&gt;创建临时表空间&lt;/p&gt;
 
@@ -47,10 +47,10 @@ AUTOEXTEND ON NEXT 32M MAXSIZE 2048M;
     
     <item>
       <title>DIRECTORY管理</title>
-      <link>https://macdfree.github.io/wiki/oracle/directory%E7%AE%A1%E7%90%86/</link>
+      <link>/wiki/oracle/directory%E7%AE%A1%E7%90%86/</link>
       <pubDate>Mon, 16 Oct 2017 20:09:54 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/oracle/directory%E7%AE%A1%E7%90%86/</guid>
+      <guid>/wiki/oracle/directory%E7%AE%A1%E7%90%86/</guid>
       <description>&lt;p&gt;使用数据泵导入备份时需要根据DIRECTORY来获取备份文件所在路径&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -58,10 +58,10 @@ AUTOEXTEND ON NEXT 32M MAXSIZE 2048M;
     
     <item>
       <title>SQL记录</title>
-      <link>https://macdfree.github.io/wiki/oracle/sql%E8%AE%B0%E5%BD%95/</link>
+      <link>/wiki/oracle/sql%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Mon, 16 Oct 2017 20:06:00 +0800</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/oracle/sql%E8%AE%B0%E5%BD%95/</guid>
+      <guid>/wiki/oracle/sql%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;h4 id=&#34;查看用户表空间&#34;&gt;查看用户表空间&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select distinct(tablespace_name) from dba_segments where owner=upper(&#39;EpointBid_TP7&#39;);
@@ -72,10 +72,10 @@ AUTOEXTEND ON NEXT 32M MAXSIZE 2048M;
     
     <item>
       <title>Oracle导库</title>
-      <link>https://macdfree.github.io/wiki/oracle/oracle%E5%AF%BC%E5%BA%93/</link>
+      <link>/wiki/oracle/oracle%E5%AF%BC%E5%BA%93/</link>
       <pubDate>Thu, 29 Sep 2016 00:10:57 +0000</pubDate>
       
-      <guid>https://macdfree.github.io/wiki/oracle/oracle%E5%AF%BC%E5%BA%93/</guid>
+      <guid>/wiki/oracle/oracle%E5%AF%BC%E5%BA%93/</guid>
       <description>&lt;p&gt;Oracle导库主要分成清库、清空回收站、导库三个步骤。&lt;/p&gt;</description>
     </item>
     
