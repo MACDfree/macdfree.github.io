@@ -57,7 +57,7 @@
 
 <meta property="article:published_time" content="2018-03-07T14:13:30&#43;08:00"/>
 
-<meta property="article:modified_time" content="2018-03-07T14:13:30&#43;08:00"/>
+<meta property="article:modified_time" content="2018-03-07T21:51:30&#43;08:00"/>
 
 
 
@@ -75,7 +75,7 @@
 
 <meta itemprop="datePublished" content="2018-03-07T14:13:30&#43;08:00" />
 <meta itemprop="dateModified" content="2018-03-07T14:13:30&#43;08:00" />
-<meta itemprop="wordCount" content="1266">
+<meta itemprop="wordCount" content="1263">
 
 
 
@@ -154,7 +154,7 @@
             <a href="/categories/html/"> html </a>
           
         </div>
-        <span class="more-meta"> 约 1266 字 </span>
+        <span class="more-meta"> 约 1263 字 </span>
         <span class="more-meta"> 预计阅读 3 分钟 </span>
         
       </div>
@@ -208,7 +208,7 @@
 
 <p><img src="http://ocd8m6zlz.bkt.clouddn.com/Lighthouse插件.png" alt="Lighthouse插件" /></p>
 
-<p>检测完成后，插件会自动打开检测报告页面，入下图所示：</p>
+<p>检测完成后，插件会自动打开检测报告页面，如下图所示：</p>
 
 <p><img src="http://ocd8m6zlz.bkt.clouddn.com/旧页面性能截图.png" alt="旧页面性能截图" /></p>
 
@@ -222,7 +222,7 @@
 
 <p>点开详细信息，可以看到测试系统没有使用gzip压缩。</p>
 
-<p>由于本人测试系统使用Nginx代理，所以直接添加Nginx配置，如下：</p>
+<p>由于测试系统使用Nginx代理，所以直接添加Nginx配置，如下：</p>
 
 <pre><code class="language-nginx">gzip on;
 gzip_min_length 3k;
@@ -270,7 +270,7 @@ gzip_vary on;
 
 <p><img src="http://ocd8m6zlz.bkt.clouddn.com/无用的css.png" alt="无用的css" /></p>
 
-<p>这个检测点比较简单，需要注意的是列出了的css并不是真的都是没有用到的，需要人工排查。</p>
+<p>这个检测点比较简单，需要注意的是列出的css并不是真的都是没有用到的，需要人工核查。</p>
 
 <h1 id="总结">总结</h1>
 

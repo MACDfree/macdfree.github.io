@@ -4,7 +4,7 @@
   
   <url>
     <loc>/posts/%E9%A1%B5%E9%9D%A2%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96-%E5%9F%BA%E4%BA%8Elighthouse/</loc>
-    <lastmod>2018-03-07T14:13:30+08:00</lastmod>
+    <lastmod>2018-03-07T21:51:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -408,14 +408,14 @@
   </url>
   
   <url>
-    <loc>/tags/c/</loc>
+    <loc>/categories/c/</loc>
     <lastmod>2014-04-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/c/</loc>
+    <loc>/tags/c/</loc>
     <lastmod>2014-04-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
@@ -485,14 +485,14 @@
   </url>
   
   <url>
-    <loc>/tags/hexo/</loc>
+    <loc>/categories/hexo/</loc>
     <lastmod>2016-05-29T03:48:32+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/hexo/</loc>
+    <loc>/tags/hexo/</loc>
     <lastmod>2016-05-29T03:48:32+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
@@ -507,7 +507,7 @@
   
   <url>
     <loc>/categories/html/</loc>
-    <lastmod>2018-03-07T14:13:30+08:00</lastmod>
+    <lastmod>2018-03-07T21:51:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -556,7 +556,7 @@
   
   <url>
     <loc>/tags/lighthouse/</loc>
-    <lastmod>2018-03-07T14:13:30+08:00</lastmod>
+    <lastmod>2018-03-07T21:51:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -570,7 +570,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2018-03-07T14:13:30+08:00</lastmod>
+    <lastmod>2018-03-07T21:51:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -604,15 +604,15 @@
   </url>
   
   <url>
-    <loc>/tags/mysql/</loc>
-    <lastmod>2014-04-05T00:00:00+00:00</lastmod>
+    <loc>/categories/mysql/</loc>
+    <lastmod>2017-10-15T23:07:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/mysql/</loc>
-    <lastmod>2017-10-15T23:07:49+08:00</lastmod>
+    <loc>/tags/mysql/</loc>
+    <lastmod>2014-04-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -654,7 +654,7 @@
   
   <url>
     <loc>/posts/</loc>
-    <lastmod>2018-03-07T14:13:30+08:00</lastmod>
+    <lastmod>2018-03-07T21:51:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -794,20 +794,20 @@
   
   <url>
     <loc>/tags/%E5%89%8D%E7%AB%AF%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/</loc>
-    <lastmod>2018-03-07T14:13:30+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/%E5%8A%A8%E6%BC%AB/</loc>
-    <lastmod>2016-06-02T14:56:34+00:00</lastmod>
+    <lastmod>2018-03-07T21:51:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/%E5%8A%A8%E6%BC%AB/</loc>
+    <lastmod>2016-06-02T14:56:34+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E5%8A%A8%E6%BC%AB/</loc>
     <lastmod>2016-06-02T14:56:34+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
