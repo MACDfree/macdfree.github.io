@@ -3,6 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>/posts/%E9%A1%B5%E9%9D%A2%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96-%E5%9F%BA%E4%BA%8Elighthouse/</loc>
+    <lastmod>2018-03-07T14:13:30+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>/wiki/go/go%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2017-11-07T22:18:08+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -500,7 +507,7 @@
   
   <url>
     <loc>/categories/html/</loc>
-    <lastmod>2016-10-02T13:51:54+00:00</lastmod>
+    <lastmod>2018-03-07T14:13:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -548,6 +555,13 @@
   </url>
   
   <url>
+    <loc>/tags/lighthouse/</loc>
+    <lastmod>2018-03-07T14:13:30+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/categories/linux/</loc>
     <lastmod>2017-10-15T22:27:35+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -556,7 +570,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2017-11-07T22:18:08+08:00</lastmod>
+    <lastmod>2018-03-07T14:13:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -640,7 +654,7 @@
   
   <url>
     <loc>/posts/</loc>
-    <lastmod>2016-10-06T21:43:07+00:00</lastmod>
+    <lastmod>2018-03-07T14:13:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -774,6 +788,13 @@
   <url>
     <loc>/tags/%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
     <lastmod>2017-11-07T22:18:08+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E5%89%8D%E7%AB%AF%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/</loc>
+    <lastmod>2018-03-07T14:13:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

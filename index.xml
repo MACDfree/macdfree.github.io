@@ -6,10 +6,20 @@
     <description>Recent content on MACDeer&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 07 Nov 2017 22:18:08 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 07 Mar 2018 14:13:30 +0800</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>页面性能优化-基于lighthouse</title>
+      <link>/posts/%E9%A1%B5%E9%9D%A2%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96-%E5%9F%BA%E4%BA%8Elighthouse/</link>
+      <pubDate>Wed, 07 Mar 2018 14:13:30 +0800</pubDate>
+      
+      <guid>/posts/%E9%A1%B5%E9%9D%A2%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96-%E5%9F%BA%E4%BA%8Elighthouse/</guid>
+      <description>&lt;p&gt;最近使用GoogleChrome的Lighthouse插件对公司的登录页面进行了检测优化，在此记录一下具体优化过程。
+&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Go命令记录</title>
