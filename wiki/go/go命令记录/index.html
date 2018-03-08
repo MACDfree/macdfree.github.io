@@ -17,7 +17,9 @@
 
 
 <meta name="author" content="macd" />
-  <meta name="description" content="Go相关命令记录 " />
+  <meta name="description" content="Go相关命令记录
+
+" />
 
   <meta name="keywords" content="blog, macd, even" />
 
@@ -51,6 +53,7 @@
 
 <meta property="og:title" content="Go命令记录" />
 <meta property="og:description" content="Go相关命令记录
+
 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/wiki/go/go%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/" />
@@ -59,7 +62,7 @@
 
 <meta property="article:published_time" content="2017-11-07T22:18:08&#43;08:00"/>
 
-<meta property="article:modified_time" content="2017-11-07T22:18:08&#43;08:00"/>
+<meta property="article:modified_time" content="2018-03-08T10:52:57&#43;08:00"/>
 
 
 
@@ -73,12 +76,13 @@
 
 <meta itemprop="name" content="Go命令记录">
 <meta itemprop="description" content="Go相关命令记录
+
 ">
 
 
 <meta itemprop="datePublished" content="2017-11-07T22:18:08&#43;08:00" />
 <meta itemprop="dateModified" content="2017-11-07T22:18:08&#43;08:00" />
-<meta itemprop="wordCount" content="67">
+<meta itemprop="wordCount" content="146">
 
 
 
@@ -86,6 +90,7 @@
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Go命令记录"/>
 <meta name="twitter:description" content="Go相关命令记录
+
 "/>
 
 <!--[if lte IE 9]>
@@ -158,7 +163,7 @@
             <a href="/categories/go/"> Go </a>
           
         </div>
-        <span class="more-meta"> 约 67 字 </span>
+        <span class="more-meta"> 约 146 字 </span>
         <span class="more-meta"> 预计阅读 1 分钟 </span>
         
       </div>
@@ -172,10 +177,8 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
 <ul>
-<li>
-<ul>
 <li><a href="#交叉编译">交叉编译</a></li>
-</ul></li>
+<li><a href="#go-install">go install</a></li>
 </ul>
 </nav>
   </div>
@@ -183,10 +186,11 @@
 
     
     <div class="post-content">
-      <p><code>Go</code>相关命令记录
-</p>
+      <p><code>Go</code>相关命令记录</p>
 
-<h2 id="交叉编译">交叉编译</h2>
+<p></p>
+
+<h1 id="交叉编译">交叉编译</h1>
 
 <pre><code class="language-sh">CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go install
 CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go install
@@ -197,6 +201,22 @@ CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go install
 <p>GOOS: darwin、freebsd、linux、windows</p>
 
 <p>GOARCH: 386、amd64、arm</p>
+
+<p>注意，上述命令只能在linux中执行，如果是Windows系统，需要分别设置环境变量，PowerShell中类似于</p>
+
+<pre><code class="language-powershell">$env:CGO_ENABLED=0
+$env:GOOS=&quot;linux&quot;
+$env:GOARCH=&quot;amd64&quot;
+go install ...
+</code></pre>
+
+<h1 id="go-install">go install</h1>
+
+<p>编译目录下所有包</p>
+
+<pre><code class="language-sh">go install ...
+go install /tmp/...
+</code></pre>
     </div>
 
     
@@ -207,7 +227,7 @@ CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go install
   </p>
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
-    <span class="item-content">2017-11-07</span>
+    <span class="item-content">2018-03-08</span>
   </p>
   
   

@@ -11,7 +11,7 @@
   
   <url>
     <loc>/wiki/go/go%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2017-11-07T22:18:08+08:00</lastmod>
+    <lastmod>2018-03-08T10:52:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -408,14 +408,14 @@
   </url>
   
   <url>
-    <loc>/categories/c/</loc>
+    <loc>/tags/c/</loc>
     <lastmod>2014-04-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/c/</loc>
+    <loc>/categories/c/</loc>
     <lastmod>2014-04-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
@@ -472,7 +472,7 @@
   
   <url>
     <loc>/categories/go/</loc>
-    <lastmod>2017-11-07T22:18:08+08:00</lastmod>
+    <lastmod>2018-03-08T10:52:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -485,14 +485,14 @@
   </url>
   
   <url>
-    <loc>/categories/hexo/</loc>
+    <loc>/tags/hexo/</loc>
     <lastmod>2016-05-29T03:48:32+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/hexo/</loc>
+    <loc>/categories/hexo/</loc>
     <lastmod>2016-05-29T03:48:32+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
@@ -604,15 +604,15 @@
   </url>
   
   <url>
-    <loc>/categories/mysql/</loc>
-    <lastmod>2017-10-15T23:07:49+08:00</lastmod>
+    <loc>/tags/mysql/</loc>
+    <lastmod>2014-04-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/mysql/</loc>
-    <lastmod>2014-04-05T00:00:00+00:00</lastmod>
+    <loc>/categories/mysql/</loc>
+    <lastmod>2017-10-15T23:07:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -766,7 +766,7 @@
   
   <url>
     <loc>/wiki/</loc>
-    <lastmod>2017-11-07T22:18:08+08:00</lastmod>
+    <lastmod>2018-03-08T10:52:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -787,7 +787,7 @@
   
   <url>
     <loc>/tags/%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
-    <lastmod>2017-11-07T22:18:08+08:00</lastmod>
+    <lastmod>2018-03-08T10:52:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -800,14 +800,14 @@
   </url>
   
   <url>
-    <loc>/categories/%E5%8A%A8%E6%BC%AB/</loc>
+    <loc>/tags/%E5%8A%A8%E6%BC%AB/</loc>
     <lastmod>2016-06-02T14:56:34+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/%E5%8A%A8%E6%BC%AB/</loc>
+    <loc>/categories/%E5%8A%A8%E6%BC%AB/</loc>
     <lastmod>2016-06-02T14:56:34+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
