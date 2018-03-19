@@ -6,10 +6,21 @@
     <description>Recent content in Posts on MACDeer&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 08 Mar 2018 22:15:08 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 15 Mar 2018 21:40:29 +0800</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Travis CI使用记录</title>
+      <link>/posts/travis-ci%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Thu, 15 Mar 2018 21:40:29 +0800</pubDate>
+      
+      <guid>/posts/travis-ci%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</guid>
+      <description>&lt;p&gt;最近有空使用了一下Travis CI持续集成工具，在此记录一下备忘。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>快速SSH连接工具（自用）</title>

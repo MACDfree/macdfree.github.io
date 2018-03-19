@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>快速SSH连接工具（自用） - MACDeer&#39;s Blog</title>
+  <title>Travis CI使用记录 - MACDeer&#39;s Blog</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,8 +16,8 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="macd" /><meta name="description" content="用go编写的快速SSH连接工具" />
-<meta name="keywords" content="ssh, go, ssh连接管理工具" />
+<meta name="author" content="macd" /><meta name="description" content="Travis CI使用记录" />
+<meta name="keywords" content="Travis CI" />
 
 
 
@@ -28,7 +28,7 @@
 <meta name="generator" content="Hugo 0.37.1" />
 
 
-<link rel="canonical" href="/posts/%E5%BF%AB%E9%80%9Fssh%E8%BF%9E%E6%8E%A5%E5%B7%A5%E5%85%B7-%E8%87%AA%E7%94%A8/" />
+<link rel="canonical" href="/posts/travis-ci%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -48,20 +48,16 @@
 
 
 
-<meta property="og:title" content="快速SSH连接工具（自用）" />
-<meta property="og:description" content="用go编写的快速SSH连接工具" />
+<meta property="og:title" content="Travis CI使用记录" />
+<meta property="og:description" content="Travis CI使用记录" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/posts/%E5%BF%AB%E9%80%9Fssh%E8%BF%9E%E6%8E%A5%E5%B7%A5%E5%85%B7-%E8%87%AA%E7%94%A8/" />
+<meta property="og:url" content="/posts/travis-ci%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/" />
 
 
 
-<meta property="article:published_time" content="2018-03-08T22:15:08&#43;08:00"/>
+<meta property="article:published_time" content="2018-03-15T21:40:29&#43;08:00"/>
 
-<meta property="article:modified_time" content="2018-03-19T18:28:08&#43;08:00"/>
-
-
-
-
+<meta property="article:modified_time" content="2018-03-15T21:40:29&#43;08:00"/>
 
 
 
@@ -69,20 +65,24 @@
 
 
 
-<meta itemprop="name" content="快速SSH连接工具（自用）">
-<meta itemprop="description" content="用go编写的快速SSH连接工具">
-
-
-<meta itemprop="datePublished" content="2018-03-08T22:15:08&#43;08:00" />
-<meta itemprop="dateModified" content="2018-03-08T22:15:08&#43;08:00" />
-<meta itemprop="wordCount" content="782">
 
 
 
-<meta itemprop="keywords" content="go,ssh," />
+
+<meta itemprop="name" content="Travis CI使用记录">
+<meta itemprop="description" content="Travis CI使用记录">
+
+
+<meta itemprop="datePublished" content="2018-03-15T21:40:29&#43;08:00" />
+<meta itemprop="dateModified" content="2018-03-15T21:40:29&#43;08:00" />
+<meta itemprop="wordCount" content="1140">
+
+
+
+<meta itemprop="keywords" content="Travis CI," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="快速SSH连接工具（自用）"/>
-<meta name="twitter:description" content="用go编写的快速SSH连接工具"/>
+<meta name="twitter:title" content="Travis CI使用记录"/>
+<meta name="twitter:description" content="Travis CI使用记录"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -145,17 +145,17 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">快速SSH连接工具（自用）</h1>
+      <h1 class="post-title">Travis CI使用记录</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2018-03-08 </span>
+        <span class="post-time"> 2018-03-15 </span>
         <div class="post-category">
           
-            <a href="/categories/go/"> go </a>
+            <a href="/categories/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/"> 持续集成 </a>
           
         </div>
-        <span class="more-meta"> 约 782 字 </span>
-        <span class="more-meta"> 预计阅读 2 分钟 </span>
+        <span class="more-meta"> 约 1140 字 </span>
+        <span class="more-meta"> 预计阅读 3 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
     </header>
@@ -168,13 +168,9 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#原因">原因</a></li>
-<li><a href="#折腾">折腾</a>
-<ul>
-<li><a href="#准备">准备</a></li>
-<li><a href="#前期规划">前期规划</a></li>
-<li><a href="#代码实现">代码实现</a></li>
-</ul></li>
+<li><a href="#概述">概述</a></li>
+<li><a href="#从-travis-yml-说起">从 <code>.travis.yml</code> 说起</a></li>
+<li><a href="#项目的构建流程">项目的构建流程</a></li>
 </ul>
 </nav>
   </div>
@@ -182,50 +178,69 @@
 
     
     <div class="post-content">
-      <p>使用go语言编写的SSH连接管理工具</p>
+      <p>最近有空使用了一下Travis CI持续集成工具，在此记录一下备忘。</p>
 
 <p></p>
 
-<h1 id="原因">原因</h1>
+<h1 id="概述">概述</h1>
 
-<p>之前一直使用XShell作为SSH远程连接工具，但它只对家庭和学生免费使用，如果要在工作中使用是需要收费的。而且最近公司对这一块查得比较严，因此只能找一下替代软件。</p>
+<p>公司使用的持续集成工具为<strong>Jenkins</strong>，使用Web可视化界面进行配置，操作简单易上手。而 <strong>Travis CI</strong> 通过<strong>yaml</strong>文件（<code>.travis.yml</code>）进行配置，有一点上手难度，但同时提高了灵活度。</p>
 
-<p>第一个想到的就是putty，但却有个不可接受的缺点：无法保存连接信息，每次都需要手动输入用户名和密码。在此说明一下本人的使用场景：部门中大约有七八台测试服务器，偶尔需要登录其中的某一台进去查看一下应用日志获取服务器状态，对于一台服务器，可能几个星期都不去登录。在此场景下，有可能登录输入用户名密码的时间比实际使用的时间还长，这是无法忍受的。（虽然可以配置密钥登录，但觉得在公司服务器上加点自己的东西很别扭）</p>
+<p>从使用下来的感受来说，<strong>Travis CI</strong> 就是根据配置执行一系列脚本，实现代码编译、单元测试、打包和发布的功能。</p>
 
-<h1 id="折腾">折腾</h1>
+<h1 id="从-travis-yml-说起">从 <code>.travis.yml</code> 说起</h1>
 
-<h2 id="准备">准备</h2>
+<p>Travis 要求项目根目录下必须包含 <code>.travis.yml</code> 文件，文件中包含了需要执行操作的配置。从文件后缀名可以看出，使用的是 <strong>yaml</strong> 文件格式，下面看一个 <code>.travis.yml</code> 的示例：</p>
 
-<p>几番对比之后，本人选择了在Windows中安装Ubuntu子系统，配合open-wsl终端工具满足ssh连接的需求。但问题还是没有解决，所以动手写了个可以管理ssh session的小工具，供自己使用。</p>
-
-<h2 id="前期规划">前期规划</h2>
-
-<p>起初想直接使用bash脚本实现，但奈何底子太差放弃了。然后果断选择了用go实现（因为一直想用go写点东西）。</p>
-
-<p>选择完语言后，先做个前期规划，希望实现的效果如下：</p>
-
-<pre><code class="language-bash">sshs alias # 登录
-sshs add alias -i ip -p port -u username -w password # 添加
-sshs rm alias # 删除
-sshs ls [alias] # 查看（支持模糊匹配）
+<pre><code class="language-yaml">language: go
+sudo: false
+go:
+  - 1.9.x
+deploy:
+  provider: releases
+  api_key: $GITHUB_OAUTH_TOKEN
+  file:
+    - &quot;bin/sshs-${TRAVIS_TAG}-linux-amd64&quot;
+    - &quot;bin/sshs-${TRAVIS_TAG}-darwin-amd64&quot;
+  skip_cleanup: true
+  on:
+    tags: true
+install:
+  - go get -d -t -v ./...
+script:
+  - chmod +x build.sh
+  - ./build.sh
+notifications:
+  email:
+    on_failure: always
+    on_success: never
 </code></pre>
 
-<p>接着考虑数据存储格式，选用yaml格式：</p>
+<p>以上是一个使用Go语言的配置，<code>language</code> 配置需要构建的语言环境；<code>go</code> 配置使用的go语言版本；<code>deploy</code> 配置构建好后文件发布的参数，在此不深入展开，具体可参考<a href="https://docs.travis-ci.com/user/deployment/releases/">官方文档</a>；<code>install</code> 配置项目依赖需要执行的指令，可配置多条指令；<code>script</code> 配置构建指令，同样可以配置多条指令；<code>notifications</code> 配置通知方式，具体配置可参考<a href="https://docs.travis-ci.com/user/notifications">官方文档</a>。</p>
 
-<pre><code class="language-yaml">alias1:
-  ip: &quot;192.168.123.123&quot;
-  port: 22
-  username: &quot;root&quot;
-  password: &quot;123456&quot;
-</code></pre>
+<p>对于 <code>.travis.yml</code> 文件，<strong>Travis</strong> 的执行顺序为：<code>before_install</code> -&gt; <code>install</code> -&gt; <code>before_script</code> -&gt; <code>script</code> -&gt; <code>deploy</code>。</p>
 
-<p>文件路径：<code>~/.sshs.yml</code>。</p>
+<h1 id="项目的构建流程">项目的构建流程</h1>
 
-<h2 id="代码实现">代码实现</h2>
+<p>下图是使用Travis CI构建Go项目的输出日志</p>
 
-<p>需要实现的功能主要包括：解析yaml文件管理（增删查）ssh session、ssh连接远程主机。其中解析yaml使用<code>gopkg.in/yaml.v2</code>实现，ssh连接使用<code>golang.org/x/crypto/ssh</code>实现。另外，由于go标准库中的flags包不支持sub commend，所以使用了<code>gopkg.in/urfave/cli.v1</code>实现命令解析功能。</p>
+<p><img src="http://ocd8m6zlz.bkt.clouddn.com/travislog.png" alt="travislog" /></p>
 
-<p>最后，附上源码地址<a href="https://github.com/MACDfree/sshs">sshs-ssh连接管理工具</a></p>
+<p>由图可知，构建任务可分为：</p>
+
+<ol>
+<li>拉取github仓库代码</li>
+<li>设置相关环境变量</li>
+<li>将代码同步至指定的目录下（此处应该和具体语言环境相关）</li>
+<li>切换至代码所在目录</li>
+<li>执行<code>install</code>中的相关指令（如果之前配置了<code>before_install</code>，则先执行<code>before_install</code>中的指令）</li>
+<li>执行<code>script</code>中的指令（如果之前配置了<code>before_script</code>，则先执行<code>before_script</code>中的指令）</li>
+<li>最后执行发布操作</li>
+</ol>
+
+<p>如此梳理过构建流程后，可以发现：<strong>Travis CI</strong>只是提供里构建所需的系统环境和框架，并且开放不同阶段的钩子，具体构建操作可由用户通过<code>.travis.yml</code>自定义配置，提高了可玩性，但同时也对使用者的bash脚步编写能力有了一定的要求。</p>
+
+<p>最后说一些题外话，之前本人的博客使用GitHub Pages + hugo 搭建。同时原始md文件存放在另一个仓库中，为了实现只要提高md文件，立马自动生成静态页面并发布至GitHub的需求，特地使用Go编写了一个BlogCI的服务程序，大体思路是：当有md文件提交时，使用webhooks发送http请求至BlogCI，BlogCI接收到请求后在本地拉取最新的md文件，调用hugo命令生成静态页面，最后发布至GitHub Pages。上述流程看着是不是很眼熟？这不就是Travis CI做的事情吗。所以，现在可以摒弃之前丑陋的实现，直接使用Travis CI实现博客的自动构建了。详细教程可参考<a href="https://docs.travis-ci.com/user/deployment/pages/">官方文档</a>。</p>
     </div>
 
     
@@ -236,7 +251,7 @@ sshs ls [alias] # 查看（支持模糊匹配）
   </p>
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
-    <span class="item-content">2018-03-19</span>
+    <span class="item-content">2018-03-15</span>
   </p>
   
   
@@ -266,23 +281,16 @@ sshs ls [alias] # 查看（支持模糊匹配）
       
         <div class="post-tags">
           
-          <a href="/tags/go/">go</a>
-          
-          <a href="/tags/ssh/">ssh</a>
+          <a href="/tags/travis-ci/">Travis CI</a>
           
         </div>
 
       
       <nav class="post-nav">
         
-          <a class="prev" href="/posts/travis-ci%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Travis CI使用记录</span>
-            <span class="prev-text nav-mobile">上一篇</span>
-          </a>
         
-          <a class="next" href="/posts/%E9%A1%B5%E9%9D%A2%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96-%E5%9F%BA%E4%BA%8Elighthouse/">
-            <span class="next-text nav-default">页面性能优化-基于lighthouse</span>
+          <a class="next" href="/posts/%E5%BF%AB%E9%80%9Fssh%E8%BF%9E%E6%8E%A5%E5%B7%A5%E5%85%B7-%E8%87%AA%E7%94%A8/">
+            <span class="next-text nav-default">快速SSH连接工具（自用）</span>
             <span class="prev-text nav-mobile">下一篇</span>
             <i class="iconfont icon-right"></i>
           </a>
