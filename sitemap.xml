@@ -25,7 +25,7 @@
   
   <url>
     <loc>/wiki/go/go%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2018-03-08T10:52:57+08:00</lastmod>
+    <lastmod>2018-03-20T10:52:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -249,7 +249,7 @@
   
   <url>
     <loc>/wiki/go/go%E7%9F%A5%E8%AF%86%E7%82%B9%E5%A4%87%E5%BF%98/</loc>
-    <lastmod>2017-10-12T23:02:15+08:00</lastmod>
+    <lastmod>2018-03-20T10:52:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -794,7 +794,7 @@
   
   <url>
     <loc>/wiki/</loc>
-    <lastmod>2018-03-08T10:52:57+08:00</lastmod>
+    <lastmod>2018-03-20T10:52:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -809,13 +809,6 @@
   <url>
     <loc>/tags/%E4%B8%AD%E6%96%AD/</loc>
     <lastmod>2014-03-27T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91/</loc>
-    <lastmod>2018-03-08T10:52:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
