@@ -57,7 +57,7 @@
 
 <meta property="article:published_time" content="2018-03-15T21:40:29&#43;08:00"/>
 
-<meta property="article:modified_time" content="2018-03-19T21:40:29&#43;08:00"/>
+<meta property="article:modified_time" content="2018-03-22T22:26:29&#43;08:00"/>
 
 
 
@@ -75,7 +75,7 @@
 
 <meta itemprop="datePublished" content="2018-03-15T21:40:29&#43;08:00" />
 <meta itemprop="dateModified" content="2018-03-15T21:40:29&#43;08:00" />
-<meta itemprop="wordCount" content="1140">
+<meta itemprop="wordCount" content="1145">
 
 
 
@@ -154,7 +154,7 @@
             <a href="/categories/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/"> 持续集成 </a>
           
         </div>
-        <span class="more-meta"> 约 1140 字 </span>
+        <span class="more-meta"> 约 1145 字 </span>
         <span class="more-meta"> 预计阅读 3 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -222,14 +222,14 @@ notifications:
 
 <h1 id="项目的构建流程">项目的构建流程</h1>
 
-<p>下图是使用Travis CI构建Go项目的输出日志</p>
+<p>下图是使用<strong>Travis CI</strong>构建Go项目的输出日志</p>
 
 <p><img src="http://ocd8m6zlz.bkt.clouddn.com/travislog.png" alt="travislog" /></p>
 
 <p>由图可知，构建任务可分为：</p>
 
 <ol>
-<li>拉取github仓库代码</li>
+<li>拉取<strong>GitHub</strong>仓库代码</li>
 <li>设置相关环境变量</li>
 <li>将代码同步至指定的目录下（此处应该和具体语言环境相关）</li>
 <li>切换至代码所在目录</li>
@@ -238,9 +238,9 @@ notifications:
 <li>最后执行发布操作</li>
 </ol>
 
-<p>如此梳理过构建流程后，可以发现：<strong>Travis CI</strong>只是提供里构建所需的系统环境和框架，并且开放不同阶段的钩子，具体构建操作可由用户通过<code>.travis.yml</code>自定义配置，提高了可玩性，但同时也对使用者的bash脚步编写能力有了一定的要求。</p>
+<p>如此梳理过构建流程后，可以发现：<strong>Travis CI</strong>只是提供里构建所需的系统环境和框架，并且开放不同阶段的钩子，具体构建操作可由用户通过<code>.travis.yml</code>自定义配置，提高了可玩性，但同时也对使用者的<strong>bash</strong>脚本编写能力有了一定的要求。</p>
 
-<p>最后说一些题外话，之前本人的博客使用GitHub Pages + hugo 搭建。同时原始md文件存放在另一个仓库中，为了实现只要提交md文件，系统自动生成静态页面并发布至GitHub的需求，特地使用Go编写了一个BlogCI的服务程序，大体思路是：当有md文件提交时，使用webhooks发送http请求至BlogCI，BlogCI接收到请求后在本地拉取最新的md文件，调用hugo命令生成静态页面，最后发布至GitHub Pages。上述流程看着是不是很眼熟？这不就是Travis CI做的事情吗。所以，现在可以摒弃之前丑陋的实现，直接使用Travis CI实现博客的自动构建了。详细教程可参考<a href="https://docs.travis-ci.com/user/deployment/pages/">官方文档</a>。</p>
+<p>最后说一些题外话，之前本人的博客使用<strong>GitHub Pages + hugo</strong> 搭建。同时原始md文件存放在另一个仓库中，为了实现只要提交md文件，系统自动生成静态页面并发布至<strong>GitHub</strong>的需求，特地使用<strong>Go</strong>编写了一个<strong>BlogCI</strong>的服务程序，<a href="https://github.com/MACDfree/BlogCI">仓库地址</a>，大体思路是：当有md文件提交时，使用<strong>webhooks</strong>发送http请求至<strong>BlogCI</strong>，<strong>BlogCI</strong>接收到请求后在本地拉取最新的md文件，调用<strong>hugo</strong>命令生成静态页面，最后发布至<strong>GitHub Pages</strong>。上述流程看着是不是很眼熟？这不就是<strong>Travis CI</strong>做的事情吗。所以，现在可以摒弃之前丑陋的实现，直接使用<strong>Travis CI</strong>实现博客的自动构建了。详细教程可参考<a href="https://docs.travis-ci.com/user/deployment/pages/">官方文档</a>。</p>
     </div>
 
     
@@ -251,7 +251,7 @@ notifications:
   </p>
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
-    <span class="item-content">2018-03-19</span>
+    <span class="item-content">2018-03-22</span>
   </p>
   
   
