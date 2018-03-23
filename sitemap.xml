@@ -3,6 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>/posts/axis%E8%B0%83%E7%94%A8cxf%E5%8F%91%E5%B8%83%E7%9A%84webservice%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</loc>
+    <lastmod>2018-03-23T12:40:50+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>/posts/travis-ci%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2018-03-22T22:26:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -401,6 +408,13 @@
   </url>
   
   <url>
+    <loc>/tags/axis/</loc>
+    <lastmod>2018-03-23T12:40:50+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/bash/</loc>
     <lastmod>2017-10-15T22:06:01+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -459,6 +473,13 @@
   <url>
     <loc>/tags/curl/</loc>
     <lastmod>2017-10-15T22:27:35+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/cxf/</loc>
+    <lastmod>2018-03-23T12:40:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -556,7 +577,7 @@
   
   <url>
     <loc>/categories/java/</loc>
-    <lastmod>2017-10-15T22:03:36+08:00</lastmod>
+    <lastmod>2018-03-23T12:40:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -591,7 +612,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2018-03-22T22:26:29+08:00</lastmod>
+    <lastmod>2018-03-23T12:40:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -675,7 +696,7 @@
   
   <url>
     <loc>/posts/</loc>
-    <lastmod>2018-03-22T22:26:29+08:00</lastmod>
+    <lastmod>2018-03-23T12:40:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -725,6 +746,13 @@
   <url>
     <loc>/tags/ssh/</loc>
     <lastmod>2018-03-19T18:28:08+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/string/</loc>
+    <lastmod>2018-03-23T12:40:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

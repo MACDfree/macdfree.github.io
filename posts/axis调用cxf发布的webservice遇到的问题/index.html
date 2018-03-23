@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Axis调用CXF发布的WebService遇到的问题 - MACDeer&#39;s Blog</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="macd" /><meta name="description" content="Axis调用CXF发布的WebService遇到的问题" />
+<meta name="keywords" content="axis, cxf, string[], WebService" />
+
+
+
+<meta name="baidu-site-verification" content="Ak74Sk61bk" />
+<meta name="google-site-verification" content="fAeFHpkrhfFS8LxdzXy0EtAPcVStv0faGn238sRF3L8" />
+
+
+<meta name="generator" content="Hugo 0.37.1" />
+
+
+<link rel="canonical" href="/posts/axis%E8%B0%83%E7%94%A8cxf%E5%8F%91%E5%B8%83%E7%9A%84webservice%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+<link href="/dist/even.min.css?v=3.0.1" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+
+
+
+<meta property="og:title" content="Axis调用CXF发布的WebService遇到的问题" />
+<meta property="og:description" content="Axis调用CXF发布的WebService遇到的问题" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/axis%E8%B0%83%E7%94%A8cxf%E5%8F%91%E5%B8%83%E7%9A%84webservice%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/" />
+
+
+
+<meta property="article:published_time" content="2018-03-22T12:40:50&#43;08:00"/>
+
+<meta property="article:modified_time" content="2018-03-23T12:40:50&#43;08:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Axis调用CXF发布的WebService遇到的问题">
+<meta itemprop="description" content="Axis调用CXF发布的WebService遇到的问题">
+
+
+<meta itemprop="datePublished" content="2018-03-22T12:40:50&#43;08:00" />
+<meta itemprop="dateModified" content="2018-03-22T12:40:50&#43;08:00" />
+<meta itemprop="wordCount" content="1382">
+
+
+
+<meta itemprop="keywords" content="axis,cxf,string[]," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Axis调用CXF发布的WebService遇到的问题"/>
+<meta name="twitter:description" content="Axis调用CXF发布的WebService遇到的问题"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">MACDeer&#39;s Blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">首页</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/archive/">
+        <li class="mobile-menu-item">归档</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">MACDeer&#39;s Blog</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">首页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/archive/">归档</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Axis调用CXF发布的WebService遇到的问题</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2018-03-22 </span>
+        <div class="post-category">
+          
+            <a href="/categories/java/"> java </a>
+          
+        </div>
+        <span class="more-meta"> 约 1382 字 </span>
+        <span class="more-meta"> 预计阅读 3 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  
+  <div class="post-toc-content always-active">
+    
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <p>最近遇到一个<strong>Axis</strong>调用<strong>CXF</strong>发布的<strong>WebService</strong>时报错的问题，在此记录一下问题解决的过程。</p>
+
+<p></p>
+
+<p>客户使用<strong>Axis</strong>调用我方使用<strong>CXF</strong>发布的<strong>WebService</strong>报错。报错信息为意外的元素，如下图所示</p>
+
+<p><img src="http://ocd8m6zlz.bkt.clouddn.com/意外的参数类型.png" alt="意外的参数类型" /></p>
+
+<p>从报错信息看，WebService端需要的参考类型是<code>&lt;{}arg0&gt;</code>，而接收到的参数是<code>(uri:&quot;http://tempuri.org/&quot;, local:&quot;xmlParameter&quot;)</code>。经过搜索，发现需要在参数上添加注解，显式注明namespace和参数名：<code>@WebParam(name = &quot;xmlParameter&quot;, targetNamespace = &quot;http://tempuri.org/&quot;)</code>。修改完成后，本地测试依然报错，如下图所示</p>
+
+<p><img src="http://ocd8m6zlz.bkt.clouddn.com/操作不匹配.png" alt="操作不匹配" /></p>
+
+<p>有了之前的经验，很快发现需要在方法上添加注解注明<code>action</code>：<code>@WebMethod(action = &quot;http://tempuri.org/getAllPurchasePlane&quot;)</code>，同时，也针对返回值也添加了注解，注明返回值的<code>namespace</code>：<code>@WebResult(targetNamespace = &quot;http://tempuri.org/&quot;)</code>。本地使用<strong>Axis</strong>测试调用成功，故更新至测试系统与客户联调，发现还是报错，但报错信息变为类型转换错误，如下图所示。</p>
+
+<p><img src="http://ocd8m6zlz.bkt.clouddn.com/%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E6%8A%A5%E9%94%99.png" alt="类型转换报错" /></p>
+
+<p>根据错误信息查找多次后仍未解决，此时，只好询问客户是否可以提供调用代码。获取调用代码后，发现确实调用代码有所不同，如下图所示。</p>
+
+<p><img src="http://ocd8m6zlz.bkt.clouddn.com/调用代码.png" alt="调用代码" /></p>
+
+<p>使用客户提供的调用代码测试确实调用不成功，但<strong>WebService</strong>确实是按照客户提供的文档发布的，同时发现<strong>WebService</strong>端返回值类型为<code>String[]</code>，但调用方接收到的是<code>List</code>类型，所以导致了转换出错。由此怀疑是不是客户调用方法有问题，但沟通后反馈说其他系统对接过，没有问题，此时问题陷入了死胡同。</p>
+
+<p>面对这种问题，需要看透问题的本质，<strong>WebService</strong>的调用依靠的是<strong>WSDL</strong>描述调用属性，既然我们调用不成功，会不会是生成的<strong>WSDL</strong>有问题呢？按照这个思路，咨询客户获得了一份之前对接成功的系统的<strong>WSDL</strong>。经过比对，果然发现返回值类型并不是文档中写明的<code>String[]</code>，而是<code>ArrayOfString</code>，经过搜索，很快就找到了<code>ArrayOfString</code>的源码：</p>
+
+<pre><code class="language-java">import java.util.ArrayList;
+import java.util.List;
+
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlType;
+
+/**
+ * &lt;p&gt;
+ * Java class for ArrayOfString complex type.
+ * &lt;p&gt;
+ * The following schema fragment specifies the expected content contained within
+ * this class.
+ * 
+ * &lt;pre&gt;
+ * &amp;lt;complexType name=&quot;ArrayOfString&quot;&gt;
+ *   &amp;lt;complexContent&gt;
+ *     &amp;lt;restriction base=&quot;{http://www.w3.org/2001/XMLSchema}anyType&quot;&gt;
+ *       &amp;lt;sequence&gt;
+ *         &amp;lt;element name=&quot;string&quot; type=&quot;{http://www.w3.org/2001/XMLSchema}string&quot; maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot;/&gt;
+ *       &amp;lt;/sequence&gt;
+ *     &amp;lt;/restriction&gt;
+ *   &amp;lt;/complexContent&gt;
+ * &amp;lt;/complexType&gt;
+ * &lt;/pre&gt;
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = &quot;ArrayOfString&quot;, propOrder = { &quot;string&quot; })
+public class ArrayOfString {
+    @XmlElement(nillable = true)
+    protected List&lt;String&gt; string;
+
+    /**
+     * Gets the value of the string property.
+     * &lt;p&gt;
+     * This accessor method returns a reference to the live list, not a snapshot.
+     * Therefore any modification you make to the returned list will be present
+     * inside the JAXB object. This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method
+     * for the string property.
+     * &lt;p&gt;
+     * For example, to add a new item, do as follows:
+     * 
+     * &lt;pre&gt;
+     * getString().add(newItem);
+     * &lt;/pre&gt;
+     * &lt;p&gt;
+     * Objects of the following type(s) are allowed in the list {@link String }
+     */
+    public List&lt;String&gt; getString() {
+        if (string == null) {
+            string = new ArrayList&lt;String&gt;();
+        }
+        return this.string;
+    }
+}
+</code></pre>
+
+<p>最终WebService代码修改如下：</p>
+
+<pre><code class="language-java">@WebMethod(action = &quot;http://tempuri.org/getAllPurchasePlane&quot;)
+public @WebResult(targetNamespace = &quot;http://tempuri.org/&quot;) ArrayOfString getAllPurchasePlane(
+        @WebParam(name = &quot;xmlParameter&quot;, targetNamespace = &quot;http://tempuri.org/&quot;) String xmlParameter) {
+    ArrayOfString ret = new ArrayOfString();
+    ret.getString().add(&quot;-1&quot;);
+    ret.getString().add(&quot;xml格式不正确&quot;);
+    return ret;
+}
+</code></pre>
+
+<p>修改代码后，本地测试通过，再和客户联调也验证通过，问题至此解决。</p>
+
+<p>但疑问还没有消除，根据<code>ArrayofString</code>的源码，其实也只是封装了一个<code>List&lt;String&gt;</code>，为什么使用<strong>Axis</strong>调用后的返回值可以转换成<code>String[]</code>？希望了解的人告知一二。</p>
+    </div>
+
+    
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">macd</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">2018-03-23</span>
+  </p>
+  
+  
+</div>
+
+    
+    
+<div class="post-reward">
+  <input type="checkbox" name="reward" id="reward" hidden />
+  <label class="reward-button" for="reward">赞赏支持</label>
+  <div class="qr-code">
+    
+    
+      <label class="qr-code-image" for="reward">
+        <img class="image" src="/img/reward/wechat-qr-code.png">
+        <span>微信打赏</span>
+      </label>
+    
+      <label class="qr-code-image" for="reward">
+        <img class="image" src="/img/reward/alipay-qr-code.png">
+        <span>支付宝打赏</span>
+      </label>
+  </div>
+</div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+          <a href="/tags/axis/">axis</a>
+          
+          <a href="/tags/cxf/">cxf</a>
+          
+          <a href="/tags/string/">string[]</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/posts/travis-ci%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/">
+            <span class="next-text nav-default">Travis CI使用记录</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:macdfree@163.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/MACDfree" class="iconfont icon-github" title="github"></a>
+  <a href="/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+    <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    
+      2014 - 
+    2018
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">macd</span>
+    <span class="division">|</span>
+    <span style="margin-left: 5px;">
+      <img alt="buildstatus" src="https://travis-ci.org/MACDfree/hugoblog.svg?branch=master">
+    </span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/lib/highlight/highlight.pack.js?v=20171001"></script><script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+<script type="text/javascript" src="/dist/even.min.js?v=3.0.1"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
