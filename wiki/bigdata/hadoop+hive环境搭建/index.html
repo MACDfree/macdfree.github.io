@@ -172,10 +172,6 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
 <ul>
-<li>
-<ul>
-<li>
-<ul>
 <li><a href="#安装包版本说明">安装包版本说明</a></li>
 <li><a href="#安装hadoop">安装Hadoop</a>
 <ul>
@@ -186,8 +182,6 @@
 <li><a href="#修改配置文件">修改配置文件</a></li>
 </ul></li>
 <li><a href="#安装hive">安装Hive</a></li>
-</ul></li>
-</ul></li>
 </ul>
 </nav>
   </div>
@@ -198,7 +192,7 @@
       <p><code>Hadoop</code>+<code>Hive</code>环境搭建过程说明及注意事项
 </p>
 
-<h3 id="安装包版本说明">安装包版本说明</h3>
+<h1 id="安装包版本说明">安装包版本说明</h1>
 
 <table>
 <thead>
@@ -221,9 +215,9 @@
 </tbody>
 </table>
 
-<h3 id="安装hadoop">安装Hadoop</h3>
+<h1 id="安装hadoop">安装Hadoop</h1>
 
-<h4 id="创建用户hadoop">创建用户hadoop</h4>
+<h2 id="创建用户hadoop">创建用户hadoop</h2>
 
 <pre><code class="language-sh"># 创建hadoop用户
 Shell&gt; useradd -m hadoop -s /bin/bash
@@ -231,7 +225,7 @@ Shell&gt; useradd -m hadoop -s /bin/bash
 Shell&gt; passwd hadoop
 </code></pre>
 
-<h4 id="修改hostname">修改hostname</h4>
+<h2 id="修改hostname">修改hostname</h2>
 
 <pre><code class="language-sh"># 修改hostname
 Shell&gt; vim /etc/hosts
@@ -241,7 +235,7 @@ Shell&gt; vim /etc/hosts
 
 <p>修改后重启，使用hadoop用户登录</p>
 
-<h4 id="设置免登录">设置免登录</h4>
+<h2 id="设置免登录">设置免登录</h2>
 
 <pre><code class="language-sh"># 生成密钥对
 Shell&gt; ssh-keygen -t rsa
@@ -253,7 +247,7 @@ Shell&gt; chmod 644 authorized_keys
 Shell&gt; tar -zxvf filename
 </code></pre>
 
-<h4 id="添加环境变量">添加环境变量</h4>
+<h2 id="添加环境变量">添加环境变量</h2>
 
 <pre><code class="language-sh">Shell&gt; vim .bashrc
 </code></pre>
@@ -271,7 +265,7 @@ export PATH=$PATH:$JAVA_HOME/bin:$HADOOP_HOME/bin:$HIVE_HOME/bin
 <pre><code class="language-sh">Shell&gt; source .bashrc
 </code></pre>
 
-<h4 id="修改配置文件">修改配置文件</h4>
+<h2 id="修改配置文件">修改配置文件</h2>
 
 <p>修改$HADOOP_HOME/etc/hadoop/core-site.xml</p>
 
@@ -385,11 +379,11 @@ Shell&gt; ./start-all.sh
 
 <p>WebUI管理界面</p>
 
-<p><a href="http://192.168.131.21:50070">http://192.168.131.21:50070</a>     HDFS管理界面</p>
+<p><code>http://192.168.131.21:50070</code>     HDFS管理界面</p>
 
-<p><a href="http://192.168.131.21:8088">http://192.168.131.21:8088</a>       MR管理界面</p>
+<p><code>http://192.168.131.21:8088</code>       MR管理界面</p>
 
-<h3 id="安装hive">安装Hive</h3>
+<h1 id="安装hive">安装Hive</h1>
 
 <p>解压Hive到opt目录下</p>
 
