@@ -75,7 +75,7 @@
 
 <meta itemprop="datePublished" content="2018-03-25T21:41:51&#43;08:00" />
 <meta itemprop="dateModified" content="2018-03-25T21:41:51&#43;08:00" />
-<meta itemprop="wordCount" content="309">
+<meta itemprop="wordCount" content="311">
 
 
 
@@ -154,7 +154,7 @@
             <a href="/categories/machine-learning/"> machine-learning </a>
           
         </div>
-        <span class="more-meta"> 约 309 字 </span>
+        <span class="more-meta"> 约 311 字 </span>
         <span class="more-meta"> 预计阅读 1 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -177,7 +177,7 @@
 
 <p>监督式机器学习定义：机器学习系统通过学习如何组合输入信息来对从未见过的数据做出有用的预测。</p>
 
-<p>标签：我们要预测的事物，如小麦未来的价格、图片中显示的动物的品种等，在简单线性回归（$y=b+{ \omega  }<em>{ 1 }{ x }</em>{ 1 }+{ \omega  }<em>{ 2 }{ x }</em>{ 2 }$）中的<code>y</code></p>
+<p>标签：我们要预测的事物，如小麦未来的价格、图片中显示的动物的品种等，在简单线性回归（$y=b&#43;{ \omega  }_{ 1 }{ x }_{ 1 }&#43;{ \omega  }_{ 2 }{ x }_{ 2 }$）中的<code>y</code></p>
 
 <p>特征：输入变量，在垃圾邮件检测器示例中，特征可能包含：</p>
 
@@ -187,10 +187,9 @@
 <li>发送电子邮件的时段</li>
 </ul>
 
-<p>在简单线性回归中的<code>x</code>，对于复杂的机器学习项目，特征会有多个，表示为：
-$$
-\left{ { x }<em>{ 1 },{ x }</em>{ 2 },{ x }<em>{ 3 },&hellip;{ x }</em>{ n } \right}
-$$</p>
+<p>在简单线性回归中的<code>x</code>，对于复杂的机器学习项目，特征会有多个，表示为：</p>
+
+$$\left\{ { x }_{ 1 },{ x }_{ 2 },{ x }_{ 3 },...{ x }_{ n } \right\}$$
     </div>
 
     
@@ -296,14 +295,16 @@ $$</p>
   <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
   <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
 <script type="text/javascript" src="/dist/even.min.js?v=3.0.1"></script>
-  <script type="text/javascript">
-    window.MathJax = {
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
       tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
-      showProcessingMessages: false,
-      messageStyle: 'none'
-    };
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      displayMath: [['$$','$$'], ['\[','\]']],
+      processEscapes: true,
+      processEnvironments: true
+    });
   </script>
-  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
 
 
