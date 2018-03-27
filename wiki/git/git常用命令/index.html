@@ -59,7 +59,7 @@
 
 <meta property="article:published_time" content="2017-10-12T22:57:49&#43;08:00"/>
 
-<meta property="article:modified_time" content="2017-10-12T22:57:49&#43;08:00"/>
+<meta property="article:modified_time" content="2018-03-27T21:41:51&#43;08:00"/>
 
 
 
@@ -78,7 +78,7 @@
 
 <meta itemprop="datePublished" content="2017-10-12T22:57:49&#43;08:00" />
 <meta itemprop="dateModified" content="2017-10-12T22:57:49&#43;08:00" />
-<meta itemprop="wordCount" content="222">
+<meta itemprop="wordCount" content="390">
 
 
 
@@ -158,7 +158,7 @@
             <a href="/categories/git/"> Git </a>
           
         </div>
-        <span class="more-meta"> 约 222 字 </span>
+        <span class="more-meta"> 约 390 字 </span>
         <span class="more-meta"> 预计阅读 1 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -172,12 +172,6 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
 <ul>
-<li>
-<ul>
-<li>
-<ul>
-<li>
-<ul>
 <li><a href="#初始化git仓库">初始化Git仓库</a></li>
 <li><a href="#跟踪所有改动文件">跟踪所有改动文件</a></li>
 <li><a href="#停止跟踪文件但不删除">停止跟踪文件但不删除</a></li>
@@ -188,9 +182,7 @@
 <li><a href="#切换tag">切换Tag</a></li>
 <li><a href="#创建并切换分支">创建并切换分支</a></li>
 <li><a href="#推送分支至远程仓库">推送分支至远程仓库</a></li>
-</ul></li>
-</ul></li>
-</ul></li>
+<li><a href="#合并远程仓库中的更改">合并远程仓库中的更改</a></li>
 </ul>
 </nav>
   </div>
@@ -201,51 +193,51 @@
       <p><code>Git</code>常用命令记录
 </p>
 
-<h4 id="初始化git仓库">初始化Git仓库</h4>
+<h1 id="初始化git仓库">初始化Git仓库</h1>
 
 <pre><code class="language-sh">git init
 </code></pre>
 
-<h4 id="跟踪所有改动文件">跟踪所有改动文件</h4>
+<h1 id="跟踪所有改动文件">跟踪所有改动文件</h1>
 
 <pre><code class="language-sh">git add .
 git add -i # 交互式添加跟踪文件
 </code></pre>
 
-<h4 id="停止跟踪文件但不删除">停止跟踪文件但不删除</h4>
+<h1 id="停止跟踪文件但不删除">停止跟踪文件但不删除</h1>
 
 <pre><code class="language-sh">git rm --cached &lt;file&gt;
 </code></pre>
 
-<h4 id="提交所有更新过的文件">提交所有更新过的文件</h4>
+<h1 id="提交所有更新过的文件">提交所有更新过的文件</h1>
 
 <pre><code class="language-sh">git commit -m 'commit message'
 </code></pre>
 
-<h4 id="删除未跟踪的所有文件">删除未跟踪的所有文件</h4>
+<h1 id="删除未跟踪的所有文件">删除未跟踪的所有文件</h1>
 
 <pre><code class="language-sh">git clean -f # 删除未跟踪的文件
 git clean -fd # 删除未跟踪的文件和文件夹
 # 使用git clean前先使用-n参数预览需要删除的文件，防止误删，如 git clean -nf
 </code></pre>
 
-<h4 id="撤销工作目录中所有未提交的修改">撤销工作目录中所有未提交的修改</h4>
+<h1 id="撤销工作目录中所有未提交的修改">撤销工作目录中所有未提交的修改</h1>
 
 <pre><code class="language-sh">git reset --hard HEAD
 </code></pre>
 
-<h4 id="全局设置">全局设置</h4>
+<h1 id="全局设置">全局设置</h1>
 
 <pre><code class="language-sh">git config --global user.name &quot;macdfree&quot;
 git config --global user.email &quot;macdfree@163.com&quot;
 </code></pre>
 
-<h4 id="切换tag">切换Tag</h4>
+<h1 id="切换tag">切换Tag</h1>
 
 <pre><code class="language-sh">git checkout &lt;tagname&gt;
 </code></pre>
 
-<h4 id="创建并切换分支">创建并切换分支</h4>
+<h1 id="创建并切换分支">创建并切换分支</h1>
 
 <pre><code class="language-sh">git checkout -b &lt;branchname&gt;
 </code></pre>
@@ -256,10 +248,44 @@ git config --global user.email &quot;macdfree@163.com&quot;
 git checkout &lt;branchname&gt;
 </code></pre>
 
-<h4 id="推送分支至远程仓库">推送分支至远程仓库</h4>
+<h1 id="推送分支至远程仓库">推送分支至远程仓库</h1>
 
 <pre><code class="language-sh">git push origin &lt;branchname&gt;
 </code></pre>
+
+<h1 id="合并远程仓库中的更改">合并远程仓库中的更改</h1>
+
+<p>使用场景为：在github中用户B<code>fork</code>了用户A的项目，经过一段时间后，用户A又修改了项目，此时用户B想同步用户A的修改内容。</p>
+
+<p>操作步骤：</p>
+
+<ol>
+<li>添加用户A的项目地址</li>
+</ol>
+
+<pre><code class="language-sh">git remote add upstream &lt;URL&gt;
+</code></pre>
+
+<ol>
+<li>fetch用户A的项目</li>
+</ol>
+
+<pre><code class="language-sh">git fetch upstream
+</code></pre>
+
+<ol>
+<li>将远程仓库合并到本地仓库</li>
+</ol>
+
+<pre><code class="language-sh">git merge upstream/master
+</code></pre>
+
+<pre><code>合并操作中可能会出现冲突无法合并，此时需要手动解决冲突后提交
+</code></pre>
+
+<ol>
+<li>推送本地仓库至用户B的远程仓库</li>
+</ol>
     </div>
 
     
@@ -270,7 +296,7 @@ git checkout &lt;branchname&gt;
   </p>
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
-    <span class="item-content">2017-10-12</span>
+    <span class="item-content">2018-03-27</span>
   </p>
   
   
