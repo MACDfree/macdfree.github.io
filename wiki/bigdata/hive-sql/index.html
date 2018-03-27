@@ -248,7 +248,25 @@
   </article>
         </div>
         
-  
+  <div id="comments-gitment"></div>
+  <link rel="stylesheet" href="/lib/gitment/gitment-0.0.3.min.css">
+    <script src="/lib/gitment/gitment-0.0.3.min.js"></script>
+  <script type="text/javascript">
+  const gitment = new Gitment({
+    id: '2017-10-12 22:55:53 \x2b0800 \x2b0800',
+    title: 'Hive SQL',
+    link: decodeURI(location.href),
+    desc: '\x3cp\x3e\x3ccode\x3eHive SQL\x3c\/code\x3e相关记录\n\x3c\/p\x3e',
+    owner: 'MACDfree',
+    repo: 'gitment4',
+    oauth: {
+      client_id: '3de7eda9fae832753b25',
+      client_secret: 'fb1c82c44491295195db0eb7a2d12af22dfcae29'
+    }
+  })
+  gitment.render('comments-gitment')
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://github.com/imsun/gitment">comments powered by gitment.</a></noscript>
       </div>
     </main>
 

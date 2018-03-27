@@ -273,7 +273,25 @@
   </article>
         </div>
         
-  
+  <div id="comments-gitment"></div>
+  <link rel="stylesheet" href="/lib/gitment/gitment-0.0.3.min.css">
+    <script src="/lib/gitment/gitment-0.0.3.min.js"></script>
+  <script type="text/javascript">
+  const gitment = new Gitment({
+    id: '2014-03-27 00:00:00 \x2b0000 UTC',
+    title: '关于51单片机的中断问题',
+    link: decodeURI(location.href),
+    desc: '\x3cp\x3e今天上无线传感器网络课的时候，老师问了一个他遇到的问题：用C语言编写中断程序时，\x3ccode\x3einterrupt\x3c\/code\x3e后跟的数字写错了，但实际运行时却是正常的，他进一步试验发现只要这个数字比正确的数字大都是可以的，由此问我们其中的原因。\x3c\/p\x3e\n\n\x3cp\x3e\x3c\/p\x3e',
+    owner: 'MACDfree',
+    repo: 'gitment4',
+    oauth: {
+      client_id: '3de7eda9fae832753b25',
+      client_secret: 'fb1c82c44491295195db0eb7a2d12af22dfcae29'
+    }
+  })
+  gitment.render('comments-gitment')
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://github.com/imsun/gitment">comments powered by gitment.</a></noscript>
       </div>
     </main>
 

@@ -280,7 +280,25 @@ Web应用启动时需要会读取web.xml中context-param节点的内容以key-va
   </article>
         </div>
         
-  
+  <div id="comments-gitment"></div>
+  <link rel="stylesheet" href="/lib/gitment/gitment-0.0.3.min.css">
+    <script src="/lib/gitment/gitment-0.0.3.min.js"></script>
+  <script type="text/javascript">
+  const gitment = new Gitment({
+    id: '2017-10-15 21:55:17 \x2b0800 \x2b0800',
+    title: 'Web.xml记录',
+    link: decodeURI(location.href),
+    desc: '\x3cp\x3eweb.xml相关知识点记录\n\x3c\/p\x3e',
+    owner: 'MACDfree',
+    repo: 'gitment4',
+    oauth: {
+      client_id: '3de7eda9fae832753b25',
+      client_secret: 'fb1c82c44491295195db0eb7a2d12af22dfcae29'
+    }
+  })
+  gitment.render('comments-gitment')
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://github.com/imsun/gitment">comments powered by gitment.</a></noscript>
       </div>
     </main>
 

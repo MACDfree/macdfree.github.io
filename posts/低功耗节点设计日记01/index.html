@@ -261,7 +261,25 @@
   </article>
         </div>
         
-  
+  <div id="comments-gitment"></div>
+  <link rel="stylesheet" href="/lib/gitment/gitment-0.0.3.min.css">
+    <script src="/lib/gitment/gitment-0.0.3.min.js"></script>
+  <script type="text/javascript">
+  const gitment = new Gitment({
+    id: '2014-07-08 00:00:00 \x2b0000 UTC',
+    title: '低功耗节点设计日记01',
+    link: decodeURI(location.href),
+    desc: '\x3cp\x3e本系列设计日记主要记录基于MSP430和CC1101的低功耗节点的硬件和程序设计过程，用于和他人分享设计思路和经验。今天是本系列设计日记的第一天，首先说明本节点的设计背景：本节点用于冷藏车内温度的实时监测，并通过射频的方式将数据发送至汇集节点。所要求实现的目标为：\x3c\/p\x3e\n\n\x3cp\x3e\x3c\/p\x3e',
+    owner: 'MACDfree',
+    repo: 'gitment4',
+    oauth: {
+      client_id: '3de7eda9fae832753b25',
+      client_secret: 'fb1c82c44491295195db0eb7a2d12af22dfcae29'
+    }
+  })
+  gitment.render('comments-gitment')
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://github.com/imsun/gitment">comments powered by gitment.</a></noscript>
       </div>
     </main>
 
