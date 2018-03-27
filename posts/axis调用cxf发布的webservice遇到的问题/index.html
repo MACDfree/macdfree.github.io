@@ -57,7 +57,7 @@
 
 <meta property="article:published_time" content="2018-03-22T12:40:50&#43;08:00"/>
 
-<meta property="article:modified_time" content="2018-03-23T12:40:50&#43;08:00"/>
+<meta property="article:modified_time" content="2018-03-27T12:40:50&#43;08:00"/>
 
 
 
@@ -75,7 +75,7 @@
 
 <meta itemprop="datePublished" content="2018-03-22T12:40:50&#43;08:00" />
 <meta itemprop="dateModified" content="2018-03-22T12:40:50&#43;08:00" />
-<meta itemprop="wordCount" content="1382">
+<meta itemprop="wordCount" content="1388">
 
 
 
@@ -154,7 +154,7 @@
             <a href="/categories/java/"> java </a>
           
         </div>
-        <span class="more-meta"> 约 1382 字 </span>
+        <span class="more-meta"> 约 1388 字 </span>
         <span class="more-meta"> 预计阅读 3 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -194,7 +194,11 @@
 
 <p>使用客户提供的调用代码测试确实调用不成功，但<strong>WebService</strong>确实是按照客户提供的文档发布的，同时发现<strong>WebService</strong>端返回值类型为<code>String[]</code>，但调用方接收到的是<code>List</code>类型，所以导致了转换出错。由此怀疑是不是客户调用方法有问题，但沟通后反馈说其他系统对接过，没有问题，此时问题陷入了死胡同。</p>
 
-<p>面对这种问题，需要看透问题的本质，<strong>WebService</strong>的调用依靠的是<strong>WSDL</strong>描述调用属性，既然我们调用不成功，会不会是生成的<strong>WSDL</strong>有问题呢？按照这个思路，咨询客户获得了一份之前对接成功的系统的<strong>WSDL</strong>。经过比对，果然发现返回值类型并不是文档中写明的<code>String[]</code>，而是<code>ArrayOfString</code>，经过搜索，很快就找到了<code>ArrayOfString</code>的源码：</p>
+<p>面对这种问题，需要看透问题的本质，<strong>WebService</strong>的调用依靠的是<strong>WSDL</strong>描述调用属性，既然我们调用不成功，会不会是生成的<strong>WSDL</strong>有问题呢？按照这个思路，咨询客户获得了一份之前对接成功的系统的<strong>WSDL</strong>。经过比对，果然发现返回值类型并不是文档中写明的<code>String[]</code>，而是<code>ArrayOfString</code>，如下图所示：</p>
+
+<p><img src="http://ocd8m6zlz.bkt.clouddn.com/成功调用的wsdl.png" alt="成功调用的wsdl" /></p>
+
+<p>经过搜索，很快就找到了<code>ArrayOfString</code>的源码：</p>
 
 <pre><code class="language-java">import java.util.ArrayList;
 import java.util.List;
@@ -279,7 +283,7 @@ public @WebResult(targetNamespace = &quot;http://tempuri.org/&quot;) ArrayOfStri
   </p>
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
-    <span class="item-content">2018-03-23</span>
+    <span class="item-content">2018-03-27</span>
   </p>
   
   
