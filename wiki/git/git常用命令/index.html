@@ -195,62 +195,62 @@
 
 <h1 id="初始化git仓库">初始化Git仓库</h1>
 
-<pre><code class="language-sh">git init
+<pre><code class="language-bash">git init
 </code></pre>
 
 <h1 id="跟踪所有改动文件">跟踪所有改动文件</h1>
 
-<pre><code class="language-sh">git add .
+<pre><code class="language-bash">git add .
 git add -i # 交互式添加跟踪文件
 </code></pre>
 
 <h1 id="停止跟踪文件但不删除">停止跟踪文件但不删除</h1>
 
-<pre><code class="language-sh">git rm --cached &lt;file&gt;
+<pre><code class="language-bash">git rm --cached &lt;file&gt;
 </code></pre>
 
 <h1 id="提交所有更新过的文件">提交所有更新过的文件</h1>
 
-<pre><code class="language-sh">git commit -m 'commit message'
+<pre><code class="language-bash">git commit -m 'commit message'
 </code></pre>
 
 <h1 id="删除未跟踪的所有文件">删除未跟踪的所有文件</h1>
 
-<pre><code class="language-sh">git clean -f # 删除未跟踪的文件
+<pre><code class="language-bash">git clean -f # 删除未跟踪的文件
 git clean -fd # 删除未跟踪的文件和文件夹
 # 使用git clean前先使用-n参数预览需要删除的文件，防止误删，如 git clean -nf
 </code></pre>
 
 <h1 id="撤销工作目录中所有未提交的修改">撤销工作目录中所有未提交的修改</h1>
 
-<pre><code class="language-sh">git reset --hard HEAD
+<pre><code class="language-bash">git reset --hard HEAD
 </code></pre>
 
 <h1 id="全局设置">全局设置</h1>
 
-<pre><code class="language-sh">git config --global user.name &quot;macdfree&quot;
+<pre><code class="language-bash">git config --global user.name &quot;macdfree&quot;
 git config --global user.email &quot;macdfree@163.com&quot;
 </code></pre>
 
 <h1 id="切换tag">切换Tag</h1>
 
-<pre><code class="language-sh">git checkout &lt;tagname&gt;
+<pre><code class="language-bash">git checkout &lt;tagname&gt;
 </code></pre>
 
 <h1 id="创建并切换分支">创建并切换分支</h1>
 
-<pre><code class="language-sh">git checkout -b &lt;branchname&gt;
+<pre><code class="language-bash">git checkout -b &lt;branchname&gt;
 </code></pre>
 
 <p>相当于</p>
 
-<pre><code class="language-sh">git branch &lt;branchname&gt;
+<pre><code class="language-bash">git branch &lt;branchname&gt;
 git checkout &lt;branchname&gt;
 </code></pre>
 
 <h1 id="推送分支至远程仓库">推送分支至远程仓库</h1>
 
-<pre><code class="language-sh">git push origin &lt;branchname&gt;
+<pre><code class="language-bash">git pubash origin &lt;branchname&gt;
 </code></pre>
 
 <h1 id="合并远程仓库中的更改">合并远程仓库中的更改</h1>
@@ -260,31 +260,24 @@ git checkout &lt;branchname&gt;
 <p>操作步骤：</p>
 
 <ol>
-<li>添加用户A的项目地址</li>
-</ol>
+<li><p>添加用户A的项目地址</p>
 
-<pre><code class="language-sh">git remote add upstream &lt;URL&gt;
+<pre><code class="language-bash">git remote add upstream &lt;URL&gt;
+</code></pre></li>
+
+<li><p>fetch用户A的项目</p>
+
+<pre><code class="language-bash">git fetch upstream
+</code></pre></li>
+
+<li><p>将远程仓库合并到本地仓库</p>
+
+<pre><code class="language-bash">git merge upstream/master
 </code></pre>
 
-<ol>
-<li>fetch用户A的项目</li>
-</ol>
+<p>合并操作中可能会出现冲突无法合并，此时需要手动解决冲突后提交</p></li>
 
-<pre><code class="language-sh">git fetch upstream
-</code></pre>
-
-<ol>
-<li>将远程仓库合并到本地仓库</li>
-</ol>
-
-<pre><code class="language-sh">git merge upstream/master
-</code></pre>
-
-<pre><code>合并操作中可能会出现冲突无法合并，此时需要手动解决冲突后提交
-</code></pre>
-
-<ol>
-<li>推送本地仓库至用户B的远程仓库</li>
+<li><p>推送本地仓库至用户B的远程仓库</p></li>
 </ol>
     </div>
 
