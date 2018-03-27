@@ -304,6 +304,25 @@ notifications:
   </article>
         </div>
         
+  <div id="comments-gitment"></div>
+  <link rel="stylesheet" href="/lib/gitment/gitment-0.0.3.min.css">
+    <script src="/lib/gitment/gitment-0.0.3.min.js"></script>
+  <script type="text/javascript">
+  const gitment = new Gitment({
+    id: '2018-03-15 21:40:29 \x2b0800 \x2b0800',
+    title: 'Travis CI使用记录',
+    link: decodeURI(location.href),
+    desc: '\x3cp\x3e最近有空使用了一下Travis CI持续集成工具，在此记录一下备忘。\x3c\/p\x3e\n\n\x3cp\x3e\x3c\/p\x3e',
+    owner: 'MACDfree',
+    repo: 'gitment4',
+    oauth: {
+      client_id: '3de7eda9fae832753b25',
+      client_secret: 'fb1c82c44491295195db0eb7a2d12af22dfcae29'
+    }
+  })
+  gitment.render('comments-gitment')
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://github.com/imsun/gitment">comments powered by gitment.</a></noscript>
       </div>
     </main>
 
