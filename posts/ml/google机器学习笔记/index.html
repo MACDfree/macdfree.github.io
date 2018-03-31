@@ -75,7 +75,7 @@
 
 <meta itemprop="datePublished" content="2018-03-25T21:41:51&#43;08:00" />
 <meta itemprop="dateModified" content="2018-03-25T21:41:51&#43;08:00" />
-<meta itemprop="wordCount" content="571">
+<meta itemprop="wordCount" content="736">
 
 
 
@@ -154,7 +154,7 @@
             <a href="/categories/machine-learning/"> machine-learning </a>
           
         </div>
-        <span class="more-meta"> 约 571 字 </span>
+        <span class="more-meta"> 约 736 字 </span>
         <span class="more-meta"> 预计阅读 2 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -178,6 +178,12 @@
 <li><a href="#模型">模型</a></li>
 <li><a href="#回归与分类">回归与分类</a></li>
 <li><a href="#线性回归">线性回归</a></li>
+<li><a href="#训练与损失">训练与损失</a>
+<ul>
+<li><a href="#经验风险最小化">经验风险最小化</a></li>
+<li><a href="#损失">损失</a></li>
+<li><a href="#损失函数">损失函数</a></li>
+</ul></li>
 </ul>
 </nav>
   </div>
@@ -245,6 +251,30 @@ $${ y }^{ \prime  }=b&#43;{ \omega  }_{ 1 }{ x }_{ 1 }&#43;{ \omega  }_{ 2 }{ x 
 <li>${ \omega  }_{ 1 }$特征 1 的权重</li>
 <li>${ x }_{ 1 }$特征 1（输入项）</li>
 </ul>
+
+<h1 id="训练与损失">训练与损失</h1>
+
+<h2 id="经验风险最小化">经验风险最小化</h2>
+
+<p>检查多个样本并尝试找出可最大限度减少损失的模型</p>
+
+<h2 id="损失">损失</h2>
+
+<p>损失是一个<strong>数值</strong>，表示对于<strong>单个</strong>样本而言模型预测的准确程度。</p>
+
+<h2 id="损失函数">损失函数</h2>
+
+<p>常见的损失函数：平方损失（L<sub>2</sub>），单个样本的平方损失如下：</p>
+
+<p>= (observation - prediction(x))<sup>2</sup></p>
+
+<p>= (y - y&rsquo;)<sup>2</sup></p>
+
+<p>即实际值与预测值差值的平方</p>
+
+<p>均方误差（MSE）指的是每个样本的平均平方损失。计算公式为：</p>
+
+MSE=\frac { 1 }{ N } \sum _{ (x,y)\in D }^{  }{ (y-prediction(x))^{ 2 } }
     </div>
 
     
