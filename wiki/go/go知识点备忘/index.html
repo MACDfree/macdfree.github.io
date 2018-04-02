@@ -78,7 +78,7 @@
 
 <meta itemprop="datePublished" content="2017-10-12T23:02:15&#43;08:00" />
 <meta itemprop="dateModified" content="2017-10-12T23:02:15&#43;08:00" />
-<meta itemprop="wordCount" content="170">
+<meta itemprop="wordCount" content="225">
 
 
 
@@ -158,7 +158,7 @@
             <a href="/categories/go/"> Go </a>
           
         </div>
-        <span class="more-meta"> 约 170 字 </span>
+        <span class="more-meta"> 约 225 字 </span>
         <span class="more-meta"> 预计阅读 1 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -173,8 +173,9 @@
     <nav id="TableOfContents">
 <ul>
 <li><a href="#和-的区别">=和:=的区别</a></li>
-<li><a href="#slice类型和-array类型变量初始化差异">slice类型和array类型变量初始化差异</a></li>
+<li><a href="#slice类型和array类型变量初始化差异">slice类型和array类型变量初始化差异</a></li>
 <li><a href="#类型转换">类型转换</a></li>
+<li><a href="#文件覆写">文件覆写</a></li>
 </ul>
 </nav>
   </div>
@@ -200,7 +201,7 @@ var c int=100
 d:=100
 </code></pre>
 
-<h1 id="slice类型和-array类型变量初始化差异">slice类型和array类型变量初始化差异</h1>
+<h1 id="slice类型和array类型变量初始化差异">slice类型和array类型变量初始化差异</h1>
 
 <p>数组：[n]T</p>
 
@@ -217,6 +218,15 @@ values := [9]int{} // array
 
 <pre><code class="language-go">T(v)
 </code></pre>
+
+<h1 id="文件覆写">文件覆写</h1>
+
+<pre><code class="language-go">file, err := os.OpenFile(common.ConfigPath, os.O_WRONLY|os.O_TRUNC, 0600)
+defer file.Close()
+_, err = io.WriteString(file, str)
+</code></pre>
+
+<p>其中关键是<code>os.O_TRUNC</code>，查看注释表示：如果可能，在打开文件时清空文件。</p>
     </div>
 
     

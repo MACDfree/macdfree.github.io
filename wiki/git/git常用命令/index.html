@@ -78,7 +78,7 @@
 
 <meta itemprop="datePublished" content="2017-10-12T22:57:49&#43;08:00" />
 <meta itemprop="dateModified" content="2017-10-12T22:57:49&#43;08:00" />
-<meta itemprop="wordCount" content="390">
+<meta itemprop="wordCount" content="412">
 
 
 
@@ -158,7 +158,7 @@
             <a href="/categories/git/"> Git </a>
           
         </div>
-        <span class="more-meta"> 约 390 字 </span>
+        <span class="more-meta"> 约 412 字 </span>
         <span class="more-meta"> 预计阅读 1 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -183,6 +183,7 @@
 <li><a href="#创建并切换分支">创建并切换分支</a></li>
 <li><a href="#推送分支至远程仓库">推送分支至远程仓库</a></li>
 <li><a href="#合并远程仓库中的更改">合并远程仓库中的更改</a></li>
+<li><a href="#新增tag并推送远程仓库">新增Tag并推送远程仓库</a></li>
 </ul>
 </nav>
   </div>
@@ -250,7 +251,7 @@ git checkout &lt;branchname&gt;
 
 <h1 id="推送分支至远程仓库">推送分支至远程仓库</h1>
 
-<pre><code class="language-bash">git pubash origin &lt;branchname&gt;
+<pre><code class="language-bash">git push origin &lt;branchname&gt;
 </code></pre>
 
 <h1 id="合并远程仓库中的更改">合并远程仓库中的更改</h1>
@@ -279,6 +280,12 @@ git checkout &lt;branchname&gt;
 
 <li><p>推送本地仓库至用户B的远程仓库</p></li>
 </ol>
+
+<h1 id="新增tag并推送远程仓库">新增Tag并推送远程仓库</h1>
+
+<pre><code class="language-bash">git tag -a v1.1 -m &quot;message&quot;
+git push origin v1.1
+</code></pre>
     </div>
 
     
