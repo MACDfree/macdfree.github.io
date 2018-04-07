@@ -75,7 +75,7 @@
 
 <meta itemprop="datePublished" content="2018-03-25T21:41:51&#43;08:00" />
 <meta itemprop="dateModified" content="2018-03-25T21:41:51&#43;08:00" />
-<meta itemprop="wordCount" content="736">
+<meta itemprop="wordCount" content="1270">
 
 
 
@@ -154,8 +154,8 @@
             <a href="/categories/machine-learning/"> machine-learning </a>
           
         </div>
-        <span class="more-meta"> 约 736 字 </span>
-        <span class="more-meta"> 预计阅读 2 分钟 </span>
+        <span class="more-meta"> 约 1270 字 </span>
+        <span class="more-meta"> 预计阅读 3 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
     </header>
@@ -183,6 +183,14 @@
 <li><a href="#经验风险最小化">经验风险最小化</a></li>
 <li><a href="#损失">损失</a></li>
 <li><a href="#损失函数">损失函数</a></li>
+</ul></li>
+<li><a href="#降低损失">降低损失</a>
+<ul>
+<li><a href="#迭代方法">迭代方法</a></li>
+<li><a href="#梯度下降法">梯度下降法</a></li>
+<li><a href="#学习速率">学习速率</a></li>
+<li><a href="#优化学习速率">优化学习速率</a></li>
+<li><a href="#随机梯度下降法-sgd">随机梯度下降法（SGD）</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -275,6 +283,65 @@ $${ y }^{ \prime  }=b&#43;{ \omega  }_{ 1 }{ x }_{ 1 }&#43;{ \omega  }_{ 2 }{ x 
 <p>均方误差（MSE）指的是每个样本的平均平方损失。计算公式为：</p>
 
 $$MSE=\frac { 1 }{ N } \sum _{ (x,y)\in D }^{  }{ (y-prediction(x))^{ 2 } }$$
+
+<p>其中：</p>
+
+<ul>
+<li>$(x,y)$指样本，其中
+
+<ul>
+<li>$x$表示特征集</li>
+<li>$y$表示标签</li>
+</ul></li>
+<li>$prediction(x)$表示预测模型</li>
+<li>$D$表示有标签样本的集合</li>
+<li>$N$表示$D$的样本数量</li>
+</ul>
+
+<p>类似于方差的计算公式。</p>
+
+<h1 id="降低损失">降低损失</h1>
+
+<h2 id="迭代方法">迭代方法</h2>
+
+<p>迭代方法过程如下图所示：</p>
+
+<p><img src="http://ocd8m6zlz.bkt.clouddn.com/迭代方法.png" alt="迭代方法" /></p>
+
+<ol>
+<li>首先为模型参数设置初始值，并代入特征值得到预测值${ y }^{ \prime  }$。</li>
+<li>然后将样本标签和预测值代入损失函数计算损失，并依据此进行参数更新。</li>
+<li>最后为模型设置更新后的参数重复上述步骤，直到损失不在变化或变化很慢，则认为已收敛。</li>
+</ol>
+
+<h2 id="梯度下降法">梯度下降法</h2>
+
+<p>搞不定，TODO。
+只知道一下几点：</p>
+
+<ol>
+<li>梯度是一个向量，有方向，有大小；</li>
+<li>对于每一个参数都会有一个梯度；</li>
+<li>梯度的方向总是指向变化速率大的方向，所以梯度下降算法需要用负梯度；</li>
+<li>参数值向负梯度的方向移动一段距离，通常为梯度的值乘以某个数值得到；</li>
+<li>通过不断计算梯度，移动距离可到达损失最小的点。</li>
+</ol>
+
+<h2 id="学习速率">学习速率</h2>
+
+<p>即上一节中第四点中提到的<strong>某个数值</strong>，例如梯度大小为2.5，学习速率为0.01，则梯度下降算法移动的距离为0.025。</p>
+
+<p>学习速率就是一个<strong>超参数</strong>。</p>
+
+<h2 id="优化学习速率">优化学习速率</h2>
+
+<p>太小浪费时间，太大会错过最低点。</p>
+
+<h2 id="随机梯度下降法-sgd">随机梯度下降法（SGD）</h2>
+
+<p>针对单次迭代，只使用一个样本，就叫随机梯度下降法。</p>
+
+<p>针对单次迭代，使用一小批样本（10-1000），就叫小批量随机梯度下降法（小批量SGD）。</p>
     </div>
 
     
