@@ -82,7 +82,7 @@
 
 <meta itemprop="datePublished" content="2014-03-25T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2014-03-25T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="514">
+<meta itemprop="wordCount" content="512">
 
 
 
@@ -163,7 +163,7 @@
             <a href="/categories/note/"> note </a>
           
         </div>
-        <span class="more-meta"> 约 514 字 </span>
+        <span class="more-meta"> 约 512 字 </span>
         <span class="more-meta"> 预计阅读 2 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -189,9 +189,12 @@
 
 <p><img src="http://ocd8m6zlz.bkt.clouddn.com/m1.png" alt="整体框图" /></p>
 
-<p>图中主要包含三个部分，分别为普通节点、汇集节点和服务器。为简化起见，普通节点只画了一个，实际上可以是多个。每个普通节点需要实现的功能为：
-1. 采集温度、PH值和溶解氧值；
-2. 将采集到的数据通过射频模块传输至汇聚节点。</p>
+<p>图中主要包含三个部分，分别为普通节点、汇集节点和服务器。为简化起见，普通节点只画了一个，实际上可以是多个。每个普通节点需要实现的功能为：</p>
+
+<ol>
+<li>采集温度、PH值和溶解氧值；</li>
+<li>将采集到的数据通过射频模块传输至汇聚节点。</li>
+</ol>
 
 <p>汇集节点负责接收各个普通节点传送过来的采集数据，并通过GPRS模块将数据发送至服务器。服务器端主要将接收到的数据存入数据库，同时通过Web访问的方式将数据以用户友好的方式呈现出来。</p>
 
