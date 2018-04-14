@@ -78,7 +78,7 @@
 
 <meta itemprop="datePublished" content="2017-10-15T22:23:08&#43;08:00" />
 <meta itemprop="dateModified" content="2017-10-15T22:23:08&#43;08:00" />
-<meta itemprop="wordCount" content="131">
+<meta itemprop="wordCount" content="185">
 
 
 
@@ -158,7 +158,7 @@
             <a href="/categories/linux/"> Linux </a>
           
         </div>
-        <span class="more-meta"> 约 131 字 </span>
+        <span class="more-meta"> 约 185 字 </span>
         <span class="more-meta"> 预计阅读 1 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -170,7 +170,15 @@
   <h2 class="post-toc-title">文章目录</h2>
   
   <div class="post-toc-content always-active">
-    
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#查看端口占用">查看端口占用</a></li>
+<li><a href="#解压缩文件tar-gz">解压缩文件tar.gz</a></li>
+<li><a href="#通过ssh上传下载文件">通过ssh上传下载文件</a></li>
+<li><a href="#修改服务器时间">修改服务器时间</a></li>
+<li><a href="#iptables">iptables</a></li>
+</ul>
+</nav>
   </div>
 </div>
 
@@ -179,27 +187,41 @@
       <p>Linux常用命令记录
 </p>
 
-<p>查看端口占用</p>
+<h1 id="查看端口占用">查看端口占用</h1>
 
-<pre><code class="language-sh">netstat -apn | grep 80
+<pre><code class="language-bash">netstat -apn | grep 80
 </code></pre>
 
-<p>解压缩文件tar.gz</p>
+<h1 id="解压缩文件tar-gz">解压缩文件tar.gz</h1>
 
-<pre><code class="language-sh">tar -zxvf filename
+<pre><code class="language-bash">tar -zxvf filename
 </code></pre>
 
-<p>通过ssh上传下载文件</p>
+<h1 id="通过ssh上传下载文件">通过ssh上传下载文件</h1>
 
-<pre><code class="language-sh">scp username@servername:/path/filename /var/www/local_dir  （从服务器下载文件）
+<pre><code class="language-bash">scp username@servername:/path/filename /var/www/local_dir  （从服务器下载文件）
 scp /path/filename username@servername:/path （上传文件至服务器）
 scp -r username@servername:/var/www/remote_dir/ /var/www/local_dir（从服务器下载文件夹）
 scp  -r local_dir username@servername:remote_dir （上传文件夹至服务器）
 </code></pre>
 
-<p>修改服务器时间</p>
+<h1 id="修改服务器时间">修改服务器时间</h1>
 
-<pre><code class="language-sh">date -s &quot;2017-07-12 12:22:00&quot;
+<pre><code class="language-bash">date -s &quot;2017-07-12 12:22:00&quot;
+</code></pre>
+
+<h1 id="iptables">iptables</h1>
+
+<pre><code class="language-bash"># 查看
+iptables -L -n --line-number
+# 添加规则
+iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+# 插入规则
+iptables -I INPUT 2 -p tcp --dport 22 -j ACCEPT
+# 删除规则
+iptables -D INPUT 2
+# 保存规则
+service iptables save
 </code></pre>
     </div>
 
