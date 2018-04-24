@@ -62,12 +62,8 @@ AUTOEXTEND ON NEXT 32M MAXSIZE 2048M;
       <pubDate>Mon, 16 Oct 2017 20:06:00 +0800</pubDate>
       
       <guid>/wiki/oracle/sql%E8%AE%B0%E5%BD%95/</guid>
-      <description>&lt;h4 id=&#34;查看用户表空间&#34;&gt;查看用户表空间&lt;/h4&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;select distinct(tablespace_name) from dba_segments where owner=upper(&#39;EpointBid_TP7&#39;);
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;记录常用Oracle SQL语句
+&lt;/p&gt;</description>
     </item>
     
     <item>

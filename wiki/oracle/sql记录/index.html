@@ -17,8 +17,7 @@
 
 
 <meta name="author" content="macd" />
-  <meta name="description" content="查看用户表空间 select distinct(tablespace_name) from dba_segments where owner=upper(&#39;EpointBid_TP7&#39;);  
-" />
+  <meta name="description" content="记录常用Oracle SQL语句 " />
 
   <meta name="keywords" content="blog, macd, even" />
 
@@ -51,11 +50,7 @@
 
 
 <meta property="og:title" content="SQL记录" />
-<meta property="og:description" content="查看用户表空间
-
-select distinct(tablespace_name) from dba_segments where owner=upper(&#39;EpointBid_TP7&#39;);
-
-
+<meta property="og:description" content="记录常用Oracle SQL语句
 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/wiki/oracle/sql%E8%AE%B0%E5%BD%95/" />
@@ -64,7 +59,7 @@ select distinct(tablespace_name) from dba_segments where owner=upper(&#39;Epoint
 
 <meta property="article:published_time" content="2017-10-16T20:06:00&#43;08:00"/>
 
-<meta property="article:modified_time" content="2017-10-16T20:06:00&#43;08:00"/>
+<meta property="article:modified_time" content="2018-04-24T10:45:56&#43;08:00"/>
 
 
 
@@ -77,28 +72,20 @@ select distinct(tablespace_name) from dba_segments where owner=upper(&#39;Epoint
 
 
 <meta itemprop="name" content="SQL记录">
-<meta itemprop="description" content="查看用户表空间
-
-select distinct(tablespace_name) from dba_segments where owner=upper(&#39;EpointBid_TP7&#39;);
-
-
+<meta itemprop="description" content="记录常用Oracle SQL语句
 ">
 
 
 <meta itemprop="datePublished" content="2017-10-16T20:06:00&#43;08:00" />
 <meta itemprop="dateModified" content="2017-10-16T20:06:00&#43;08:00" />
-<meta itemprop="wordCount" content="136">
+<meta itemprop="wordCount" content="189">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="SQL记录"/>
-<meta name="twitter:description" content="查看用户表空间
-
-select distinct(tablespace_name) from dba_segments where owner=upper(&#39;EpointBid_TP7&#39;);
-
-
+<meta name="twitter:description" content="记录常用Oracle SQL语句
 "/>
 
 <!--[if lte IE 9]>
@@ -171,7 +158,7 @@ select distinct(tablespace_name) from dba_segments where owner=upper(&#39;Epoint
             <a href="/categories/oracle/"> Oracle </a>
           
         </div>
-        <span class="more-meta"> 约 136 字 </span>
+        <span class="more-meta"> 约 189 字 </span>
         <span class="more-meta"> 预计阅读 1 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -185,21 +172,13 @@ select distinct(tablespace_name) from dba_segments where owner=upper(&#39;Epoint
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
 <ul>
-<li>
-<ul>
-<li>
-<ul>
-<li>
-<ul>
 <li><a href="#查看用户表空间">查看用户表空间</a></li>
 <li><a href="#查看oracle版本">查看Oracle版本</a></li>
 <li><a href="#查看表大小">查看表大小</a></li>
 <li><a href="#添加字段">添加字段</a></li>
 <li><a href="#修改字段">修改字段</a></li>
 <li><a href="#删除字段">删除字段</a></li>
-</ul></li>
-</ul></li>
-</ul></li>
+<li><a href="#统计用户表字段数">统计用户表字段数</a></li>
 </ul>
 </nav>
   </div>
@@ -207,19 +186,20 @@ select distinct(tablespace_name) from dba_segments where owner=upper(&#39;Epoint
 
     
     <div class="post-content">
-      <h4 id="查看用户表空间">查看用户表空间</h4>
+      <p>记录常用Oracle SQL语句
+</p>
+
+<h1 id="查看用户表空间">查看用户表空间</h1>
 
 <pre><code class="language-sql">select distinct(tablespace_name) from dba_segments where owner=upper('EpointBid_TP7');
 </code></pre>
 
-<p></p>
-
-<h4 id="查看oracle版本">查看Oracle版本</h4>
+<h1 id="查看oracle版本">查看Oracle版本</h1>
 
 <pre><code class="language-sql">select * from v$version;
 </code></pre>
 
-<h4 id="查看表大小">查看表大小</h4>
+<h1 id="查看表大小">查看表大小</h1>
 
 <p>由于user_tables表中数据不是实时的，所有需要先执行</p>
 
@@ -231,19 +211,31 @@ select distinct(tablespace_name) from dba_segments where owner=upper(&#39;Epoint
 <pre><code class="language-sql">select t.table_name,t.num_rows from user_tables t ORDER BY NUM_ROWS DESC;
 </code></pre>
 
-<h4 id="添加字段">添加字段</h4>
+<h1 id="添加字段">添加字段</h1>
 
 <pre><code class="language-sql">alter table tablename add (column datatype [default value][null/not null],….);
 </code></pre>
 
-<h4 id="修改字段">修改字段</h4>
+<h1 id="修改字段">修改字段</h1>
 
 <pre><code class="language-sql">alter table tablename modify (column datatype [default value][null/not null],….);
 </code></pre>
 
-<h4 id="删除字段">删除字段</h4>
+<h1 id="删除字段">删除字段</h1>
 
 <pre><code class="language-sql">alter table tablename drop (column);
+</code></pre>
+
+<h1 id="统计用户表字段数">统计用户表字段数</h1>
+
+<pre><code class="language-sql">select *
+from (select
+        count(1) cc,
+        a.table_name
+      from user_col_comments a left join user_tab_comments b on a.table_name = b.table_name
+      where b.table_type = 'TABLE'
+      group by a.table_name) t
+order by t.cc desc;
 </code></pre>
     </div>
 
@@ -255,7 +247,7 @@ select distinct(tablespace_name) from dba_segments where owner=upper(&#39;Epoint
   </p>
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
-    <span class="item-content">2017-10-16</span>
+    <span class="item-content">2018-04-24</span>
   </p>
   
   
