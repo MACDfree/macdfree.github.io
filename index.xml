@@ -6,10 +6,20 @@
     <description>Recent content on MACDeer&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 25 Mar 2018 21:41:51 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 30 Mar 2018 22:33:54 +0800</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>IDEA和Eclipse快捷键</title>
+      <link>/wiki/java/idea%E5%92%8Ceclipse%E5%BF%AB%E6%8D%B7%E9%94%AE%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Fri, 30 Mar 2018 22:33:54 +0800</pubDate>
+      
+      <guid>/wiki/java/idea%E5%92%8Ceclipse%E5%BF%AB%E6%8D%B7%E9%94%AE%E8%AE%B0%E5%BD%95/</guid>
+      <description>&lt;p&gt;记录IDEA中常用快捷键，备忘，备查。
+&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Google机器学习笔记</title>
