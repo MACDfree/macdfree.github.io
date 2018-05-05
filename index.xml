@@ -389,16 +389,6 @@ mysqld --initialize-insecure [without random root password]
     </item>
     
     <item>
-      <title>Shiro学习记录</title>
-      <link>/wiki/java/shiro%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</link>
-      <pubDate>Sun, 15 Oct 2017 22:02:11 +0800</pubDate>
-      
-      <guid>/wiki/java/shiro%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</guid>
-      <description>&lt;p&gt;安全框架Shiro学习记录
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Quartz使用</title>
       <link>/wiki/java/quartz%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Sun, 15 Oct 2017 21:57:39 +0800</pubDate>
