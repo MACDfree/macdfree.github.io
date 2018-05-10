@@ -17,7 +17,8 @@
 
 
 <meta name="author" content="macd" />
-  <meta name="description" content="Windows首次安装MySQL时初始化 mysqld --initialize [with random root password] mysqld --initialize-insecure [without random root password]  
+  <meta name="description" content="mysql安装记录
+
 " />
 
   <meta name="keywords" content="blog, macd, even" />
@@ -51,11 +52,7 @@
 
 
 <meta property="og:title" content="MySQL安装配置及导入导出" />
-<meta property="og:description" content="Windows首次安装MySQL时初始化
-
-mysqld --initialize [with random root password]
-mysqld --initialize-insecure [without random root password]
-
+<meta property="og:description" content="mysql安装记录
 
 " />
 <meta property="og:type" content="article" />
@@ -78,29 +75,21 @@ mysqld --initialize-insecure [without random root password]
 
 
 <meta itemprop="name" content="MySQL安装配置及导入导出">
-<meta itemprop="description" content="Windows首次安装MySQL时初始化
-
-mysqld --initialize [with random root password]
-mysqld --initialize-insecure [without random root password]
-
+<meta itemprop="description" content="mysql安装记录
 
 ">
 
 
 <meta itemprop="datePublished" content="2017-10-15T22:55:29&#43;08:00" />
 <meta itemprop="dateModified" content="2017-10-15T22:55:29&#43;08:00" />
-<meta itemprop="wordCount" content="491">
+<meta itemprop="wordCount" content="571">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="MySQL安装配置及导入导出"/>
-<meta name="twitter:description" content="Windows首次安装MySQL时初始化
-
-mysqld --initialize [with random root password]
-mysqld --initialize-insecure [without random root password]
-
+<meta name="twitter:description" content="mysql安装记录
 
 "/>
 
@@ -174,8 +163,8 @@ mysqld --initialize-insecure [without random root password]
             <a href="/categories/mysql/"> MySQL </a>
           
         </div>
-        <span class="more-meta"> 约 491 字 </span>
-        <span class="more-meta"> 预计阅读 1 分钟 </span>
+        <span class="more-meta"> 约 571 字 </span>
+        <span class="more-meta"> 预计阅读 2 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
     </header>
@@ -188,15 +177,9 @@ mysqld --initialize-insecure [without random root password]
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
 <ul>
-<li>
-<ul>
-<li>
-<ul>
 <li><a href="#windows首次安装mysql时初始化">Windows首次安装MySQL时初始化</a></li>
 <li><a href="#linux安装mysql后密码重置">linux安装mysql后密码重置</a></li>
 <li><a href="#补充">补充</a></li>
-</ul></li>
-</ul></li>
 </ul>
 </nav>
   </div>
@@ -204,15 +187,17 @@ mysqld --initialize-insecure [without random root password]
 
     
     <div class="post-content">
-      <h3 id="windows首次安装mysql时初始化">Windows首次安装MySQL时初始化</h3>
+      <p>mysql安装记录</p>
+
+<p></p>
+
+<h1 id="windows首次安装mysql时初始化">Windows首次安装MySQL时初始化</h1>
 
 <pre><code class="language-sh">mysqld --initialize [with random root password]
 mysqld --initialize-insecure [without random root password]
 </code></pre>
 
-<p></p>
-
-<h3 id="linux安装mysql后密码重置">linux安装mysql后密码重置</h3>
+<h1 id="linux安装mysql后密码重置">linux安装mysql后密码重置</h1>
 
 <ol>
 <li><p>修改/etc/my.cnf文件，添加skip-grant-tables=1配置，重启mysqld服务</p></li>
@@ -236,7 +221,16 @@ update user set host='%' where user='root';
 </code></pre></li>
 </ol>
 
-<h3 id="补充">补充</h3>
+<h1 id="补充">补充</h1>
+
+<p>mysql8.0.11安装包中没有my.ini默认配置文件，需要手动新增，并添加配置</p>
+
+<pre><code class="language-ini">basedir=D:/software/mysql-8.0.11-winx64
+datadir=D:/software/mysql-8.0.11-winx64/data
+default-storage-engine=INNODB
+# 默认启用ssl，本地部署可以关掉
+skip_ssl
+</code></pre>
 
 <p>mysql5.7为root用户随机生成了密码，一般存放在<code>/var/log/mysqld.log</code>中</p>
 
@@ -249,7 +243,8 @@ update user set host='%' where user='root';
 
 <p>使用此密码登录后需要通过以下语句修改密码</p>
 
-<pre><code class="language-sql">alter user 'root'@'localhost' identified by '11111';
+<pre><code class="language-sql">alter user 'root'@'localhost' identified with mysql_native_password by '11111';
+--alter user 'root'@'localhost' identified by '11111';
 </code></pre>
 
 <p>查看mysql密码长度限制</p>

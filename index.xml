@@ -227,11 +227,7 @@ AUTOEXTEND ON NEXT 32M MAXSIZE 2048M;
       <pubDate>Sun, 15 Oct 2017 22:55:29 +0800</pubDate>
       
       <guid>/wiki/mysql/mysql%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%8F%8A%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA/</guid>
-      <description>&lt;h3 id=&#34;windows首次安装mysql时初始化&#34;&gt;Windows首次安装MySQL时初始化&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;mysqld --initialize [with random root password]
-mysqld --initialize-insecure [without random root password]
-&lt;/code&gt;&lt;/pre&gt;
+      <description>&lt;p&gt;mysql安装记录&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
