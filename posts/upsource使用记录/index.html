@@ -221,15 +221,16 @@
 <ul>
 <li>最大打开文件数调整为100000</li>
 <li>内存锁定和地址空间限制调整为无限制</li>
-<li>进程数调整为32768</li>
+
+<li><p>进程数调整为32768</p>
+
+<p>具体配置为在<code>/etc/security/limits.conf</code>文件中添加如下配置：</p></li>
 </ul>
 
-<p>具体配置为在<code>/etc/security/limits.conf</code>文件中添加如下配置：</p>
-
-<pre><code class="language-conf">   * - memlock unlimited
-   * - nofile 100000
-   * - nproc 32768
-   * - as unlimited
+<pre><code class="language-conf">* - memlock unlimited
+* - nofile 100000
+* - nproc 32768
+* - as unlimited
 </code></pre>
 
 <p>配置完成后，进入<code>&lt;upsource_home&gt;/bin</code>目录，执行<code>upsource.bat start</code>启动Upsource，执行<code>upsource.bat service install /runAsSystem</code>可以将Upsource注册为Windows服务，执行<code>upsource.bat stop</code>停止Upsource。</p>
