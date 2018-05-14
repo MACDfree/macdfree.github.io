@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Upsource on MACDeer&#39;s Blog</title>
+    <link>/tags/upsource/</link>
+    <description>Recent content in Upsource on MACDeer&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 12 May 2018 12:39:45 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/upsource/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Upsource使用记录</title>
+      <link>/posts/upsource%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Sat, 12 May 2018 12:39:45 +0800</pubDate>
+      
+      <guid>/posts/upsource%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</guid>
+      <description>&lt;p&gt;关于Upsource的安装、配置、使用记录&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
