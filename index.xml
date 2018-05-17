@@ -6,10 +6,21 @@
     <description>Recent content on MACDeer&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 12 May 2018 12:39:45 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 17 May 2018 14:02:39 +0800</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>根证书生成及签发证书Java实现</title>
+      <link>/posts/%E6%A0%B9%E8%AF%81%E4%B9%A6%E7%94%9F%E6%88%90%E5%8F%8A%E7%AD%BE%E5%8F%91%E8%AF%81%E4%B9%A6java%E5%AE%9E%E7%8E%B0/</link>
+      <pubDate>Thu, 17 May 2018 14:02:39 +0800</pubDate>
+      
+      <guid>/posts/%E6%A0%B9%E8%AF%81%E4%B9%A6%E7%94%9F%E6%88%90%E5%8F%8A%E7%AD%BE%E5%8F%91%E8%AF%81%E4%B9%A6java%E5%AE%9E%E7%8E%B0/</guid>
+      <description>&lt;p&gt;Java中使用Keytool可以方便的实现证书的生成及存储。但实际项目中，可能需要在现有系统中实现证书的签发功能，这就要求通过Java代码实现证书的签发。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Upsource使用记录</title>
