@@ -75,7 +75,7 @@
 
 <meta itemprop="datePublished" content="2018-05-17T14:02:39&#43;08:00" />
 <meta itemprop="dateModified" content="2018-05-17T14:02:39&#43;08:00" />
-<meta itemprop="wordCount" content="1005">
+<meta itemprop="wordCount" content="992">
 
 
 
@@ -154,8 +154,8 @@
             <a href="/categories/java/"> java </a>
           
         </div>
-        <span class="more-meta"> 约 1005 字 </span>
-        <span class="more-meta"> 预计阅读 3 分钟 </span>
+        <span class="more-meta"> 约 992 字 </span>
+        <span class="more-meta"> 预计阅读 2 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
     </header>
@@ -201,8 +201,6 @@
 <li>使用私钥进行对证书进行签名</li>
 <li>将私钥和签过名的证书存储到文件中</li>
 </ol>
-
-<p>需要注意的是，如果是使用根证书签发证书，上述步骤二中的<code>Issuer Name</code>需要设置为根证书的<code>Subject Name</code>，步骤三中的私钥应该是根证书的私钥。</p>
 
 <p>下面来看一下具体实现</p>
 
@@ -309,6 +307,8 @@ X509CertificateHolder certHolder = certBuilder.build(signer);
 return new JcaX509CertificateConverter().getCertificate(certHolder);
 </code></pre>
 
+<p>需要注意的是，如果是使用根证书签发证书，应该用根证书的私钥来进行签名。</p>
+
 <h2 id="将私钥和签过名的证书存储到文件中">将私钥和签过名的证书存储到文件中</h2>
 
 <pre><code class="language-java">KeyStore keyStore = null;
@@ -320,6 +320,8 @@ keyStore.store(fos, cPassword);
 fos.flush();
 fos.close();
 </code></pre>
+
+<p>此处使用<code>PKCS #12</code>格式进行存储，包含私钥和证书链。</p>
     </div>
 
     
