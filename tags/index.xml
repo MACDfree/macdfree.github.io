@@ -84,6 +84,15 @@
     </item>
     
     <item>
+      <title>Centos</title>
+      <link>/tags/centos/</link>
+      <pubDate>Thu, 12 Jul 2018 23:33:33 +0800</pubDate>
+      
+      <guid>/tags/centos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Cryptderivekey</title>
       <link>/tags/cryptderivekey/</link>
       <pubDate>Thu, 10 May 2018 08:13:12 +0800</pubDate>
@@ -377,6 +386,15 @@
       <pubDate>Mon, 16 Oct 2017 20:15:58 +0800</pubDate>
       
       <guid>/tags/virtualenv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vps</title>
+      <link>/tags/vps/</link>
+      <pubDate>Thu, 12 Jul 2018 23:33:33 +0800</pubDate>
+      
+      <guid>/tags/vps/</guid>
       <description></description>
     </item>
     

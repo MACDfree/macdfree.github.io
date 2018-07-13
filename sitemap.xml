@@ -3,6 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>/posts/vps%E5%88%9D%E5%A7%8B%E5%8C%96%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2018-07-12T23:33:33+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>/posts/%E6%A0%B9%E8%AF%81%E4%B9%A6%E7%94%9F%E6%88%90%E5%8F%8A%E7%AD%BE%E5%8F%91%E8%AF%81%E4%B9%A6java%E5%AE%9E%E7%8E%B0/</loc>
     <lastmod>2018-05-17T14:02:39+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -506,6 +513,13 @@
   </url>
   
   <url>
+    <loc>/tags/centos/</loc>
+    <lastmod>2018-07-12T23:33:33+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/cryptderivekey/</loc>
     <lastmod>2018-05-10T08:13:12+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -661,14 +675,14 @@
   
   <url>
     <loc>/categories/linux/</loc>
-    <lastmod>2017-10-15T22:27:35+08:00</lastmod>
+    <lastmod>2018-07-12T23:33:33+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2018-05-17T14:02:39+08:00</lastmod>
+    <lastmod>2018-07-12T23:33:33+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -759,7 +773,7 @@
   
   <url>
     <loc>/posts/</loc>
-    <lastmod>2018-05-17T14:02:39+08:00</lastmod>
+    <lastmod>2018-07-12T23:33:33+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -851,6 +865,13 @@
   <url>
     <loc>/tags/virtualenv/</loc>
     <lastmod>2017-10-16T20:15:58+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/vps/</loc>
+    <lastmod>2018-07-12T23:33:33+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

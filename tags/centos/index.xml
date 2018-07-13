@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Centos on MACDeer&#39;s Blog</title>
+    <link>/tags/centos/</link>
+    <description>Recent content in Centos on MACDeer&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 12 Jul 2018 23:33:33 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/centos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>VPS初始化配置记录</title>
+      <link>/posts/vps%E5%88%9D%E5%A7%8B%E5%8C%96%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Thu, 12 Jul 2018 23:33:33 +0800</pubDate>
+      
+      <guid>/posts/vps%E5%88%9D%E5%A7%8B%E5%8C%96%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/</guid>
+      <description>&lt;p&gt;由于之前用的虚拟主机不稳定，丢包率很高，所以不得不重新换了一个主机。换完主机后需要重新配置安装，在此记录一下，方便以后参考。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
