@@ -6,10 +6,21 @@
     <description>Recent content in 持续集成 on MACDeer&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 15 Mar 2018 21:40:29 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 28 Jul 2018 17:14:20 +0800</lastBuildDate>
     
 	<atom:link href="/categories/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Jenkins整合sonarQube</title>
+      <link>/posts/jenkins%E6%95%B4%E5%90%88sonarqube/</link>
+      <pubDate>Sat, 28 Jul 2018 17:14:20 +0800</pubDate>
+      
+      <guid>/posts/jenkins%E6%95%B4%E5%90%88sonarqube/</guid>
+      <description>&lt;p&gt;本文主要记录在CentOS7中安装SonarQube，以及将SonarQube整合到Jenkins的过程&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Travis CI使用记录</title>

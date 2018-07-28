@@ -228,6 +228,15 @@
     </item>
     
     <item>
+      <title>Jenkins</title>
+      <link>/tags/jenkins/</link>
+      <pubDate>Sat, 28 Jul 2018 17:14:20 +0800</pubDate>
+      
+      <guid>/tags/jenkins/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Keytool</title>
       <link>/tags/keytool/</link>
       <pubDate>Sun, 15 Oct 2017 21:51:56 +0800</pubDate>
@@ -314,6 +323,15 @@
       <pubDate>Sun, 15 Oct 2017 21:57:39 +0800</pubDate>
       
       <guid>/tags/quartz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sonarqube</title>
+      <link>/tags/sonarqube/</link>
+      <pubDate>Sat, 28 Jul 2018 17:14:20 +0800</pubDate>
+      
+      <guid>/tags/sonarqube/</guid>
       <description></description>
     </item>
     
