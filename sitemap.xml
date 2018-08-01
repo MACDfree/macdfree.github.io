@@ -3,6 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>/posts/maven%E6%89%93%E5%8C%85%E6%B7%BB%E5%8A%A0svn%E7%89%88%E6%9C%AC%E5%8F%B7%E5%92%8C%E6%9E%84%E5%BB%BA%E6%97%B6%E9%97%B4/</loc>
+    <lastmod>2018-08-01T12:36:34+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>/posts/jenkins%E6%95%B4%E5%90%88sonarqube/</loc>
     <lastmod>2018-07-28T17:14:20+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -654,7 +661,7 @@
   
   <url>
     <loc>/categories/java/</loc>
-    <lastmod>2018-05-17T14:02:39+08:00</lastmod>
+    <lastmod>2018-08-01T12:36:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -696,7 +703,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2018-07-28T17:14:20+08:00</lastmod>
+    <lastmod>2018-08-01T12:36:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -717,7 +724,7 @@
   
   <url>
     <loc>/tags/maven/</loc>
-    <lastmod>2017-10-15T21:50:23+08:00</lastmod>
+    <lastmod>2018-08-01T12:36:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -787,7 +794,7 @@
   
   <url>
     <loc>/posts/</loc>
-    <lastmod>2018-07-28T17:14:20+08:00</lastmod>
+    <lastmod>2018-08-01T12:36:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

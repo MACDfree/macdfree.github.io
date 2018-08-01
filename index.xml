@@ -6,10 +6,23 @@
     <description>Recent content on MACDeer&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 28 Jul 2018 17:14:20 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 01 Aug 2018 12:36:34 +0800</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Maven打包添加SVN版本号和构建时间</title>
+      <link>/posts/maven%E6%89%93%E5%8C%85%E6%B7%BB%E5%8A%A0svn%E7%89%88%E6%9C%AC%E5%8F%B7%E5%92%8C%E6%9E%84%E5%BB%BA%E6%97%B6%E9%97%B4/</link>
+      <pubDate>Wed, 01 Aug 2018 12:36:34 +0800</pubDate>
+      
+      <guid>/posts/maven%E6%89%93%E5%8C%85%E6%B7%BB%E5%8A%A0svn%E7%89%88%E6%9C%AC%E5%8F%B7%E5%92%8C%E6%9E%84%E5%BB%BA%E6%97%B6%E9%97%B4/</guid>
+      <description>&lt;p&gt;为了方便判断应用服务器运行环境中的jar包是否是最新的，考虑将SVN版本号和构建时间信息添加到jar包中。&lt;/p&gt;
+
+&lt;p&gt;经过搜索尝试，记录一下基于Maven的实现方式。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Jenkins整合sonarQube</title>
