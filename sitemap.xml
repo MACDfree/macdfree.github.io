@@ -3,6 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>/wiki/java/%E6%80%A7%E8%83%BD%E6%8E%92%E6%9F%A5%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
+    <lastmod>2018-09-15T21:44:42+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>/posts/maven%E6%89%93%E5%8C%85%E6%B7%BB%E5%8A%A0svn%E7%89%88%E6%9C%AC%E5%8F%B7%E5%92%8C%E6%9E%84%E5%BB%BA%E6%97%B6%E9%97%B4/</loc>
     <lastmod>2018-08-01T12:36:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -661,7 +668,7 @@
   
   <url>
     <loc>/categories/java/</loc>
-    <lastmod>2018-08-01T12:36:34+08:00</lastmod>
+    <lastmod>2018-09-15T21:44:42+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -703,7 +710,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2018-08-01T12:36:34+08:00</lastmod>
+    <lastmod>2018-09-15T21:44:42+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -927,7 +934,7 @@
   
   <url>
     <loc>/wiki/</loc>
-    <lastmod>2018-04-27T12:35:32+08:00</lastmod>
+    <lastmod>2018-09-15T21:44:42+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -998,6 +1005,13 @@
   <url>
     <loc>/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/</loc>
     <lastmod>2018-04-27T12:35:32+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E6%80%A7%E8%83%BD%E6%8E%92%E6%9F%A5/</loc>
+    <lastmod>2018-09-15T21:44:42+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
