@@ -172,19 +172,10 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
 <ul>
-<li>
-<ul>
-<li>
-<ul>
-<li>
-<ul>
 <li><a href="#filter">Filter</a></li>
 <li><a href="#listener">Listener</a></li>
 <li><a href="#web-xml加载流程">web.xml加载流程</a></li>
 <li><a href="#classpath和classpath-的区别">classpath和classpath*的区别</a></li>
-</ul></li>
-</ul></li>
-</ul></li>
 </ul>
 </nav>
   </div>
@@ -195,12 +186,12 @@
       <p>web.xml相关知识点记录
 </p>
 
-<h4 id="filter">Filter</h4>
+<h1 id="filter">Filter</h1>
 
 <p>需要实现javax.servlet.Filter接口。
 在Web应用启动时初始化（仅初始化一次），随Web应用停止而销毁。会拦截每次客户端的请求。</p>
 
-<h4 id="listener">Listener</h4>
+<h1 id="listener">Listener</h1>
 
 <p>需要实现javax.servlet.ServletContextListener接口。
 在Web应用启动时初始化（仅初始一次），随Web应用停止而销毁。
@@ -208,11 +199,11 @@ Web应用启动时需要会读取web.xml中context-param节点的内容以key-va
 
 <p>由上可知，Filter如其名，对每次客户端请求做处理（过滤）；Listener则是作为一个初始化的功能。</p>
 
-<h4 id="web-xml加载流程">web.xml加载流程</h4>
+<h1 id="web-xml加载流程">web.xml加载流程</h1>
 
 <p>context-param &gt; listener &gt; filter &gt; sevlet &gt; spring&hellip;</p>
 
-<h4 id="classpath和classpath-的区别">classpath和classpath*的区别</h4>
+<h1 id="classpath和classpath-的区别">classpath和classpath*的区别</h1>
 
 <p>classpath：只在当前的classpath下查找</p>
 
