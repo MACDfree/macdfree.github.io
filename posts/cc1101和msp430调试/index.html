@@ -190,7 +190,7 @@
 
 <p>CC1101与MSP430间的通信通过SPI接口，程序使用MSP430的硬件SPI接口，需要配置相应的寄存器。其中我犯的错误是在配置完寄存器后没有置位USPIEx，关于SPI接口的状态转换图如下：</p>
 
-<p><img src="http://ocd8m6zlz.bkt.clouddn.com/m7.png" alt="SPI状态转换" /></p>
+<p><img src="https://blog-1254016481.cos.ap-shanghai.myqcloud.com/m7.png" alt="SPI状态转换" /></p>
 
 <p>另外，关于MSP430对IO口复用设置的问题，对于SPI需要设置P3.1、P3.2、P3.3为SPI功能，分别对应SIMO0、SOMI0、UCLK0，其中SOMI0从数据的流向上来说是输入，而SIMO0和UCLK0为输出。那设置时要规定引脚的方向吗？数据手册中的这段话给出了答案：</p>
 
