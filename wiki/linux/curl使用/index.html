@@ -78,7 +78,7 @@
 
 <meta itemprop="datePublished" content="2017-10-15T22:27:35&#43;08:00" />
 <meta itemprop="dateModified" content="2017-10-15T22:27:35&#43;08:00" />
-<meta itemprop="wordCount" content="62">
+<meta itemprop="wordCount" content="65">
 
 
 
@@ -158,7 +158,7 @@
             <a href="/categories/linux/"> Linux </a>
           
         </div>
-        <span class="more-meta"> 约 62 字 </span>
+        <span class="more-meta"> 约 65 字 </span>
         <span class="more-meta"> 预计阅读 1 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -191,15 +191,10 @@
 
 <p>断点续传</p>
 
-<pre><code class="language-sh">curl -O url
+<pre><code class="language-sh">curl -C - -O url
 </code></pre>
 
-<p>下载过程中中断下载</p>
-
-<pre><code class="language-sh">curl -C -O url
-</code></pre>
-
-<p>只用-C参数继续对该文件下载</p>
+<p>其中<code>-C -</code>表示让curl自动判断偏移位置进行断点续传下载</p>
     </div>
 
     
