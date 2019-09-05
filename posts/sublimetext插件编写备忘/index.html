@@ -18,7 +18,6 @@
 
 <meta name="author" content="macd" />
   <meta name="description" content="最近本来想玩一下Atom，奈何插件真不会写（JS功底太差，CoffeeScript不想用），导致最后又重投了Sublime Text的怀抱。Sublime Text的插件两年前就已经写过，只是当时也就网上各种搜，东拼西凑出来个，也没有好好记录一下，所以这次来补上。
-
 " />
 
   <meta name="keywords" content="blog, macd, even" />
@@ -28,7 +27,7 @@
 <meta name="google-site-verification" content="fAeFHpkrhfFS8LxdzXy0EtAPcVStv0faGn238sRF3L8" />
 
 
-<meta name="generator" content="Hugo 0.37.1" />
+<meta name="generator" content="Hugo 0.54.0" />
 
 
 <link rel="canonical" href="/posts/sublimetext%E6%8F%92%E4%BB%B6%E7%BC%96%E5%86%99%E5%A4%87%E5%BF%98/" />
@@ -52,32 +51,14 @@
 
 
 <meta property="og:title" content="SublimeText插件编写备忘" />
-<meta property="og:description" content="最近本来想玩一下Atom，奈何插件真不会写（JS功底太差，CoffeeScript不想用），导致最后又重投了Sublime Text的怀抱。Sublime Text的插件两年前就已经写过，只是当时也就网上各种搜，东拼西凑出来个，也没有好好记录一下，所以这次来补上。
-
-" />
+<meta property="og:description" content="最近本来想玩一下Atom，奈何插件真不会写（JS功底太差，CoffeeScript不想用），导致最后又重投了Sublime Text的怀抱。Sublime Text的插件两年前就已经写过，只是当时也就网上各种搜，东拼西凑出来个，也没有好好记录一下，所以这次来补上。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/posts/sublimetext%E6%8F%92%E4%BB%B6%E7%BC%96%E5%86%99%E5%A4%87%E5%BF%98/" />
-
-
-
 <meta property="article:published_time" content="2016-10-06T21:43:07&#43;00:00"/>
-
 <meta property="article:modified_time" content="2016-10-06T21:43:07&#43;00:00"/>
 
-
-
-
-
-
-
-
-
-
-
 <meta itemprop="name" content="SublimeText插件编写备忘">
-<meta itemprop="description" content="最近本来想玩一下Atom，奈何插件真不会写（JS功底太差，CoffeeScript不想用），导致最后又重投了Sublime Text的怀抱。Sublime Text的插件两年前就已经写过，只是当时也就网上各种搜，东拼西凑出来个，也没有好好记录一下，所以这次来补上。
-
-">
+<meta itemprop="description" content="最近本来想玩一下Atom，奈何插件真不会写（JS功底太差，CoffeeScript不想用），导致最后又重投了Sublime Text的怀抱。Sublime Text的插件两年前就已经写过，只是当时也就网上各种搜，东拼西凑出来个，也没有好好记录一下，所以这次来补上。">
 
 
 <meta itemprop="datePublished" content="2016-10-06T21:43:07&#43;00:00" />
@@ -89,9 +70,7 @@
 <meta itemprop="keywords" content="Sublime Text," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="SublimeText插件编写备忘"/>
-<meta name="twitter:description" content="最近本来想玩一下Atom，奈何插件真不会写（JS功底太差，CoffeeScript不想用），导致最后又重投了Sublime Text的怀抱。Sublime Text的插件两年前就已经写过，只是当时也就网上各种搜，东拼西凑出来个，也没有好好记录一下，所以这次来补上。
-
-"/>
+<meta name="twitter:description" content="最近本来想玩一下Atom，奈何插件真不会写（JS功底太差，CoffeeScript不想用），导致最后又重投了Sublime Text的怀抱。Sublime Text的插件两年前就已经写过，只是当时也就网上各种搜，东拼西凑出来个，也没有好好记录一下，所以这次来补上。"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -189,8 +168,6 @@
     
     <div class="post-content">
       <p>最近本来想玩一下Atom，奈何插件真不会写（JS功底太差，CoffeeScript不想用），导致最后又重投了Sublime Text的怀抱。Sublime Text的插件两年前就已经写过，只是当时也就网上各种搜，东拼西凑出来个，也没有好好记录一下，所以这次来补上。</p>
-
-<p></p>
 
 <h1 id="1-如何新建一个插件">1. 如何新建一个插件</h1>
 
@@ -322,7 +299,7 @@ class ExampleCommand(sublime_plugin.TextCommand):
     &copy; 
     
       2014 - 
-    2018
+    2019
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>

@@ -17,9 +17,7 @@
       <pubDate>Thu, 06 Oct 2016 21:43:07 +0000</pubDate>
       
       <guid>/posts/sublimetext%E6%8F%92%E4%BB%B6%E7%BC%96%E5%86%99%E5%A4%87%E5%BF%98/</guid>
-      <description>&lt;p&gt;最近本来想玩一下Atom，奈何插件真不会写（JS功底太差，CoffeeScript不想用），导致最后又重投了Sublime Text的怀抱。Sublime Text的插件两年前就已经写过，只是当时也就网上各种搜，东拼西凑出来个，也没有好好记录一下，所以这次来补上。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;最近本来想玩一下Atom，奈何插件真不会写（JS功底太差，CoffeeScript不想用），导致最后又重投了Sublime Text的怀抱。Sublime Text的插件两年前就已经写过，只是当时也就网上各种搜，东拼西凑出来个，也没有好好记录一下，所以这次来补上。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -28,9 +26,7 @@
       <pubDate>Tue, 08 Jul 2014 00:00:00 +0000</pubDate>
       
       <guid>/posts/%E4%BD%8E%E5%8A%9F%E8%80%97%E8%8A%82%E7%82%B9%E8%AE%BE%E8%AE%A1%E6%97%A5%E8%AE%B001/</guid>
-      <description>&lt;p&gt;本系列设计日记主要记录基于MSP430和CC1101的低功耗节点的硬件和程序设计过程，用于和他人分享设计思路和经验。今天是本系列设计日记的第一天，首先说明本节点的设计背景：本节点用于冷藏车内温度的实时监测，并通过射频的方式将数据发送至汇集节点。所要求实现的目标为：&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;本系列设计日记主要记录基于MSP430和CC1101的低功耗节点的硬件和程序设计过程，用于和他人分享设计思路和经验。今天是本系列设计日记的第一天，首先说明本节点的设计背景：本节点用于冷藏车内温度的实时监测，并通过射频的方式将数据发送至汇集节点。所要求实现的目标为：&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -39,9 +35,7 @@
       <pubDate>Wed, 04 Jun 2014 00:00:00 +0000</pubDate>
       
       <guid>/posts/cc1101%E5%92%8Cmsp430%E8%B0%83%E8%AF%95/</guid>
-      <description>&lt;p&gt;本篇记录最近调试基于MSP430的CC1101射频通信程序中遇到的问题和需要注意的地方。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;本篇记录最近调试基于MSP430的CC1101射频通信程序中遇到的问题和需要注意的地方。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -50,9 +44,7 @@
       <pubDate>Sun, 06 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>/posts/%E6%B0%B4%E8%B4%A8%E7%9B%91%E6%B5%8B2/</guid>
-      <description>&lt;p&gt;拖来拖去就拖到现在了，什么都没弄，趁现在临阵抱一下佛脚吧。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;拖来拖去就拖到现在了，什么都没弄，趁现在临阵抱一下佛脚吧。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -61,8 +53,7 @@
       <pubDate>Sat, 05 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>/posts/php-apache-mysql%E9%85%8D%E7%BD%AE/</guid>
-      <description>&lt;p&gt;php apache mysql配置
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;php apache mysql配置&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -71,9 +62,7 @@
       <pubDate>Thu, 27 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>/posts/%E5%85%B3%E4%BA%8E51%E5%8D%95%E7%89%87%E6%9C%BA%E7%9A%84%E4%B8%AD%E6%96%AD%E9%97%AE%E9%A2%98/</guid>
-      <description>&lt;p&gt;今天上无线传感器网络课的时候，老师问了一个他遇到的问题：用C语言编写中断程序时，&lt;code&gt;interrupt&lt;/code&gt;后跟的数字写错了，但实际运行时却是正常的，他进一步试验发现只要这个数字比正确的数字大都是可以的，由此问我们其中的原因。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;今天上无线传感器网络课的时候，老师问了一个他遇到的问题：用C语言编写中断程序时，&lt;code&gt;interrupt&lt;/code&gt;后跟的数字写错了，但实际运行时却是正常的，他进一步试验发现只要这个数字比正确的数字大都是可以的，由此问我们其中的原因。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -82,9 +71,7 @@
       <pubDate>Tue, 25 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>/posts/%E6%B0%B4%E8%B4%A8%E7%9B%91%E6%B5%8B1/</guid>
-      <description>&lt;p&gt;“水质监测”是我这学期的实习题目，我想通过一系列的文章记录整个的开发过程。这是第一篇，主要记录整体的结构设想和一些关键点。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;“水质监测”是我这学期的实习题目，我想通过一系列的文章记录整个的开发过程。这是第一篇，主要记录整体的结构设想和一些关键点。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -93,9 +80,7 @@
       <pubDate>Mon, 24 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>/posts/%E7%94%A8%E5%8D%8A%E5%A4%A9%E6%97%B6%E9%97%B4%E6%90%AD%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
-      <description>&lt;p&gt;使用&lt;code&gt;GitHub Pages&lt;/code&gt;和&lt;code&gt;jekylleb&lt;/code&gt;搭建博客系统&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;使用&lt;code&gt;GitHub Pages&lt;/code&gt;和&lt;code&gt;jekylleb&lt;/code&gt;搭建博客系统&lt;/p&gt;</description>
     </item>
     
   </channel>

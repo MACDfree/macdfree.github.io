@@ -20,9 +20,7 @@
       <description>&lt;h4 id=&#34;新建虚拟环境-指定解释器&#34;&gt;新建虚拟环境（指定解释器）&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;virtualenv -p /usr/bin/python2.7 venv
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
   </channel>

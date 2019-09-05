@@ -20,9 +20,7 @@
       <description>&lt;h4 id=&#34;进入redis命令行&#34;&gt;进入redis命令行&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;redis-cli
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
   </channel>

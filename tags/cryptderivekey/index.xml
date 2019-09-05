@@ -17,9 +17,7 @@
       <pubDate>Thu, 10 May 2018 08:13:12 +0800</pubDate>
       
       <guid>/posts/dotnet%E4%B8%ADpasswordderivebytes.cryptderivekey%E7%9A%84java%E5%AE%9E%E7%8E%B0/</guid>
-      <description>&lt;p&gt;新老系统分别基于Java和.NET，老系统中使用&lt;code&gt;PasswordDeriveBytes.CryptDeriveKey&lt;/code&gt;进行3DES密钥的生成。为实现新老系统的互操作性，需要使用Java实现密钥生成逻辑。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;新老系统分别基于Java和.NET，老系统中使用&lt;code&gt;PasswordDeriveBytes.CryptDeriveKey&lt;/code&gt;进行3DES密钥的生成。为实现新老系统的互操作性，需要使用Java实现密钥生成逻辑。&lt;/p&gt;</description>
     </item>
     
   </channel>

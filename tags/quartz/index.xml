@@ -17,8 +17,7 @@
       <pubDate>Sun, 15 Oct 2017 21:57:39 +0800</pubDate>
       
       <guid>/wiki/java/quartz%E4%BD%BF%E7%94%A8/</guid>
-      <description>&lt;p&gt;Quartz的主要概念是Scheduler、Job、JobDetail和Trigger，其中Scheduler（调度者）是主体；JobDetail和Trigger用于定义任务的相关信息，如：需要执行的任务类，任务执行的时间点等；Job为实际需要执行的任务。
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;Quartz的主要概念是Scheduler、Job、JobDetail和Trigger，其中Scheduler（调度者）是主体；JobDetail和Trigger用于定义任务的相关信息，如：需要执行的任务类，任务执行的时间点等；Job为实际需要执行的任务。&lt;/p&gt;</description>
     </item>
     
   </channel>

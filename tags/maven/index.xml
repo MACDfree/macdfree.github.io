@@ -19,9 +19,7 @@
       <guid>/posts/maven%E6%89%93%E5%8C%85%E6%B7%BB%E5%8A%A0svn%E7%89%88%E6%9C%AC%E5%8F%B7%E5%92%8C%E6%9E%84%E5%BB%BA%E6%97%B6%E9%97%B4/</guid>
       <description>&lt;p&gt;为了方便判断应用服务器运行环境中的jar包是否是最新的，考虑将SVN版本号和构建时间信息添加到jar包中。&lt;/p&gt;
 
-&lt;p&gt;经过搜索尝试，记录一下基于Maven的实现方式。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;经过搜索尝试，记录一下基于Maven的实现方式。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -30,8 +28,7 @@
       <pubDate>Sun, 15 Oct 2017 21:50:23 +0800</pubDate>
       
       <guid>/wiki/java/maven%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
-      <description>&lt;p&gt;Maven常用命令记录
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;Maven常用命令记录&lt;/p&gt;</description>
     </item>
     
   </channel>

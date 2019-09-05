@@ -17,9 +17,7 @@
       <pubDate>Sat, 28 Jul 2018 17:14:20 +0800</pubDate>
       
       <guid>/posts/jenkins%E6%95%B4%E5%90%88sonarqube/</guid>
-      <description>&lt;p&gt;本文主要记录在CentOS7中安装SonarQube，以及将SonarQube整合到Jenkins的过程&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;本文主要记录在CentOS7中安装SonarQube，以及将SonarQube整合到Jenkins的过程&lt;/p&gt;</description>
     </item>
     
   </channel>

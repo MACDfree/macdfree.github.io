@@ -17,9 +17,7 @@
       <pubDate>Thu, 12 Jul 2018 23:33:33 +0800</pubDate>
       
       <guid>/posts/vps%E5%88%9D%E5%A7%8B%E5%8C%96%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/</guid>
-      <description>&lt;p&gt;由于之前用的虚拟主机不稳定，丢包率很高，所以不得不重新换了一个主机。换完主机后需要重新配置安装，在此记录一下，方便以后参考。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;由于之前用的虚拟主机不稳定，丢包率很高，所以不得不重新换了一个主机。换完主机后需要重新配置安装，在此记录一下，方便以后参考。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -28,8 +26,7 @@
       <pubDate>Sun, 15 Oct 2017 22:27:35 +0800</pubDate>
       
       <guid>/wiki/linux/curl%E4%BD%BF%E7%94%A8/</guid>
-      <description>&lt;p&gt;curl用法记录
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;curl用法记录&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -38,8 +35,7 @@
       <pubDate>Sun, 15 Oct 2017 22:24:48 +0800</pubDate>
       
       <guid>/wiki/linux/%E7%94%A8%E6%88%B7%E6%96%B0%E5%A2%9E%E5%B9%B6%E6%8E%88%E6%9D%83/</guid>
-      <description>&lt;p&gt;Linux新增用户并授权命令
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;Linux新增用户并授权命令&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -48,8 +44,7 @@
       <pubDate>Sun, 15 Oct 2017 22:23:08 +0800</pubDate>
       
       <guid>/wiki/linux/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
-      <description>&lt;p&gt;Linux常用命令记录
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;Linux常用命令记录&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -58,8 +53,7 @@
       <pubDate>Sun, 15 Oct 2017 22:19:59 +0800</pubDate>
       
       <guid>/wiki/linux/ssh%E5%85%8D%E5%AF%86%E7%A0%81%E8%AE%BE%E7%BD%AE/</guid>
-      <description>&lt;p&gt;实现SSH证书登录
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;实现SSH证书登录&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -68,8 +62,7 @@
       <pubDate>Sun, 15 Oct 2017 22:17:44 +0800</pubDate>
       
       <guid>/wiki/linux/figlet%E4%BD%BF%E7%94%A8%E5%AD%97%E7%AC%A6%E7%94%BB/</guid>
-      <description>&lt;p&gt;字符画工具Figlet的安装和使用
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;字符画工具Figlet的安装和使用&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -78,8 +71,7 @@
       <pubDate>Sun, 15 Oct 2017 22:10:09 +0800</pubDate>
       
       <guid>/wiki/linux/%E5%88%9B%E5%BB%BA%E7%94%A8%E4%BA%8Enginx%E7%9A%84%E7%AD%BE%E5%90%8D%E8%AF%81%E4%B9%A6/</guid>
-      <description>&lt;p&gt;Nginx配置SSL时创建签名证书的方法
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;Nginx配置SSL时创建签名证书的方法&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -88,8 +80,7 @@
       <pubDate>Sun, 15 Oct 2017 22:07:57 +0800</pubDate>
       
       <guid>/wiki/linux/linux%E6%8A%93%E5%8C%85%E5%88%86%E6%9E%90/</guid>
-      <description>&lt;p&gt;使用tcpdump+wireshark工具组合，tcpdump进行再Linux环境下进行抓包并存储为cap文件，wireshark进行分析。
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;使用tcpdump+wireshark工具组合，tcpdump进行再Linux环境下进行抓包并存储为cap文件，wireshark进行分析。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -98,8 +89,7 @@
       <pubDate>Sun, 15 Oct 2017 22:06:01 +0800</pubDate>
       
       <guid>/wiki/linux/bash%E7%9F%A5%E8%AF%86%E7%82%B9/</guid>
-      <description>&lt;p&gt;Bash知识点记录
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;Bash知识点记录&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -108,8 +98,7 @@
       <pubDate>Fri, 26 Aug 2016 12:44:52 +0000</pubDate>
       
       <guid>/wiki/linux/centos%E6%B3%A8%E5%86%8C%E6%9C%8D%E5%8A%A1%E8%84%9A%E6%9C%AC/</guid>
-      <description>&lt;p&gt;CentOS中服务脚本示例模板及注册方法
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;CentOS中服务脚本示例模板及注册方法&lt;/p&gt;</description>
     </item>
     
   </channel>

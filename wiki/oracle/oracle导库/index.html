@@ -27,7 +27,7 @@
 <meta name="google-site-verification" content="fAeFHpkrhfFS8LxdzXy0EtAPcVStv0faGn238sRF3L8" />
 
 
-<meta name="generator" content="Hugo 0.37.1" />
+<meta name="generator" content="Hugo 0.54.0" />
 
 
 <link rel="canonical" href="/wiki/oracle/oracle%E5%AF%BC%E5%BA%93/" />
@@ -54,22 +54,8 @@
 <meta property="og:description" content="Oracle导库主要分成清库、清空回收站、导库三个步骤。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/wiki/oracle/oracle%E5%AF%BC%E5%BA%93/" />
-
-
-
 <meta property="article:published_time" content="2016-09-29T00:10:57&#43;00:00"/>
-
 <meta property="article:modified_time" content="2016-09-29T00:10:57&#43;00:00"/>
-
-
-
-
-
-
-
-
-
-
 
 <meta itemprop="name" content="Oracle导库">
 <meta itemprop="description" content="Oracle导库主要分成清库、清空回收站、导库三个步骤。">
@@ -77,7 +63,7 @@
 
 <meta itemprop="datePublished" content="2016-09-29T00:10:57&#43;00:00" />
 <meta itemprop="dateModified" content="2016-09-29T00:10:57&#43;00:00" />
-<meta itemprop="wordCount" content="767">
+<meta itemprop="wordCount" content="750">
 
 
 
@@ -156,7 +142,7 @@
             <a href="/categories/oracle/"> Oracle </a>
           
         </div>
-        <span class="more-meta"> 约 767 字 </span>
+        <span class="more-meta"> 约 750 字 </span>
         <span class="more-meta"> 预计阅读 2 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -176,13 +162,11 @@
     <div class="post-content">
       <p>Oracle导库主要分成清库、清空回收站、导库三个步骤。</p>
 
-<p>
-1. 清库</p>
-
-<pre><code>将`Function`、`Procedures`、`Packages`、`Package bodies`、`Tables`、`Triggers`、`views`、`Sequences`都删除
-</code></pre>
-
 <ol>
+<li><p>清库</p>
+
+<p>将<code>Function</code>、<code>Procedures</code>、<code>Packages</code>、<code>Package bodies</code>、<code>Tables</code>、<code>Triggers</code>、<code>views</code>、<code>Sequences</code>都删除</p></li>
+
 <li><p>清空回收站</p>
 
 <p>执行<code>purge recyclebin</code>，把drop后回收站中的数据清空</p></li>
@@ -308,7 +292,7 @@
     &copy; 
     
       2014 - 
-    2018
+    2019
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>

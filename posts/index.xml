@@ -6,10 +6,19 @@
     <description>Recent content in Posts on MACDeer&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 01 Aug 2018 12:36:34 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 05 Sep 2019 16:19:05 +0800</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Windows下编译安装OpenSSL</title>
+      <link>/posts/windows%E4%B8%8B%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85openssl/</link>
+      <pubDate>Thu, 05 Sep 2019 16:19:05 +0800</pubDate>
+      
+      <guid>/posts/windows%E4%B8%8B%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85openssl/</guid>
+      <description>&lt;p&gt;最近需要使用老版本的OpenSSL库进行开发，但网上搜索了一圈并没有编译好的版本。无奈只能自己搭建编译环境进行编译安装。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Maven打包添加SVN版本号和构建时间</title>
@@ -19,9 +28,7 @@
       <guid>/posts/maven%E6%89%93%E5%8C%85%E6%B7%BB%E5%8A%A0svn%E7%89%88%E6%9C%AC%E5%8F%B7%E5%92%8C%E6%9E%84%E5%BB%BA%E6%97%B6%E9%97%B4/</guid>
       <description>&lt;p&gt;为了方便判断应用服务器运行环境中的jar包是否是最新的，考虑将SVN版本号和构建时间信息添加到jar包中。&lt;/p&gt;
 
-&lt;p&gt;经过搜索尝试，记录一下基于Maven的实现方式。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;经过搜索尝试，记录一下基于Maven的实现方式。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -30,9 +37,7 @@
       <pubDate>Sat, 28 Jul 2018 17:14:20 +0800</pubDate>
       
       <guid>/posts/jenkins%E6%95%B4%E5%90%88sonarqube/</guid>
-      <description>&lt;p&gt;本文主要记录在CentOS7中安装SonarQube，以及将SonarQube整合到Jenkins的过程&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;本文主要记录在CentOS7中安装SonarQube，以及将SonarQube整合到Jenkins的过程&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -41,9 +46,7 @@
       <pubDate>Thu, 12 Jul 2018 23:33:33 +0800</pubDate>
       
       <guid>/posts/vps%E5%88%9D%E5%A7%8B%E5%8C%96%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/</guid>
-      <description>&lt;p&gt;由于之前用的虚拟主机不稳定，丢包率很高，所以不得不重新换了一个主机。换完主机后需要重新配置安装，在此记录一下，方便以后参考。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;由于之前用的虚拟主机不稳定，丢包率很高，所以不得不重新换了一个主机。换完主机后需要重新配置安装，在此记录一下，方便以后参考。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -52,9 +55,7 @@
       <pubDate>Thu, 17 May 2018 14:02:39 +0800</pubDate>
       
       <guid>/posts/%E6%A0%B9%E8%AF%81%E4%B9%A6%E7%94%9F%E6%88%90%E5%8F%8A%E7%AD%BE%E5%8F%91%E8%AF%81%E4%B9%A6java%E5%AE%9E%E7%8E%B0/</guid>
-      <description>&lt;p&gt;Java中使用Keytool可以方便的实现证书的生成及存储。但实际项目中，可能需要在现有系统中实现证书的签发功能，这就要求通过Java代码实现证书的签发。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Java中使用Keytool可以方便的实现证书的生成及存储。但实际项目中，可能需要在现有系统中实现证书的签发功能，这就要求通过Java代码实现证书的签发。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -63,9 +64,7 @@
       <pubDate>Sat, 12 May 2018 12:39:45 +0800</pubDate>
       
       <guid>/posts/upsource%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</guid>
-      <description>&lt;p&gt;关于Upsource的安装、配置、使用记录&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;关于Upsource的安装、配置、使用记录&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -74,9 +73,7 @@
       <pubDate>Thu, 10 May 2018 08:13:12 +0800</pubDate>
       
       <guid>/posts/dotnet%E4%B8%ADpasswordderivebytes.cryptderivekey%E7%9A%84java%E5%AE%9E%E7%8E%B0/</guid>
-      <description>&lt;p&gt;新老系统分别基于Java和.NET，老系统中使用&lt;code&gt;PasswordDeriveBytes.CryptDeriveKey&lt;/code&gt;进行3DES密钥的生成。为实现新老系统的互操作性，需要使用Java实现密钥生成逻辑。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;新老系统分别基于Java和.NET，老系统中使用&lt;code&gt;PasswordDeriveBytes.CryptDeriveKey&lt;/code&gt;进行3DES密钥的生成。为实现新老系统的互操作性，需要使用Java实现密钥生成逻辑。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -85,8 +82,7 @@
       <pubDate>Sun, 25 Mar 2018 21:41:51 +0800</pubDate>
       
       <guid>/posts/ml/google%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
-      <description>&lt;p&gt;最近正在抽空学习Google的&lt;a href=&#34;https://developers.google.com/machine-learning/crash-course&#34;&gt;《机器学习速成课程》&lt;/a&gt;。由于拖延症晚期加上工作忙碌，学习进度缓慢，经常遇到这次看的内容下次就忘了的情况，所以在此记录一下，以加强记忆，巩固所学知识。
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;最近正在抽空学习Google的&lt;a href=&#34;https://developers.google.com/machine-learning/crash-course&#34;&gt;《机器学习速成课程》&lt;/a&gt;。由于拖延症晚期加上工作忙碌，学习进度缓慢，经常遇到这次看的内容下次就忘了的情况，所以在此记录一下，以加强记忆，巩固所学知识。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -95,9 +91,7 @@
       <pubDate>Thu, 22 Mar 2018 12:40:50 +0800</pubDate>
       
       <guid>/posts/axis%E8%B0%83%E7%94%A8cxf%E5%8F%91%E5%B8%83%E7%9A%84webservice%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
-      <description>&lt;p&gt;最近遇到一个&lt;strong&gt;Axis&lt;/strong&gt;调用&lt;strong&gt;CXF&lt;/strong&gt;发布的&lt;strong&gt;WebService&lt;/strong&gt;时报错的问题，在此记录一下问题解决的过程。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;最近遇到一个&lt;strong&gt;Axis&lt;/strong&gt;调用&lt;strong&gt;CXF&lt;/strong&gt;发布的&lt;strong&gt;WebService&lt;/strong&gt;时报错的问题，在此记录一下问题解决的过程。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -106,9 +100,7 @@
       <pubDate>Thu, 15 Mar 2018 21:40:29 +0800</pubDate>
       
       <guid>/posts/travis-ci%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</guid>
-      <description>&lt;p&gt;最近有空使用了一下Travis CI持续集成工具，在此记录一下备忘。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;最近有空使用了一下Travis CI持续集成工具，在此记录一下备忘。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -117,9 +109,7 @@
       <pubDate>Thu, 08 Mar 2018 22:15:08 +0800</pubDate>
       
       <guid>/posts/%E5%BF%AB%E9%80%9Fssh%E8%BF%9E%E6%8E%A5%E5%B7%A5%E5%85%B7-%E8%87%AA%E7%94%A8/</guid>
-      <description>&lt;p&gt;使用go语言编写的SSH连接管理工具&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;使用go语言编写的SSH连接管理工具&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -128,8 +118,7 @@
       <pubDate>Wed, 07 Mar 2018 14:13:30 +0800</pubDate>
       
       <guid>/posts/%E9%A1%B5%E9%9D%A2%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96-%E5%9F%BA%E4%BA%8Elighthouse/</guid>
-      <description>&lt;p&gt;最近使用GoogleChrome的Lighthouse插件对公司的登录页面进行了检测优化，在此记录一下具体优化过程。
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;最近使用GoogleChrome的Lighthouse插件对公司的登录页面进行了检测优化，在此记录一下具体优化过程。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -138,9 +127,7 @@
       <pubDate>Thu, 06 Oct 2016 21:43:07 +0000</pubDate>
       
       <guid>/posts/sublimetext%E6%8F%92%E4%BB%B6%E7%BC%96%E5%86%99%E5%A4%87%E5%BF%98/</guid>
-      <description>&lt;p&gt;最近本来想玩一下Atom，奈何插件真不会写（JS功底太差，CoffeeScript不想用），导致最后又重投了Sublime Text的怀抱。Sublime Text的插件两年前就已经写过，只是当时也就网上各种搜，东拼西凑出来个，也没有好好记录一下，所以这次来补上。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;最近本来想玩一下Atom，奈何插件真不会写（JS功底太差，CoffeeScript不想用），导致最后又重投了Sublime Text的怀抱。Sublime Text的插件两年前就已经写过，只是当时也就网上各种搜，东拼西凑出来个，也没有好好记录一下，所以这次来补上。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -160,9 +147,7 @@
       <guid>/posts/%E7%9C%8B%E8%BF%87%E7%9A%84%E5%8A%A8%E6%BC%AB/</guid>
       <description>&lt;p&gt;以下是我看过的动漫，算是一种收藏吧。&lt;/p&gt;
 
-&lt;p&gt;持续更新，考虑每个动画贴个图片。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;持续更新，考虑每个动画贴个图片。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -171,9 +156,7 @@
       <pubDate>Sun, 29 May 2016 03:48:32 +0000</pubDate>
       
       <guid>/posts/hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
-      <description>&lt;p&gt;在网上看见使用Hexo和GitHub Page搭建博客的文章，闲来无事就仿照着做了一下。起初是在我的Windows电脑搭建，但觉得Windows和命令行不怎么协调，就改用我的树莓派搭建。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;在网上看见使用Hexo和GitHub Page搭建博客的文章，闲来无事就仿照着做了一下。起初是在我的Windows电脑搭建，但觉得Windows和命令行不怎么协调，就改用我的树莓派搭建。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -182,9 +165,7 @@
       <pubDate>Tue, 08 Jul 2014 00:00:00 +0000</pubDate>
       
       <guid>/posts/%E4%BD%8E%E5%8A%9F%E8%80%97%E8%8A%82%E7%82%B9%E8%AE%BE%E8%AE%A1%E6%97%A5%E8%AE%B001/</guid>
-      <description>&lt;p&gt;本系列设计日记主要记录基于MSP430和CC1101的低功耗节点的硬件和程序设计过程，用于和他人分享设计思路和经验。今天是本系列设计日记的第一天，首先说明本节点的设计背景：本节点用于冷藏车内温度的实时监测，并通过射频的方式将数据发送至汇集节点。所要求实现的目标为：&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;本系列设计日记主要记录基于MSP430和CC1101的低功耗节点的硬件和程序设计过程，用于和他人分享设计思路和经验。今天是本系列设计日记的第一天，首先说明本节点的设计背景：本节点用于冷藏车内温度的实时监测，并通过射频的方式将数据发送至汇集节点。所要求实现的目标为：&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -193,9 +174,7 @@
       <pubDate>Wed, 04 Jun 2014 00:00:00 +0000</pubDate>
       
       <guid>/posts/cc1101%E5%92%8Cmsp430%E8%B0%83%E8%AF%95/</guid>
-      <description>&lt;p&gt;本篇记录最近调试基于MSP430的CC1101射频通信程序中遇到的问题和需要注意的地方。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;本篇记录最近调试基于MSP430的CC1101射频通信程序中遇到的问题和需要注意的地方。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -204,9 +183,7 @@
       <pubDate>Tue, 15 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>/posts/c%E8%AF%AD%E8%A8%80%E5%A4%8D%E6%9D%82%E5%A3%B0%E6%98%8E%E7%9A%84%E7%90%86%E8%A7%A3/</guid>
-      <description>&lt;p&gt;本篇主要记录我现在对C语言中复杂声明的理解，以供以后的我参考。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;本篇主要记录我现在对C语言中复杂声明的理解，以供以后的我参考。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -215,9 +192,7 @@
       <pubDate>Tue, 08 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>/posts/%E4%B8%B2%E5%8F%A3%E8%BF%9E%E6%8E%A5%E6%A0%91%E8%8E%93%E6%B4%BE/</guid>
-      <description>&lt;p&gt;通过树莓派的GPIO连接usb转串口模块连接电脑，通过Putty登录树莓派&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;通过树莓派的GPIO连接usb转串口模块连接电脑，通过Putty登录树莓派&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -226,9 +201,7 @@
       <pubDate>Sun, 06 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>/posts/%E6%B0%B4%E8%B4%A8%E7%9B%91%E6%B5%8B2/</guid>
-      <description>&lt;p&gt;拖来拖去就拖到现在了，什么都没弄，趁现在临阵抱一下佛脚吧。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;拖来拖去就拖到现在了，什么都没弄，趁现在临阵抱一下佛脚吧。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -237,8 +210,7 @@
       <pubDate>Sat, 05 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>/posts/php-apache-mysql%E9%85%8D%E7%BD%AE/</guid>
-      <description>&lt;p&gt;php apache mysql配置
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;php apache mysql配置&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -247,9 +219,7 @@
       <pubDate>Thu, 27 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>/posts/%E5%85%B3%E4%BA%8E51%E5%8D%95%E7%89%87%E6%9C%BA%E7%9A%84%E4%B8%AD%E6%96%AD%E9%97%AE%E9%A2%98/</guid>
-      <description>&lt;p&gt;今天上无线传感器网络课的时候，老师问了一个他遇到的问题：用C语言编写中断程序时，&lt;code&gt;interrupt&lt;/code&gt;后跟的数字写错了，但实际运行时却是正常的，他进一步试验发现只要这个数字比正确的数字大都是可以的，由此问我们其中的原因。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;今天上无线传感器网络课的时候，老师问了一个他遇到的问题：用C语言编写中断程序时，&lt;code&gt;interrupt&lt;/code&gt;后跟的数字写错了，但实际运行时却是正常的，他进一步试验发现只要这个数字比正确的数字大都是可以的，由此问我们其中的原因。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -258,9 +228,7 @@
       <pubDate>Tue, 25 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>/posts/%E6%B0%B4%E8%B4%A8%E7%9B%91%E6%B5%8B1/</guid>
-      <description>&lt;p&gt;“水质监测”是我这学期的实习题目，我想通过一系列的文章记录整个的开发过程。这是第一篇，主要记录整体的结构设想和一些关键点。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;“水质监测”是我这学期的实习题目，我想通过一系列的文章记录整个的开发过程。这是第一篇，主要记录整体的结构设想和一些关键点。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -269,9 +237,7 @@
       <pubDate>Mon, 24 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>/posts/%E7%94%A8%E5%8D%8A%E5%A4%A9%E6%97%B6%E9%97%B4%E6%90%AD%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
-      <description>&lt;p&gt;使用&lt;code&gt;GitHub Pages&lt;/code&gt;和&lt;code&gt;jekylleb&lt;/code&gt;搭建博客系统&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;使用&lt;code&gt;GitHub Pages&lt;/code&gt;和&lt;code&gt;jekylleb&lt;/code&gt;搭建博客系统&lt;/p&gt;</description>
     </item>
     
   </channel>

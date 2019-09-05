@@ -18,7 +18,6 @@
 
 <meta name="author" content="macd" />
   <meta name="description" content="今天上无线传感器网络课的时候，老师问了一个他遇到的问题：用C语言编写中断程序时，interrupt后跟的数字写错了，但实际运行时却是正常的，他进一步试验发现只要这个数字比正确的数字大都是可以的，由此问我们其中的原因。
-
 " />
 
   <meta name="keywords" content="blog, macd, even" />
@@ -28,7 +27,7 @@
 <meta name="google-site-verification" content="fAeFHpkrhfFS8LxdzXy0EtAPcVStv0faGn238sRF3L8" />
 
 
-<meta name="generator" content="Hugo 0.37.1" />
+<meta name="generator" content="Hugo 0.54.0" />
 
 
 <link rel="canonical" href="/posts/%E5%85%B3%E4%BA%8E51%E5%8D%95%E7%89%87%E6%9C%BA%E7%9A%84%E4%B8%AD%E6%96%AD%E9%97%AE%E9%A2%98/" />
@@ -52,32 +51,14 @@
 
 
 <meta property="og:title" content="关于51单片机的中断问题" />
-<meta property="og:description" content="今天上无线传感器网络课的时候，老师问了一个他遇到的问题：用C语言编写中断程序时，interrupt后跟的数字写错了，但实际运行时却是正常的，他进一步试验发现只要这个数字比正确的数字大都是可以的，由此问我们其中的原因。
-
-" />
+<meta property="og:description" content="今天上无线传感器网络课的时候，老师问了一个他遇到的问题：用C语言编写中断程序时，interrupt后跟的数字写错了，但实际运行时却是正常的，他进一步试验发现只要这个数字比正确的数字大都是可以的，由此问我们其中的原因。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/posts/%E5%85%B3%E4%BA%8E51%E5%8D%95%E7%89%87%E6%9C%BA%E7%9A%84%E4%B8%AD%E6%96%AD%E9%97%AE%E9%A2%98/" />
-
-
-
 <meta property="article:published_time" content="2014-03-27T00:00:00&#43;00:00"/>
-
 <meta property="article:modified_time" content="2014-03-27T00:00:00&#43;00:00"/>
 
-
-
-
-
-
-
-
-
-
-
 <meta itemprop="name" content="关于51单片机的中断问题">
-<meta itemprop="description" content="今天上无线传感器网络课的时候，老师问了一个他遇到的问题：用C语言编写中断程序时，interrupt后跟的数字写错了，但实际运行时却是正常的，他进一步试验发现只要这个数字比正确的数字大都是可以的，由此问我们其中的原因。
-
-">
+<meta itemprop="description" content="今天上无线传感器网络课的时候，老师问了一个他遇到的问题：用C语言编写中断程序时，interrupt后跟的数字写错了，但实际运行时却是正常的，他进一步试验发现只要这个数字比正确的数字大都是可以的，由此问我们其中的原因。">
 
 
 <meta itemprop="datePublished" content="2014-03-27T00:00:00&#43;00:00" />
@@ -89,9 +70,7 @@
 <meta itemprop="keywords" content="单片机,中断,interrupt," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="关于51单片机的中断问题"/>
-<meta name="twitter:description" content="今天上无线传感器网络课的时候，老师问了一个他遇到的问题：用C语言编写中断程序时，interrupt后跟的数字写错了，但实际运行时却是正常的，他进一步试验发现只要这个数字比正确的数字大都是可以的，由此问我们其中的原因。
-
-"/>
+<meta name="twitter:description" content="今天上无线传感器网络课的时候，老师问了一个他遇到的问题：用C语言编写中断程序时，interrupt后跟的数字写错了，但实际运行时却是正常的，他进一步试验发现只要这个数字比正确的数字大都是可以的，由此问我们其中的原因。"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -182,8 +161,6 @@
     
     <div class="post-content">
       <p>今天上无线传感器网络课的时候，老师问了一个他遇到的问题：用C语言编写中断程序时，<code>interrupt</code>后跟的数字写错了，但实际运行时却是正常的，他进一步试验发现只要这个数字比正确的数字大都是可以的，由此问我们其中的原因。</p>
-
-<p></p>
 
 <p>听到这个问题我首先想到了中断响应时，单片机所做的工作。其中关键的一步就是根据中断类型跳转到相应的中断向量，然后程序就从这个中断向量继续向下执行。而上述问题的答案也就是在此，为了便于说明，我将定时器0的中断程序改成<code>interrupt 1</code>-&gt;<code>interrupt 2</code>，编译后的汇编代码如图所示：</p>
 
@@ -303,7 +280,7 @@
     &copy; 
     
       2014 - 
-    2018
+    2019
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>

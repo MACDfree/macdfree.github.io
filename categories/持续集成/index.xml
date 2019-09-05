@@ -17,9 +17,7 @@
       <pubDate>Sat, 28 Jul 2018 17:14:20 +0800</pubDate>
       
       <guid>/posts/jenkins%E6%95%B4%E5%90%88sonarqube/</guid>
-      <description>&lt;p&gt;本文主要记录在CentOS7中安装SonarQube，以及将SonarQube整合到Jenkins的过程&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;本文主要记录在CentOS7中安装SonarQube，以及将SonarQube整合到Jenkins的过程&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -28,9 +26,7 @@
       <pubDate>Thu, 15 Mar 2018 21:40:29 +0800</pubDate>
       
       <guid>/posts/travis-ci%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</guid>
-      <description>&lt;p&gt;最近有空使用了一下Travis CI持续集成工具，在此记录一下备忘。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;最近有空使用了一下Travis CI持续集成工具，在此记录一下备忘。&lt;/p&gt;</description>
     </item>
     
   </channel>
