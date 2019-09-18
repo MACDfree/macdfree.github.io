@@ -164,7 +164,7 @@
 
 <p>听到这个问题我首先想到了中断响应时，单片机所做的工作。其中关键的一步就是根据中断类型跳转到相应的中断向量，然后程序就从这个中断向量继续向下执行。而上述问题的答案也就是在此，为了便于说明，我将定时器0的中断程序改成<code>interrupt 1</code>-&gt;<code>interrupt 2</code>，编译后的汇编代码如图所示：</p>
 
-<p><img src="https://blog-1254016481.cos.ap-shanghai.myqcloud.com/m2.png" alt="汇编截图" /></p>
+<p><img src="/images/m2.png" alt="汇编截图" /></p>
 
 <p>由图可知中断跳转语句<code>C:0x0013 0201EA LJMP timeI(C:01EA)</code>是放置在<code>0x0013</code>的地址上的，而这个地址正是中断号为2的中断向量，由此可知关键词<code>interrupt</code>的作用是在编译时根据编写的中断号在相应的中断向量中放置一条跳转指令，跳转至定义的函数入口。</p>
 

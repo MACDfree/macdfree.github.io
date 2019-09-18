@@ -210,14 +210,14 @@ ulimit -u 2048
 
 <p>由于Elasticsearch不能使用root用户运行，所以先需要新建用户，可参考<a href="/wiki/linux/%E7%94%A8%E6%88%B7%E6%96%B0%E5%A2%9E%E5%B9%B6%E6%8E%88%E6%9D%83/">用户新增并授权</a>。使用此用户下载安装包并解压缩，解压缩后目录结构如下图所示</p>
 
-<p><img src="https://blog-1254016481.cos.ap-shanghai.myqcloud.com/sonarqube目录结构.png" alt="sonarqube目录结构" /></p>
+<p><img src="/images/sonarqube目录结构.png" alt="sonarqube目录结构" /></p>
 
 <p>接下来需要创建数据库，笔者使用MySQL数据库，创建完成后需要修改配置文件</p>
 
 <pre><code class="language-bash">vim conf/sonar.properties
 </code></pre>
 
-<p><img src="https://blog-1254016481.cos.ap-shanghai.myqcloud.com/sonarube数据库修改.png" alt="sonarube数据库修改" /></p>
+<p><img src="/images/sonarube数据库修改.png" alt="sonarube数据库修改" /></p>
 
 <p>在启动之前，需要赋予一下执行权限</p>
 
@@ -239,19 +239,19 @@ chmod +x elasticsearch/bin/*
 
 <p>使用admin/admin登录系统，点击配置/应用市场进行插件的更新和安装。建议可以安装中文语言包以便于使用，在搜索框中输入<code>chinese</code>，选择<code>Chinese Pack</code>进行安装。另外，对于需要用到插件也可以进行更新。注意，安装和更新插件需要重启后才生效。</p>
 
-<p><img src="https://blog-1254016481.cos.ap-shanghai.myqcloud.com/sonarqube更新插件.png" alt="sonarqube更新插件" /></p>
+<p><img src="/images/sonarqube更新插件.png" alt="sonarqube更新插件" /></p>
 
 <h2 id="配置svn账号密码">配置SVN账号密码</h2>
 
 <p>由于代码使用SVN进行管理，在分析代码时SonarQube需要有SVN权限，设置如下图所示，首先需要启用SCM，然后配置用户名和密码。</p>
 
-<p><img src="https://blog-1254016481.cos.ap-shanghai.myqcloud.com/sonarqub设置svn账号.png" alt="sonarqube设置svn账号" /></p>
+<p><img src="/images/sonarqub设置svn账号.png" alt="sonarqube设置svn账号" /></p>
 
 <h2 id="生成token">生成Token</h2>
 
 <p>由于下面需要和Jenkins进行整合，所以此处需要生成一个Token供Jenkins使用。生成后切记将此Token保存下来，供Jenkins整合时使用。</p>
 
-<p><img src="https://blog-1254016481.cos.ap-shanghai.myqcloud.com/sonarqubeToken设置.png" alt="sonarqubeToken设置" /></p>
+<p><img src="/images/sonarqubeToken设置.png" alt="sonarqubeToken设置" /></p>
 
 <p>至此，SonarQube的配置基本完成，下面就轮到Jenkins上场了。</p>
 
@@ -261,7 +261,7 @@ chmod +x elasticsearch/bin/*
 
 <p>在Jenkins中点击系统管理/管理插件，搜索<code>SonarQube Scanner</code>安装，安装完成重启后，点击系统管理/系统设置，定位到如下图所示位置</p>
 
-<p><img src="https://blog-1254016481.cos.ap-shanghai.myqcloud.com/sonarqube整合Jenkins配置.png" alt="sonarqube整合Jenkins配置" /></p>
+<p><img src="/images/sonarqube整合Jenkins配置.png" alt="sonarqube整合Jenkins配置" /></p>
 
 <p>其中<code>Server URL</code>即SonarQube的访问地址，<code>Server authentication token</code>即上一节中生成的Token。</p>
 
@@ -269,9 +269,9 @@ chmod +x elasticsearch/bin/*
 
 <p>选择需要分析的项目，点击配置，添加构建后步骤，如下图所示</p>
 
-<p><img src="https://blog-1254016481.cos.ap-shanghai.myqcloud.com/sonarqube整合Jenkins项目配置.png" alt="sonarqube整合Jenkins项目配置" /></p>
+<p><img src="/images/sonarqube整合Jenkins项目配置.png" alt="sonarqube整合Jenkins项目配置" /></p>
 
-<p><img src="https://blog-1254016481.cos.ap-shanghai.myqcloud.com/sonarqube整合Jenkins项目配置2.png" alt="sonarqube整合Jenkins项目配置2" /></p>
+<p><img src="/images/sonarqube整合Jenkins项目配置2.png" alt="sonarqube整合Jenkins项目配置2" /></p>
 
 <pre><code class="language-ini">sonar.projectKey=projectKey
 sonar.projectName=projectName
@@ -283,7 +283,7 @@ sonar.sources=$WORKSPACE/src
 
 <p>配置完成后点击立即构建，构建成功后可在SonarQube中看到代码的分析结果。</p>
 
-<p><img src="https://blog-1254016481.cos.ap-shanghai.myqcloud.com/sonarube分析结果.png" alt="sonarube分析结果" /></p>
+<p><img src="/images/sonarube分析结果.png" alt="sonarube分析结果" /></p>
     </div>
 
     
