@@ -513,14 +513,14 @@
   </url>
   
   <url>
-    <loc>/tags/c/</loc>
+    <loc>/categories/c/</loc>
     <lastmod>2014-04-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/c/</loc>
+    <loc>/tags/c/</loc>
     <lastmod>2014-04-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
@@ -604,14 +604,14 @@
   </url>
   
   <url>
-    <loc>/tags/go/</loc>
+    <loc>/categories/go/</loc>
     <lastmod>2018-03-19T18:28:08+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/go/</loc>
+    <loc>/tags/go/</loc>
     <lastmod>2018-03-19T18:28:08+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
@@ -625,14 +625,14 @@
   </url>
   
   <url>
-    <loc>/tags/hexo/</loc>
+    <loc>/categories/hexo/</loc>
     <lastmod>2016-05-29T03:48:32+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/hexo/</loc>
+    <loc>/tags/hexo/</loc>
     <lastmod>2016-05-29T03:48:32+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
@@ -674,14 +674,14 @@
   </url>
   
   <url>
-    <loc>/tags/iptables/</loc>
+    <loc>/categories/iptables/</loc>
     <lastmod>2019-09-26T21:48:40+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/iptables/</loc>
+    <loc>/tags/iptables/</loc>
     <lastmod>2019-09-26T21:48:40+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
@@ -779,15 +779,15 @@
   </url>
   
   <url>
-    <loc>/tags/mysql/</loc>
-    <lastmod>2014-04-05T00:00:00+00:00</lastmod>
+    <loc>/categories/mysql/</loc>
+    <lastmod>2017-10-15T23:07:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/mysql/</loc>
-    <lastmod>2017-10-15T23:07:49+08:00</lastmod>
+    <loc>/tags/mysql/</loc>
+    <lastmod>2014-04-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -807,14 +807,14 @@
   </url>
   
   <url>
-    <loc>/tags/openssl/</loc>
+    <loc>/categories/openssl/</loc>
     <lastmod>2019-09-05T16:19:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/openssl/</loc>
+    <loc>/tags/openssl/</loc>
     <lastmod>2019-09-05T16:19:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
@@ -1003,14 +1003,14 @@
   </url>
   
   <url>
-    <loc>/tags/%E5%8A%A8%E6%BC%AB/</loc>
+    <loc>/categories/%E5%8A%A8%E6%BC%AB/</loc>
     <lastmod>2018-03-22T22:26:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/%E5%8A%A8%E6%BC%AB/</loc>
+    <loc>/tags/%E5%8A%A8%E6%BC%AB/</loc>
     <lastmod>2018-03-22T22:26:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
@@ -1087,14 +1087,14 @@
   </url>
   
   <url>
-    <loc>/tags/%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/</loc>
+    <loc>/categories/%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/</loc>
     <lastmod>2019-09-26T21:48:40+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/</loc>
+    <loc>/tags/%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/</loc>
     <lastmod>2019-09-26T21:48:40+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
